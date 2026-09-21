@@ -787,31 +787,34 @@
   {
     "id": "portfolio-archive",
     "name": "Solonflow",
-    "subtitle": "Эволюция личного портфолио",
-    "intro": "Три найденные версии портфолио собраны в один исторический кейс.",
+    "subtitle": "Живой Vercel-сайт и эволюция личного портфолио",
+    "intro": "Актуальный публичный Solonflow снят без переделки: от загрузочной заставки и hero до каталога, проекта и контактов.",
     "stack": "Подробности в исследовании",
-    "flow": "Фильтры, карточки, модальные окна и переключение языка. Архивные версии отделены от новой подачи.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
+    "flow": "Boot → hero → услуги → автор → стек → 3D/Grid-каталог → фильтр → проект → RU/EN → контакты.",
+    "boundary": "Видео и основные screenshots сняты 21 сентября 2026 с живого solonflowai-portfolio.vercel.app. Локальная polish-версия сохранена только как отдельный исследовательский слой.",
     "category": "Исследования",
-    "desktop": "images/portfolio-archive.webp",
-    "mobile": "../projects/portfolio-archive/assets/overview-390.png",
+    "desktop": "../projects/portfolio-archive/assets/cover-live.webp",
+    "mobile": "../projects/portfolio-archive/assets/live-hero-390.png",
     "media": [
       {
-        "src": "../projects/portfolio-archive/assets/master-desktop.mp4",
-        "poster": "../projects/portfolio-archive/assets/poster-desktop.webp",
+        "src": "../projects/portfolio-archive/assets/master-live-1440.webm",
+        "poster": "../projects/portfolio-archive/assets/poster-live-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/portfolio-archive/assets/master-mobile.mp4",
-        "poster": "../projects/portfolio-archive/assets/poster-mobile.webp",
+        "src": "../projects/portfolio-archive/assets/master-live-390.webm",
+        "poster": "../projects/portfolio-archive/assets/poster-live-mobile.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/portfolio-archive/assets/about-1440.png",
-      "../projects/portfolio-archive/assets/catalog-1440.png",
-      "../projects/portfolio-archive/assets/contact-1440.png",
-      "../projects/portfolio-archive/assets/copied-1440.png"
+      "../projects/portfolio-archive/assets/live-services-1440.png",
+      "../projects/portfolio-archive/assets/live-about-1440.png",
+      "../projects/portfolio-archive/assets/live-stack-1440.png",
+      "../projects/portfolio-archive/assets/live-projects-web-1440.png",
+      "../projects/portfolio-archive/assets/live-project-detail-1440.png",
+      "../projects/portfolio-archive/assets/live-contact-1440.png",
+      "../projects/portfolio-archive/assets/live-navigation-390.png"
     ],
     "document": "../projects/portfolio-archive/case.md",
     "research": "../review/portfolio-archive.html",

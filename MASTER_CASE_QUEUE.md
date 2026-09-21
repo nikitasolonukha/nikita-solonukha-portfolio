@@ -128,7 +128,7 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: GitHub GraphQL 21.09.2026 подтвердил isEmpty=true: репозиторий не содержит кода/commit. Непустые secure-branch-training и stepbystep-miniapp1 остаются отдельными кандидатами; это не исключение их продукта.
 41. **solonflowai-portfolio — READY**
     - Источник: work/research-solonflowai-portfolio
-    - Следующий шаг / причина: Единый архивный кейс review/portfolio-archive.html; отдельные source manifests всех трёх версий. Builds/types, QA3, master desktop/mobile, case QA4. Исторические версии отделены от новой подачи; неподтверждённые метрики убраны.
+    - Следующий шаг / причина: Живой Vercel-сайт снят в 1440×900 и 390×844; сохранены ключевые screenshots и интерактивы. Три локальные версии остаются отдельным историческим слоем. Известный дефект исходного сайта: mobile women-strange.webp.
 42. **meta-ads-service — READY**
     - Источник: https://github.com/nikitasolonukha/meta-ads-service
     - Следующий шаг / причина: review/meta-ads.html; исходный JobService с mock сборщиком, 33 теста PASS; master input/process/output + failure/cancel, UI/case QA; приватный локальный пакет.
@@ -143,13 +143,13 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: review/nikita-chat.html; исходный REST handler + local KV, история/ошибка/повтор/валидация, master и case QA. Однопользовательский учебный чат, не мессенджер.
 46. **Site-DigitalTranformation — READY**
     - Источник: work/research-Site-DigitalTranformation
-    - Следующий шаг / причина: Единый архивный кейс review/portfolio-archive.html; отдельные source manifests всех трёх версий. Builds/types, QA3, master desktop/mobile, case QA4. Исторические версии отделены от новой подачи; неподтверждённые метрики убраны.
+    - Следующий шаг / причина: Объединено с Solonflow: живой Vercel capture + отдельный исторический слой локальных версий и source manifests.
 47. **secure-branch-training. — NOT PORTFOLIO**
     - Источник: https://github.com/nikitasolonukha/secure-branch-training.
     - Следующий шаг / причина: GitHub GraphQL 21.09.2026 подтвердил isEmpty=true: репозиторий не содержит кода/commit. Непустые secure-branch-training и stepbystep-miniapp1 остаются отдельными кандидатами; это не исключение их продукта.
 48. **site-avito — READY**
     - Источник: work/research-site-avito
-    - Следующий шаг / причина: Единый архивный кейс review/portfolio-archive.html; отдельные source manifests всех трёх версий. Builds/types, QA3, master desktop/mobile, case QA4. Исторические версии отделены от новой подачи; неподтверждённые метрики убраны.
+    - Следующий шаг / причина: Объединено с Solonflow: живой Vercel capture + отдельный исторический слой локальных версий и source manifests.
 49. **poseshaemost-MUIV — READY**
     - Источник: work/research-poseshaemost-MUIV; private commit 9a18a21
     - Следующий шаг / причина: review/attendance.html; исходные API handlers + local store, отметка/пересчёт/сохранение, master desktop/mobile, QA. Telegram/Sheets не подключены; отдельная demo-панель обозначена.
