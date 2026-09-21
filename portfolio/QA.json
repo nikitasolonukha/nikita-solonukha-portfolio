@@ -1,0 +1,679 @@
+[
+  {
+    "page": "home+flow",
+    "width": 390,
+    "overflow": false,
+    "heroTabs": true,
+    "catalog41": true,
+    "filters": true,
+    "search": true,
+    "empty": true,
+    "caseNavigation": true,
+    "evidence": true,
+    "clipboard": true,
+    "errors": []
+  },
+  {
+    "page": "home+flow",
+    "width": 768,
+    "overflow": false,
+    "heroTabs": true,
+    "catalog41": true,
+    "filters": true,
+    "search": true,
+    "empty": true,
+    "caseNavigation": true,
+    "evidence": true,
+    "clipboard": true,
+    "errors": []
+  },
+  {
+    "page": "home+flow",
+    "width": 1440,
+    "overflow": false,
+    "heroTabs": true,
+    "catalog41": true,
+    "filters": true,
+    "search": true,
+    "empty": true,
+    "caseNavigation": true,
+    "evidence": true,
+    "clipboard": true,
+    "errors": []
+  },
+  {
+    "page": "lexlegal",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "photo-animation",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "roulette",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "telegram-schedule",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "tatiana",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.9192484870382078,
+        "source": 1.9191919191919191
+      },
+      {
+        "display": 0.4880996920597462,
+        "source": 0.4880952380952381
+      },
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "support-rag",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "telegram-leads",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "ppbot",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "copilot",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "gigant",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "desert-wheels",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "women-strange",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "beauty-lead",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "channel-monitor",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "linux-lab",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "pifpaf",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      },
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "store-builder-embedded",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "ritm",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "portnoy",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "business-cards",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "vibe-autorouter",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "webchat",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "trekpodarok",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "contentfactory",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "garmony",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "ep-beauty",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "portfolio-archive",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "meta-ads",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "nikita-chat",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "attendance",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "keys4",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "stepbystep",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "skazka",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "twitter-automation",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "telegram-intel",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "leadworker",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "autoposting",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "store-builder-demo",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "topgadalkin",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "contactcard",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  },
+  {
+    "page": "content-factory-marek",
+    "width": 390,
+    "ratios": [
+      {
+        "display": 1.6,
+        "source": 1.6
+      },
+      {
+        "display": 0.4620875677737515,
+        "source": 0.46208530805687204
+      }
+    ],
+    "errors": []
+  }
+]
