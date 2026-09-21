@@ -211,30 +211,30 @@
     "id": "ppbot",
     "name": "PP BOT",
     "subtitle": "База рецептов в Telegram WebApp",
-    "intro": "Интерфейс рецептов с интерактивным открытием содержимого карточки.",
+    "intro": "Telegram-бот помогает выбрать блюдо, а WebApp открывает персональную карточку рецепта с ингредиентами и шагами.",
     "stack": "Подробности в исследовании",
-    "flow": "Два подготовленных рецепта, навигация и scratch-взаимодействие. Telegram SDK и webhook отключены.",
+    "flow": "Telegram → приём пищи → фильтры → рецепт → WebApp → ингредиенты → приготовление.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
-    "desktop": "images/ppbot.webp",
+    "desktop": "../projects/ppbot/assets/cover-v2.webp",
     "mobile": "../projects/ppbot/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/ppbot/assets/master-desktop.mp4",
-        "poster": "../projects/ppbot/assets/poster-desktop.webp",
+        "src": "../projects/ppbot/assets/master-desktop-v2.mp4",
+        "poster": "../projects/ppbot/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/ppbot/assets/master-mobile.mp4",
-        "poster": "../projects/ppbot/assets/poster-mobile.webp",
+        "src": "../projects/ppbot/assets/master-mobile-v2.mp4",
+        "poster": "../projects/ppbot/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/ppbot/assets/ingredients-1440.png",
-      "../projects/ppbot/assets/missing-1440.png",
-      "../projects/ppbot/assets/pear-oats-1440.png",
-      "../projects/ppbot/assets/personal-view-1440.png"
+      "../projects/ppbot/assets/telegram-1-desktop.png",
+      "../projects/ppbot/assets/telegram-2-desktop.png",
+      "../projects/ppbot/assets/telegram-3-desktop.png",
+      "../projects/ppbot/assets/pear-oats-1440.png"
     ],
     "document": "../projects/ppbot/case.md",
     "research": "../review/ppbot.html",
@@ -921,6 +921,38 @@
     ],
     "document": "../projects/twitter-automation/case.md",
     "research": "../review/twitter-automation.html",
+    "local": true
+  },
+  {
+    "id": "telegram-schedule",
+    "name": "Telegram Schedule",
+    "subtitle": "Сообщение → папка → 24 часа публикаций",
+    "intro": "Telegram-first автоматизация распределяет исходный пост по рабочим чатам и создаёт суточную очередь.",
+    "stack": "Python · Playwright · Telegram Web · Typer · Docker · cron",
+    "flow": "Telegram source → folder → chat → immediate message → 23 scheduled messages → result.",
+    "boundary": "Логика проверена на исходной функции; Telegram UI и данные обезличены, внешние отправки отключены.",
+    "category": "Автоматизация",
+    "desktop": "../projects/telegram-schedule/assets/cover-v2.webp",
+    "mobile": "../projects/telegram-schedule/assets/telegram-result-390-v2.png",
+    "media": [
+      {
+        "src": "../projects/telegram-schedule/assets/master-desktop-v2.mp4",
+        "poster": "../projects/telegram-schedule/assets/poster-desktop-v2.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/telegram-schedule/assets/master-mobile-v2.mp4",
+        "poster": "../projects/telegram-schedule/assets/poster-mobile-v2.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/telegram-schedule/assets/telegram-entry-1440-v2.png",
+      "../projects/telegram-schedule/assets/telegram-schedule-1440-v2.png",
+      "../projects/telegram-schedule/assets/telegram-result-1440-v2.png"
+    ],
+    "document": "../projects/telegram-schedule/case.md",
+    "research": "../review/telegram-schedule.html",
     "local": true
   },
   {

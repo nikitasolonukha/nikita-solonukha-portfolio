@@ -19,13 +19,13 @@
 15. Трек в подарок: убрать AI-визуальные клише — READY
 16. GARMONY: ограниченный polish без смены характера — READY
 17. Portnoy / Atelier: отдельный 3D feature moment — READY
-18. Университетский комплекс: protected messages + data analysis + bot/API — TODO
-19. Внутренние продукты юридической компании: sanitized actual interfaces — TODO
-20. MAGNUM: проверить полноту реальных desktop/mobile материалов — TODO
-21. KONTUR / БПЛА: проверить storytelling и маркировку supporting visuals — TODO
-22. PP BOT: Telegram/WebApp-first presentation — TODO
-23. Живые фото: Telegram evidence после получения материалов — TODO
-24. Telegram schedule / рассылка 24/7 — TODO
+18. Университетский комплекс: protected messages + data analysis + bot/API — BLOCKED — связь модулей не подтверждена: два кейса существуют только как архивные карточки без исходников, а найденный parser-tg-muiv — отдельный репозиторий мониторинга Telegram. Не объединять их в один продукт без доказательства.
+19. Внутренние продукты юридической компании: sanitized actual interfaces — PRIVATE/NDA — безопасные реальные экраны не найдены; подготовлена честная обезличенная редакционная подача без вымышленного UI и клиентских данных.
+20. MAGNUM: проверить полноту реальных desktop/mobile материалов — READY
+21. KONTUR / БПЛА: проверить storytelling и маркировку supporting visuals — READY
+22. PP BOT: Telegram/WebApp-first presentation — READY
+23. Живые фото: Telegram evidence после получения материалов — BLOCKED — сайт, сравнение и responsive-видео READY; реальный Telegram flow бота не передан, а по найденному frontend его нельзя достоверно восстановить.
+24. Telegram schedule / рассылка 24/7 — READY
 25. AI Support RAG — BLOCKED
 26. LexLegal — TODO
 27. Ритм — TODO
