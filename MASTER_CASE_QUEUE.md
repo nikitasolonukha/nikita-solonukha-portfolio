@@ -17,7 +17,7 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: Полные реальные master desktop/mobile, screenshot всех разделов, storyboard, QA продукта 3 ширин и кейса 4 ширин. Согласованный дизайн сохранён; публикация и авторство отдельно в case.md.
 04. **Лидогенератор B2B (парсинг Google Карт) — READY**
     - Источник: local n8n export ищет клиентов через карты.json; authorship confirmed by user
-    - Следующий шаг / причина: Проверена безопасная структура 15-узлового workflow. Подготовлены адаптивная demo-панель, синтетические данные, desktop/mobile walkthrough и QA. Исходный экспорт и credentials не публикуются.
+    - Следующий шаг / причина: review/maps-lead-generator.html; table-first B2B workspace, settings, six-stage run, 12-row results, company detail, filters, workflow drawer, desktop/mobile walkthrough и QA. Экспорт и credentials не публикуются.
 05. **Личный AI-ассистент — READY**
     - Источник: archived portfolio card + cover; authorship confirmed by user
     - Следующий шаг / причина: Подготовлен архивный редакционный пакет с desktop/mobile walkthrough, QA и явными границами доказательств. Runtime не восстановлен; архивная обложка не выдается за UI.
@@ -39,9 +39,9 @@ READY означает готовность локального пакета, �
 11. **AI Саппорт-система с RAG — BLOCKED**
     - Источник: Desktop/РАБОТА/Сервисы/tg-business-rag-worker (2), src + migrations; точное совпадение архитектуры со старым кейсом
     - Следующий шаг / причина: Исходная RAG-логика подтверждена кодом, но реальный Telegram-интерфейс сценария не зафиксирован. Новая техническая web-панель не заменяет пользовательский Telegram UI. См. projects/support-rag/case.md и TELEGRAM_VISUAL_AUDIT.md.
-12. **AI Лидогенерация в Telegram — BLOCKED**
+12. **Telegram AI Lead Hunter — READY**
     - Источник: Desktop tg-business-rag-worker (2)/leads-worker + backend-webchat-clean: Junction parser, ingest, topics/RAG; точное совпадение старого описания
-    - Следующий шаг / причина: Backend-пайплайн подтверждён кодом, но отсутствует безопасная запись реального Telegram flow. Демонстрационная web-панель не выдаётся за исходный интерфейс. См. projects/telegram-leads/case.md и TELEGRAM_VISUAL_AUDIT.md.
+    - Следующий шаг / причина: review/telegram-leads.html; Telegram-first demo replay, исходные parser/webhook/ingest, draft, duplicate/anonymous states и связанный MTProto transport boundary. Внешних отправок нет.
 13. **PP BOT — закрытая база рецептов — READY**
     - Источник: work/research-ppbot; public GitHub ppbot, commit 379b7a9
     - Следующий шаг / причина: review/ppbot.html; исправлен пустой Canvas, synthetic recipes, master desktop/mobile, QA 390/768/1440 и case 320–1440. Telegram backend отсутствует; закрытая коллекция не опубликована.
@@ -176,11 +176,7 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: review/twitter-automation.html; исходный processor/парсер, 6 offline modes/9 source checks, UI QA3 + error/retry, master/cover/case QA4. Новая панель; X не подключён; ограничения success описаны.
 57. **Telegram Intel Bot — READY**
     - Источник: work/research-telegram-intel-bot; private commit 480eac9
-    - Следующий шаг / причина: review/telegram-intel.html; реальный API+SQLite, synthetic fixtures, 45 исходных тестов, master пяти разделов, UI/case QA. Публичный показ не разрешён автоматически.
-58. **Leadworker MTProto — транспорт сообщений — READY**
-    - Источник: work/research-LeadworkerMTProto; private GitHub
-    - Следующий шаг / причина: review/leadworker.html; 8 API checks, 18 UI checks, master desktop/mobile, cover, docs. Исходные Vercel handler + sender, mock Telegram transport; отправок нет.
-59. **Autoposting — очередь публикаций — READY**
+    - Следующий шаг / причина: review/telegram-intel.html; Telegram-first replay по реальным командам, 45 исходных тестов, desktop/mobile master 20.48 сек, QA 1440/390 без overflow. Данные синтетические; приватный код не публикуется.
     - Источник: work/research-autoposting/автопостинг; private
     - Следующий шаг / причина: review/autoposting.html; исходный сервис/репозитории, mock UploadPost, retry/schedule/error QA, master desktop/mobile, cover. API status-shadowing исправлен локально; внешних публикаций нет.
 60. **Store Builder — самостоятельная витрина — READY**
@@ -195,3 +191,4 @@ READY означает готовность локального пакета, �
 63. **Content Factory — микросервисная версия Marek — READY**
     - Источник: Desktop/РАБОТА/Сервисы/Контент-завод/content-zavod Marek
     - Следующий шаг / причина: Исходные React сценарии + локальный API, новая оболочка. Build/types, 12 offline source checks (включая фиксацию дефектов), QA3/case4, 2 master/cover/screens/storyboard. Инфраструктура и платформы не подключены; ограничения в case.md.
+

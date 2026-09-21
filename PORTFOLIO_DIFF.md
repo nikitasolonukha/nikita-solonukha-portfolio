@@ -62,7 +62,7 @@
 - Реальный n8n workflow Copilot и Telegram input/output.
 - Готовый университетский Telegram news bot, если это отдельный проект от архивного digest.
 - Telegram AI Lead Hunter как единый кейс; сейчас MTProto ошибочно подан отдельно.
-- Telegram UI для Telegram Intel.
+- Telegram UI для Telegram Intel — восстановлен и опубликован в Telegram-first формате.
 - Реальный Telegram → обработка → публикация flow для Autopost.
 - Полные страницы результатов Meta Ads с карточками объявлений и ad detail.
 - Builder-часть объединённого Shopify flow перед живым storefront.
@@ -74,7 +74,7 @@
 ## MERGED
 
 - `store-builder-demo` + `store-builder-embedded` + живой Lumina Form → один `shopify-store-builder`: input → generation → Shopify → storefront.
-- `leadworker` / MTProto + `telegram-leads` → один Telegram AI Lead Hunter, если код подтверждает общий pipeline.
+- `leadworker` / MTProto + `telegram-leads` → один Telegram AI Lead Hunter. Основной Telegram pipeline и MTProto transport подтверждены; прямой production-вызов между репозиториями не заявляется.
 - `protected-messages` + `npm-data-analysis` + связанный университетский бот/API → один честный университетский программный комплекс после подтверждения связей.
 - `autoposting` + связанные Telegram/WordPress-сценарии юридической компании → обезличенный внутренний продукт, если подтверждается общая система.
 - Старый B2B Google Maps parser + `maps-lead-generator` → один B2B Lead Generator с реальным n8n pipeline и результатом.

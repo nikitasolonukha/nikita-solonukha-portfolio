@@ -7,11 +7,11 @@
 03. Shopify Store Builder + Lumina Form: builder → generation → Shopify → storefront — READY
 04. Personal AI Assistant: n8n workflow + Telegram — BLOCKED
 05. N8N Copilot: workflow + Telegram input/output — BLOCKED
-06. Telegram News Digest: разделить архивную и университетскую версии — TODO
-07. Telegram AI Lead Hunter + MTProto: объединить подтверждённые части — TODO
-08. B2B Lead Generator / Atlas: взрослый redesign с реальным pipeline — TODO
-09. Twitter / X Automation: X-first presentation — TODO
-10. Telegram Intel: Telegram-first presentation — TODO
+06. Telegram News Digest: разделить архивную и университетскую версии — BLOCKED
+07. Telegram AI Lead Hunter + MTProto: Telegram-first flow и связанный transport boundary — READY
+08. B2B Lead Generator / Atlas: table-first redesign, real n8n pipeline — READY
+09. Twitter / X Automation: X-first presentation — READY
+10. Telegram Intel: Telegram-first presentation — READY
 11. Autopost: установить принадлежность и показать Telegram → публикация — TODO
 12. Meta Ads: реальные страницы результатов и ad detail — READY
 13. STEP: полный visual QA и новая запись — TODO
@@ -48,3 +48,5 @@
 `BLOCKED` для Copilot означает: спецификация и промпты найдены, но точный n8n export и реальный Telegram flow отсутствуют. Подготовленная web-мастерская остаётся исследовательской реконструкцией и не используется как доказательство продукта.
 
 `BLOCKED` для AI Support RAG означает: найденные n8n-шаблоны нельзя честно приписать Никите без сопоставимого экспорта или другого доказательства. Эти блокеры не останавливают очередь.
+
+`BLOCKED` для Telegram News Digest означает: архивный AI-агрегатор из старого портфолио был помечен «в разработке» и не имеет найденного исходника или Telegram-записи. Он отделён от готового университетского `parser-tg-muiv`: это другой Telegram-бот без AI-суммаризации, с подтверждёнными Telethon, SQLite, поиском и командами. Подменять один продукт другим нельзя.

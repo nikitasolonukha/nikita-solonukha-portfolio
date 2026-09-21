@@ -921,37 +921,36 @@
   {
     "id": "telegram-intel",
     "name": "Telegram Intel",
-    "subtitle": "Из сообщений — в рабочую сводку",
-    "intro": "Источники, сообщения и уведомления в одном аналитическом интерфейсе.",
-    "stack": "FastAPI · SQLite · Telegram",
-    "flow": "Пять разделов и исходные API-сервисы на синтетических данных.",
-    "boundary": "Приватный источник. Только локальная демонстрация; разрешение на публичный показ не получено.",
-    "category": "Продукты",
-    "desktop": "images/telegram-intel.webp",
-    "mobile": "../projects/telegram-intel/assets/overview-390.png",
+    "subtitle": "Мониторинг каналов прямо в Telegram",
+    "intro": "Темы, поиск, публикации, алерты и дайджест работают в привычном Telegram-чате.",
+    "stack": "Python · Telegram Bot API · Telethon · FastAPI · SQLite",
+    "flow": "Telegram → выбор тем → публикации → алерт → digest → Mini App.",
+    "boundary": "Команды и карточки подтверждены исходником; данные синтетические, Telegram network отключён.",
+    "category": "Автоматизация",
+    "desktop": "../projects/telegram-intel/assets/cover-v2.webp",
+    "mobile": "../projects/telegram-intel/assets/telegram-digest-390-v2.png",
     "media": [
       {
-        "src": "../projects/telegram-intel/assets/master-desktop.mp4",
-        "poster": "../projects/telegram-intel/assets/poster-desktop.webp",
+        "src": "../projects/telegram-intel/assets/master-desktop-v2.mp4",
+        "poster": "../projects/telegram-intel/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/telegram-intel/assets/master-mobile.mp4",
-        "poster": "../projects/telegram-intel/assets/poster-mobile.webp",
+        "src": "../projects/telegram-intel/assets/master-mobile-v2.mp4",
+        "poster": "../projects/telegram-intel/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/telegram-intel/assets/alert-1440.png",
-      "../projects/telegram-intel/assets/alerts-1440.png",
-      "../projects/telegram-intel/assets/collection-1440.png",
-      "../projects/telegram-intel/assets/detail-1440.png"
+      "../projects/telegram-intel/assets/telegram-start-1440-v2.png",
+      "../projects/telegram-intel/assets/telegram-today-1440-v2.png",
+      "../projects/telegram-intel/assets/telegram-alert-1440-v2.png",
+      "../projects/telegram-intel/assets/telegram-digest-1440-v2.png"
     ],
     "document": "../projects/telegram-intel/case.md",
     "research": "../review/telegram-intel.html",
     "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "published": true
   },
   {
     "id": "telegram-leads",
