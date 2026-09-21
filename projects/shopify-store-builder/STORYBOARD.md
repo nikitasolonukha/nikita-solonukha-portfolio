@@ -1,8 +1,16 @@
-# Master walkthrough — Lumina Form
-00:00 Hero и визуальная система
-00:05 Коллекция и свойства товара
-00:11 Product storytelling
-00:16 Catalog
-00:20 PDP и галерея
-00:27 Продуктовые сцены, FAQ и отзывы
-00:32 Cart
+# Master walkthrough — Shopify Store Builder → Lumina Form
+
+00:00 Builder / каталог товара
+00:05 Выбор товара и запуск
+00:10 Подготовленный результат сохранения
+00:16 Image Studio и честное недоступное состояние
+00:22 Собственный товар: изображения, цена и факты
+00:35 Повторная сборка и generation result
+00:39 Переход к созданному Shopify-магазину
+00:41 Lumina Form / hero и визуальная система
+00:46 Коллекция и свойства товара
+00:52 Product storytelling
+00:57 Catalog
+01:01 PDP и галерея
+01:08 FAQ, отзывы и дополнительные сцены
+01:13 Cart

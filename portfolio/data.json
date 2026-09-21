@@ -450,31 +450,33 @@
   },
   {
     "id": "shopify-store-builder",
-    "name": "Lumina Form",
-    "subtitle": "Живой Shopify storefront",
-    "intro": "Актуальная Shopify-витрина: выразительная главная, каталог, глубокий PDP, продуктовые сцены и корзина.",
-    "stack": "Shopify · Liquid · Theme App Extension · Admin GraphQL",
-    "flow": "Home → collection → PDP/gallery → product storytelling → FAQ/reviews → cart.",
-    "boundary": "Текущий VERIFIED preview. Пароль и authenticated state не публикуются; платёж и заказ не выполнялись.",
+    "name": "Shopify Store Builder",
+    "subtitle": "Из данных товара — в готовый Shopify-магазин",
+    "intro": "Builder принимает данные товара, формирует результат и доводит сценарий до реального storefront Lumina Form.",
+    "stack": "Shopify · Admin GraphQL · Liquid · Theme App Extension",
+    "flow": "Input → generation → Shopify → Lumina Form home → catalog → PDP → cart.",
+    "boundary": "Builder использует prepared result; storefront — проверенный Shopify preview. Платёж и заказ не выполнялись.",
     "category": "Продукты",
-    "desktop": "../projects/shopify-store-builder/assets/cover.webp?v=live-only",
-    "mobile": "../projects/shopify-store-builder/assets/live-home-390.png?v=live-only",
+    "desktop": "../projects/shopify-store-builder/assets/cover.webp?v=complete-flow",
+    "mobile": "../projects/shopify-store-builder/assets/live-home-390.png?v=complete-flow",
     "media": [
       {
-        "src": "../projects/shopify-store-builder/assets/live-desktop.mp4?v=live-only",
-        "poster": "../projects/shopify-store-builder/assets/live-poster-desktop.webp?v=live-only",
+        "src": "../projects/shopify-store-builder/assets/complete-desktop.mp4?v=complete-flow",
+        "poster": "../projects/shopify-store-builder/assets/poster-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/shopify-store-builder/assets/live-mobile.mp4?v=live-only",
-        "poster": "../projects/shopify-store-builder/assets/live-poster-mobile.webp?v=live-only",
+        "src": "../projects/shopify-store-builder/assets/complete-mobile.mp4?v=complete-flow",
+        "poster": "../projects/shopify-store-builder/assets/poster-mobile.webp",
         "mobile": true
       }
     ],
     "screens": [
+      "../projects/shopify-store-builder/assets/builder-1440.png",
+      "../projects/shopify-store-builder/assets/input-1440.png",
+      "../projects/shopify-store-builder/assets/generation-result-1440.png",
       "../projects/shopify-store-builder/assets/live-home-1440.png",
       "../projects/shopify-store-builder/assets/live-product-1440.png",
-      "../projects/shopify-store-builder/assets/live-catalog-1440.png",
       "../projects/shopify-store-builder/assets/live-cart-1440.png"
     ],
     "document": "../projects/shopify-store-builder/case.md",
