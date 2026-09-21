@@ -1,48 +1,49 @@
-# Telegram Leads — Junction → рабочий сценарий
+# Telegram AI Lead Hunter — Telegram flow + MTProto transport
 
-**Статус: READY (локальный пакет).** Локальный пакет; публичное использование требует подтверждения прав.
+**Статус: READY.** Безопасный локальный demo replay на исходной логике; внешних Telegram-отправок нет.
 
-Из входящего сообщения система извлекает автора и источник, проверяет допустимость коллектора и повтор, затем передаёт лид в систему поддержки. Идентифицированный контакт ожидает решения менеджера о создании топика; скрытый аккаунт обрабатывается отдельно, без попытки восстановить личность.
+Система принимает сообщения из Telegram-коллектора, проверяет источник, извлекает автора, защищается от повторов и передаёт лид в рабочий Telegram-сценарий. Менеджер получает подготовленный черновик и сам решает, продолжать ли контакт.
 
 ## ORIGINAL
 
-Сопоставлен со старым кейсом «AI Лидогенерация в Telegram» по Junction, collector, RAG drafts, support core и Telegram topics. Источники: `leads-worker/src/handlers/webhook.ts`, `parsers/junction.ts`, `backend-webchat-clean/src/worker/handlers/leads-ingest.ts`, formatter и связанная документация. Стек: TypeScript, Cloudflare Workers, KV, D1, Telegram; draft pipeline использует RAG и AI. Транспорт MTProto подготовлен отдельно в кейсе Leadworker, не подменяет весь продукт.
+Основной продукт подтверждён исходниками `leads-worker` и `backend-webchat-clean`: Junction parser, collector webhook, ingest, Telegram topics, draft formatter и RAG/AI pipeline. Отдельный репозиторий `LeadworkerMTProto` — внутренний сервис первой отправки через Telegram user account. Он поддерживает адресацию по username или Telegram peer (`chatId` + `accessHash`), fallback, timeout и безопасные ошибки.
 
-В текущем исходнике контакт сохраняется с pending_topic и предлагается кнопка создания топика. Это не полностью автономные переговоры. Старые заявления о 30+ группах, росте качества и uptime исключены как непроверенные.
+Парсер основного продукта хранит MTProto/topic hints, а OpenAPI транспорта прямо называет его sender service for leads. Это подтверждает общую предметную область. Прямой production-вызов между двумя найденными репозиториями не обнаружен, поэтому MTProto показан как связанный проверенный модуль, а не как доказанный end-to-end участок.
 
 ## VERIFIED
 
-Исходные parser → collector webhook → core ingest запускаются в локальном VM harness, без глобального fetch. 8 проверок: идентифицированный автор/pending_topic, повтор до core, новое сообщение того же автора, анонимный маршрут с autosend=false и send_anon callback, чужой чат, собственный бот, draft pipeline с mock resolver, missing user. API-результаты сохраняются отдельно от collector HTTP 200. На 390/768/1440 проверены основные сценарии и отсутствие overflow.
+Исходные parser → collector webhook → core ingest выполняются в локальном VM harness. Проверены: открытый автор, `pending_topic`, новое сообщение того же автора, duplicate до core, скрытый автор, allowlist чужого чата, исключение собственного бота, draft pipeline и missing user. Отдельный MTProto-пакет проверен на username, InputPeer fallback, валидацию, missing entity, timeout, unauthorized и wrong method.
+
+Новая запись прошла visual QA на 1440×900 и 390×844: page errors 0, horizontal overflow 0, broken images 0. Видео показывает Telegram-first flow, а не вымышленный SaaS dashboard.
 
 ## DEMO / MOCK
 
-Новая техническая панель для презентации, исходный операторский интерфейс — Telegram. Все сообщения, имена, IDs и username вымышлены. KV и StorageClient заменены in-memory адаптерами; TelegramApi и topic creation — заглушки. Draft pipeline исходный, resolver и retrieval подготовленные. Кнопка просмотра черновика не симулирует успешный реальный create_topic callback. Исходный formatter работает с локальными escape/truncate helpers. Никакие ссылки Telegram не открывались, внешних сообщений нет.
+Telegram shell — презентационная реконструкция интерфейса продукта. Сообщения, имя студии, IDs и username вымышлены. Parser, webhook, ingest и formatter исходные. KV, D1, Telegram API, topic creation, AI resolver и retrieval заменены локальными адаптерами. Кнопка MTProto показывает подтверждённые возможности отдельного транспорта; настоящая отправка не выполняется.
 
 ## PORTFOLIO POLISH
 
-Собрана читаемая панель «сообщение → источник → защита от повторов → результат», состояния показаны рядом с решением. Локальная маркировка объясняет происхождение интерфейса и ответов. Core-код публикации не менялся. Скрытый контакт не получает обычную кнопку подготовки черновика в новой панели; выводится исходное ограничение ручной работы в чате.
+Техническая web-панель заменена на Telegram-first операторский сценарий: входящее сообщение, квалификация, путь обработки, черновик, защита от дублей и ограничение скрытого контакта. Desktop повторяет двухколоночную структуру Telegram, mobile показывает чистый чат без пустого верхнего поля. Сущность продукта и backend-контракт не изменены.
 
 ## Ограничения / PLANNED
 
-Не проверены реальные Junction-группы, аккаунт MTProto, отправка Telegram, OAuth, R2 learning sync и качество внешней модели. Тема анонимного лида создаётся mock helper. Настоящий create_topic callback и полный диалог менеджера не прогонялись. Исходный collector отмечает KV dedup до вызова core и возвращает HTTP 200 даже при ошибке core: повтор после неуспеха может быть потерян. Внешняя доставка и надёжность повторов не заявляются готовыми. Данные in-memory, после рестарта исчезают. Роль Никиты/права публикации — QUESTIONS.md.
+Не проверены реальные Junction-группы, Telegram-сессия, production topic callback, внешняя AI-модель, R2 learning sync и фактическая доставка. Topic creation и storage локальные. Исходный collector ставит KV dedup до ответа core; повтор после ошибки core может быть потерян. Права на публикацию исходных клиентских данных не предполагаются, поэтому используются только вымышленные данные.
 
 ## SCREEN → ACTION → STATE → RESULT
 
-Сообщение → обработать → parsing → named или anonymous.
-Named → ingest → pending_topic → решение менеджера.
-Черновик → запрос → prepared AI → текст для просмотра.
-Повтор → тот же message → duplicate → core не вызывается.
-Anonymous → ingest-anon → mock topic → прямой контакт невозможен.
-Чужой чат/собственный бот → проверка → skip → дальнейших действий нет.
+Telegram collector → «Обработать лид» → allowlist + parse + dedup → `pending_topic`.
+
+Квалифицированный лид → «Подготовить черновик» → исходный draft pipeline → текст для проверки менеджером.
+
+MTProto transport → открыть модуль → username / peer fallback / timeout → описание проверенного transport boundary.
+
+Повтор → тот же message id → duplicate → core не вызывается.
+
+Скрытый автор → ingest-anon → безопасный маршрут → прямой контакт помечен невозможным.
 
 ## Материалы
 
-Storyboard, master desktop/mobile, cover из настоящего стенда, screenshots pending/draft/duplicate/anonymous/blocked/own, UI/API QA и хеши исходников. Оформление продолжает техническую панель связанной RAG-системы, не изображает отдельный ранее выпущенный SaaS.
-
-Master desktop/mobile просмотрены по кадрам; case QA 320/390/768/1440 пройден, видео и постеры без искажения пропорций.
-
-## VISUAL BLOCKED — реальный Telegram UI
-
-Backend-пайплайн подтверждён кодом, но отсутствует безопасная запись реального Telegram flow. Демонстрационная web-панель не выдаётся за исходный интерфейс.
-
-Подготовленные интерфейсы, тесты и видео сохранены как исследовательские материалы, но исключены из READY-витрины до появления проверяемого пользовательского Telegram-сценария.
+- `assets/master-desktop-v2.mp4` и `assets/master-mobile-v2.mp4` — master walkthrough.
+- `assets/cover-v2.webp`, `poster-desktop-v2.webp`, `poster-mobile-v2.webp`.
+- Screenshots entry, qualified, draft, MTProto, duplicate и anonymous для desktop/mobile.
+- `capture-report.json` — timings и visual QA.
+- `storyboard.md` — последовательность записи.

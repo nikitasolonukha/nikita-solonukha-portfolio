@@ -956,39 +956,39 @@
     "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
-    "id": "leadworker",
-    "name": "MTProto",
-    "subtitle": "Транспорт сообщений",
-    "intro": "Демонстрация связывает исходный HTTP-обработчик с отправителем и показывает обработку запросов.",
-    "stack": "Подробности в исследовании",
-    "flow": "Валидация, результат и ошибки на mock-транспорте Telegram. Новая web-панель; реальных отправок нет.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Автоматизация",
-    "desktop": "images/leadworker.webp",
-    "mobile": "../projects/leadworker/assets/overview-390.png",
+    "id": "telegram-leads",
+    "name": "Telegram AI Lead Hunter",
+    "subtitle": "Входящий лид → квалификация → черновик → Telegram",
+    "intro": "Telegram-first система разбирает входящие возможности, защищает от дублей и готовит ответ менеджеру.",
+    "stack": "TypeScript · Cloudflare Workers · Telegram · D1/KV · RAG · MTProto",
+    "flow": "Collector → parser → allowlist/dedup → core ingest → manager draft → MTProto transport boundary.",
+    "boundary": "Безопасный demo replay на исходной логике. Telegram, storage и AI заменены локальными адаптерами; внешних отправок нет.",
+    "category": "AI и автоматизация",
+    "desktop": "../projects/telegram-leads/assets/cover-v2.webp",
+    "mobile": "../projects/telegram-leads/assets/telegram-draft-390-v2.png",
     "media": [
       {
-        "src": "../projects/leadworker/assets/master-desktop.mp4",
-        "poster": "../projects/leadworker/assets/poster-desktop.webp",
+        "src": "../projects/telegram-leads/assets/master-desktop-v2.mp4",
+        "poster": "../projects/telegram-leads/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/leadworker/assets/master-mobile.mp4",
-        "poster": "../projects/leadworker/assets/poster-mobile.webp",
+        "src": "../projects/telegram-leads/assets/master-mobile-v2.mp4",
+        "poster": "../projects/telegram-leads/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/leadworker/assets/demo-fallback-1440.png",
-      "../projects/leadworker/assets/demo-no_hints-1440.png",
-      "../projects/leadworker/assets/demo-timeout-1440.png",
-      "../projects/leadworker/assets/demo-unauthorized-1440.png"
+      "../projects/telegram-leads/assets/telegram-entry-1440-v2.png",
+      "../projects/telegram-leads/assets/telegram-qualified-1440-v2.png",
+      "../projects/telegram-leads/assets/telegram-draft-1440-v2.png",
+      "../projects/telegram-leads/assets/telegram-mtproto-1440-v2.png",
+      "../projects/telegram-leads/assets/telegram-duplicate-1440-v2.png",
+      "../projects/telegram-leads/assets/telegram-anonymous-1440-v2.png"
     ],
-    "document": "../projects/leadworker/case.md",
-    "research": "../review/leadworker.html",
-    "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "document": "../projects/telegram-leads/case.md",
+    "research": "../review/telegram-leads.html",
+    "local": true
   },
   {
     "id": "autoposting",
