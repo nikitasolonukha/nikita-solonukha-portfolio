@@ -11,6 +11,7 @@
 | Media | Скриншоты и master video берутся из сохранённых материалов проектов | Пропавших изображений и пустых video-секций в проверенных views нет |
 | Motion | Семь коротких фрагментов из существующих master videos | Проигрываются без звука при hover/focus; `prefers-reduced-motion` отключает превью |
 | Взаимодействия | Четыре фильтра Work, семь видео-превью, мобильное меню, reduced-motion | Ошибок 0; локальные video URL возвращают 200 |
+| Feature moments | Пифпаф Reels, Портной 3D, AI Support webchat + Telegram на 390/1440 | 6 визуальных проверок, ошибок 0 |
 
 Проверки измеряли горизонтальное переполнение, runtime JS errors, наличие H1, битые изображения, количество видео и наличие архивной пометки там, где нет записи. Снимки результата лежат в `site/qa/`: `home-1440.png`, `home-390.png`, `work-1440.png`, `work-390.png`, `shopify-1440.png`, `shopify-390.png`, отдельные top screenshots About/Archive/Meta/Portnoy/Support.
 

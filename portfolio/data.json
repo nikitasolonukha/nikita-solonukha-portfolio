@@ -381,7 +381,7 @@
     "flow": "Добавление ролика, поиск, графики, настройки и обработка ошибок.",
     "boundary": "Запись использует локальные ответы API и вымышленные ролики. Живой сбор Apify не выполнялся.",
     "category": "Продукты",
-    "desktop": "images/pifpaf.webp",
+    "desktop": "../projects/pifpaf/assets/reels-wall-1440.png",
     "mobile": "../projects/pifpaf/assets/overview-390.png",
     "media": [
       {
@@ -406,6 +406,7 @@
       }
     ],
     "screens": [
+      "../projects/pifpaf/assets/reels-wall-1440.png",
       "../projects/pifpaf/assets/account-1440.png",
       "../projects/pifpaf/assets/add-1440.png",
       "../projects/pifpaf/assets/analytics-30-1440.png",
@@ -598,11 +599,11 @@
     ],
     "screens": [
       "../projects/support-rag/assets/telegram-support-sanitized.png",
+      "../projects/webchat/assets/conversation-1440.png",
       "../projects/support-rag/assets/sources-1440.png",
       "../projects/support-rag/assets/approved-1440.png",
       "../projects/support-rag/assets/history-1440.png",
-      "../projects/webchat/assets/host-1440.png",
-      "../projects/webchat/assets/conversation-1440.png"
+      "../projects/webchat/assets/host-1440.png"
     ],
     "document": "../projects/support-rag/case.md",
     "research": "../review/support-rag.html",
