@@ -1061,36 +1061,36 @@
   {
     "id": "maps-lead-generator",
     "name": "Atlas / Leads",
-    "subtitle": "B2B-лидогенератор из Google Maps",
-    "intro": "Ниша и город превращаются в очищенную базу компаний с сайтами, телефонами и найденными email.",
+    "subtitle": "B2B company enrichment workspace",
+    "intro": "Ниша и город превращаются в рабочую таблицу компаний с сайтами, телефонами и найденными email.",
     "stack": "n8n · Google Maps API · Google Sheets · OpenAI",
-    "flow": "Запрос → карты → нормализация → дедупликация → сайт → email → таблица.",
-    "boundary": "Исходная схема подтверждена экспортом и авторством. Внешние сервисы заменены локальными синтетическими данными.",
+    "flow": "Настройка поиска → n8n run → table enrichment → company detail → фильтр → export.",
+    "boundary": "Исходная 15-узловая схема и авторство подтверждены. Внешние сервисы заменены локальными синтетическими данными.",
     "category": "Автоматизация",
-    "desktop": "../projects/maps-lead-generator/assets/cover.webp",
-    "mobile": "../projects/maps-lead-generator/assets/overview-390.png",
+    "desktop": "../projects/maps-lead-generator/assets/cover-v2.webp",
+    "mobile": "../projects/maps-lead-generator/assets/company-table-390-v2.png",
     "media": [
       {
-        "src": "../projects/maps-lead-generator/assets/master-desktop.webm",
-        "poster": "../projects/maps-lead-generator/assets/poster-desktop.webp",
+        "src": "../projects/maps-lead-generator/assets/master-desktop-v2.webm",
+        "poster": "../projects/maps-lead-generator/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/maps-lead-generator/assets/master-mobile.webm",
-        "poster": "../projects/maps-lead-generator/assets/poster-mobile.webp",
+        "src": "../projects/maps-lead-generator/assets/master-mobile-v2.webm",
+        "poster": "../projects/maps-lead-generator/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/maps-lead-generator/assets/results-1440.png",
-      "../projects/maps-lead-generator/assets/email-filter-1440.png",
-      "../projects/maps-lead-generator/assets/architecture-1440.png"
+      "../projects/maps-lead-generator/assets/search-settings-1440-v2.png",
+      "../projects/maps-lead-generator/assets/company-table-1440-v2.png",
+      "../projects/maps-lead-generator/assets/company-detail-1440-v2.png",
+      "../projects/maps-lead-generator/assets/email-filter-1440-v2.png",
+      "../projects/maps-lead-generator/assets/workflow-detail-1440-v2.png"
     ],
     "document": "../projects/maps-lead-generator/case.md",
     "research": "../review/maps-lead-generator.html",
-    "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "local": true
   },
   {
     "id": "personal-assistant",
