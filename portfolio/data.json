@@ -888,37 +888,35 @@
   {
     "id": "twitter-automation",
     "name": "Twitter / X Automation",
-    "subtitle": "Наблюдаемая browser-автоматизация",
-    "intro": "Исходный Python orchestration, инженерный trace и честная X-реконструкция без внешних действий.",
+    "subtitle": "Browser automation with an X-first proof layer",
+    "intro": "Исходный Python orchestration проходит группу, правило 1/N, участников и mock-repost прямо на X-подобной поверхности.",
     "stack": "Подробности в исследовании",
-    "flow": "Условие → исходный GroupProcessor → trace → X surface → результат → история.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
+    "flow": "X community → source message → participants → repost states → source trace.",
+    "boundary": "X-first demo replay. Профили и публикации вымышлены; аккаунты, DOM X и внешние действия отключены.",
     "category": "Автоматизация",
-    "desktop": "../projects/twitter-automation/assets/cover-v2.webp",
-    "mobile": "../projects/twitter-automation/assets/normal-result-390.png",
+    "desktop": "../projects/twitter-automation/assets/cover-v3.webp",
+    "mobile": "../projects/twitter-automation/assets/x-feed-result-390-v3.png",
     "media": [
       {
-        "src": "../projects/twitter-automation/assets/master-desktop-v2.webm",
-        "poster": "../projects/twitter-automation/assets/poster-desktop-v2.webp",
+        "src": "../projects/twitter-automation/assets/master-desktop-v3.webm",
+        "poster": "../projects/twitter-automation/assets/poster-desktop-v3.webp",
         "mobile": false
       },
       {
-        "src": "../projects/twitter-automation/assets/master-mobile-v2.webm",
-        "poster": "../projects/twitter-automation/assets/poster-mobile-v2.webp",
+        "src": "../projects/twitter-automation/assets/master-mobile-v3.webm",
+        "poster": "../projects/twitter-automation/assets/poster-mobile-v3.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/twitter-automation/assets/normal-result-1440.png",
-      "../projects/twitter-automation/assets/partial-result-1440.png",
-      "../projects/twitter-automation/assets/history-1440.png",
-      "../projects/twitter-automation/assets/architecture-1440.png"
+      "../projects/twitter-automation/assets/x-community-1440-v3.png",
+      "../projects/twitter-automation/assets/x-repost-result-1440-v3.png",
+      "../projects/twitter-automation/assets/x-source-trace-1440-v3.png",
+      "../projects/twitter-automation/assets/x-partial-result-1440-v3.png"
     ],
     "document": "../projects/twitter-automation/case.md",
     "research": "../review/twitter-automation.html",
-    "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "local": true
   },
   {
     "id": "telegram-intel",
