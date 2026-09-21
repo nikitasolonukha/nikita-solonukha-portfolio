@@ -8,7 +8,7 @@
 
 ## VERIFIED
 
-Сверено содержание русской и английской версии записи в `work/research-solonflowai-portfolio/components/projectsData.tsx`. Отдельный исходник, production-доступ или безопасная запись внутреннего интерфейса не найдены. Autoposting исследован отдельно и не подставляется вместо этого кейса.
+Сверено содержание русской и английской версии записи в `work/research-solonflowai-portfolio/components/projectsData.tsx`. Отдельный исходник, production-доступ или безопасная запись внутреннего интерфейса не найдены.
 
 ## PORTFOLIO POLISH
 

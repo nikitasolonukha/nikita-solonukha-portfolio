@@ -2,7 +2,7 @@
 
 Текущий проход по исправлению presentation отслеживается отдельно: [PORTFOLIO_CORRECTION_QUEUE.md](PORTFOLIO_CORRECTION_QUEUE.md).
 
-Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 46; BLOCKED 6; PRIVATE/NDA 2; NOT PORTFOLIO 8. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
+Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 45; BLOCKED 6; PRIVATE/NDA 2; NOT PORTFOLIO 9. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
 
 READY означает готовность локального пакета, не разрешение на публичную публикацию. Исходники, вклад автора и права перечислены в case.md. Повторные версии и названия сохранены как aliases, а не выданы за дополнительные продукты. Полные технические данные — master-case-queue.json. Каталог — review/index.html.
 
@@ -177,9 +177,9 @@ READY означает готовность локального пакета, �
 57. **Telegram Intel Bot — READY**
     - Источник: work/research-telegram-intel-bot; private commit 480eac9
     - Следующий шаг / причина: review/telegram-intel.html; Telegram-first replay по реальным командам, 45 исходных тестов, desktop/mobile master 20.48 сек, QA 1440/390 без overflow. Данные синтетические; приватный код не публикуется.
-58. **Autopost — API-очередь публикаций — READY**
+58. **Autopost — API-очередь публикаций — NOT PORTFOLIO**
     - Источник: work/research-autoposting/автопостинг; private
-    - Следующий шаг / причина: review/autoposting.html; две папки подтверждены как копии одного FastAPI publisher. API-first replay показывает POST → queue → worker → retry/success/failed; связь с юридической системой не найдена; внешних публикаций нет.
+    - Следующий шаг / причина: Убрано из публичного портфолио по запросу автора. Локальные исходники и исследование сохранены.
 60. **Store Builder — самостоятельная витрина — READY**
     - Источник: work/research-ai-shopify-store-builder-demo — private
     - Следующий шаг / причина: review/store-builder-demo.html; Next build, QA 3 размеров, корзина/reload/custom/error retry, 2 master/cover. Mock generator, без Shopify/checkout.
