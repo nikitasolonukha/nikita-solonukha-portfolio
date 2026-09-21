@@ -555,39 +555,6 @@
     "local": true
   },
   {
-    "id": "business-cards",
-    "name": "Визитки",
-    "subtitle": "Платформа контактных страниц",
-    "intro": "Редактирование визиток и просмотр публичной карточки в одном рабочем пространстве.",
-    "stack": "Подробности в исследовании",
-    "flow": "Создание, редактирование, удаление, поиск и публичная страница. Хранение адаптировано к localStorage; Go/MySQL backend не запускался.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/business-cards.webp",
-    "mobile": "../projects/business-cards/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/business-cards/assets/master-desktop.mp4",
-        "poster": "../projects/business-cards/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/business-cards/assets/master-mobile.mp4",
-        "poster": "../projects/business-cards/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/business-cards/assets/confirmation-1440.png",
-      "../projects/business-cards/assets/copied-1440.png",
-      "../projects/business-cards/assets/create-1440.png",
-      "../projects/business-cards/assets/created-1440.png"
-    ],
-    "document": "../projects/business-cards/case.md",
-    "research": "../review/business-cards.html",
-    "local": true
-  },
-  {
     "id": "vibe-autorouter",
     "name": "Vibe AutoRouter",
     "subtitle": "Выбор маршрута для задач",

@@ -2,7 +2,7 @@
 
 Текущий проход по исправлению presentation отслеживается отдельно: [PORTFOLIO_CORRECTION_QUEUE.md](PORTFOLIO_CORRECTION_QUEUE.md).
 
-Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 47; BLOCKED 6; PRIVATE/NDA 2; NOT PORTFOLIO 7. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
+Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 46; BLOCKED 6; PRIVATE/NDA 2; NOT PORTFOLIO 8. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
 
 READY означает готовность локального пакета, не разрешение на публичную публикацию. Исходники, вклад автора и права перечислены в case.md. Повторные версии и названия сохранены как aliases, а не выданы за дополнительные продукты. Полные технические данные — master-case-queue.json. Каталог — review/index.html.
 
@@ -99,9 +99,9 @@ READY означает готовность локального пакета, �
 31. **Портной — процессы ателье — READY**
     - Источник: portnoy-atelier — см. описание
     - Следующий шаг / причина: review/portnoy.html; оригинальный demo mode, 95 unit + 10 integration + 59 E2E; 2 master видео и отдельный 3D clip; screenshots/storyboard/case/QA. Только локально, публичные права отдельно.
-32. **Платформа визиток — READY**
+32. **Платформа визиток — NOT PORTFOLIO**
     - Источник: business-cards-platform; work/research-business-cards-platform
-    - Следующий шаг / причина: review/business-cards.html; полный CRUD/search/public/stats master, QA 3 размеров и case QA 4 размеров; backend локально эмулирован, настройки честно отмечены как незавершённые.
+    - Следующий шаг / причина: Убрано из публичного портфолио по запросу автора. Локальный исследовательский пакет сохранён.
 33. **Vibe Autorouter — READY**
     - Источник: work/research-vibe-autorouter; GitHub public main
     - Следующий шаг / причина: review/vibe-autorouter.html; полный master desktop/mobile, исходные unit 6 PASS, FakeVibeClient проверен, QA 390/768/1440 и case 320–1440; PostgreSQL orchestration не проверен, локальный adapter явно DEMO.
