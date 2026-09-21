@@ -2,7 +2,7 @@
 
 Текущий проход по исправлению presentation отслеживается отдельно: [PORTFOLIO_CORRECTION_QUEUE.md](PORTFOLIO_CORRECTION_QUEUE.md).
 
-Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 46; BLOCKED 7; PRIVATE/NDA 2; NOT PORTFOLIO 7. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
+Обновлено: 21.09.2026. ОБЯЗАТЕЛЬНЫЙ ВТОРОЙ ПРОХОД — COMPLETE. Текущий реестр: READY 47; BLOCKED 6; PRIVATE/NDA 2; NOT PORTFOLIO 7. TODO и IN PROGRESS отсутствуют; причины всех ограничений сохранены в реестре и case.md.
 
 READY означает готовность локального пакета, не разрешение на публичную публикацию. Исходники, вклад автора и права перечислены в case.md. Повторные версии и названия сохранены как aliases, а не выданы за дополнительные продукты. Полные технические данные — master-case-queue.json. Каталог — review/index.html.
 
@@ -36,9 +36,9 @@ READY означает готовность локального пакета, �
 10. **Сайт для психоаналитика — READY**
     - Источник: Desktop/МОЕ/Сайты/татьяна-·-психоаналитик + авторские видео; projects/tatiana/case.md
     - Следующий шаг / причина: Авторские записи сохранены + два полных новых master. Сборка/TS PASS, меню/карусель/tabs QA3, 4 видео case QA4. Локальные a11y исправления; авторство подтверждено.
-11. **AI Саппорт-система с RAG — BLOCKED**
+11. **AI Саппорт-система с RAG — READY**
     - Источник: Desktop/РАБОТА/Сервисы/tg-business-rag-worker (2), src + migrations; точное совпадение архитектуры со старым кейсом
-    - Следующий шаг / причина: Исходная RAG-логика подтверждена кодом, но реальный Telegram-интерфейс сценария не зафиксирован. Новая техническая web-панель не заменяет пользовательский Telegram UI. См. projects/support-rag/case.md и TELEGRAM_VISUAL_AUDIT.md.
+    - Следующий шаг / причина: Пользователь подтвердил и передал реальный Telegram-интерфейс. Ники/ID/ссылка обезличены; backend-ветки отдельно проверены локальным стендом. См. projects/support-rag/case.md.
 12. **Telegram AI Lead Hunter — READY**
     - Источник: Desktop tg-business-rag-worker (2)/leads-worker + backend-webchat-clean: Junction parser, ingest, topics/RAG; точное совпадение старого описания
     - Следующий шаг / причина: review/telegram-leads.html; Telegram-first demo replay, исходные parser/webhook/ingest, draft, duplicate/anonymous states и связанный MTProto transport boundary. Внешних отправок нет.

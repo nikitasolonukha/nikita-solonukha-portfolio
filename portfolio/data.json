@@ -621,6 +621,38 @@
     "local": true
   },
   {
+    "id": "support-rag",
+    "name": "AI Support",
+    "subtitle": "Telegram-поддержка с проверяемыми RAG-черновиками",
+    "intro": "Оператор получает диалог в Telegram, проверяет предложенный ответ, редактирует его и решает, отправлять ли сообщение.",
+    "stack": "TypeScript · Cloudflare Workers · D1 · R2 · Telegram API · RAG",
+    "flow": "Telegram conversation → FAQ/RAG search → draft → Edit/Regen → operator decision.",
+    "boundary": "Основной экран — реальный обезличенный Telegram UI. Видео показывает локальную проверку backend-веток; production-отправка и внешняя модель отключены.",
+    "category": "AI и автоматизация",
+    "desktop": "../projects/support-rag/assets/telegram-support-sanitized.png",
+    "media": [
+      {
+        "src": "../projects/support-rag/assets/master-desktop.mp4",
+        "poster": "../projects/support-rag/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/support-rag/assets/master-mobile.mp4",
+        "poster": "../projects/support-rag/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/support-rag/assets/telegram-support-sanitized.png",
+      "../projects/support-rag/assets/sources-1440.png",
+      "../projects/support-rag/assets/approved-1440.png",
+      "../projects/support-rag/assets/history-1440.png"
+    ],
+    "document": "../projects/support-rag/case.md",
+    "research": "../review/support-rag.html",
+    "local": true
+  },
+  {
     "id": "webchat",
     "name": "Webchat",
     "subtitle": "Чат-виджет для сайта",
