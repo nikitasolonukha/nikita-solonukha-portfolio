@@ -1115,39 +1115,6 @@
     "local": true
   },
   {
-    "id": "tarot-archive",
-    "name": "Лендинг таро-бота",
-    "subtitle": "Архивный интерактивный web-проект",
-    "intro": "Свет, туман, золотые акценты и реакция на курсор создавали вход в Telegram-сценарий.",
-    "stack": "Next.js · React · Tailwind · CSS motion",
-    "flow": "Атмосфера → интерактивный отклик → объяснение → переход в бот",
-    "boundary": "Отдельная историческая версия; не объединяется с TopGadalkin. Код и запись не найдены.",
-    "category": "Сайты",
-    "desktop": "../projects/tarot-archive/assets/cover.webp",
-    "mobile": "../projects/tarot-archive/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/tarot-archive/assets/master-desktop.webm",
-        "poster": "../projects/tarot-archive/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/tarot-archive/assets/master-mobile.webm",
-        "poster": "../projects/tarot-archive/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/tarot-archive/assets/product-1440.png",
-      "../projects/tarot-archive/assets/features-1440.png",
-      "../projects/tarot-archive/assets/flow-1440.png",
-      "../projects/tarot-archive/assets/boundaries-1440.png"
-    ],
-    "document": "../projects/tarot-archive/case.md",
-    "research": "../review/tarot-archive.html",
-    "local": true
-  },
-  {
     "id": "news-aggregator-archive",
     "name": "Telegram News Digest",
     "subtitle": "AI-агрегатор новостей",
