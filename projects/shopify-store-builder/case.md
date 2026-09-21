@@ -1,21 +1,18 @@
-# AI Shopify Store Builder — от входных данных к готовому магазину
+# AI Shopify Store Builder — две версии витрины
 
-**READY — объединённый второй проход.** Два прежних кейса объединены в одну историю.
+**READY — обновлено по текущему Shopify preview.**
 
 ## ORIGINAL
-Embedded Shopify app `ai-store-builder` принимает товар и 1–4 изображения, получает валидированный `GeneratedStore`, создаёт продукт, цену, media, SEO и app-owned данные через Admin GraphQL, затем публикует storefront через Theme App Extension. Отдельный frontend-прототип использовался как самостоятельная проверка UX витрины; он больше не является отдельным портфельным проектом.
+Embedded Shopify app `ai-store-builder` принимает товар и 1–4 изображения, получает валидированный `GeneratedStore`, создаёт продукт, цену, media, SEO и app-owned данные через Admin GraphQL, затем публикует storefront через Theme App Extension.
 
 ## VERIFIED
-Для embedded app пройдены 132 локальных теста. Архивный QA-отчёт подтверждает dev-store `testbogdan-ml87kqbq.myshopify.com`, продукт `Sculptural Table Lamp`, unpublished QA theme и проверенные storefront routes: home, catalog, product, contacts, cart и Shopify checkout. Cart был проверен с quantity 1→2, remove/re-add и переходом в checkout; оплата и заказ не выполнялись.
+Локальный builder и demo-витрина повторно собраны и проверены на 390, 768 и 1440 px. Живой password-protected Shopify preview `Lumina Form` открыт и проверен 21.09.2026: home, collection, PDP, галерея и cart. Пароль и authenticated state не публикуются. Checkout ранее проверялся до формы без оплаты.
 
-## VERSION DIFFERENCE
-Первая часть master показывает локально запущенный builder с безопасными адаптерами. Вторая часть использует настоящие архивные screenshots Shopify QA storefront от 10.09.2026. Это не непрерывная текущая production-сессия: credentials и authenticated storage state намеренно не публикуются.
+## VARIANT A — PORTFOLIO POLISH / DEMO
+Светлая редакционная витрина показывает результат генератора отдельно от Shopify theme. Для товара собрана цельная серия из трёх разрешённых кадров: общий вид, рабочий контекст и чистый предметный ракурс. Добавлен журнальный блок, галерея, PDP, FAQ, demo reviews и cart. Отзывы и данные магазина вымышленные и помечены как demo.
 
-## PORTFOLIO POLISH
-История пересобрана как INPUT → настройка → генерация → результат → Shopify home → catalog → product/gallery → quantity/cart → checkout. Desktop и mobile storefront показаны отдельно. Старые пакеты `store-builder-embedded` и `store-builder-demo` сохранены как архивные источники.
-
-## DEMO / MOCK
-Локальный builder использует prepared product/result и не выполняет новые AI/Shopify вызовы. Архивные Shopify кадры относятся к реальному dev-store QA. Продукт и demo reviews тестовые; метрики продаж и клиенты не заявляются.
+## VARIANT B — ORIGINAL / VERIFIED SHOPIFY PREVIEW
+Чёрно-жёлтая `Lumina Form` — текущая живая Shopify theme по переданной preview-ссылке. В кейсе показаны home, catalog, product detail, дополнительные продуктовые сцены, FAQ и cart. Это отдельная версия, а не продолжение светлой demo-витрины.
 
 ## Ограничения
-Живая QA preview может требовать пароль и authenticated session. Checkout проверен до формы, без оплаты. Storefront версии из builder и архивного QA могут различаться визуально; это явно показано как развитие одной системы.
+Preview может перестать открываться или запросить новый пароль, поэтому в портфолио сохранены локальные walkthrough и screenshots. Покупка, платёж и реальный заказ не выполнялись.

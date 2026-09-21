@@ -451,33 +451,42 @@
   {
     "id": "shopify-store-builder",
     "name": "AI Shopify Store Builder",
-    "subtitle": "От продукта до готового Shopify storefront",
-    "intro": "Builder создаёт структуру магазина, а кейс доводит сценарий до реального QA storefront, корзины и checkout.",
+    "subtitle": "Demo storefront + живой Shopify preview",
+    "intro": "Две версии одной системы: редакционная витрина генератора и актуальная Shopify theme Lumina Form.",
     "stack": "React Router · Shopify Admin GraphQL · Liquid · Theme App Extension",
-    "flow": "Ввод данных, настройка, генерация, Shopify home, catalog, product/gallery, quantity, cart и checkout.",
-    "boundary": "Builder показан локально; storefront — реальные архивные QA-кадры dev-store. Оплата и заказ не выполнялись.",
+    "flow": "Variant A: gallery, product story, FAQ, cart. Variant B: Shopify home, catalog, PDP, product scenes и cart.",
+    "boundary": "Светлая версия — PORTFOLIO POLISH/DEMO. Чёрно-жёлтая версия — текущий VERIFIED preview. Пароль не публикуется; платёж не выполнялся.",
     "category": "Продукты",
-    "desktop": "../projects/shopify-store-builder/assets/cover.webp?v=merged-v2",
-    "mobile": "../projects/shopify-store-builder/assets/shopify-home-390.png?v=merged-v2",
+    "desktop": "../projects/shopify-store-builder/assets/cover.webp?v=two-variants",
+    "mobile": "../projects/shopify-store-builder/assets/live-home-390.png?v=two-variants",
     "media": [
       {
-        "src": "../projects/shopify-store-builder/assets/master-desktop.mp4?v=merged-v2",
-        "poster": "../projects/shopify-store-builder/assets/poster-desktop.webp?v=merged-v2",
+        "src": "../projects/shopify-store-builder/assets/concept-desktop.mp4?v=two-variants",
+        "poster": "../projects/shopify-store-builder/assets/concept-poster-desktop.webp?v=two-variants",
         "mobile": false
       },
       {
-        "src": "../projects/shopify-store-builder/assets/master-mobile.mp4?v=merged-v2",
-        "poster": "../projects/shopify-store-builder/assets/poster-mobile.webp?v=merged-v2",
+        "src": "../projects/shopify-store-builder/assets/concept-mobile.mp4?v=two-variants",
+        "poster": "../projects/shopify-store-builder/assets/concept-poster-mobile.webp?v=two-variants",
+        "mobile": true
+      },
+      {
+        "src": "../projects/shopify-store-builder/assets/live-desktop.mp4?v=two-variants",
+        "poster": "../projects/shopify-store-builder/assets/live-poster-desktop.webp?v=two-variants",
+        "mobile": false
+      },
+      {
+        "src": "../projects/shopify-store-builder/assets/live-mobile.mp4?v=two-variants",
+        "poster": "../projects/shopify-store-builder/assets/live-poster-mobile.webp?v=two-variants",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/shopify-store-builder/assets/input-1440.png",
-      "../projects/shopify-store-builder/assets/shopify-home-1440.png",
-      "../projects/shopify-store-builder/assets/shopify-catalog-1440.png",
-      "../projects/shopify-store-builder/assets/shopify-product-1440.png",
-      "../projects/shopify-store-builder/assets/shopify-cart-1440.png",
-      "../projects/shopify-store-builder/assets/shopify-checkout-1440.png"
+      "../projects/shopify-store-builder/assets/concept-home-1440.png",
+      "../projects/shopify-store-builder/assets/live-home-1440.png",
+      "../projects/shopify-store-builder/assets/live-catalog-1440.png",
+      "../projects/shopify-store-builder/assets/live-product-1440.png",
+      "../projects/shopify-store-builder/assets/live-cart-1440.png"
     ],
     "document": "../projects/shopify-store-builder/case.md",
     "research": "../review/shopify-store-builder.html",
