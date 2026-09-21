@@ -525,7 +525,7 @@
     "flow": "Навигация, рабочие экраны и проверенные пользовательские сценарии.",
     "boundary": "Локальная версия с подготовленными данными; ограничения 3D и интеграций описаны в исследовании.",
     "category": "Продукты",
-    "desktop": "images/portnoy.webp",
+    "desktop": "../projects/portnoy/assets/cover.webp",
     "mobile": "../projects/portnoy/assets/overview-390.png",
     "media": [
       {
@@ -537,13 +537,18 @@
         "src": "../projects/portnoy/assets/master-mobile.mp4",
         "poster": "../projects/portnoy/assets/poster-mobile.webp",
         "mobile": true
+      },
+      {
+        "src": "../projects/portnoy/assets/feature-3d.mp4",
+        "poster": "../projects/portnoy/assets/technical-3d.png",
+        "mobile": false
       }
     ],
     "screens": [
+      "../projects/portnoy/assets/technical-3d.png",
       "../projects/portnoy/assets/catalog-1440.png",
       "../projects/portnoy/assets/comparison-1440.png",
-      "../projects/portnoy/assets/configurator-1440.png",
-      "../projects/portnoy/assets/create-1440.png"
+      "../projects/portnoy/assets/configurator-1440.png"
     ],
     "document": "../projects/portnoy/case.md",
     "research": "../review/portnoy.html",
@@ -657,7 +662,7 @@
     "flow": "Разделы сайта и исходные взаимодействия frontend. Генерация музыки и backend не подтверждены.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "images/trekpodarok.webp",
+    "desktop": "../projects/trekpodarok/assets/cover.webp",
     "mobile": "../projects/trekpodarok/assets/overview-390.png",
     "media": [
       {
@@ -690,7 +695,7 @@
     "flow": "Интерактивная дверь, четыре коллекции и подбор модели.",
     "boundary": "Визуальные доработки сделаны в этой задаче. Контакты и запросы — демонстрационные.",
     "category": "Сайты",
-    "desktop": "images/garmony.webp",
+    "desktop": "../projects/garmony/assets/cover.webp",
     "mobile": "../projects/garmony/assets/overview-390.png",
     "media": [
       {
@@ -861,7 +866,7 @@
     "flow": "Четыре тарифа, FAQ и переход к боту. Работа бота, PDF и аудио не проверена.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "images/skazka.webp",
+    "desktop": "../projects/skazka/assets/cover.webp",
     "mobile": "../projects/skazka/assets/overview-390.png",
     "media": [
       {

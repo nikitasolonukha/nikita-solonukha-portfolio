@@ -15,10 +15,10 @@
 11. Autopost: установить принадлежность и показать Telegram → публикация — READY
 12. Meta Ads: реальные страницы результатов и ad detail — READY
 13. STEP: полный visual QA и новая запись — READY
-14. СказкаМоя: убрать AI-визуальные клише — TODO
-15. Трек в подарок: убрать AI-визуальные клише — TODO
-16. GARMONY: ограниченный polish без смены характера — TODO
-17. Portnoy / Atelier: отдельный 3D feature moment — TODO
+14. СказкаМоя: убрать AI-визуальные клише — READY
+15. Трек в подарок: убрать AI-визуальные клише — READY
+16. GARMONY: ограниченный polish без смены характера — READY
+17. Portnoy / Atelier: отдельный 3D feature moment — READY
 18. Университетский комплекс: protected messages + data analysis + bot/API — TODO
 19. Внутренние продукты юридической компании: sanitized actual interfaces — TODO
 20. MAGNUM: проверить полноту реальных desktop/mobile материалов — TODO
