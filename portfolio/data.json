@@ -1084,7 +1084,7 @@
     "research": "../review/personal-assistant.html",
     "local": true,
     "published": true,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "publicationNote": "Опубликован как архивный кейс: исходные материалы неполны; ограничения доказательств указаны на странице."
   },
   {
     "id": "news-aggregator-archive",
@@ -1103,7 +1103,7 @@
     "research": "../review/news-aggregator-archive.html",
     "local": true,
     "published": true,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "publicationNote": "Опубликован как архивный кейс: исходные материалы неполны; ограничения доказательств указаны на странице."
   },
   {
     "id": "copilot",
