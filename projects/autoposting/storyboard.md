@@ -1,15 +1,10 @@
-# Autoposting — storyboard до записи
+# Autopost · API-first master
 
-Desktop 1440×900, mobile 390×844. План 40–60 секунд.
+00:00 `POST /autopost/jobs` и пустая очередь.
+00:03 Создание Instagram job с network retry сценарием.
+00:07 Worker: pending → retry, JSON показывает attempt и ошибку.
+00:11 Transport online: повтор → success + published_post_id.
+00:14 YouTube job с validation error.
+00:18 Failed response и завершённый lifecycle trace.
 
-| Экран | Действие | Состояние | Результат |
-|---|---|---|---|
-| Очередь | Обзор двух подготовленных заданий | Одно сейчас, одно завтра | Понятное расписание |
-| Новое задание | Выбрать сетевой сбой, добавить | pending | Карточка в очереди |
-| Обработчик | Запустить цикл | success + retry pending | Счётчик попыток и причина |
-| Восстановление | Подменённый транспорт снова доступен | pending→success | Следующая попытка |
-| Фильтр | Выбрать успешные | Отфильтрованный список | Два результата |
-| Невалидное медиа | Добавить и обработать | failed | Неповторяемая ошибка |
-| Фильтр ошибок | Открыть failed | Один результат | Причина отказа |
-
-Все внешние ответы эмулированы. Реальные платформы не вызываются. Фоновый worker в стенде не запускается: кнопка вызывает исходный process_pending_jobs для контролируемой демонстрации.
+ENTRY → ACTION → CORE FUNCTION → RESULT: API request → queue → original worker → retry/success/failed JSON response.

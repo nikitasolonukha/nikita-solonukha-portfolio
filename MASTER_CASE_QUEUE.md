@@ -177,8 +177,9 @@ READY означает готовность локального пакета, �
 57. **Telegram Intel Bot — READY**
     - Источник: work/research-telegram-intel-bot; private commit 480eac9
     - Следующий шаг / причина: review/telegram-intel.html; Telegram-first replay по реальным командам, 45 исходных тестов, desktop/mobile master 20.48 сек, QA 1440/390 без overflow. Данные синтетические; приватный код не публикуется.
+58. **Autopost — API-очередь публикаций — READY**
     - Источник: work/research-autoposting/автопостинг; private
-    - Следующий шаг / причина: review/autoposting.html; исходный сервис/репозитории, mock UploadPost, retry/schedule/error QA, master desktop/mobile, cover. API status-shadowing исправлен локально; внешних публикаций нет.
+    - Следующий шаг / причина: review/autoposting.html; две папки подтверждены как копии одного FastAPI publisher. API-first replay показывает POST → queue → worker → retry/success/failed; связь с юридической системой не найдена; внешних публикаций нет.
 60. **Store Builder — самостоятельная витрина — READY**
     - Источник: work/research-ai-shopify-store-builder-demo — private
     - Следующий шаг / причина: review/store-builder-demo.html; Next build, QA 3 размеров, корзина/reload/custom/error retry, 2 master/cover. Mock generator, без Shopify/checkout.
@@ -191,4 +192,6 @@ READY означает готовность локального пакета, �
 63. **Content Factory — микросервисная версия Marek — READY**
     - Источник: Desktop/РАБОТА/Сервисы/Контент-завод/content-zavod Marek
     - Следующий шаг / причина: Исходные React сценарии + локальный API, новая оболочка. Build/types, 12 offline source checks (включая фиксацию дефектов), QA3/case4, 2 master/cover/screens/storyboard. Инфраструктура и платформы не подключены; ограничения в case.md.
+
+
 

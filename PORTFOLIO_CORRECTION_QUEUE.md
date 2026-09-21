@@ -12,7 +12,7 @@
 08. B2B Lead Generator / Atlas: table-first redesign, real n8n pipeline — READY
 09. Twitter / X Automation: X-first presentation — READY
 10. Telegram Intel: Telegram-first presentation — READY
-11. Autopost: установить принадлежность и показать Telegram → публикация — TODO
+11. Autopost: установить принадлежность и показать Telegram → публикация — READY
 12. Meta Ads: реальные страницы результатов и ad detail — READY
 13. STEP: полный visual QA и новая запись — TODO
 14. СказкаМоя: убрать AI-визуальные клише — TODO

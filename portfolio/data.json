@@ -990,37 +990,37 @@
   {
     "id": "autoposting",
     "name": "Autopost",
-    "subtitle": "Очередь публикаций",
-    "intro": "Исходный сервис организует подготовку задачи, её выполнение и повтор после ошибки.",
-    "stack": "Подробности в исследовании",
-    "flow": "Расписание, очередь, состояния и retry. UploadPost заменён локальным адаптером; внешних публикаций нет.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
+    "subtitle": "API-очередь публикаций",
+    "intro": "Задание проходит через API, очередь, worker и возвращает подтверждённый результат или управляемую ошибку.",
+    "stack": "Python · FastAPI · asyncio · httpx · Upload-Post",
+    "flow": "POST job → pending → worker → retry/success/failed.",
+    "boundary": "Оригинальный backend без frontend; UI — portfolio console, transport и данные локально эмулированы.",
     "category": "Автоматизация",
-    "desktop": "images/autoposting.webp",
-    "mobile": "../projects/autoposting/assets/overview-390.png",
+    "desktop": "../projects/autoposting/assets/cover-v2.webp",
+    "mobile": "../projects/autoposting/assets/api-success-390-v2.png",
     "media": [
       {
-        "src": "../projects/autoposting/assets/master-desktop.mp4",
-        "poster": "../projects/autoposting/assets/poster-desktop.webp",
+        "src": "../projects/autoposting/assets/master-desktop-v2.mp4",
+        "poster": "../projects/autoposting/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/autoposting/assets/master-mobile.mp4",
-        "poster": "../projects/autoposting/assets/poster-mobile.webp",
+        "src": "../projects/autoposting/assets/master-mobile-v2.mp4",
+        "poster": "../projects/autoposting/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/autoposting/assets/empty-1440.png",
-      "../projects/autoposting/assets/failed-1440.png",
-      "../projects/autoposting/assets/failure-1440.png",
-      "../projects/autoposting/assets/queue-1440.png"
+      "../projects/autoposting/assets/api-empty-1440-v2.png",
+      "../projects/autoposting/assets/api-pending-1440-v2.png",
+      "../projects/autoposting/assets/api-retry-1440-v2.png",
+      "../projects/autoposting/assets/api-success-1440-v2.png",
+      "../projects/autoposting/assets/api-failed-1440-v2.png"
     ],
     "document": "../projects/autoposting/case.md",
     "research": "../review/autoposting.html",
     "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "published": true
   },
   {
     "id": "topgadalkin",

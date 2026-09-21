@@ -1,31 +1,29 @@
-# Autoposting — задания, очередь и повторные попытки
+# Autopost — API-очередь публикаций
 
-**Статус: READY (локальный пакет).** Приватный backend, только локальный пакет.
+**Статус: READY.** Приватный backend показан через безопасный API-first replay.
 
-Сервис принимает задание публикации, выбирает социальный аккаунт и обрабатывает очередь через Upload-Post. Важная часть — жизненный цикл задания: pending → processing → success, возврат в pending при сетевой ошибке или failed при окончательном отказе.
+## СОПОСТАВЛЕНИЕ
+
+Папки `Сервисы/autoposting-main` и `Сервисы/автопостинг` — две копии одного сервиса: SHA-256 ключевого `autopost_service.py` совпадает (`272524E5…97665`). Признаков связи с внутренней системой юридической компании или отдельным Telegram-ботом в исходнике нет. Проект не объединён с кейсом Telegram-рассылки; запись `рассылкаnew.mp4` относится к отдельному browser automation сценарию.
 
 ## ORIGINAL
 
-`autoposting/автопостинг`, commit `287c22ec1ff41a60adfae6c5bd8d2ffaeb46b102`. Изучены main/lifespan, workers, container, service, domain, repositories, client, schemas/router. Python, FastAPI, Pydantic, httpx, asyncio. Оригинал использует Stub repositories в памяти; постоянной БД в этом исходнике нет. Frontend отсутствовал.
+Исследован `autoposting/автопостинг`, commit `287c22ec1ff41a60adfae6c5bd8d2ffaeb46b102`: FastAPI router, `AutopostService`, worker, доменные модели, stub repositories и Upload-Post client. Сервис создаёт publish job, выбирает активный social account, обрабатывает pending queue и сохраняет `published_post_id`. Поддерживаемый enum площадок включает Telegram, VK, OK, Instagram, TikTok, Facebook, YouTube и Pinterest; в исходных stub-аккаунтах подготовлены Instagram, YouTube, TikTok, Facebook и Pinterest.
 
 ## VERIFIED
 
-Исходный AutopostService выполняется с исходными in-memory repositories и подменённым UploadPostClient. Проверены success, network pending, recovery success, validation failed, authentication failed, future schedule без попытки, HTTP 422 на неверное задание и HTTP 400 на неизвестный фильтр. UI: создание, цикл обработки, повтор, статус и фильтр на 390/768/1440. Внешних публикаций 0.
+Исходный service выполнен с in-memory repositories и локальным Upload-Post adapter. Проверены success, network retry, recovery success, validation failed, authentication failed, future schedule, HTTP 422 на неверное задание и HTTP 400 на неизвестный фильтр. Внешних публикаций: 0.
+
+Browser QA нового replay: 1440×900 и 390×844, ошибок страницы нет, горизонтального переполнения нет, сломанных изображений нет. Видео 18.08 секунды.
 
 ## PORTFOLIO POLISH
 
-Создана техническая панель управления для кейса, не original frontend. Сохранены source handlers, исправлена конкретная ошибка локальной копии router: аргумент status перекрывал импорт fastapi.status и вызывал AttributeError при неверном статусе; импорт переименован в http_status. Worker запускается вручную через кнопку для понятного демонстрационного сценария, не изображается круглосуточной эксплуатацией.
+Старый generic dashboard заменён на интерфейс, соответствующий сущности продукта: request builder для `POST /autopost/jobs`, очередь, lifecycle trace и фактический JSON response. Пользователь видит input → pending → worker → retry/success/failed.
 
 ## DEMO / MOCK
 
-Вымышленная студия Лист, подготовленные подписи, условные аккаунты, media.example и mock ответы. Медиа не скачивается, Upload-Post не вызывается, токены не загружаются. «Восстановить транспорт» меняет локальный сценарий mock и повторно вызывает реальный обработчик. Это не функция исходного API.
+Тексты, media URL, аккаунты и ответы Upload-Post синтетические. Кнопки запускают исходный service через локальный FastAPI; сетевой transport заменён mock-клиентом. «Transport online» меняет demo-сценарий и повторно запускает реальный обработчик.
 
-## Ограничения
+## ОГРАНИЧЕНИЯ
 
-Нет подтверждённой реальной доставки в соцсети, production auth, постоянной очереди, распределённых блокировок или обработки конкурентных worker. Original retry не использует backoff. Даты без timezone могут конфликтовать с aware datetime репозитория; демо использует корректный UTC ISO. Число total у API относится к возвращённой странице. Частные credentials/клиентские материалы не исследовались. Не путать этот сервис со старой заявленной Telegram-рассылкой 24/7: назначение различается.
-
-## Материалы и роль
-
-Подготовлены storyboard, API/UI QA, screenshots состояний, master desktop/mobile, cover из реального стенда. Роль Никиты и разрешение на публичный показ приватного проекта остаются вопросами в QUESTIONS.md. Нет заявлений о клиентских результатах или фактическом объёме отправок.
-
-Desktop/mobile master просмотрены по декодированным кадрам. QA оболочки 320/390/768/1440 пройден, пропорции видео и постеров совпадают.
+Постоянной БД в найденной версии нет; очередь хранится в памяти. Не проверены реальные social credentials, production worker concurrency, distributed locks и backoff. Публичный frontend у оригинала отсутствовал, поэтому API console — новый presentation layer, а не исторический интерфейс.

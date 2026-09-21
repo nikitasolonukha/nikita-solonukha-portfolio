@@ -76,7 +76,7 @@
 - `store-builder-demo` + `store-builder-embedded` + живой Lumina Form → один `shopify-store-builder`: input → generation → Shopify → storefront.
 - `leadworker` / MTProto + `telegram-leads` → один Telegram AI Lead Hunter. Основной Telegram pipeline и MTProto transport подтверждены; прямой production-вызов между репозиториями не заявляется.
 - `protected-messages` + `npm-data-analysis` + связанный университетский бот/API → один честный университетский программный комплекс после подтверждения связей.
-- `autoposting` + связанные Telegram/WordPress-сценарии юридической компании → обезличенный внутренний продукт, если подтверждается общая система.
+- `autoposting` подтверждён как отдельный FastAPI publisher; связь с юридической системой не найдена. Telegram-рассылка сохранена отдельным проектом.
 - Старый B2B Google Maps parser + `maps-lead-generator` → один B2B Lead Generator с реальным n8n pipeline и результатом.
 - Старый лендинг таро-бота + `topgadalkin` → один актуальный кейс; удалённый архивный дубль не возвращать.
 - `contentfactory` и `content-factory-marek` не должны существовать как два отдельных публичных кейса; отдельный дублирующий кейс удаляется.
