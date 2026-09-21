@@ -48,3 +48,11 @@ Workflow → детали → проверенная топология 15 уз�
 - `cover-v2.webp`, desktop/mobile posters;
 - settings, table, detail, email filter и workflow screenshots;
 - `qa-v2.json` и `storyboard.md`.
+
+## Reconciliation, 22.09.2026
+
+Atlas / Leads (n8n Maps enrichment) и Beauty Lead Hunter (Python/Playwright/Streamlit/SQLite) объединены в один редакционный B2B Lead Generator. Это две реализации одного направления, не один общий backend. Материалы второй реализации сохранены в `../beauty-lead/` и включены в страницу кейса. Telegram AI Lead Hunter остаётся отдельным продуктом; MTProto относится к нему.
+
+## Объединённый walkthrough, 22.09.2026
+
+Создан `master-combined.mp4` как монтаж уже проверенных локальных записей обеих составляющих. Он не утверждает единую live production-интеграцию между demo-средами. Отдельные исходные видеозаписи и скриншоты сохранены.

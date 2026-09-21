@@ -340,39 +340,6 @@
     "local": true
   },
   {
-    "id": "beauty-lead",
-    "name": "Beauty Lead Hunter",
-    "subtitle": "Поиск и приоритизация B2B-клиентов",
-    "intro": "Результаты поиска проходят анализ и ранжирование, чтобы выделить подходящие компании.",
-    "stack": "Подробности в исследовании",
-    "flow": "Исходный pipeline, scoring и SQLite; ответы карт, сайтов и анализа подготовлены локально.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/beauty-lead.webp",
-    "mobile": "../projects/beauty-lead/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/beauty-lead/assets/master-desktop.mp4",
-        "poster": "../projects/beauty-lead/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/beauty-lead/assets/master-mobile.mp4",
-        "poster": "../projects/beauty-lead/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/beauty-lead/assets/category-Без сайта-1440.png",
-      "../projects/beauty-lead/assets/category-Слабый сайт-1440.png",
-      "../projects/beauty-lead/assets/category-Соцсети-YCLIENTS-1440.png",
-      "../projects/beauty-lead/assets/detail-1440.png"
-    ],
-    "document": "../projects/beauty-lead/case.md",
-    "research": "../review/beauty-lead.html",
-    "local": true
-  },
-  {
     "id": "linux-lab",
     "name": "Linux Lab",
     "subtitle": "Практика информационной безопасности",
@@ -490,10 +457,10 @@
     "intro": "От отметки привычки до законченной тренировки — один последовательный сценарий.",
     "stack": "Next.js · React · TypeScript",
     "flow": "Пять разделов, тренировочная сессия, журнал и настройки.",
-    "boundary": "Согласованная хвойная тема; локальные демонстрационные данные. Внешняя синхронизация не подключена.",
+    "boundary": "Portfolio polish: Charcoal Violet #3C1A47 и ограниченный Cyber Lime #B6FF00. Данные демонстрационные; внешняя синхронизация не подключена.",
     "category": "Продукты",
     "desktop": "images/ritm.webp",
-    "mobile": "../projects/ritm/assets/habit-done-390.png",
+    "mobile": "../projects/ritm/assets/today-390.png",
     "media": [
       {
         "src": "../projects/ritm/assets/master-desktop.mp4",
@@ -507,10 +474,15 @@
       }
     ],
     "screens": [
+      "../projects/ritm/assets/today-1440.png",
       "../projects/ritm/assets/habit-done-1440.png",
+      "../projects/ritm/assets/program-1440.png",
+      "../projects/ritm/assets/rest-1440.png",
+      "../projects/ritm/assets/result-1440.png",
+      "../projects/ritm/assets/progress-1440.png",
       "../projects/ritm/assets/journal-1440.png",
-      "../projects/ritm/assets/light-1440.png",
-      "../projects/ritm/assets/program-1440.png"
+      "../projects/ritm/assets/settings-1440.png",
+      "../projects/ritm/assets/settings-program-1440.png"
     ],
     "document": "../projects/ritm/case.md",
     "research": "../review/ritm.html",
@@ -590,14 +562,29 @@
   {
     "id": "support-rag",
     "name": "AI Support",
-    "subtitle": "Telegram-поддержка с проверяемыми RAG-черновиками",
-    "intro": "Реальный Telegram-интерфейс операторской поддержки показан на безопасном вымышленном сценарии доступа к закрытому каналу.",
+    "subtitle": "Webchat · Telegram · RAG-поддержка",
+    "intro": "Посетитель пишет в webchat; обращение попадает в Telegram, где оператор работает с AI-черновиком и отправляет ответ.",
     "stack": "TypeScript · Cloudflare Workers · D1 · R2 · Telegram API · RAG",
-    "flow": "Telegram conversation → FAQ/RAG search → draft → Edit/Regen → operator decision.",
-    "boundary": "Telegram UI и controls реальные; имена, канал и вся видимая переписка заменены на DEMO / MOCK. Видео показывает локальную проверку backend-веток; production-отправка отключена.",
+    "flow": "Webchat → Telegram topic → RAG/AI draft → Edit/Regen/Send → ответ посетителю.",
+    "boundary": "Webchat и Telegram — один продукт. Telegram screenshot обезличен; webchat replay и AI/backend демо проверялись отдельно, сквозная production-интеграция сейчас не заявляется.",
     "category": "AI и автоматизация",
     "desktop": "../projects/support-rag/assets/telegram-support-sanitized.png",
     "media": [
+      {
+        "src": "../projects/support-rag/assets/master-combined.mp4",
+        "poster": "../projects/support-rag/assets/poster-combined.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/webchat/assets/master-desktop.mp4",
+        "poster": "../projects/webchat/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/webchat/assets/master-mobile.mp4",
+        "poster": "../projects/webchat/assets/poster-mobile.webp",
+        "mobile": true
+      },
       {
         "src": "../projects/support-rag/assets/master-desktop.mp4",
         "poster": "../projects/support-rag/assets/poster-desktop.webp",
@@ -613,43 +600,12 @@
       "../projects/support-rag/assets/telegram-support-sanitized.png",
       "../projects/support-rag/assets/sources-1440.png",
       "../projects/support-rag/assets/approved-1440.png",
-      "../projects/support-rag/assets/history-1440.png"
+      "../projects/support-rag/assets/history-1440.png",
+      "../projects/webchat/assets/host-1440.png",
+      "../projects/webchat/assets/conversation-1440.png"
     ],
     "document": "../projects/support-rag/case.md",
     "research": "../review/support-rag.html",
-    "local": true
-  },
-  {
-    "id": "webchat",
-    "name": "Webchat",
-    "subtitle": "Чат-виджет для сайта",
-    "intro": "Пара интерфейсов показывает посетительскую сторону диалога и локальный обмен сообщениями.",
-    "stack": "Подробности в исследовании",
-    "flow": "Виджет, ввод, ошибка, повтор, draft и iframe-взаимодействие. Реальный Telegram не подключён.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/webchat.webp",
-    "mobile": "../projects/webchat/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/webchat/assets/master-desktop.mp4",
-        "poster": "../projects/webchat/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/webchat/assets/master-mobile.mp4",
-        "poster": "../projects/webchat/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/webchat/assets/conversation-1440.png",
-      "../projects/webchat/assets/empty-1440.png",
-      "../projects/webchat/assets/history-1440.png",
-      "../projects/webchat/assets/host-1440.png"
-    ],
-    "document": "../projects/webchat/case.md",
-    "research": "../review/webchat.html",
     "local": true
   },
   {
@@ -1062,16 +1018,21 @@
   },
   {
     "id": "maps-lead-generator",
-    "name": "Atlas / Leads",
-    "subtitle": "B2B company enrichment workspace",
-    "intro": "Ниша и город превращаются в рабочую таблицу компаний с сайтами, телефонами и найденными email.",
+    "name": "B2B Lead Generator",
+    "subtitle": "Поиск, обогащение и оценка компаний",
+    "intro": "Две реализации одного B2B-направления: n8n-сбор и enrichment компаний, а также Python/Streamlit-поиск со скорингом и статусами.",
     "stack": "n8n · Google Maps API · Google Sheets · OpenAI",
-    "flow": "Настройка поиска → n8n run → table enrichment → company detail → фильтр → export.",
-    "boundary": "Исходная 15-узловая схема и авторство подтверждены. Внешние сервисы заменены локальными синтетическими данными.",
+    "flow": "Ниша и город → pipeline/workflow → таблица компаний → enrichment и scoring → фильтр, деталь и экспорт.",
+    "boundary": "Atlas / Leads и Beauty Lead Hunter объединены редакционно как один B2B-кейс. Это две реализации; данные в демо синтетические, сетевой сбор и outreach отключены.",
     "category": "Автоматизация",
     "desktop": "../projects/maps-lead-generator/assets/cover-v2.webp",
     "mobile": "../projects/maps-lead-generator/assets/company-table-390-v2.png",
     "media": [
+      {
+        "src": "../projects/maps-lead-generator/assets/master-combined.mp4",
+        "poster": "../projects/maps-lead-generator/assets/poster-combined.webp",
+        "mobile": false
+      },
       {
         "src": "../projects/maps-lead-generator/assets/master-desktop-v2.webm",
         "poster": "../projects/maps-lead-generator/assets/poster-desktop-v2.webp",
@@ -1081,6 +1042,16 @@
         "src": "../projects/maps-lead-generator/assets/master-mobile-v2.webm",
         "poster": "../projects/maps-lead-generator/assets/poster-mobile-v2.webp",
         "mobile": true
+      },
+      {
+        "src": "../projects/beauty-lead/assets/master-desktop.mp4",
+        "poster": "../projects/beauty-lead/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/beauty-lead/assets/master-mobile.mp4",
+        "poster": "../projects/beauty-lead/assets/poster-mobile.webp",
+        "mobile": true
       }
     ],
     "screens": [
@@ -1088,7 +1059,9 @@
       "../projects/maps-lead-generator/assets/company-table-1440-v2.png",
       "../projects/maps-lead-generator/assets/company-detail-1440-v2.png",
       "../projects/maps-lead-generator/assets/email-filter-1440-v2.png",
-      "../projects/maps-lead-generator/assets/workflow-detail-1440-v2.png"
+      "../projects/maps-lead-generator/assets/workflow-detail-1440-v2.png",
+      "../projects/beauty-lead/assets/detail-1440.png",
+      "../projects/beauty-lead/assets/filtered-1440.png"
     ],
     "document": "../projects/maps-lead-generator/case.md",
     "research": "../review/maps-lead-generator.html",
@@ -1098,140 +1071,89 @@
     "id": "personal-assistant",
     "name": "Личный AI-ассистент",
     "subtitle": "Персональная автоматизация рутины",
-    "intro": "Почта, расписание, расходы, контент и файлы соединены в одном историческом AI-сценарии.",
+    "intro": "Авторский n8n-ассистент из прежнего портфолио. Архив подтверждает проект; точный workflow и Telegram-запись пока не сопоставлены.",
     "stack": "n8n · OpenAI · Gmail · Calendar · Telegram",
-    "flow": "Событие → классификация → инструмент → действие → ответ",
-    "boundary": "Авторство подтверждено; runtime и экспорт сейчас не найдены. Архивная обложка не является UI.",
+    "flow": "Описанный исторически сценарий: Telegram/почта/расписание → n8n → инструменты → ответ. Точный исполняемый flow не восстановлен.",
+    "boundary": "Авторство подтверждено автором. Архивная обложка — иллюстрация; точный n8n canvas и Telegram flow ещё отсутствуют. Видео реконструкции не используется как доказательство.",
     "category": "Автоматизация",
     "desktop": "../projects/personal-assistant/assets/cover.webp",
     "mobile": "../projects/personal-assistant/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/personal-assistant/assets/master-desktop.webm",
-        "poster": "../projects/personal-assistant/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/personal-assistant/assets/master-mobile.webm",
-        "poster": "../projects/personal-assistant/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/personal-assistant/assets/product-1440.png",
-      "../projects/personal-assistant/assets/features-1440.png",
-      "../projects/personal-assistant/assets/flow-1440.png",
-      "../projects/personal-assistant/assets/boundaries-1440.png"
-    ],
+    "media": [],
+    "screens": [],
     "document": "../projects/personal-assistant/case.md",
     "research": "../review/personal-assistant.html",
     "local": true,
-    "published": false,
+    "published": true,
     "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "news-aggregator-archive",
-    "name": "Telegram News Digest",
-    "subtitle": "AI-агрегатор новостей",
-    "intro": "Каналы, суммаризация и профиль интересов формировали персональный новостной дайджест.",
+    "name": "Telegram News · две версии",
+    "subtitle": "AI News Digest и университетский Telegram-бот",
+    "intro": "Разные связанные работы: личный AI News Digest оставался в разработке; университетский Telegram parser/search был реализован отдельно.",
     "stack": "Python · Telethon · OpenAI · PostgreSQL",
-    "flow": "Каналы → фильтрация → суммаризация → профиль → дайджест",
-    "boundary": "Архивная версия в разработке; не отождествляется с Telegram Intel без доказательства.",
+    "flow": "Личный проект: каналы → отбор → AI-дайджест (архивное описание). Университетский: Telegram → Telethon/parser → SQLite → поиск/ответ.",
+    "boundary": "Версии не смешаны. Исходный Telegram UI личного дайджеста не найден; университетский исходный код проверен, но Telegram-запись также не найдена. Архивное видео реконструкции не выдаётся за Telegram.",
     "category": "Автоматизация",
     "desktop": "../projects/news-aggregator-archive/assets/cover.webp",
     "mobile": "../projects/news-aggregator-archive/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/news-aggregator-archive/assets/master-desktop.webm",
-        "poster": "../projects/news-aggregator-archive/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/news-aggregator-archive/assets/master-mobile.webm",
-        "poster": "../projects/news-aggregator-archive/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/news-aggregator-archive/assets/product-1440.png",
-      "../projects/news-aggregator-archive/assets/features-1440.png",
-      "../projects/news-aggregator-archive/assets/flow-1440.png",
-      "../projects/news-aggregator-archive/assets/boundaries-1440.png"
-    ],
+    "media": [],
+    "screens": [],
     "document": "../projects/news-aggregator-archive/case.md",
     "research": "../review/news-aggregator-archive.html",
     "local": true,
-    "published": false,
+    "published": true,
     "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
-    "id": "protected-messages",
-    "name": "Защищённые сообщения",
-    "subtitle": "Университетский программный комплекс",
-    "intro": "Desktop GUI, web-компонент и учебные механизмы защиты сообщений работали как единый комплекс.",
-    "stack": "Python · Tkinter · Flask · HTML",
-    "flow": "Сообщение → обработка → передача → расшифрование → результат",
-    "boundary": "Авторство подтверждено; код и отчёт сейчас не найдены. Это учебная, не production security-система.",
-    "category": "Исследования",
-    "desktop": "../projects/protected-messages/assets/cover.webp",
-    "mobile": "../projects/protected-messages/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/protected-messages/assets/master-desktop.webm",
-        "poster": "../projects/protected-messages/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/protected-messages/assets/master-mobile.webm",
-        "poster": "../projects/protected-messages/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/protected-messages/assets/product-1440.png",
-      "../projects/protected-messages/assets/features-1440.png",
-      "../projects/protected-messages/assets/flow-1440.png",
-      "../projects/protected-messages/assets/boundaries-1440.png"
-    ],
-    "document": "../projects/protected-messages/case.md",
-    "research": "../review/protected-messages.html",
-    "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "id": "copilot",
+    "name": "n8n Copilot",
+    "subtitle": "Четырёхслойная подготовка Telegram-контента",
+    "intro": "Сохранены оригинальная спецификация и промпты четырёх слоёв. Исполняемый n8n export и Telegram flow ещё не найдены.",
+    "stack": "n8n · AI · Telegram · редакционный workflow",
+    "flow": "Raw → L1 → L2 → L3 → L4 → Body; переработка одного слоя по комментарию.",
+    "boundary": "Публично показана архитектура по найденной спецификации. SVG — схема, не настоящий n8n canvas; прежняя web-реконструкция не используется как доказательство.",
+    "category": "Автоматизация",
+    "desktop": "../projects/copilot/assets/evidence-cover.svg",
+    "mobile": "../projects/copilot/assets/evidence-cover.svg",
+    "media": [],
+    "screens": [],
+    "document": "../projects/copilot/case.md",
+    "research": "../review/copilot.html",
+    "published": true
   },
   {
-    "id": "npm-data-analysis",
-    "name": "Анализ данных NPM",
-    "subtitle": "Университетская аналитическая практика",
-    "intro": "Получение данных через API, очистка, статистика и визуализация в учебных работах.",
-    "stack": "Python · Pandas · NumPy · Matplotlib",
-    "flow": "API → подготовка → группировка → статистика → график",
-    "boundary": "Авторство подтверждено; notebook и исходный датасет сейчас не найдены.",
+    "id": "university-projects",
+    "name": "Университетские проекты",
+    "subtitle": "Защищённые сообщения · анализ NPM · Telegram parser",
+    "intro": "Три отдельные учебные работы под одной обложкой. Две подтверждены архивными карточками, для Telegram parser найден исходный код.",
+    "stack": "Python · Tkinter · Flask · Pandas · NumPy · Matplotlib · Telethon · SQLite",
+    "flow": "Защищённые сообщения: обработка и шифрование. NPM: API → статистика → визуализация. Telegram parser: сбор → SQLite → поиск через бота.",
+    "boundary": "Umbrella-case, не один технический продукт. Для первых двух работ runtime не найден; для parser исходный код доступен, но реальный Telegram UI пока не записан.",
     "category": "Исследования",
-    "desktop": "../projects/npm-data-analysis/assets/cover.webp",
-    "mobile": "../projects/npm-data-analysis/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/npm-data-analysis/assets/master-desktop.webm",
-        "poster": "../projects/npm-data-analysis/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/npm-data-analysis/assets/master-mobile.webm",
-        "poster": "../projects/npm-data-analysis/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/npm-data-analysis/assets/product-1440.png",
-      "../projects/npm-data-analysis/assets/features-1440.png",
-      "../projects/npm-data-analysis/assets/flow-1440.png",
-      "../projects/npm-data-analysis/assets/boundaries-1440.png"
-    ],
-    "document": "../projects/npm-data-analysis/case.md",
-    "research": "../review/npm-data-analysis.html",
-    "local": true,
-    "published": false,
-    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
+    "desktop": "../projects/university-projects/assets/cover.svg",
+    "mobile": "../projects/university-projects/assets/cover.svg",
+    "media": [],
+    "screens": [],
+    "document": "../projects/university-projects/case.md",
+    "research": "../review/university-projects.html",
+    "published": true
+  },
+  {
+    "id": "legal-automation",
+    "name": "Внутренние продукты · NDA",
+    "subtitle": "Автоматизация и AI-инструменты юридической компании",
+    "intro": "Обезличенное описание направлений работы: внутренние системы, автоматизации, отчёты и Telegram-сценарии без данных клиента.",
+    "stack": "Web · API · автоматизация · AI · Telegram",
+    "flow": "Внутренний запрос → обработка/автоматизация → проверяемый результат. Детали ограничены NDA.",
+    "boundary": "Клиент, персональные данные и внутренний интерфейс не раскрываются. Редакционная графика не выдаётся за реальный UI; Autopost не включён без доказанной связи.",
+    "category": "Автоматизация",
+    "desktop": "../projects/legal-automation/assets/cover.webp",
+    "mobile": "../projects/legal-automation/assets/cover.webp",
+    "media": [],
+    "screens": [],
+    "document": "../projects/legal-automation/case.md",
+    "research": "../review/legal-automation.html",
+    "published": true
   }
 ]

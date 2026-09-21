@@ -56,3 +56,7 @@ MTProto transport → открыть модуль → username / peer fallback /
 - Screenshots entry, qualified, draft, MTProto, duplicate и anonymous для desktop/mobile.
 - `capture-report.json` — timings и visual QA.
 - `storyboard.md` — последовательность записи.
+
+## Проверка разделения материалов, 22.09.2026
+
+Скриншоты AI Support и Lead Hunter визуально сверены. Первый показывает тему доступа к платному каналу, второй — найденное исходное сообщение и подготовленный лид-ответ. Это разные обезличенные кадры общей операторской Telegram-оболочки. Соседний Support-топик в боковом списке lead-кадра не делает активную беседу кейсом поддержки.
