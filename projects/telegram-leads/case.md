@@ -14,11 +14,19 @@
 
 Исходные parser → collector webhook → core ingest выполняются в локальном VM harness. Проверены: открытый автор, `pending_topic`, новое сообщение того же автора, duplicate до core, скрытый автор, allowlist чужого чата, исключение собственного бота, draft pipeline и missing user. Отдельный MTProto-пакет проверен на username, InputPeer fallback, валидацию, missing entity, timeout, unauthorized и wrong method.
 
-Новая запись прошла visual QA на 1440×900 и 390×844: page errors 0, horizontal overflow 0, broken images 0. Видео показывает Telegram-first flow, а не вымышленный SaaS dashboard.
+Новая запись прошла visual QA на 1440×900 и 390×844: page errors 0, horizontal overflow 0, broken images 0. Видео показывает Telegram-first flow, а не вымышленный SaaS dashboard. Пользователь также передал и подтвердил настоящий операторский Telegram-экран с топиками.
+
+## REAL TELEGRAM EVIDENCE
+
+21 сентября пользователь подтвердил и передал настоящий Telegram-интерфейс этой лид-системы. На экране видны топики лидов, исходное сообщение, подготовленный ответ и операторские действия `Edit`, `Send`, `Regen`, `Close`. Это основной визуальный материал кейса.
+
+Перед публикацией ники заменены на `Лид 1…13`, имя адресата — на `Клиент 1`, Telegram-ссылка, название канала и источник скрыты. Telegram layout, тексты продукта, даты, кнопки и структура топиков сохранены. Исходный screenshot остаётся только в рабочей исследовательской папке и не публикуется.
+
+Статичный экран подтверждает реальный интерфейс и состояние черновика, но не доказывает фактическую отправку сообщения. Безопасный replay ниже остаётся техническим доказательством parser/webhook/ingest и MTProto boundary.
 
 ## DEMO / MOCK
 
-Telegram shell — презентационная реконструкция интерфейса продукта. Сообщения, имя студии, IDs и username вымышлены. Parser, webhook, ingest и formatter исходные. KV, D1, Telegram API, topic creation, AI resolver и retrieval заменены локальными адаптерами. Кнопка MTProto показывает подтверждённые возможности отдельного транспорта; настоящая отправка не выполняется.
+Telegram shell в master video — презентационная реконструкция интерфейса продукта; реальный обезличенный Telegram-экран опубликован отдельно первым материалом кейса. Сообщения, имя студии, IDs и username вымышлены. Parser, webhook, ingest и formatter исходные. KV, D1, Telegram API, topic creation, AI resolver и retrieval заменены локальными адаптерами. Кнопка MTProto показывает подтверждённые возможности отдельного транспорта; настоящая отправка не выполняется.
 
 ## PORTFOLIO POLISH
 
@@ -42,7 +50,8 @@ MTProto transport → открыть модуль → username / peer fallback /
 
 ## Материалы
 
-- `assets/master-desktop-v2.mp4` и `assets/master-mobile-v2.mp4` — master walkthrough.
+- `assets/telegram-leads-sanitized.png` — реальный обезличенный Telegram-интерфейс с топиками.
+- `assets/master-desktop-v2.mp4` и `assets/master-mobile-v2.mp4` — безопасный локальный walkthrough.
 - `assets/cover-v2.webp`, `poster-desktop-v2.webp`, `poster-mobile-v2.webp`.
 - Screenshots entry, qualified, draft, MTProto, duplicate и anonymous для desktop/mobile.
 - `capture-report.json` — timings и visual QA.

@@ -1025,12 +1025,12 @@
     "id": "telegram-leads",
     "name": "Telegram AI Lead Hunter",
     "subtitle": "Входящий лид → квалификация → черновик → Telegram",
-    "intro": "Telegram-first система разбирает входящие возможности, защищает от дублей и готовит ответ менеджеру.",
+    "intro": "Реальный Telegram-интерфейс собирает лиды в топики, показывает источник и готовит ответ менеджеру.",
     "stack": "TypeScript · Cloudflare Workers · Telegram · D1/KV · RAG · MTProto",
-    "flow": "Collector → parser → allowlist/dedup → core ingest → manager draft → MTProto transport boundary.",
-    "boundary": "Безопасный demo replay на исходной логике. Telegram, storage и AI заменены локальными адаптерами; внешних отправок нет.",
+    "flow": "Telegram topic → source message → qualification → draft → operator Edit/Send/Regen/Close → linked MTProto transport boundary.",
+    "boundary": "Главный экран — реальный обезличенный Telegram UI. Видео ниже — безопасный локальный replay исходной parser/webhook/ingest-логики; внешних отправок нет.",
     "category": "AI и автоматизация",
-    "desktop": "../projects/telegram-leads/assets/cover-v2.webp",
+    "desktop": "../projects/telegram-leads/assets/telegram-leads-sanitized.png",
     "mobile": "../projects/telegram-leads/assets/telegram-draft-390-v2.png",
     "media": [
       {
@@ -1045,6 +1045,7 @@
       }
     ],
     "screens": [
+      "../projects/telegram-leads/assets/telegram-leads-sanitized.png",
       "../projects/telegram-leads/assets/telegram-entry-1440-v2.png",
       "../projects/telegram-leads/assets/telegram-qualified-1440-v2.png",
       "../projects/telegram-leads/assets/telegram-draft-1440-v2.png",

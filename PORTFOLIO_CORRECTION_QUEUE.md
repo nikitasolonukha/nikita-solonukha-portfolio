@@ -8,7 +8,7 @@
 04. Personal AI Assistant: n8n workflow + Telegram — BLOCKED
 05. N8N Copilot: workflow + Telegram input/output — BLOCKED
 06. Telegram News Digest: разделить архивную и университетскую версии — BLOCKED
-07. Telegram AI Lead Hunter + MTProto: Telegram-first flow и связанный transport boundary — READY
+07. Telegram AI Lead Hunter + MTProto: реальный обезличенный Telegram с топиками + связанный transport boundary — READY
 08. B2B Lead Generator / Atlas: table-first redesign, real n8n pipeline — READY
 09. Twitter / X Automation: X-first presentation — READY
 10. Telegram Intel: Telegram-first presentation — READY

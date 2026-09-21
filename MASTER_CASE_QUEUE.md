@@ -41,7 +41,7 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: Пользователь подтвердил и передал реальный Telegram-интерфейс. Ники/ID/ссылка обезличены; backend-ветки отдельно проверены локальным стендом. См. projects/support-rag/case.md.
 12. **Telegram AI Lead Hunter — READY**
     - Источник: Desktop tg-business-rag-worker (2)/leads-worker + backend-webchat-clean: Junction parser, ingest, topics/RAG; точное совпадение старого описания
-    - Следующий шаг / причина: review/telegram-leads.html; Telegram-first demo replay, исходные parser/webhook/ingest, draft, duplicate/anonymous states и связанный MTProto transport boundary. Внешних отправок нет.
+    - Следующий шаг / причина: Пользователь подтвердил реальный Telegram-интерфейс с топиками; ники, имя, канал и ссылка обезличены. Demo replay отдельно подтверждает parser/webhook/ingest, draft, duplicate/anonymous states и связанный MTProto transport boundary. Внешних отправок нет.
 13. **PP BOT — закрытая база рецептов — READY**
     - Источник: work/research-ppbot; public GitHub ppbot, commit 379b7a9
     - Следующий шаг / причина: review/ppbot.html; исправлен пустой Canvas, synthetic recipes, master desktop/mobile, QA 390/768/1440 и case 320–1440. Telegram backend отсутствует; закрытая коллекция не опубликована.
