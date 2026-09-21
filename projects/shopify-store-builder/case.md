@@ -1,18 +1,18 @@
-# AI Shopify Store Builder — две версии витрины
+# Lumina Form — живой Shopify storefront
 
-**READY — обновлено по текущему Shopify preview.**
+**READY — актуальный Shopify preview проверен 21.09.2026.**
 
 ## ORIGINAL
-Embedded Shopify app `ai-store-builder` принимает товар и 1–4 изображения, получает валидированный `GeneratedStore`, создаёт продукт, цену, media, SEO и app-owned данные через Admin GraphQL, затем публикует storefront через Theme App Extension.
+`Lumina Form` — Shopify-витрина продукта Sculptural Table Lamp. Тема включает главную, коллекцию, карточку товара, дополнительные продуктовые сцены, FAQ, отзывы, корзину и стандартный Shopify checkout.
 
 ## VERIFIED
-Локальный builder и demo-витрина повторно собраны и проверены на 390, 768 и 1440 px. Живой password-protected Shopify preview `Lumina Form` открыт и проверен 21.09.2026: home, collection, PDP, галерея и cart. Пароль и authenticated state не публикуются. Checkout ранее проверялся до формы без оплаты.
+Password-protected Shopify preview открыт по переданной ссылке и проверен на desktop и iPhone. Повторно пройдены home, catalog, PDP, переключение изображений и добавление товара в cart. Ранее checkout проверялся до формы без оплаты.
 
-## VARIANT A — PORTFOLIO POLISH / DEMO
-Светлая редакционная витрина показывает результат генератора отдельно от Shopify theme. Для товара собрана цельная серия из трёх разрешённых кадров: общий вид, рабочий контекст и чистый предметный ракурс. Добавлен журнальный блок, галерея, PDP, FAQ, demo reviews и cart. Отзывы и данные магазина вымышленные и помечены как demo.
+## PORTFOLIO PRESENTATION
+В кейсе сохранены локальные walkthrough и screenshots актуальной чёрно-жёлтой темы. Служебная Shopify preview bar, cookie banner и пароль в запись не попали.
 
-## VARIANT B — ORIGINAL / VERIFIED SHOPIFY PREVIEW
-Чёрно-жёлтая `Lumina Form` — текущая живая Shopify theme по переданной preview-ссылке. В кейсе показаны home, catalog, product detail, дополнительные продуктовые сцены, FAQ и cart. Это отдельная версия, а не продолжение светлой demo-витрины.
+## DEMO DATA
+Sculptural Table Lamp, тексты, отзывы и характеристики относятся к демонстрационному Shopify-магазину. Метрики продаж и реальные покупатели не заявляются.
 
 ## Ограничения
-Preview может перестать открываться или запросить новый пароль, поэтому в портфолио сохранены локальные walkthrough и screenshots. Покупка, платёж и реальный заказ не выполнялись.
+Preview может перестать открываться или запросить новый пароль. Покупка, платёж и реальный заказ не выполнялись.
