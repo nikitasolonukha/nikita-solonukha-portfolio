@@ -38,7 +38,7 @@ READY означает готовность локального пакета, �
     - Следующий шаг / причина: Авторские записи сохранены + два полных новых master. Сборка/TS PASS, меню/карусель/tabs QA3, 4 видео case QA4. Локальные a11y исправления; авторство подтверждено.
 11. **AI Саппорт-система с RAG — READY**
     - Источник: Desktop/РАБОТА/Сервисы/tg-business-rag-worker (2), src + migrations; точное совпадение архитектуры со старым кейсом
-    - Следующий шаг / причина: Пользователь подтвердил и передал реальный Telegram-интерфейс. Ники/ID/ссылка обезличены; backend-ветки отдельно проверены локальным стендом. См. projects/support-rag/case.md.
+    - Следующий шаг / причина: Пользователь подтвердил реальный Telegram-интерфейс. Ники/ID/ссылка обезличены, переписка заменена вымышленным сценарием поддержки Telegram-канала; backend-ветки отдельно проверены локальным стендом. См. projects/support-rag/case.md.
 12. **Telegram AI Lead Hunter — READY**
     - Источник: Desktop tg-business-rag-worker (2)/leads-worker + backend-webchat-clean: Junction parser, ingest, topics/RAG; точное совпадение старого описания
     - Следующий шаг / причина: Пользователь подтвердил реальный Telegram-интерфейс с топиками; ники, имя, канал и ссылка обезличены. Demo replay отдельно подтверждает parser/webhook/ingest, draft, duplicate/anonymous states и связанный MTProto transport boundary. Внешних отправок нет.

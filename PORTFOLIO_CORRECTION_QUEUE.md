@@ -26,7 +26,7 @@
 22. PP BOT: Telegram/WebApp-first presentation — READY
 23. Живые фото: Telegram evidence после получения материалов — BLOCKED — сайт, сравнение и responsive-видео READY; реальный Telegram flow бота не передан, а по найденному frontend его нельзя достоверно восстановить.
 24. Telegram schedule / рассылка 24/7 — READY
-25. AI Support RAG — READY — пользователь подтвердил реальный Telegram-интерфейс; ники/ID/ссылка обезличены, техническая панель оставлена вторичным доказательством backend-flow.
+25. AI Support RAG — READY — реальный Telegram-интерфейс подтверждён; ники/ID/ссылка обезличены, текст заменён вымышленным сценарием поддержки закрытого канала, техническая панель оставлена вторичным доказательством backend-flow.
 26. LexLegal — READY — реальный Mobirise-архив отделён от согласованного portfolio polish; полный desktop/mobile walkthrough и QA основных разделов сохранены.
 27. Ритм — READY — реальный Next.js-продукт, полный flow привычек/тренировки/журнала/настроек; 58 тестов, build и responsive QA.
 28. Пифпаф — READY — исходный кабинет Reels, импорт/ошибка/повтор/аналитика/таблица и mobile; 56 тестов PASS, 2 SKIP.
