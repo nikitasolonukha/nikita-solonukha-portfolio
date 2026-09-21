@@ -1,0 +1,44 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "external": [],
+    "overflow": false,
+    "checks": [
+      "estimate uses FakeVibeClient",
+      "z-image selected",
+      "execute/result",
+      "retry no new attempt",
+      "insufficient budget",
+      "lab explicitly demo"
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "external": [],
+    "overflow": false,
+    "checks": [
+      "estimate uses FakeVibeClient",
+      "z-image selected",
+      "execute/result",
+      "retry no new attempt",
+      "insufficient budget",
+      "lab explicitly demo"
+    ]
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "external": [],
+    "overflow": false,
+    "checks": [
+      "estimate uses FakeVibeClient",
+      "z-image selected",
+      "execute/result",
+      "retry no new attempt",
+      "insufficient budget",
+      "lab explicitly demo"
+    ]
+  }
+]

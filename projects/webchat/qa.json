@@ -1,0 +1,41 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "chatOverflow": false,
+    "send": true,
+    "reply": true,
+    "reopen": true,
+    "reloadHistory": true,
+    "errorDraftRetained": true,
+    "retry": true,
+    "noDuplicates": true
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "chatOverflow": false,
+    "send": true,
+    "reply": true,
+    "reopen": true,
+    "reloadHistory": true,
+    "errorDraftRetained": true,
+    "retry": true,
+    "noDuplicates": true
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "chatOverflow": false,
+    "send": true,
+    "reply": true,
+    "reopen": true,
+    "reloadHistory": true,
+    "errorDraftRetained": true,
+    "retry": true,
+    "noDuplicates": true
+  }
+]

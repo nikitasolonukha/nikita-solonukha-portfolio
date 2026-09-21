@@ -1,0 +1,28 @@
+/* Readability pass: clear screen text and sturdier serif headings. */
+:root{--muted:#595254}
+body{font-family:"Segoe UI",Arial,sans-serif;font-size:17px;line-height:1.7}
+button,input,textarea,select{font-family:inherit}
+h1,h2,h3,.brand{font-family:Cambria,Georgia,serif}
+h1{font-weight:400;letter-spacing:-1px;line-height:1.12}
+h2{letter-spacing:-.7px;line-height:1.18}
+h3,.practice h3{letter-spacing:-.3px;line-height:1.25}
+.brand{font-size:32px}.brand span{font-family:"Segoe UI",Arial,sans-serif;font-size:10px;font-weight:600;letter-spacing:2.2px}
+nav{font-size:15px}.location{font-size:15px;color:#e7dadd}
+.intro{font-size:18px;line-height:1.75;color:#f0e7e8;max-width:40ch}
+.primary-button,.text-link{font-size:15px;line-height:1.5}
+.primary-button{font-weight:600}.hero-image figcaption{font-size:14px}
+.introduction p{font-size:19px;line-height:1.7}.introduction p+p{font-size:16px}
+.section-title>p,.practice-description{font-size:16px;line-height:1.6}
+.practice-body p{font-size:16px;line-height:1.75;color:#534b4d}
+li{font-size:16px;line-height:1.6;padding:9px 0}
+.service-contact{font-size:15px;line-height:1.6}
+.prepare h4{font:600 15px/1.5 "Segoe UI",Arial,sans-serif}.prepare p{font-size:15px;line-height:1.7}
+.consultation-copy>p{font-size:17px;line-height:1.75;color:#42483e}
+.consultation-rows>div{grid-template-columns:115px 1fr}
+.consultation-rows strong{font-size:15px;line-height:1.6}.consultation-rows p{font-size:15px;line-height:1.7;color:#474d42}
+.questions-title>p{font-size:16px}.faq summary{font-size:17px;line-height:1.6}.faq details p{font-size:16px;line-height:1.75}
+.contact>div>p{font-size:16px;color:#e7dadd}.contact-email{font-size:clamp(21px,2.1vw,30px)}
+.copy-email{font-size:15px;line-height:1.6}.contact-right .email-help,.contact-right .copy-status{font-size:14px;line-height:1.6}
+footer>div{font-size:15px}footer small{font-size:14px}
+@media(max-width:1000px){.consultation-rows>div{grid-template-columns:1fr}}
+@media(max-width:640px){body{font-size:16px}.brand{font-size:29px}.menu-button{font-size:16px}h1{font-size:47px;letter-spacing:-.6px}.intro{font-size:17px}.hero-image figcaption{font-size:12px}.introduction p{font-size:17px}.introduction p+p{font-size:16px}.section-title>p,.practice-description{font-size:15px}.practice h3{font-size:32px}.practice-body p{font-size:16px}.prepare p{font-size:15px}.consultation-rows>div{grid-template-columns:1fr;gap:8px}.contact-email{font-size:20px}.primary-button{min-height:50px}.copy-email{padding:10px 0}footer small{font-size:13px}}

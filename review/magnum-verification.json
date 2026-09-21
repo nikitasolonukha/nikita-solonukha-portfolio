@@ -1,0 +1,19 @@
+{
+  "checks": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "missingImages": [],
+      "errors": [],
+      "videoDuration": 12
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "missingImages": [],
+      "errors": [],
+      "videoDuration": 12
+    }
+  ],
+  "missingLocalFiles": []
+}

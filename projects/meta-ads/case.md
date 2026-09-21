@@ -29,3 +29,9 @@ Mock только на границе ScraperCore: три вымышленных
 ## Материалы
 
 Master desktop/mobile: input → processing → output, failure, cancel. Overview/request/result/failure/cancel screenshots, cover, storyboard, qa.json. Телефонная версия — адаптивная презентация API, не заявление о существовавшем мобильном приложении.
+
+## SECOND PASS — FULL PRODUCT VIEW
+
+Сохранён строгий технический характер презентации, но восстановлена полноценная карта продукта: Runner, session-only Job Registry, API Contract и архитектурные слои. Новые разделы не заявляются как исторический frontend; они показывают реально существующие backend-контракты и состояния.
+
+Master desktop/mobile теперь проходит success → registry → contract → failure → cancel → consolidated registry. Повторный QA: 390/1440, page errors 0, horizontal overflow 0, broken images 0.

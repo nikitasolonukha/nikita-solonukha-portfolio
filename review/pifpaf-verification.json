@@ -1,0 +1,36 @@
+[
+  {
+    "file": "pifpaf.html",
+    "width": 1440,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/pifpaf/assets/video/preview.mp4",
+        "duration": 6.68,
+        "width": 1440,
+        "height": 1000,
+        "playing": true
+      }
+    ]
+  },
+  {
+    "file": "pifpaf.html",
+    "width": 390,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/pifpaf/assets/video/preview.mp4",
+        "duration": 6.68,
+        "width": 1440,
+        "height": 1000,
+        "playing": true
+      }
+    ]
+  }
+]

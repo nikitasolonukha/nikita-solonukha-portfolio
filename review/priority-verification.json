@@ -1,0 +1,84 @@
+[
+  {
+    "file": "magnum.html",
+    "width": 1440,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/desktop-tour.mp4",
+        "duration": 67.7,
+        "width": 1441,
+        "height": 750,
+        "playing": true
+      },
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/mobile-tour.mp4",
+        "duration": 50.5,
+        "width": 640,
+        "height": 1080,
+        "playing": true
+      }
+    ]
+  },
+  {
+    "file": "magnum.html",
+    "width": 390,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/desktop-tour.mp4",
+        "duration": 67.7,
+        "width": 1441,
+        "height": 750,
+        "playing": true
+      },
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/mobile-tour.mp4",
+        "duration": 50.5,
+        "width": 640,
+        "height": 1080,
+        "playing": true
+      }
+    ]
+  },
+  {
+    "file": "index.html",
+    "width": 1440,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/formats-demo.mp4",
+        "duration": 12,
+        "width": 1441,
+        "height": 750,
+        "playing": true
+      }
+    ]
+  },
+  {
+    "file": "index.html",
+    "width": 390,
+    "overflow": false,
+    "missingImages": [],
+    "missingFiles": [],
+    "errors": [],
+    "videos": [
+      {
+        "src": "file:///C:/Users/%D0%9D%D0%B8%D0%BA%D0%B8%D1%82%D0%B0/Documents/Codex/2026-09-20/files-pasted-by-the-user-full/outputs/portfolio-research/projects/magnum/assets/video/formats-demo.mp4",
+        "duration": 12,
+        "width": 1441,
+        "height": 750,
+        "playing": true
+      }
+    ]
+  }
+]

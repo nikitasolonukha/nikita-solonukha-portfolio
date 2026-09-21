@@ -1,0 +1,56 @@
+[
+  {
+    "width": 390,
+    "checks": [
+      "login",
+      "search",
+      "empty search",
+      "telegram filter",
+      "create",
+      "persistence",
+      "edit",
+      "public",
+      "delete cancel",
+      "delete",
+      "404"
+    ],
+    "errors": [],
+    "external": []
+  },
+  {
+    "width": 768,
+    "checks": [
+      "login",
+      "search",
+      "empty search",
+      "telegram filter",
+      "create",
+      "persistence",
+      "edit",
+      "public",
+      "delete cancel",
+      "delete",
+      "404"
+    ],
+    "errors": [],
+    "external": []
+  },
+  {
+    "width": 1440,
+    "checks": [
+      "login",
+      "search",
+      "empty search",
+      "telegram filter",
+      "create",
+      "persistence",
+      "edit",
+      "public",
+      "delete cancel",
+      "delete",
+      "404"
+    ],
+    "errors": [],
+    "external": []
+  }
+]

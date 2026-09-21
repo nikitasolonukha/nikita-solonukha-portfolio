@@ -1,5 +1,38 @@
 [
   {
+    "id": "protective-structures",
+    "name": "KONTUR",
+    "subtitle": "Защитные системы для промышленных объектов",
+    "intro": "Премиальный B2B-лендинг сложного инженерного продукта с адаптивной подачей.",
+    "stack": "Next.js · React · TypeScript · Framer Motion",
+    "flow": "Предложение → устройство системы → отрасли → процесс → контакт.",
+    "boundary": "Frontend и демонстрационная форма. Реальные объекты и инженерные расчёты не заявляются.",
+    "category": "Сайты",
+    "desktop": "../projects/protective-structures/assets/cover.webp",
+    "mobile": "../projects/protective-structures/assets/390-hero.png",
+    "media": [
+      {
+        "src": "../projects/protective-structures/assets/master-desktop.webm",
+        "poster": "../projects/protective-structures/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/protective-structures/assets/master-mobile.webm",
+        "poster": "../projects/protective-structures/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/protective-structures/assets/1440-how.png",
+      "../projects/protective-structures/assets/1440-services.png",
+      "../projects/protective-structures/assets/1440-system.png",
+      "../projects/protective-structures/assets/1440-contacts.png"
+    ],
+    "document": "../projects/protective-structures/case.md",
+    "research": "../review/protective-structures.html",
+    "local": true
+  },
+  {
     "id": "lexlegal",
     "name": "LexLegal",
     "subtitle": "Юридический консалтинг",
@@ -30,6 +63,39 @@
     ],
     "document": "../projects/lexlegal/case.md",
     "research": "../review/lexlegal.html",
+    "local": true
+  },
+  {
+    "id": "magnum",
+    "name": "MAGNUM",
+    "subtitle": "Сайт клуба спортивного покера",
+    "intro": "Редакционный media-first кейс по авторским desktop/mobile записям согласованной версии.",
+    "stack": "Design · Frontend · Responsive · Motion",
+    "flow": "Главная → клуб → форматы → галерея → отзывы → контакты.",
+    "boundary": "Приоритетная версия подтверждена видео; точный исходник этой версии не найден. Это ограничение явно сохранено.",
+    "category": "Сайты",
+    "desktop": "../projects/magnum/assets/export/magnum-cover-video.webp",
+    "mobile": "../projects/magnum/assets/export/video-mobile-hero.webp",
+    "media": [
+      {
+        "src": "../projects/magnum/assets/master-desktop.mp4?v=natural",
+        "poster": "../projects/magnum/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/magnum/assets/master-mobile.mp4?v=natural",
+        "poster": "../projects/magnum/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/magnum/assets/export/video-desktop-about.webp",
+      "../projects/magnum/assets/export/video-desktop-formats-open.webp",
+      "../projects/magnum/assets/export/video-desktop-gallery.webp",
+      "../projects/magnum/assets/export/video-desktop-reviews.webp"
+    ],
+    "document": "../projects/magnum/case.md",
+    "research": "../review/magnum.html",
     "local": true
   },
   {
@@ -99,39 +165,6 @@
     "local": true
   },
   {
-    "id": "telegram-schedule",
-    "name": "Telegram Schedule",
-    "subtitle": "Планирование сообщений",
-    "intro": "Локальная демонстрация исходного скрипта распределяет сообщения по времени и показывает результат обработки.",
-    "stack": "Подробности в исследовании",
-    "flow": "Обычный прогон, dry-run, частичный отказ, дубликат и отсутствие материалов. Отправок в Telegram нет.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Автоматизация",
-    "desktop": "images/telegram-schedule.webp",
-    "mobile": "../projects/telegram-schedule/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/telegram-schedule/assets/master-desktop.mp4",
-        "poster": "../projects/telegram-schedule/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/telegram-schedule/assets/master-mobile.mp4",
-        "poster": "../projects/telegram-schedule/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/telegram-schedule/assets/details-1440.png",
-      "../projects/telegram-schedule/assets/dry-1440.png",
-      "../projects/telegram-schedule/assets/duplicate-1440.png",
-      "../projects/telegram-schedule/assets/empty-1440.png"
-    ],
-    "document": "../projects/telegram-schedule/case.md",
-    "research": "../review/telegram-schedule.html",
-    "local": true
-  },
-  {
     "id": "tatiana",
     "name": "Татьяна",
     "subtitle": "Сайт психоаналитика",
@@ -175,72 +208,6 @@
     "local": true
   },
   {
-    "id": "support-rag",
-    "name": "Support / RAG",
-    "subtitle": "Поддержка с базой знаний",
-    "intro": "Вопрос проходит поиск по знаниям, затем превращается в черновик ответа.",
-    "stack": "Cloudflare Workers · RAG · SQLite adapter",
-    "flow": "Поиск, fallback и формирование ответа на основе исходных обработчиков.",
-    "boundary": "Web-панель новая; исходная логика проверяется с локальными адаптерами. Ответы модели подготовлены.",
-    "category": "Автоматизация",
-    "desktop": "images/support-rag.webp",
-    "mobile": "../projects/support-rag/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/support-rag/assets/master-desktop.mp4",
-        "poster": "../projects/support-rag/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/support-rag/assets/master-mobile.mp4",
-        "poster": "../projects/support-rag/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/support-rag/assets/approved-1440.png",
-      "../projects/support-rag/assets/draft-1440.png",
-      "../projects/support-rag/assets/empty-result-1440.png",
-      "../projects/support-rag/assets/empty-sources-1440.png"
-    ],
-    "document": "../projects/support-rag/case.md",
-    "research": "../review/support-rag.html",
-    "local": true
-  },
-  {
-    "id": "telegram-leads",
-    "name": "Leads / Junction",
-    "subtitle": "Маршрутизация Telegram-заявок",
-    "intro": "Сообщение проходит разбор, проверку дубликата и передачу в исходный обработчик заявок.",
-    "stack": "Подробности в исследовании",
-    "flow": "Разбор, ingest, распределение по темам и локальные ответы. Транспорт Telegram отключён.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Автоматизация",
-    "desktop": "images/telegram-leads.webp",
-    "mobile": "../projects/telegram-leads/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/telegram-leads/assets/master-desktop.mp4",
-        "poster": "../projects/telegram-leads/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/telegram-leads/assets/master-mobile.mp4",
-        "poster": "../projects/telegram-leads/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/telegram-leads/assets/anonymous-1440.png",
-      "../projects/telegram-leads/assets/blocked-1440.png",
-      "../projects/telegram-leads/assets/draft-1440.png",
-      "../projects/telegram-leads/assets/duplicate-1440.png"
-    ],
-    "document": "../projects/telegram-leads/case.md",
-    "research": "../review/telegram-leads.html",
-    "local": true
-  },
-  {
     "id": "ppbot",
     "name": "PP BOT",
     "subtitle": "База рецептов в Telegram WebApp",
@@ -271,39 +238,6 @@
     ],
     "document": "../projects/ppbot/case.md",
     "research": "../review/ppbot.html",
-    "local": true
-  },
-  {
-    "id": "copilot",
-    "name": "Copilot",
-    "subtitle": "Редактор с четырьмя слоями",
-    "intro": "Архитектурная реконструкция редактора: четыре роли последовательно работают с текстом, отдельный слой можно переработать.",
-    "stack": "Подробности в исследовании",
-    "flow": "Raw → четыре стадии → Body; история, ручная правка и изолированный rework. Ответы фиксированные, workflow не найден.",
-    "boundary": "Реконструкция по документации и промптам. Исходный workflow не найден; ответы подготовлены локально.",
-    "category": "Автоматизация",
-    "desktop": "images/copilot.webp",
-    "mobile": "../projects/copilot/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/copilot/assets/master-desktop.mp4",
-        "poster": "../projects/copilot/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/copilot/assets/master-mobile.mp4",
-        "poster": "../projects/copilot/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/copilot/assets/about-1440.png",
-      "../projects/copilot/assets/copy-1440.png",
-      "../projects/copilot/assets/draft-layer-2-1440.png",
-      "../projects/copilot/assets/draft-layer-4-1440.png"
-    ],
-    "document": "../projects/copilot/case.md",
-    "research": "../review/copilot.html",
     "local": true
   },
   {
@@ -439,39 +373,6 @@
     "local": true
   },
   {
-    "id": "channel-monitor",
-    "name": "Архив каналов",
-    "subtitle": "Мониторинг и поиск Telegram-публикаций",
-    "intro": "Инструмент поиска по сообщениям и источникам с исходным хранилищем SQLite.",
-    "stack": "Подробности в исследовании",
-    "flow": "Три вымышленных канала, девять сообщений, поиск и детали; внешнего сбора нет.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Автоматизация",
-    "desktop": "images/channel-monitor.webp",
-    "mobile": "../projects/channel-monitor/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/channel-monitor/assets/master-desktop.mp4",
-        "poster": "../projects/channel-monitor/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/channel-monitor/assets/master-mobile.mp4",
-        "poster": "../projects/channel-monitor/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/channel-monitor/assets/demo-all-1440.png",
-      "../projects/channel-monitor/assets/demo-any-1440.png",
-      "../projects/channel-monitor/assets/demo-channel-1440.png",
-      "../projects/channel-monitor/assets/demo-empty-1440.png"
-    ],
-    "document": "../projects/channel-monitor/case.md",
-    "research": "../review/channel-monitor.html",
-    "local": true
-  },
-  {
     "id": "linux-lab",
     "name": "Linux Lab",
     "subtitle": "Практика информационной безопасности",
@@ -548,36 +449,38 @@
     "local": true
   },
   {
-    "id": "store-builder-embedded",
-    "name": "Shopify Builder",
-    "subtitle": "Конструктор витрины",
-    "intro": "Интерфейс настройки магазина из исходного встроенного Shopify-приложения.",
-    "stack": "Подробности в исследовании",
-    "flow": "React Router builder с локальными loader/action fixtures. Удалённый магазин не создаётся.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
+    "id": "shopify-store-builder",
+    "name": "AI Shopify Store Builder",
+    "subtitle": "От продукта до готового Shopify storefront",
+    "intro": "Builder создаёт структуру магазина, а кейс доводит сценарий до реального QA storefront, корзины и checkout.",
+    "stack": "React Router · Shopify Admin GraphQL · Liquid · Theme App Extension",
+    "flow": "Ввод данных, настройка, генерация, Shopify home, catalog, product/gallery, quantity, cart и checkout.",
+    "boundary": "Builder показан локально; storefront — реальные архивные QA-кадры dev-store. Оплата и заказ не выполнялись.",
     "category": "Продукты",
-    "desktop": "images/store-builder-embedded.webp",
-    "mobile": "../projects/store-builder-embedded/assets/overview-390.png",
+    "desktop": "../projects/shopify-store-builder/assets/cover.webp?v=merged-v2",
+    "mobile": "../projects/shopify-store-builder/assets/shopify-home-390.png?v=merged-v2",
     "media": [
       {
-        "src": "../projects/store-builder-embedded/assets/master-desktop.mp4",
-        "poster": "../projects/store-builder-embedded/assets/poster-desktop.webp",
+        "src": "../projects/shopify-store-builder/assets/master-desktop.mp4?v=merged-v2",
+        "poster": "../projects/shopify-store-builder/assets/poster-desktop.webp?v=merged-v2",
         "mobile": false
       },
       {
-        "src": "../projects/store-builder-embedded/assets/master-mobile.mp4",
-        "poster": "../projects/store-builder-embedded/assets/poster-mobile.webp",
+        "src": "../projects/shopify-store-builder/assets/master-mobile.mp4?v=merged-v2",
+        "poster": "../projects/shopify-store-builder/assets/poster-mobile.webp?v=merged-v2",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/store-builder-embedded/assets/custom-1440.png",
-      "../projects/store-builder-embedded/assets/error-1440.png",
-      "../projects/store-builder-embedded/assets/image-studio-1440.png",
-      "../projects/store-builder-embedded/assets/result-1440.png"
+      "../projects/shopify-store-builder/assets/input-1440.png",
+      "../projects/shopify-store-builder/assets/shopify-home-1440.png",
+      "../projects/shopify-store-builder/assets/shopify-catalog-1440.png",
+      "../projects/shopify-store-builder/assets/shopify-product-1440.png",
+      "../projects/shopify-store-builder/assets/shopify-cart-1440.png",
+      "../projects/shopify-store-builder/assets/shopify-checkout-1440.png"
     ],
-    "document": "../projects/store-builder-embedded/case.md",
-    "research": "../review/store-builder-embedded.html",
+    "document": "../projects/shopify-store-builder/case.md",
+    "research": "../review/shopify-store-builder.html",
     "local": true
   },
   {
@@ -779,39 +682,6 @@
     "local": true
   },
   {
-    "id": "contentfactory",
-    "name": "Контент-завод",
-    "subtitle": "Редакционный процесс от находки до готового",
-    "intro": "Исходные обработчики бота показывают путь материала через подборку, черновик и рабочую доску.",
-    "stack": "Подробности в исследовании",
-    "flow": "Фильтр, детали, создание, работа, завершение и удаление. Web-панель новая; внешние платформы выключены.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Продукты",
-    "desktop": "images/contentfactory.webp",
-    "mobile": "../projects/contentfactory/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/contentfactory/assets/master-desktop.mp4",
-        "poster": "../projects/contentfactory/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/contentfactory/assets/master-mobile.mp4",
-        "poster": "../projects/contentfactory/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/contentfactory/assets/about-1440.png",
-      "../projects/contentfactory/assets/board-1440.png",
-      "../projects/contentfactory/assets/catalog-1440.png",
-      "../projects/contentfactory/assets/create-1440.png"
-    ],
-    "document": "../projects/contentfactory/case.md",
-    "research": "../review/contentfactory.html",
-    "local": true
-  },
-  {
     "id": "garmony",
     "name": "GARMONY",
     "subtitle": "Интерьер начинается с двери",
@@ -912,161 +782,62 @@
   },
   {
     "id": "meta-ads",
-    "name": "Meta / Jobs",
-    "subtitle": "Обработка задач сбора объявлений",
-    "intro": "Исходный JobService управляет состояниями фоновой задачи и результатами обработки.",
+    "name": "Meta Ads Job Service",
+    "subtitle": "Управляемая очередь рекламных запросов",
+    "intro": "Техническая product-подача backend: Runner, реестр задач, API-контракт и реальные lifecycle-состояния.",
     "stack": "Подробности в исследовании",
-    "flow": "Запуск, progress, результат, failure и отмена. Сборщик локальный; внешний Ads Library не вызывается.",
+    "flow": "Runner → queued/running → result; registry; API contract; failure и cooperative cancel.",
     "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
     "category": "Автоматизация",
-    "desktop": "images/meta-ads.webp",
-    "mobile": "../projects/meta-ads/assets/overview-390.png",
+    "desktop": "../projects/meta-ads/assets/cover-v2.webp",
+    "mobile": "../projects/meta-ads/assets/overview-390-v2.png",
     "media": [
       {
-        "src": "../projects/meta-ads/assets/master-desktop.mp4",
-        "poster": "../projects/meta-ads/assets/poster-desktop.webp",
+        "src": "../projects/meta-ads/assets/master-desktop-v2.webm",
+        "poster": "../projects/meta-ads/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/meta-ads/assets/master-mobile.mp4",
-        "poster": "../projects/meta-ads/assets/poster-mobile.webp",
+        "src": "../projects/meta-ads/assets/master-mobile-v2.webm",
+        "poster": "../projects/meta-ads/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/meta-ads/assets/completed-1440.png",
-      "../projects/meta-ads/assets/failure-1440.png",
-      "../projects/meta-ads/assets/ok-1440.png",
-      "../projects/meta-ads/assets/request-1440.png"
+      "../projects/meta-ads/assets/completed-1440-v2.png",
+      "../projects/meta-ads/assets/registry-final-1440-v2.png",
+      "../projects/meta-ads/assets/contract-1440-v2.png",
+      "../projects/meta-ads/assets/failure-1440-v2.png"
     ],
     "document": "../projects/meta-ads/case.md",
     "research": "../review/meta-ads.html",
     "local": true
   },
   {
-    "id": "nikita-chat",
-    "name": "Chat",
-    "subtitle": "Личные заметки с REST API",
-    "intro": "Небольшой учебный интерфейс над исходным обработчиком сообщений.",
-    "stack": "Подробности в исследовании",
-    "flow": "История, валидация, ошибка и повтор; local KV. Это однопользовательские заметки, не многопользовательский мессенджер.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/nikita-chat.webp",
-    "mobile": "../projects/nikita-chat/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/nikita-chat/assets/master-desktop.mp4",
-        "poster": "../projects/nikita-chat/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/nikita-chat/assets/master-mobile.mp4",
-        "poster": "../projects/nikita-chat/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/nikita-chat/assets/draft-1440.png",
-      "../projects/nikita-chat/assets/empty-1440.png",
-      "../projects/nikita-chat/assets/error-1440.png",
-      "../projects/nikita-chat/assets/history-1440.png"
-    ],
-    "document": "../projects/nikita-chat/case.md",
-    "research": "../review/nikita-chat.html",
-    "local": true
-  },
-  {
-    "id": "attendance",
-    "name": "Учёт",
-    "subtitle": "Посещаемость в Telegram WebApp",
-    "intro": "Отметка посещения меняет сводку и сохраняется через исходные API-обработчики.",
-    "stack": "Подробности в исследовании",
-    "flow": "Расписание, отметка, пересчёт и экспортные сценарии с локальными данными. Google Sheets и Telegram не подключены.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
-    "category": "Продукты",
-    "desktop": "images/attendance.webp",
-    "mobile": "../projects/attendance/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/attendance/assets/master-desktop.mp4",
-        "poster": "../projects/attendance/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/attendance/assets/master-mobile.mp4",
-        "poster": "../projects/attendance/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/attendance/assets/changed-1440.png",
-      "../projects/attendance/assets/corrected-1440.png",
-      "../projects/attendance/assets/error-1440.png",
-      "../projects/attendance/assets/final-1440.png"
-    ],
-    "document": "../projects/attendance/case.md",
-    "research": "../review/attendance.html",
-    "local": true
-  },
-  {
-    "id": "keys4",
-    "name": "Рынок",
-    "subtitle": "Экономическая модель",
-    "intro": "Интерактивный график раскрывает зависимости исходной учебной модели.",
-    "stack": "Подробности в исследовании",
-    "flow": "Plotly: значения при наведении, легенда, масштабирование, сброс и SVG. Данные условные.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Исследования",
-    "desktop": "images/keys4.webp",
-    "mobile": "../projects/keys4/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/keys4/assets/master-desktop.mp4",
-        "poster": "../projects/keys4/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/keys4/assets/master-mobile.mp4",
-        "poster": "../projects/keys4/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/keys4/assets/comparison-1440.png",
-      "../projects/keys4/assets/equilibrium-1440.png",
-      "../projects/keys4/assets/result-1440.png",
-      "../projects/keys4/assets/zoom-1440.png"
-    ],
-    "document": "../projects/keys4/case.md",
-    "research": "../review/keys4.html",
-    "local": true
-  },
-  {
     "id": "stepbystep",
     "name": "Степ",
     "subtitle": "Ежедневные практики и дневник",
-    "intro": "Telegram Mini App объединяет записи, цели и ежедневные действия.",
+    "intro": "Дневник ежедневной практики с целями, заметками, прогрессом и игровой механикой дерева.",
     "stack": "Подробности в исследовании",
-    "flow": "Двадцать проверенных экранов; дневник, цели и локальное сохранение. Чат, аудио, SOS и напоминания имеют описанные ограничения.",
+    "flow": "20 экранов: заметки → прогресс → общая цель → полив → статьи → чат → настройки и библиотека.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
-    "desktop": "images/stepbystep.webp",
-    "mobile": "../projects/stepbystep/assets/overview-390.png",
+    "desktop": "../projects/stepbystep/assets/cover-v2.webp",
+    "mobile": "../projects/stepbystep/assets/overview-390.png?v=premium-v2",
     "media": [
       {
-        "src": "../projects/stepbystep/assets/master-desktop.mp4",
-        "poster": "../projects/stepbystep/assets/poster-desktop.webp",
+        "src": "../projects/stepbystep/assets/master-desktop-v2.webm",
+        "poster": "../projects/stepbystep/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/stepbystep/assets/master-mobile.mp4",
-        "poster": "../projects/stepbystep/assets/poster-mobile.webp",
+        "src": "../projects/stepbystep/assets/master-mobile-v2.webm",
+        "poster": "../projects/stepbystep/assets/poster-mobile-v2.webp",
         "mobile": true
       },
       {
-        "src": "../projects/stepbystep/assets/extra-mobile.mp4",
-        "poster": "../projects/stepbystep/assets/poster-extra.webp",
+        "src": "../projects/stepbystep/assets/extra-mobile-v2.webm",
+        "poster": "../projects/stepbystep/assets/poster-extra-v2.webp",
         "mobile": true
       }
     ],
@@ -1115,35 +886,68 @@
   },
   {
     "id": "twitter-automation",
-    "name": "Social / Lab",
-    "subtitle": "Автоматизация рабочих потоков X",
-    "intro": "Исходный processor разбирает задания и показывает последовательность выполнения.",
+    "name": "Twitter / X Automation",
+    "subtitle": "Наблюдаемая browser-автоматизация",
+    "intro": "Исходный Python orchestration, инженерный trace и честная X-реконструкция без внешних действий.",
     "stack": "Подробности в исследовании",
-    "flow": "Шесть offline-режимов, разбор и результаты. Браузер и планировщик эмулированы; в X ничего не публикуется.",
+    "flow": "Условие → исходный GroupProcessor → trace → X surface → результат → история.",
     "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
     "category": "Автоматизация",
-    "desktop": "images/twitter-automation.webp",
-    "mobile": "../projects/twitter-automation/assets/overview-390.png",
+    "desktop": "../projects/twitter-automation/assets/cover-v2.webp",
+    "mobile": "../projects/twitter-automation/assets/normal-result-390.png",
     "media": [
       {
-        "src": "../projects/twitter-automation/assets/master-desktop.mp4",
-        "poster": "../projects/twitter-automation/assets/poster-desktop.webp",
+        "src": "../projects/twitter-automation/assets/master-desktop-v2.webm",
+        "poster": "../projects/twitter-automation/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/twitter-automation/assets/master-mobile.mp4",
-        "poster": "../projects/twitter-automation/assets/poster-mobile.webp",
+        "src": "../projects/twitter-automation/assets/master-mobile-v2.webm",
+        "poster": "../projects/twitter-automation/assets/poster-mobile-v2.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/twitter-automation/assets/architecture-1440.png",
-      "../projects/twitter-automation/assets/closed-result-1440.png",
-      "../projects/twitter-automation/assets/closed-trace-1440.png",
-      "../projects/twitter-automation/assets/connection-error-1440.png"
+      "../projects/twitter-automation/assets/normal-result-1440.png",
+      "../projects/twitter-automation/assets/partial-result-1440.png",
+      "../projects/twitter-automation/assets/history-1440.png",
+      "../projects/twitter-automation/assets/architecture-1440.png"
     ],
     "document": "../projects/twitter-automation/case.md",
     "research": "../review/twitter-automation.html",
+    "local": true
+  },
+  {
+    "id": "telegram-intel",
+    "name": "Telegram Intel",
+    "subtitle": "Из сообщений — в рабочую сводку",
+    "intro": "Источники, сообщения и уведомления в одном аналитическом интерфейсе.",
+    "stack": "FastAPI · SQLite · Telegram",
+    "flow": "Пять разделов и исходные API-сервисы на синтетических данных.",
+    "boundary": "Приватный источник. Только локальная демонстрация; разрешение на публичный показ не получено.",
+    "category": "Продукты",
+    "desktop": "images/telegram-intel.webp",
+    "mobile": "../projects/telegram-intel/assets/overview-390.png",
+    "media": [
+      {
+        "src": "../projects/telegram-intel/assets/master-desktop.mp4",
+        "poster": "../projects/telegram-intel/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/telegram-intel/assets/master-mobile.mp4",
+        "poster": "../projects/telegram-intel/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/telegram-intel/assets/alert-1440.png",
+      "../projects/telegram-intel/assets/alerts-1440.png",
+      "../projects/telegram-intel/assets/collection-1440.png",
+      "../projects/telegram-intel/assets/detail-1440.png"
+    ],
+    "document": "../projects/telegram-intel/case.md",
+    "research": "../review/telegram-intel.html",
     "local": true
   },
   {
@@ -1213,39 +1017,6 @@
     "local": true
   },
   {
-    "id": "store-builder-demo",
-    "name": "Store Builder",
-    "subtitle": "Самостоятельная витрина магазина",
-    "intro": "Отдельный frontend-прототип показывает создание и просмотр витрины с каталогом и корзиной.",
-    "stack": "Подробности в исследовании",
-    "flow": "Настройка, каталог, корзина, сохранение и retry. Mock generator; Shopify и checkout не подключены.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/store-builder-demo.webp",
-    "mobile": "../projects/store-builder-demo/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/store-builder-demo/assets/master-desktop.mp4",
-        "poster": "../projects/store-builder-demo/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/store-builder-demo/assets/master-mobile.mp4",
-        "poster": "../projects/store-builder-demo/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/store-builder-demo/assets/builder-1440.png",
-      "../projects/store-builder-demo/assets/cart-1440.png",
-      "../projects/store-builder-demo/assets/catalog-1440.png",
-      "../projects/store-builder-demo/assets/contact-1440.png"
-    ],
-    "document": "../projects/store-builder-demo/case.md",
-    "research": "../review/store-builder-demo.html",
-    "local": true
-  },
-  {
     "id": "topgadalkin",
     "name": "TopGadalkin",
     "subtitle": "Сайт сервиса расшифровки ладони",
@@ -1279,69 +1050,200 @@
     "local": true
   },
   {
-    "id": "contactcard",
-    "name": "Contact",
-    "subtitle": "Визитка для экрана и печати",
-    "intro": "Адаптивная контактная страница дополняет исходный печатный HTML-макет.",
-    "stack": "Подробности в исследовании",
-    "flow": "Копирование контактов, PDF и мобильная компоновка. Имя, фото и контакты заменены вымышленными.",
-    "boundary": "Обезличенная HTML-визитка. Адаптивная версия и PDF добавлены для презентации.",
-    "category": "Сайты",
-    "desktop": "images/contactcard.webp",
-    "mobile": "../projects/contactcard/assets/overview-390.png",
+    "id": "maps-lead-generator",
+    "name": "Atlas / Leads",
+    "subtitle": "B2B-лидогенератор из Google Maps",
+    "intro": "Ниша и город превращаются в очищенную базу компаний с сайтами, телефонами и найденными email.",
+    "stack": "n8n · Google Maps API · Google Sheets · OpenAI",
+    "flow": "Запрос → карты → нормализация → дедупликация → сайт → email → таблица.",
+    "boundary": "Исходная схема подтверждена экспортом и авторством. Внешние сервисы заменены локальными синтетическими данными.",
+    "category": "Автоматизация",
+    "desktop": "../projects/maps-lead-generator/assets/cover.webp",
+    "mobile": "../projects/maps-lead-generator/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/contactcard/assets/master-desktop.mp4",
-        "poster": "../projects/contactcard/assets/poster-desktop.webp",
+        "src": "../projects/maps-lead-generator/assets/master-desktop.webm",
+        "poster": "../projects/maps-lead-generator/assets/poster-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/contactcard/assets/master-mobile.mp4",
-        "poster": "../projects/contactcard/assets/poster-mobile.webp",
+        "src": "../projects/maps-lead-generator/assets/master-mobile.webm",
+        "poster": "../projects/maps-lead-generator/assets/poster-mobile.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/contactcard/assets/contacts-1440.png",
-      "../projects/contactcard/assets/email-copied-1440.png",
-      "../projects/contactcard/assets/formats-1440.png",
-      "../projects/contactcard/assets/phone-copied-1440.png"
+      "../projects/maps-lead-generator/assets/results-1440.png",
+      "../projects/maps-lead-generator/assets/email-filter-1440.png",
+      "../projects/maps-lead-generator/assets/architecture-1440.png"
     ],
-    "document": "../projects/contactcard/case.md",
-    "research": "../review/contactcard.html",
+    "document": "../projects/maps-lead-generator/case.md",
+    "research": "../review/maps-lead-generator.html",
     "local": true
   },
   {
-    "id": "content-factory-marek",
-    "name": "Content Factory",
-    "subtitle": "Рабочее пространство редакции",
-    "intro": "Отдельная микросервисная версия объединяет сбор, темы и профили конкурентов.",
-    "stack": "Подробности в исследовании",
-    "flow": "Запуск парсинга, progress, platform filters, добавление и stop/resume. API локальный; ограничения backend перечислены в исследовании.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
-    "category": "Продукты",
-    "desktop": "images/content-factory-marek.webp",
-    "mobile": "../projects/content-factory-marek/assets/overview-390.png",
+    "id": "personal-assistant",
+    "name": "Личный AI-ассистент",
+    "subtitle": "Персональная автоматизация рутины",
+    "intro": "Почта, расписание, расходы, контент и файлы соединены в одном историческом AI-сценарии.",
+    "stack": "n8n · OpenAI · Gmail · Calendar · Telegram",
+    "flow": "Событие → классификация → инструмент → действие → ответ",
+    "boundary": "Авторство подтверждено; runtime и экспорт сейчас не найдены. Архивная обложка не является UI.",
+    "category": "Автоматизация",
+    "desktop": "../projects/personal-assistant/assets/cover.webp",
+    "mobile": "../projects/personal-assistant/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/content-factory-marek/assets/master-desktop.mp4",
-        "poster": "../projects/content-factory-marek/assets/poster-desktop.webp",
+        "src": "../projects/personal-assistant/assets/master-desktop.webm",
+        "poster": "../projects/personal-assistant/assets/poster-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/content-factory-marek/assets/master-mobile.mp4",
-        "poster": "../projects/content-factory-marek/assets/poster-mobile.webp",
+        "src": "../projects/personal-assistant/assets/master-mobile.webm",
+        "poster": "../projects/personal-assistant/assets/poster-mobile.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/content-factory-marek/assets/boundaries-1440.png",
-      "../projects/content-factory-marek/assets/competitor-added-1440.png",
-      "../projects/content-factory-marek/assets/competitor-filter-1440.png",
-      "../projects/content-factory-marek/assets/competitors-1440.png"
+      "../projects/personal-assistant/assets/product-1440.png",
+      "../projects/personal-assistant/assets/features-1440.png",
+      "../projects/personal-assistant/assets/flow-1440.png",
+      "../projects/personal-assistant/assets/boundaries-1440.png"
     ],
-    "document": "../projects/content-factory-marek/case.md",
-    "research": "../review/content-factory-marek.html",
+    "document": "../projects/personal-assistant/case.md",
+    "research": "../review/personal-assistant.html",
+    "local": true
+  },
+  {
+    "id": "tarot-archive",
+    "name": "Лендинг таро-бота",
+    "subtitle": "Архивный интерактивный web-проект",
+    "intro": "Свет, туман, золотые акценты и реакция на курсор создавали вход в Telegram-сценарий.",
+    "stack": "Next.js · React · Tailwind · CSS motion",
+    "flow": "Атмосфера → интерактивный отклик → объяснение → переход в бот",
+    "boundary": "Отдельная историческая версия; не объединяется с TopGadalkin. Код и запись не найдены.",
+    "category": "Сайты",
+    "desktop": "../projects/tarot-archive/assets/cover.webp",
+    "mobile": "../projects/tarot-archive/assets/overview-390.png",
+    "media": [
+      {
+        "src": "../projects/tarot-archive/assets/master-desktop.webm",
+        "poster": "../projects/tarot-archive/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/tarot-archive/assets/master-mobile.webm",
+        "poster": "../projects/tarot-archive/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/tarot-archive/assets/product-1440.png",
+      "../projects/tarot-archive/assets/features-1440.png",
+      "../projects/tarot-archive/assets/flow-1440.png",
+      "../projects/tarot-archive/assets/boundaries-1440.png"
+    ],
+    "document": "../projects/tarot-archive/case.md",
+    "research": "../review/tarot-archive.html",
+    "local": true
+  },
+  {
+    "id": "news-aggregator-archive",
+    "name": "Telegram News Digest",
+    "subtitle": "AI-агрегатор новостей",
+    "intro": "Каналы, суммаризация и профиль интересов формировали персональный новостной дайджест.",
+    "stack": "Python · Telethon · OpenAI · PostgreSQL",
+    "flow": "Каналы → фильтрация → суммаризация → профиль → дайджест",
+    "boundary": "Архивная версия в разработке; не отождествляется с Telegram Intel без доказательства.",
+    "category": "Автоматизация",
+    "desktop": "../projects/news-aggregator-archive/assets/cover.webp",
+    "mobile": "../projects/news-aggregator-archive/assets/overview-390.png",
+    "media": [
+      {
+        "src": "../projects/news-aggregator-archive/assets/master-desktop.webm",
+        "poster": "../projects/news-aggregator-archive/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/news-aggregator-archive/assets/master-mobile.webm",
+        "poster": "../projects/news-aggregator-archive/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/news-aggregator-archive/assets/product-1440.png",
+      "../projects/news-aggregator-archive/assets/features-1440.png",
+      "../projects/news-aggregator-archive/assets/flow-1440.png",
+      "../projects/news-aggregator-archive/assets/boundaries-1440.png"
+    ],
+    "document": "../projects/news-aggregator-archive/case.md",
+    "research": "../review/news-aggregator-archive.html",
+    "local": true
+  },
+  {
+    "id": "protected-messages",
+    "name": "Защищённые сообщения",
+    "subtitle": "Университетский программный комплекс",
+    "intro": "Desktop GUI, web-компонент и учебные механизмы защиты сообщений работали как единый комплекс.",
+    "stack": "Python · Tkinter · Flask · HTML",
+    "flow": "Сообщение → обработка → передача → расшифрование → результат",
+    "boundary": "Авторство подтверждено; код и отчёт сейчас не найдены. Это учебная, не production security-система.",
+    "category": "Исследования",
+    "desktop": "../projects/protected-messages/assets/cover.webp",
+    "mobile": "../projects/protected-messages/assets/overview-390.png",
+    "media": [
+      {
+        "src": "../projects/protected-messages/assets/master-desktop.webm",
+        "poster": "../projects/protected-messages/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/protected-messages/assets/master-mobile.webm",
+        "poster": "../projects/protected-messages/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/protected-messages/assets/product-1440.png",
+      "../projects/protected-messages/assets/features-1440.png",
+      "../projects/protected-messages/assets/flow-1440.png",
+      "../projects/protected-messages/assets/boundaries-1440.png"
+    ],
+    "document": "../projects/protected-messages/case.md",
+    "research": "../review/protected-messages.html",
+    "local": true
+  },
+  {
+    "id": "npm-data-analysis",
+    "name": "Анализ данных NPM",
+    "subtitle": "Университетская аналитическая практика",
+    "intro": "Получение данных через API, очистка, статистика и визуализация в учебных работах.",
+    "stack": "Python · Pandas · NumPy · Matplotlib",
+    "flow": "API → подготовка → группировка → статистика → график",
+    "boundary": "Авторство подтверждено; notebook и исходный датасет сейчас не найдены.",
+    "category": "Исследования",
+    "desktop": "../projects/npm-data-analysis/assets/cover.webp",
+    "mobile": "../projects/npm-data-analysis/assets/overview-390.png",
+    "media": [
+      {
+        "src": "../projects/npm-data-analysis/assets/master-desktop.webm",
+        "poster": "../projects/npm-data-analysis/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/npm-data-analysis/assets/master-mobile.webm",
+        "poster": "../projects/npm-data-analysis/assets/poster-mobile.webp",
+        "mobile": true
+      }
+    ],
+    "screens": [
+      "../projects/npm-data-analysis/assets/product-1440.png",
+      "../projects/npm-data-analysis/assets/features-1440.png",
+      "../projects/npm-data-analysis/assets/flow-1440.png",
+      "../projects/npm-data-analysis/assets/boundaries-1440.png"
+    ],
+    "document": "../projects/npm-data-analysis/case.md",
+    "research": "../review/npm-data-analysis.html",
     "local": true
   }
 ]

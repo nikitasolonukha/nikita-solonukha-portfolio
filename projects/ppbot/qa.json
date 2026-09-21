@@ -1,0 +1,74 @@
+[
+  {
+    "width": 390,
+    "id": "pear-oats",
+    "overflow": false,
+    "pixels": {
+      "dark": 40912,
+      "total": 1457280,
+      "w": 720,
+      "h": 2024,
+      "css": 360
+    }
+  },
+  {
+    "width": 390,
+    "id": "tomato-toast",
+    "overflow": false,
+    "pixels": {
+      "dark": 42742,
+      "total": 1388160,
+      "w": 720,
+      "h": 1928,
+      "css": 360
+    }
+  },
+  {
+    "width": 768,
+    "id": "pear-oats",
+    "overflow": false,
+    "pixels": {
+      "dark": 57652,
+      "total": 2264848,
+      "w": 1412,
+      "h": 1604,
+      "css": 706
+    }
+  },
+  {
+    "width": 768,
+    "id": "tomato-toast",
+    "overflow": false,
+    "pixels": {
+      "dark": 63592,
+      "total": 2123648,
+      "w": 1412,
+      "h": 1504,
+      "css": 706
+    }
+  },
+  {
+    "width": 1440,
+    "id": "pear-oats",
+    "overflow": false,
+    "pixels": {
+      "dark": 57552,
+      "total": 2708240,
+      "w": 1940,
+      "h": 1396,
+      "css": 970
+    }
+  },
+  {
+    "width": 1440,
+    "id": "tomato-toast",
+    "overflow": false,
+    "pixels": {
+      "dark": 63766,
+      "total": 2708240,
+      "w": 1940,
+      "h": 1396,
+      "css": 970
+    }
+  }
+]

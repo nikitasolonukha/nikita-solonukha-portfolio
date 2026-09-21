@@ -1,0 +1,38 @@
+[
+  {
+    "width": 390,
+    "overflow": false,
+    "errors": [],
+    "checks": [
+      "four occasions",
+      "FAQ",
+      "CTA demo",
+      "Escape",
+      "menu on mobile"
+    ]
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "errors": [],
+    "checks": [
+      "four occasions",
+      "FAQ",
+      "CTA demo",
+      "Escape",
+      "menu on mobile"
+    ]
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "errors": [],
+    "checks": [
+      "four occasions",
+      "FAQ",
+      "CTA demo",
+      "Escape",
+      "menu on mobile"
+    ]
+  }
+]

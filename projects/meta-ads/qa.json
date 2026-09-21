@@ -1,0 +1,32 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "checks": [
+      "create",
+      "result",
+      "upstream failure",
+      "cancel"
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "checks": [
+      "create",
+      "result",
+      "upstream failure",
+      "cancel"
+    ]
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "checks": [
+      "create",
+      "result",
+      "upstream failure",
+      "cancel"
+    ]
+  }
+]

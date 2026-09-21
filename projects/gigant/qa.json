@@ -1,0 +1,251 @@
+[
+  {
+    "width": 768,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 0.3
+      },
+      {
+        "name": "empty",
+        "seconds": 0.6
+      },
+      {
+        "name": "approval",
+        "seconds": 1.6
+      },
+      {
+        "name": "step-1",
+        "seconds": 2.5
+      },
+      {
+        "name": "step-2",
+        "seconds": 3.3
+      },
+      {
+        "name": "step-3",
+        "seconds": 4.1
+      },
+      {
+        "name": "result",
+        "seconds": 4.4
+      },
+      {
+        "name": "trace",
+        "seconds": 4.8
+      },
+      {
+        "name": "history",
+        "seconds": 5.2
+      },
+      {
+        "name": "rejected",
+        "seconds": 7.7
+      },
+      {
+        "name": "environment",
+        "seconds": 7.9
+      }
+    ],
+    "events": [
+      {
+        "action": "browser.open_url",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "browser.extract_text",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.write_file",
+        "input": {
+          "content": "Студия «Север» — вымышленный проект\n\nЗадача: подготовить сайт для небольшой архитектурной студии.\nАудитория: частные заказчики и девелоперы.\nСостав: проекты, подход, команда, контакты.\nМатериалы: 6 проектов, фотографии и описания.\nСледующий шаг: согласовать структуру и собрать исходные материалы.",
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.read_file",
+        "input": {
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      }
+    ],
+    "rejectionToolCalls": 0,
+    "download": true
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 2.8
+      },
+      {
+        "name": "empty",
+        "seconds": 3.9
+      },
+      {
+        "name": "approval",
+        "seconds": 5.7
+      },
+      {
+        "name": "step-1",
+        "seconds": 9
+      },
+      {
+        "name": "step-2",
+        "seconds": 12.4
+      },
+      {
+        "name": "step-3",
+        "seconds": 15.7
+      },
+      {
+        "name": "result",
+        "seconds": 16.7
+      },
+      {
+        "name": "trace",
+        "seconds": 17.9
+      },
+      {
+        "name": "history",
+        "seconds": 20.6
+      },
+      {
+        "name": "rejected",
+        "seconds": 25.5
+      },
+      {
+        "name": "environment",
+        "seconds": 26.5
+      }
+    ],
+    "events": [
+      {
+        "action": "browser.open_url",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "browser.extract_text",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.write_file",
+        "input": {
+          "content": "Студия «Север» — вымышленный проект\n\nЗадача: подготовить сайт для небольшой архитектурной студии.\nАудитория: частные заказчики и девелоперы.\nСостав: проекты, подход, команда, контакты.\nМатериалы: 6 проектов, фотографии и описания.\nСледующий шаг: согласовать структуру и собрать исходные материалы.",
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.read_file",
+        "input": {
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      }
+    ],
+    "rejectionToolCalls": 0,
+    "download": true
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 2.8
+      },
+      {
+        "name": "empty",
+        "seconds": 3.8
+      },
+      {
+        "name": "approval",
+        "seconds": 5.7
+      },
+      {
+        "name": "step-1",
+        "seconds": 9
+      },
+      {
+        "name": "step-2",
+        "seconds": 12.3
+      },
+      {
+        "name": "step-3",
+        "seconds": 15.6
+      },
+      {
+        "name": "result",
+        "seconds": 16.6
+      },
+      {
+        "name": "trace",
+        "seconds": 17.8
+      },
+      {
+        "name": "history",
+        "seconds": 20.4
+      },
+      {
+        "name": "rejected",
+        "seconds": 25.3
+      },
+      {
+        "name": "environment",
+        "seconds": 26.3
+      }
+    ],
+    "events": [
+      {
+        "action": "browser.open_url",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "browser.extract_text",
+        "input": {
+          "url": "https://sever-studio.example/brief"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.write_file",
+        "input": {
+          "content": "Студия «Север» — вымышленный проект\n\nЗадача: подготовить сайт для небольшой архитектурной студии.\nАудитория: частные заказчики и девелоперы.\nСостав: проекты, подход, команда, контакты.\nМатериалы: 6 проектов, фотографии и описания.\nСледующий шаг: согласовать структуру и собрать исходные материалы.",
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      },
+      {
+        "action": "file.read_file",
+        "input": {
+          "path": "sever-brief.txt"
+        },
+        "ok": true
+      }
+    ],
+    "rejectionToolCalls": 0,
+    "download": true
+  }
+]

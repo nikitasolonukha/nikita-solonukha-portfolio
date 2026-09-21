@@ -1,0 +1,47 @@
+[
+  {
+    "width": 390,
+    "errors": [],
+    "checks": [
+      "read",
+      "signals",
+      "search",
+      "empty",
+      "alert create toggle persist delete",
+      "watch create delete",
+      "topics",
+      "schedule",
+      "source toggle"
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "checks": [
+      "read",
+      "signals",
+      "search",
+      "empty",
+      "alert create toggle persist delete",
+      "watch create delete",
+      "topics",
+      "schedule",
+      "source toggle"
+    ]
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "checks": [
+      "read",
+      "signals",
+      "search",
+      "empty",
+      "alert create toggle persist delete",
+      "watch create delete",
+      "topics",
+      "schedule",
+      "source toggle"
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "width": 768,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 0.2
+      },
+      {
+        "name": "topic-0-step-0",
+        "seconds": 0.6
+      },
+      {
+        "name": "topic-0-step-1",
+        "seconds": 0.9
+      },
+      {
+        "name": "topic-0-step-2",
+        "seconds": 1.2
+      },
+      {
+        "name": "topic-1-step-0",
+        "seconds": 1.5
+      },
+      {
+        "name": "topic-1-step-1",
+        "seconds": 1.8
+      },
+      {
+        "name": "topic-1-step-2",
+        "seconds": 2.1
+      },
+      {
+        "name": "topic-2-step-0",
+        "seconds": 2.5
+      },
+      {
+        "name": "topic-2-step-1",
+        "seconds": 2.8
+      },
+      {
+        "name": "topic-2-step-2",
+        "seconds": 3.1
+      },
+      {
+        "name": "zoom",
+        "seconds": 3.2
+      },
+      {
+        "name": "archive",
+        "seconds": 3.9
+      }
+    ],
+    "keyboard": true,
+    "downloadHashMatches": true,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 2.3
+      },
+      {
+        "name": "topic-0-step-0",
+        "seconds": 5.1
+      },
+      {
+        "name": "topic-0-step-1",
+        "seconds": 7.8
+      },
+      {
+        "name": "topic-0-step-2",
+        "seconds": 10.5
+      },
+      {
+        "name": "topic-1-step-0",
+        "seconds": 13.2
+      },
+      {
+        "name": "topic-1-step-1",
+        "seconds": 15.9
+      },
+      {
+        "name": "topic-1-step-2",
+        "seconds": 18.7
+      },
+      {
+        "name": "topic-2-step-0",
+        "seconds": 21.4
+      },
+      {
+        "name": "topic-2-step-1",
+        "seconds": 24.1
+      },
+      {
+        "name": "topic-2-step-2",
+        "seconds": 26.8
+      },
+      {
+        "name": "zoom",
+        "seconds": 27.6
+      },
+      {
+        "name": "archive",
+        "seconds": 32
+      }
+    ],
+    "keyboard": true,
+    "downloadHashMatches": true,
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "marks": [
+      {
+        "name": "overview",
+        "seconds": 2.3
+      },
+      {
+        "name": "topic-0-step-0",
+        "seconds": 5
+      },
+      {
+        "name": "topic-0-step-1",
+        "seconds": 7.7
+      },
+      {
+        "name": "topic-0-step-2",
+        "seconds": 10.4
+      },
+      {
+        "name": "topic-1-step-0",
+        "seconds": 13.1
+      },
+      {
+        "name": "topic-1-step-1",
+        "seconds": 15.8
+      },
+      {
+        "name": "topic-1-step-2",
+        "seconds": 18.5
+      },
+      {
+        "name": "topic-2-step-0",
+        "seconds": 21.2
+      },
+      {
+        "name": "topic-2-step-1",
+        "seconds": 23.8
+      },
+      {
+        "name": "topic-2-step-2",
+        "seconds": 26.5
+      },
+      {
+        "name": "zoom",
+        "seconds": 27.3
+      },
+      {
+        "name": "archive",
+        "seconds": 31.5
+      }
+    ],
+    "keyboard": true,
+    "downloadHashMatches": true,
+    "overflow": false
+  }
+]
