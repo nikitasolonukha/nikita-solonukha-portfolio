@@ -5,15 +5,15 @@
 01. Portfolio shell / исходная композиция + Charcoal Violet / Cyber Lime — IN PROGRESS
 02. Удаление Testsergey, attendance, Keys 4, contact card и дубля Content Factory — READY
 03. Shopify Store Builder + Lumina Form: builder → generation → Shopify → storefront — READY
-04. Personal AI Assistant: n8n workflow + Telegram — TODO
-05. N8N Copilot: workflow + Telegram input/output — TODO
+04. Personal AI Assistant: n8n workflow + Telegram — BLOCKED
+05. N8N Copilot: workflow + Telegram input/output — BLOCKED
 06. Telegram News Digest: разделить архивную и университетскую версии — TODO
 07. Telegram AI Lead Hunter + MTProto: объединить подтверждённые части — TODO
 08. B2B Lead Generator / Atlas: взрослый redesign с реальным pipeline — TODO
 09. Twitter / X Automation: X-first presentation — TODO
 10. Telegram Intel: Telegram-first presentation — TODO
 11. Autopost: установить принадлежность и показать Telegram → публикация — TODO
-12. Meta Ads: реальные страницы результатов и ad detail — TODO
+12. Meta Ads: реальные страницы результатов и ad detail — READY
 13. STEP: полный visual QA и новая запись — TODO
 14. СказкаМоя: убрать AI-визуальные клише — TODO
 15. Трек в подарок: убрать AI-визуальные клише — TODO
@@ -43,4 +43,8 @@
 39. Tatiana — TODO
 40. Portfolio archive / Solonflow — TODO
 
-`BLOCKED` для AI Support RAG означает: найденные n8n-шаблоны нельзя честно приписать Никите без сопоставимого экспорта или другого доказательства. Этот блокер не останавливает очередь.
+`BLOCKED` для Personal AI Assistant означает: найденный `Ai sekretar.json` — реальный n8n workflow с Telegram, multimodal input, Google Docs и Pinecone, но он не совпадает с историческим описанием ассистента с Gmail, Calendar и расходами. Подменять один проект другим нельзя.
+
+`BLOCKED` для Copilot означает: спецификация и промпты найдены, но точный n8n export и реальный Telegram flow отсутствуют. Подготовленная web-мастерская остаётся исследовательской реконструкцией и не используется как доказательство продукта.
+
+`BLOCKED` для AI Support RAG означает: найденные n8n-шаблоны нельзя честно приписать Никите без сопоставимого экспорта или другого доказательства. Эти блокеры не останавливают очередь.

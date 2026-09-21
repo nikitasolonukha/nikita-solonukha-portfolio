@@ -782,32 +782,33 @@
   },
   {
     "id": "meta-ads",
-    "name": "Meta Ads Job Service",
-    "subtitle": "Управляемая очередь рекламных запросов",
-    "intro": "Техническая product-подача backend: Runner, реестр задач, API-контракт и реальные lifecycle-состояния.",
-    "stack": "Подробности в исследовании",
-    "flow": "Runner → queued/running → result; registry; API contract; failure и cooperative cancel.",
-    "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
+    "name": "Meta Ads Library Collector",
+    "subtitle": "Поиск и нормализация рекламных объявлений",
+    "intro": "Поисковый запрос проходит очередь и GraphQL worker, после чего превращается в плотную выдачу объявлений с креативами, advertiser, датами, платформами и ссылками.",
+    "stack": "Python · FastAPI · asyncio · GraphQL · curl_cffi",
+    "flow": "Search request → queue → worker → normalized ads → ad detail.",
+    "boundary": "Исходный backend и live collection verified. Portfolio UI — отдельный presentation layer; публичные Meta creatives используются как replay/demo evidence.",
     "category": "Автоматизация",
-    "desktop": "../projects/meta-ads/assets/cover-v2.webp",
-    "mobile": "../projects/meta-ads/assets/overview-390-v2.png",
+    "desktop": "../projects/meta-ads/assets/cover-v3.webp",
+    "mobile": "../projects/meta-ads/assets/results-390-v3.png",
     "media": [
       {
-        "src": "../projects/meta-ads/assets/master-desktop-v2.webm",
-        "poster": "../projects/meta-ads/assets/poster-desktop-v2.webp",
+        "src": "../projects/meta-ads/assets/master-desktop-v3.webm",
+        "poster": "../projects/meta-ads/assets/poster-desktop-v3.webp",
         "mobile": false
       },
       {
-        "src": "../projects/meta-ads/assets/master-mobile-v2.webm",
-        "poster": "../projects/meta-ads/assets/poster-mobile-v2.webp",
+        "src": "../projects/meta-ads/assets/master-mobile-v3.webm",
+        "poster": "../projects/meta-ads/assets/poster-mobile-v3.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/meta-ads/assets/completed-1440-v2.png",
-      "../projects/meta-ads/assets/registry-final-1440-v2.png",
-      "../projects/meta-ads/assets/contract-1440-v2.png",
-      "../projects/meta-ads/assets/failure-1440-v2.png"
+      "../projects/meta-ads/assets/search-1440-v3.png",
+      "../projects/meta-ads/assets/results-1440-v3.png",
+      "../projects/meta-ads/assets/detail-1440-v3.png",
+      "../projects/meta-ads/assets/jobs-1440-v3.png",
+      "../projects/meta-ads/assets/contract-1440-v3.png"
     ],
     "document": "../projects/meta-ads/case.md",
     "research": "../review/meta-ads.html",
@@ -915,7 +916,9 @@
     ],
     "document": "../projects/twitter-automation/case.md",
     "research": "../review/twitter-automation.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "telegram-intel",
@@ -948,7 +951,9 @@
     ],
     "document": "../projects/telegram-intel/case.md",
     "research": "../review/telegram-intel.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "leadworker",
@@ -981,7 +986,9 @@
     ],
     "document": "../projects/leadworker/case.md",
     "research": "../review/leadworker.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "autoposting",
@@ -1014,7 +1021,9 @@
     ],
     "document": "../projects/autoposting/case.md",
     "research": "../review/autoposting.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "topgadalkin",
@@ -1079,7 +1088,9 @@
     ],
     "document": "../projects/maps-lead-generator/case.md",
     "research": "../review/maps-lead-generator.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "personal-assistant",
@@ -1112,7 +1123,9 @@
     ],
     "document": "../projects/personal-assistant/case.md",
     "research": "../review/personal-assistant.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "news-aggregator-archive",
@@ -1145,7 +1158,9 @@
     ],
     "document": "../projects/news-aggregator-archive/case.md",
     "research": "../review/news-aggregator-archive.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "protected-messages",
@@ -1178,7 +1193,9 @@
     ],
     "document": "../projects/protected-messages/case.md",
     "research": "../review/protected-messages.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   },
   {
     "id": "npm-data-analysis",
@@ -1211,6 +1228,8 @@
     ],
     "document": "../projects/npm-data-analysis/case.md",
     "research": "../review/npm-data-analysis.html",
-    "local": true
+    "local": true,
+    "published": false,
+    "publicationNote": "Временно исключён из основной сетки до замены presentation на доказательства реального продукта."
   }
 ]

@@ -1,13 +1,15 @@
-# Meta Ads Service · full technical walkthrough
+# Meta Ads Library Collector · master walkthrough
 
-00:00 — product overview и service health.
-00:05 — Runner: параметры POST /jobs.
-00:10 — queued → running → completed.
-00:16 — JSON результата.
-00:21 — Job Registry текущей сессии.
-00:26 — API Contract и схема GET result.
-00:32 — подготовленный upstream failure.
-00:39 — длительная задача и DELETE /jobs/:id.
-00:45 — итоговый registry: completed, failed, cancelled.
+00:00 — product overview и проверенный live run.
+00:04 — advertiser, country, status и limit.
+00:07 — POST /jobs → queued → GraphQL worker.
+00:11 — normalized results list.
+00:15 — creative preview и поля AdRecord.
+00:20 — переключение между объявлениями.
+00:24 — session job registry.
+00:28 — API contract и GET result schema.
+00:33 — возврат к выдаче.
 
-Новый UI — PORTFOLIO POLISH. JobService, lifecycle и HTTP responses — VERIFIED. Scraper upstream — DEMO / MOCK.
+ORIGINAL / VERIFIED: JobService, queue, parser, API contract, live result schema.
+PORTFOLIO POLISH: results-first web UI.
+DEMO / REPLAY: сохранённый результат вместо нового обращения к Meta.
