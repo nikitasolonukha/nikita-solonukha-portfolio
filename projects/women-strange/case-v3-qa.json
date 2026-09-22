@@ -1,0 +1,32 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-mobile.mp4"
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-mobile.mp4"
+    ]
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/women-strange/assets/master-mobile.mp4"
+    ]
+  }
+]

@@ -24,3 +24,9 @@ READY — локальная подготовка, не разрешение п�
 
 Новые master-desktop/mobile.mp4 — реальная запись браузера, без ускорения и интерполяции. Экспорт 60 fps дублирует кадры и не служит измерением производительности. Прежние покадровые обзоры заменены в кейсе. Storyboard и master-qa.json фиксируют сценарии. Кадры просмотрены; MacBook/iPhone, постеры и изображения проверены на 320/390/768/1440 без overflow и искажения.
 Начальная заставка и первая отрисовка обрезаны на 4,8 с, основной walkthrough сохраняет естественную скорость. Reveal-анимации работают, не отключены. Данные об обрезке — video-edit.json.
+
+## Art direction V3
+
+23 сентября повторно проверена просьба о скруглении: базовый класс `.btn` использует `border-radius: 999px`, включая hero, delivery, contacts, 404/500 и runtime actions. Исходный storefront не переделывался в новый ecommerce и не получил вымышленные корзину или оплату.
+
+Portfolio-case построен как media-first fashion editorial: image-over-type hero, type-only manifesto, полный storefront walkthrough, асимметричная последовательность реальных разделов и отдельный mobile moment. Референсы FABRIC и The Damai используются только для масштаба media и ритма. Кейс проверен на 1440/768/390: overflow 0, page errors 0, broken images 0, оба video source доступны. `REFERENCE_LOCK.md`, `SECTION_MAP.md`, `ART_QA.md` и before/after сохранены рядом.

@@ -16,7 +16,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 10 | Ритм | ritm | READY | Future Goals reference locked; every core screen and settings editor manually reviewed; sync badge removed from portfolio capture; 390/768/1440 QA clean; V3 desktop/mobile walkthrough and product-led case published |
 | 11 | LexLegal | lexlegal | READY | Original legal site retained as a calm consulting experience; 1440/768/390 visual QA, mobile menu, service disclosures and FAQ checked |
 | 12 | Татьяна | tatiana | READY | Original light site restored and retained; author desktop/mobile recordings remain primary; The Damai reference informs only the editorial case rhythm; 1440/768/390 case QA complete |
-| 13 | Women Strange | women-strange | TODO | Actual site, button and layout polish |
+| 13 | Women Strange | women-strange | READY | Actual storefront retained; all CTA buttons verified pill-rounded; FABRIC/The Damai reference lock, media-first case, desktop/mobile walkthrough and 1440/768/390 QA complete |
 | 14 | EP Beauty | ep-beauty | TODO | Approved magazine character, consistent sections |
 | 15 | Трек в подарок | trekpodarok | TODO | Individual music-gift identity |
 | 16 | СказкаМоя | skazka | TODO | Individual storybook identity |
