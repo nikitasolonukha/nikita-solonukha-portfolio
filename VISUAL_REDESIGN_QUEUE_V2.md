@@ -10,7 +10,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |
 | 05 | Meta Ads | meta-ads | READY | Verified results-first replay, scope guard, 20-record sample/6 visual rows; search → processing → result/detail → jobs/API captured and 1440/768/390 public QA passed |
 | 06 | Пифпаф | pifpaf | READY | Reels-led dashboard, compact analytics; dashboard/feed/table/analytics/profile QA at 1440/768/390 plus 320 analytics; refreshed full masters and failure clips verified |
-| 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
+| 07 | GARMONY | garmony | READY | Hero door, four collections/dialogs, approach, form/download and reduced motion manually reviewed; 1440/768/390 public video/image/overflow QA passed |
 | 08 | AI Support + Webchat | support-rag | IN PROGRESS | Real webchat → Telegram → AI draft → operator response; original Telegram evidence re-sanitized and combined video refreshed, product art QA remains |
 | 09 | STEP | stepbystep | IN PROGRESS | Actual demo source: 20 routes audited at 390/768/1440; V2 seeded actions, screenshots, 58-second mobile/desktop walkthrough captured; final visual review and public case integration pending |
 | 10 | Ритм | ritm | TODO | Violet/lime habit tracker, all screens |
