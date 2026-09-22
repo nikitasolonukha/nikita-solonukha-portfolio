@@ -64,3 +64,22 @@
 ORIGINAL — авторские видео. VERIFIED — происхождение, декодирование, показанные состояния и оболочка кейса. PORTFOLIO POLISH — обложка/устройства/кроп и кодирование. DEMO/MOCK — не добавлялись. PLANNED — восстановление точной версии, чистая перезапись без debug и проверка трёх ширин самого продукта.
 
 Новый экспорт: master-desktop.mp4 55 сек, master-mobile.mp4 42 сек. Сохранена естественная скорость, удалена интерполяция с двоением движущихся элементов; повторный проход после контактов обрезан. Приоритет пользователя и выбранная обложка не изменены. Старые smooth-файлы сохранены, но в кейсе больше не используются.
+
+## Portfolio polish V3 — match night
+
+22.09.2026. После обязательного live-аудита Future Goals, One:Nil и This Is FC88 создана новая presentation-версия исходного сайта. Она использует только подтверждённые тексты и реальные фотографии MAGNUM. Композиция построена как один вечер: кинематографичный вход, пять управляемых этапов, пространство клуба, галерея, отзывы, вопросы и запись.
+
+Главная signature interaction — секция «Как проходит вечер»: активный этап меняет фотографию, прогресс и текст внутри одной большой сцены. Это portfolio polish существующего сценария, а не ORIGINAL. Исторические авторские записи сохранены на странице кейса отдельным доказательством.
+
+Материалы V3:
+
+- live export: `review/magnum-live/`;
+- desktop walkthrough: `assets/v3/master-desktop.webm`;
+- mobile walkthrough: `assets/v3/master-mobile.webm`;
+- screenshots: `assets/v3/hero-*`, `evening-*`, `gallery-*`, `cta-*`;
+- QA: `assets/v3/qa.json`;
+- reference rationale: `REFERENCE_LOCK.md`;
+- section architecture: `SECTION_MAP.md`;
+- three considered compositions: `WIRE-COMPOSITIONS.md`.
+
+Production build прошёл. На 1440, 768 и 390 px горизонтального переполнения нет. Первый экран, переключение этапов, мобильное меню, галерея, FAQ, CTA и контакты проверены визуально. ART READY относится к V3 presentation layer; он не доказывает backend внешнего Telegram-бота и не заменяет ORIGINAL.

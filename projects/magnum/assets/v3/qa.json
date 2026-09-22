@@ -1,0 +1,57 @@
+[
+  {
+    "width": 1440,
+    "overflow": false,
+    "scrollWidth": 1440,
+    "viewportWidth": 1440,
+    "brokenImages": [
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-9.webp&w=1080&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fwhy%2Fparking.png&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fwhy%2Ffood-court.png&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-2.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-3.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-5.webp&w=1080&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-6.webp&w=1080&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-7.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-8.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-9.webp&w=1080&q=75"
+    ],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "scrollWidth": 768,
+    "viewportWidth": 768,
+    "brokenImages": [
+      "http://127.0.0.1:4334/_next/image?url=%2Fwhy%2Fparking.png&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fwhy%2Ffood-court.png&w=828&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-2.webp&w=828&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-3.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-5.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-6.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-7.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-8.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-9.webp&w=640&q=75"
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "scrollWidth": 390,
+    "viewportWidth": 390,
+    "brokenImages": [
+      "http://127.0.0.1:4334/_next/image?url=%2Fwhy%2Fparking.png&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-2.webp&w=640&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-3.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-5.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-6.webp&w=384&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-7.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-8.webp&w=384&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-9.webp&w=3840&q=75",
+      "http://127.0.0.1:4334/_next/image?url=%2Fgallery%2Fimage-9.webp&w=3840&q=75"
+    ],
+    "errors": []
+  }
+]

@@ -70,30 +70,30 @@
     "id": "magnum",
     "name": "MAGNUM",
     "subtitle": "Сайт клуба спортивного покера",
-    "intro": "Сайт знакомит с клубом через форматы игры, атмосферу зала, галерею и контакты.",
+    "intro": "Спортивный community-сайт проводит через один вечер в клубе: от знакомства с правилами до финального стола.",
     "stack": "Design · Frontend · Responsive · Motion",
-    "flow": "Главная → клуб → форматы → галерея → отзывы → контакты.",
-    "boundary": "Приоритетная версия подтверждена видео; точный исходник этой версии не найден. Это ограничение явно сохранено.",
+    "flow": "Вход → этапы вечера → пространство клуба → живая галерея → отзывы → запись.",
+    "boundary": "ORIGINAL подтверждён авторскими видео. Новая интерактивная версия честно обозначена как PORTFOLIO POLISH по реальным материалам проекта.",
     "category": "Сайты",
-    "desktop": "../projects/magnum/assets/export/magnum-cover-video.webp",
-    "mobile": "../projects/magnum/assets/export/video-mobile-hero.webp",
+    "desktop": "../projects/magnum/assets/v3/hero-1440.png",
+    "mobile": "../projects/magnum/assets/v3/hero-390.png",
     "media": [
       {
-        "src": "../projects/magnum/assets/master-desktop.mp4?v=natural",
-        "poster": "../projects/magnum/assets/poster-desktop.webp",
+        "src": "../projects/magnum/assets/v3/master-desktop.webm",
+        "poster": "../projects/magnum/assets/v3/hero-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/magnum/assets/master-mobile.mp4?v=natural",
-        "poster": "../projects/magnum/assets/poster-mobile.webp",
+        "src": "../projects/magnum/assets/v3/master-mobile.webm",
+        "poster": "../projects/magnum/assets/v3/hero-390.png",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/magnum/assets/export/video-desktop-about.webp",
-      "../projects/magnum/assets/export/video-desktop-formats-open.webp",
-      "../projects/magnum/assets/export/video-desktop-gallery.webp",
-      "../projects/magnum/assets/export/video-desktop-reviews.webp"
+      "../projects/magnum/assets/v3/evening-1440.png",
+      "../projects/magnum/assets/v3/evening-active-1440.png",
+      "../projects/magnum/assets/v3/gallery-1440.png",
+      "../projects/magnum/assets/v3/cta-1440.png"
     ],
     "document": "../projects/magnum/case.md",
     "research": "../review/magnum.html",

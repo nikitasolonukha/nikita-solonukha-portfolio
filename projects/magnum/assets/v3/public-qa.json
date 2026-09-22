@@ -1,0 +1,28 @@
+[
+  {
+    "width": 1440,
+    "page": "case",
+    "overflow": false,
+    "offenders": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "page": "live",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "page": "case",
+    "overflow": false,
+    "offenders": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "page": "live",
+    "overflow": false,
+    "errors": []
+  }
+]

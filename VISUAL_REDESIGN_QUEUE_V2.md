@@ -5,8 +5,8 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | # | Project | Case ID | Art direction | Focus |
 |---:|---|---|---|---|
 | 01 | Shopify Store Builder + Lumina Form | shopify-store-builder | IN PROGRESS | Builder → generation → storefront → PDP → cart; lamp-led editorial design |
-| 02 | KONTUR | protective-structures | IN PROGRESS | Three live hero compositions compared; technical typography + wide image implemented, all 11 sections surveyed, final CTA reworked; responsive/menu/system/form QA and new full masters captured; build/final sign-off pending |
-| 03 | MAGNUM | magnum | IN PROGRESS | Authentic archive preserved; separate interactive V2 reconstruction, 1440/768/390 QA and new desktop/mobile walkthrough captured; public/final art check pending |
+| 02 | KONTUR | protective-structures | READY | Technical editorial redesign; all 11 sections surveyed, responsive/menu/system/form QA passed at 1440/768/390, refreshed screenshots and desktop/mobile walkthrough published |
+| 03 | MAGNUM | magnum | READY | V3 match-night redesign; authentic archive preserved; live export, 1440/768/390 art QA and desktop/mobile walkthrough complete |
 | 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |
 | 05 | Meta Ads | meta-ads | READY | Verified results-first replay, scope guard, 20-record sample/6 visual rows; search → processing → result/detail → jobs/API captured and 1440/768/390 public QA passed |
 | 06 | Пифпаф | pifpaf | READY | Reels-led dashboard, compact analytics; dashboard/feed/table/analytics/profile QA at 1440/768/390 plus 320 analytics; refreshed full masters and failure clips verified |
@@ -42,6 +42,6 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 
 ## Current checkpoint
 
-The reference notes are in `references/DENNIS_PROJECT_DESIGN_LANGUAGE_V2.md`. Shopify's local source is `work/store-demo-preview`; its source-backed preview and existing case assets remain separate from the live Shopify dev-store evidence. The first UI audit/redesign is underway. No row is visually READY yet under V2 criteria.
+The reference notes are in `references/DENNIS_PROJECT_DESIGN_LANGUAGE_V2.md`. Shopify's local source is `work/store-demo-preview`; its source-backed preview and existing case assets remain separate from the live Shopify dev-store evidence. Rows marked READY have passed the V2 product UI, responsive and refreshed-media checks.
 
 MAGNUM: the local `work/magnum-poker-site` and archived recording have different home compositions. The authentic recording remains published. V2 explicitly authorizes a labeled portfolio/demo reconstruction constrained to confirmed source content, so this row is actionable again; the reconstruction must not be presented as the original production site.
