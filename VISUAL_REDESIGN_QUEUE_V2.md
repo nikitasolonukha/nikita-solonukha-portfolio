@@ -10,7 +10,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 04 | Портной / 3D | portnoy | IN PROGRESS | Compact fabric-led workspace QA at 1440/768/390; refreshed walkthrough in progress; retain 3D feature |
 | 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |
 | 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
-| 07 | GARMONY | garmony | TODO | Retain door interaction, polish full site |
+| 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
 | 08 | AI Support + Webchat | support-rag | TODO | Real webchat → Telegram → AI draft → operator response |
 | 09 | STEP | stepbystep | TODO | Finish actual mobile product and all states |
 | 10 | Ритм | ritm | TODO | Violet/lime habit tracker, all screens |

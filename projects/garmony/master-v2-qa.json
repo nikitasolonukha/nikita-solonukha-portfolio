@@ -1,0 +1,146 @@
+{
+  "sizes": [
+    {
+      "width": 768,
+      "errors": [],
+      "marks": [
+        {
+          "screen": "overview",
+          "seconds": 4.681
+        },
+        {
+          "screen": "door-open",
+          "seconds": 5.191
+        },
+        {
+          "screen": "collections",
+          "seconds": 6.503
+        },
+        {
+          "screen": "collection-toscana",
+          "seconds": 7.057
+        },
+        {
+          "screen": "collection-zero",
+          "seconds": 7.58
+        },
+        {
+          "screen": "collection-galant",
+          "seconds": 8.336
+        },
+        {
+          "screen": "collection-magic",
+          "seconds": 8.897
+        },
+        {
+          "screen": "approach",
+          "seconds": 9.365
+        },
+        {
+          "screen": "request",
+          "seconds": 9.794
+        },
+        {
+          "screen": "saved",
+          "seconds": 10.326
+        }
+      ],
+      "download": true
+    },
+    {
+      "width": 1440,
+      "errors": [],
+      "marks": [
+        {
+          "screen": "overview",
+          "seconds": 3.891
+        },
+        {
+          "screen": "door-open",
+          "seconds": 6.772
+        },
+        {
+          "screen": "collections",
+          "seconds": 14.527
+        },
+        {
+          "screen": "collection-toscana",
+          "seconds": 17.569
+        },
+        {
+          "screen": "collection-zero",
+          "seconds": 20.638
+        },
+        {
+          "screen": "collection-galant",
+          "seconds": 23.701
+        },
+        {
+          "screen": "collection-magic",
+          "seconds": 26.805
+        },
+        {
+          "screen": "approach",
+          "seconds": 30.277
+        },
+        {
+          "screen": "request",
+          "seconds": 31.435
+        },
+        {
+          "screen": "saved",
+          "seconds": 33.928
+        }
+      ],
+      "download": true
+    },
+    {
+      "width": 390,
+      "errors": [],
+      "marks": [
+        {
+          "screen": "overview",
+          "seconds": 3.884
+        },
+        {
+          "screen": "door-open",
+          "seconds": 6.673
+        },
+        {
+          "screen": "collections",
+          "seconds": 15.015
+        },
+        {
+          "screen": "collection-toscana",
+          "seconds": 18.048
+        },
+        {
+          "screen": "collection-zero",
+          "seconds": 21.096
+        },
+        {
+          "screen": "collection-galant",
+          "seconds": 24.128
+        },
+        {
+          "screen": "collection-magic",
+          "seconds": 27.179
+        },
+        {
+          "screen": "approach",
+          "seconds": 30.592
+        },
+        {
+          "screen": "request",
+          "seconds": 31.737
+        },
+        {
+          "screen": "saved",
+          "seconds": 34.257
+        }
+      ],
+      "download": true
+    }
+  ],
+  "reducedMotion": true
+}
