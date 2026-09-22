@@ -19,7 +19,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 13 | Women Strange | women-strange | READY | Actual storefront retained; all CTA buttons verified pill-rounded; FABRIC/The Damai reference lock, media-first case, desktop/mobile walkthrough and 1440/768/390 QA complete |
 | 14 | EP Beauty | ep-beauty | READY | Ivory magazine case; real services, booking, FAQ and contacts; desktop/mobile QA clean |
 | 15 | Трек в подарок | trekpodarok | READY | Music-release art direction; real occasion selector and Telegram handoff; responsive QA clean |
-| 16 | СказкаМоя | skazka | TODO | Individual storybook identity |
+| 16 | СказкаМоя | skazka | READY | Storybook chapter art direction; real formats, FAQ, audio and documents; responsive QA clean |
 | 17 | TopGadalkin | topgadalkin | TODO | Actual dark site and full flow |
 | 18 | Живые фото | photo-animation | TODO | Original site and working before/after |
 | 19 | Колесо Фортуны | roulette | TODO | Actual local product, complete states |
