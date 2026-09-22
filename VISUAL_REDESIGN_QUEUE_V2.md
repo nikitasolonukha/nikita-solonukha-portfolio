@@ -5,7 +5,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | # | Project | Case ID | Art direction | Focus |
 |---:|---|---|---|---|
 | 01 | Shopify Store Builder + Lumina Form | shopify-store-builder | IN PROGRESS | Builder → generation → storefront → PDP → cart; lamp-led editorial design |
-| 02 | KONTUR | protective-structures | IN PROGRESS | Current split hero explicitly rejected in V2; rebuild industrial art direction across all 11 sections, compare three hero compositions |
+| 02 | KONTUR | protective-structures | IN PROGRESS | Three live hero compositions compared; technical typography + wide image implemented, all 11 sections surveyed, final CTA reworked; responsive/menu/system/form QA and new full masters captured; build/final sign-off pending |
 | 03 | MAGNUM | magnum | TODO | Author permits a clearly labeled portfolio/demo reconstruction from confirmed source content; preserve authentic archived recording |
 | 04 | Портной / 3D | portnoy | IN PROGRESS | Compact fabric-led workspace QA at 1440/768/390; refreshed walkthrough in progress; retain 3D feature |
 | 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |

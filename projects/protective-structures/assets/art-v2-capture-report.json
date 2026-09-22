@@ -1,0 +1,102 @@
+[
+  {
+    "width": 1440,
+    "marks": [
+      {
+        "id": "top",
+        "seconds": 5.4
+      },
+      {
+        "id": "how-it-works",
+        "seconds": 7.9
+      },
+      {
+        "id": "solutions",
+        "seconds": 10.3
+      },
+      {
+        "id": "industries",
+        "seconds": 12.8
+      },
+      {
+        "id": "advantages",
+        "seconds": 15.3
+      },
+      {
+        "id": "system",
+        "seconds": 17.8
+      },
+      {
+        "id": "process",
+        "seconds": 21.9
+      },
+      {
+        "id": "value",
+        "seconds": 24.3
+      },
+      {
+        "id": "company",
+        "seconds": 26.7
+      },
+      {
+        "id": "cta",
+        "seconds": 29.1
+      },
+      {
+        "id": "contact",
+        "seconds": 31.6
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "marks": [
+      {
+        "id": "top",
+        "seconds": 5.2
+      },
+      {
+        "id": "how-it-works",
+        "seconds": 7.6
+      },
+      {
+        "id": "solutions",
+        "seconds": 10
+      },
+      {
+        "id": "industries",
+        "seconds": 12.4
+      },
+      {
+        "id": "advantages",
+        "seconds": 14.7
+      },
+      {
+        "id": "system",
+        "seconds": 17.1
+      },
+      {
+        "id": "process",
+        "seconds": 20.9
+      },
+      {
+        "id": "value",
+        "seconds": 23.3
+      },
+      {
+        "id": "company",
+        "seconds": 25.6
+      },
+      {
+        "id": "cta",
+        "seconds": 28
+      },
+      {
+        "id": "contact",
+        "seconds": 30.4
+      }
+    ],
+    "errors": []
+  }
+]

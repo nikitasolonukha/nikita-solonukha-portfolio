@@ -1,0 +1,25 @@
+[
+  {
+    "width": 390,
+    "overflow": false,
+    "unloaded": [],
+    "errors": [],
+    "responses": []
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "unloaded": [],
+    "errors": [],
+    "responses": []
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "unloaded": [
+      "http://127.0.0.1:4331/_next/image?url=%2Fimages%2Fsystem%2Fsystem-support-structure.jpg&w=1920&q=75"
+    ],
+    "errors": [],
+    "responses": []
+  }
+]
