@@ -21,7 +21,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 15 | Трек в подарок | trekpodarok | READY | Music-release art direction; real occasion selector and Telegram handoff; responsive QA clean |
 | 16 | СказкаМоя | skazka | READY | Storybook chapter art direction; real formats, FAQ, audio and documents; responsive QA clean |
 | 17 | TopGadalkin | topgadalkin | READY | Approved plum product; real examples, instruction, price and FAQ; responsive case QA clean |
-| 18 | Живые фото | photo-animation | TODO | Original site and working before/after |
+| 18 | Живые фото | photo-animation | READY | Original purple site; working comparison, fitted vertical video and aligned mobile; responsive QA clean |
 | 19 | Колесо Фортуны | roulette | TODO | Actual local product, complete states |
 | 20 | PP BOT | ppbot | TODO | Telegram screenshots and recipe flow |
 | 21 | GIGANT | gigant | TODO | Actual site and content hierarchy |
