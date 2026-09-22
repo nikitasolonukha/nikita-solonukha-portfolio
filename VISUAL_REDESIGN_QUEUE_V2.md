@@ -7,7 +7,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 01 | Shopify Store Builder + Lumina Form | shopify-store-builder | IN PROGRESS | Builder → generation → storefront → PDP → cart; lamp-led editorial design |
 | 02 | KONTUR | protective-structures | IN PROGRESS | Three live hero compositions compared; technical typography + wide image implemented, all 11 sections surveyed, final CTA reworked; responsive/menu/system/form QA and new full masters captured; build/final sign-off pending |
 | 03 | MAGNUM | magnum | IN PROGRESS | Authentic archive preserved; separate interactive V2 reconstruction, 1440/768/390 QA and new desktop/mobile walkthrough captured; public/final art check pending |
-| 04 | Портной / 3D | portnoy | IN PROGRESS | Compact fabric-led workspace QA at 1440/768/390; refreshed walkthrough in progress; retain 3D feature |
+| 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |
 | 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |
 | 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
 | 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
