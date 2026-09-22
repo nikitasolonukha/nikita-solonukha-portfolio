@@ -1111,15 +1111,24 @@
     "id": "copilot",
     "name": "n8n Copilot",
     "subtitle": "Четырёхслойная подготовка Telegram-контента",
-    "intro": "Сохранены оригинальная спецификация и промпты четырёх слоёв. Исполняемый n8n export и Telegram flow ещё не найдены.",
+    "intro": "Подлинная запись показывает редакционную базу Notion: Raw → L1 AI Draft → L1 Final и статус. Оригинальный n8n canvas и Telegram flow пока не найдены.",
     "stack": "n8n · AI · Telegram · редакционный workflow",
     "flow": "Raw → L1 → L2 → L3 → L4 → Body; переработка одного слоя по комментарию.",
-    "boundary": "Публично показана архитектура по найденной спецификации. SVG — схема, не настоящий n8n canvas; прежняя web-реконструкция не используется как доказательство.",
+    "boundary": "Главный визуал — настоящий Notion UI из записи Никиты от 10.01.2026. Видео подтверждает первый слой; остальные слои описаны в исходной спецификации. Оно не показывает n8n nodes или Telegram.",
     "category": "Автоматизация",
-    "desktop": "../projects/copilot/assets/evidence-cover.svg",
-    "mobile": "../projects/copilot/assets/evidence-cover.svg",
-    "media": [],
-    "screens": [],
+    "desktop": "../projects/copilot/assets/notion-result.webp",
+    "mobile": "../projects/copilot/assets/notion-result.webp",
+    "media": [
+      {
+        "src": "../projects/copilot/assets/original-notion-flow.mp4",
+        "poster": "../projects/copilot/assets/notion-overview.webp",
+        "mobile": false
+      }
+    ],
+    "screens": [
+      "../projects/copilot/assets/notion-overview.webp",
+      "../projects/copilot/assets/notion-result.webp"
+    ],
     "document": "../projects/copilot/case.md",
     "research": "../review/copilot.html",
     "published": true
