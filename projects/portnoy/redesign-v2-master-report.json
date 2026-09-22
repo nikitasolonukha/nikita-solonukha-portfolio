@@ -1,0 +1,164 @@
+[
+  {
+    "width": 1440,
+    "marks": [
+      {
+        "screen": "overview",
+        "seconds": 3.6
+      },
+      {
+        "screen": "catalog",
+        "seconds": 7.3
+      },
+      {
+        "screen": "search",
+        "seconds": 9.7
+      },
+      {
+        "screen": "detail",
+        "seconds": 13.5
+      },
+      {
+        "screen": "configurator",
+        "seconds": 18.7
+      },
+      {
+        "screen": "material",
+        "seconds": 23.5
+      },
+      {
+        "screen": "jacket",
+        "seconds": 29.2
+      },
+      {
+        "screen": "save",
+        "seconds": 41.8
+      },
+      {
+        "screen": "saved",
+        "seconds": 45
+      },
+      {
+        "screen": "variants",
+        "seconds": 47.2
+      },
+      {
+        "screen": "comparison",
+        "seconds": 52.1
+      },
+      {
+        "screen": "import",
+        "seconds": 54.2
+      },
+      {
+        "screen": "import-mapping",
+        "seconds": 56.5
+      },
+      {
+        "screen": "import-preview",
+        "seconds": 61.4
+      },
+      {
+        "screen": "import-result",
+        "seconds": 64.5
+      },
+      {
+        "screen": "create",
+        "seconds": 66.6
+      },
+      {
+        "screen": "create-filled",
+        "seconds": 69.1
+      },
+      {
+        "screen": "created",
+        "seconds": 72.2
+      }
+    ],
+    "errors": [],
+    "external": []
+  },
+  {
+    "width": 390,
+    "marks": [
+      {
+        "screen": "overview",
+        "seconds": 3.1
+      },
+      {
+        "screen": "catalog",
+        "seconds": 6.6
+      },
+      {
+        "screen": "search",
+        "seconds": 8.8
+      },
+      {
+        "screen": "detail",
+        "seconds": 12.3
+      },
+      {
+        "screen": "configurator",
+        "seconds": 15.9
+      },
+      {
+        "screen": "material",
+        "seconds": 20.4
+      },
+      {
+        "screen": "jacket",
+        "seconds": 25.6
+      },
+      {
+        "screen": "save",
+        "seconds": 38
+      },
+      {
+        "screen": "saved",
+        "seconds": 41.1
+      },
+      {
+        "screen": "variants",
+        "seconds": 42.8
+      },
+      {
+        "screen": "comparison",
+        "seconds": 47.5
+      },
+      {
+        "screen": "comparison-detail",
+        "seconds": 50.5
+      },
+      {
+        "screen": "import",
+        "seconds": 52.3
+      },
+      {
+        "screen": "import-mapping",
+        "seconds": 54.4
+      },
+      {
+        "screen": "import-preview",
+        "seconds": 59.1
+      },
+      {
+        "screen": "import-result",
+        "seconds": 61.9
+      },
+      {
+        "screen": "create",
+        "seconds": 63.6
+      },
+      {
+        "screen": "create-filled",
+        "seconds": 65.8
+      },
+      {
+        "screen": "created",
+        "seconds": 68.7
+      }
+    ],
+    "errors": [],
+    "external": []
+  }
+]

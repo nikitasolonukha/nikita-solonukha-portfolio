@@ -1,0 +1,60 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "marks": [
+      {
+        "name": "search",
+        "seconds": 3.772
+      },
+      {
+        "name": "results",
+        "seconds": 10.536
+      },
+      {
+        "name": "detail",
+        "seconds": 13.46
+      },
+      {
+        "name": "jobs",
+        "seconds": 19.311
+      },
+      {
+        "name": "contract",
+        "seconds": 24.562
+      }
+    ],
+    "overflow": false,
+    "brokenImages": [],
+    "visibleRows": 6
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "marks": [
+      {
+        "name": "search",
+        "seconds": 3.678
+      },
+      {
+        "name": "results",
+        "seconds": 10.376
+      },
+      {
+        "name": "detail",
+        "seconds": 13.285
+      },
+      {
+        "name": "jobs",
+        "seconds": 19.141
+      },
+      {
+        "name": "contract",
+        "seconds": 24.348
+      }
+    ],
+    "overflow": false,
+    "brokenImages": [],
+    "visibleRows": 6
+  }
+]
