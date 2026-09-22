@@ -14,3 +14,18 @@
 01:01 PDP и галерея
 01:08 FAQ, отзывы и дополнительные сцены
 01:13 Cart
+
+## Lumina Form V3 feature walkthrough
+
+00:00 — object-led hero
+00:05 — type-only manifesto
+00:09 — Object Anatomy / Shape
+00:13 — переключение на Focus
+00:17 — asymmetric image sequence
+00:22 — purchase stage
+00:27 — FAQ and closing
+00:32 — catalog
+00:36 — PDP gallery and purchase
+00:43 — cart result
+
+V3 walkthrough относится к локальной portfolio/demo версии. Основной complete walkthrough выше сохраняет настоящий builder → Shopify storefront flow.

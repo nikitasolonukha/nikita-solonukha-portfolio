@@ -4,7 +4,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 
 | # | Project | Case ID | Art direction | Focus |
 |---:|---|---|---|---|
-| 01 | Shopify Store Builder + Lumina Form | shopify-store-builder | IN PROGRESS | Builder → generation → storefront → PDP → cart; lamp-led editorial design |
+| 01 | Shopify Store Builder + Lumina Form | shopify-store-builder | READY | Object-led V3 storefront; builder → generation → home → interaction → catalog → PDP → cart; 1440/390 masters, production build and manual art QA complete |
 | 02 | KONTUR | protective-structures | READY | Technical editorial redesign; all 11 sections surveyed, responsive/menu/system/form QA passed at 1440/768/390, refreshed screenshots and desktop/mobile walkthrough published |
 | 03 | MAGNUM | magnum | READY | V3 match-night redesign; authentic archive preserved; live export, 1440/768/390 art QA and desktop/mobile walkthrough complete |
 | 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |

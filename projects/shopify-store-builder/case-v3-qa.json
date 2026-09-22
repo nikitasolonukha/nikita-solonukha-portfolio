@@ -1,0 +1,32 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/shopify-store-builder/assets/demo-lumina-v3-desktop.webm",
+      "../projects/shopify-store-builder/assets/demo-lumina-v3-mobile.webm",
+      "../projects/shopify-store-builder/assets/complete-desktop.mp4",
+      "../projects/shopify-store-builder/assets/complete-mobile.mp4"
+    ]
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/shopify-store-builder/assets/demo-lumina-v3-desktop.webm",
+      "../projects/shopify-store-builder/assets/demo-lumina-v3-mobile.webm",
+      "../projects/shopify-store-builder/assets/complete-desktop.mp4",
+      "../projects/shopify-store-builder/assets/complete-mobile.mp4"
+    ]
+  }
+]
