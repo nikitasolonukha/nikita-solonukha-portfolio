@@ -136,11 +136,11 @@
     "name": "Колесо Фортуны",
     "subtitle": "Промомеханика с призами",
     "intro": "Колесо выбирает сектор, показывает результат и сохраняет состояние попытки.",
-    "stack": "Подробности в исследовании",
+    "stack": "Canvas 2D · JavaScript · Telegram WebApp · n8n webhook в оригинале",
     "flow": "Вращение, приз, второй шанс и защита от повторного запуска после reload.",
-    "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
+    "boundary": "В публичном preview Telegram SDK и webhook отключены, реальные призы не выдаются. Демо показывает существующий пользовательский сценарий.",
     "category": "Продукты",
-    "desktop": "images/roulette.webp",
+    "desktop": "../projects/roulette/assets/overview-1440.png",
     "mobile": "../projects/roulette/assets/overview-390.png",
     "media": [
       {
@@ -155,10 +155,10 @@
       }
     ],
     "screens": [
-      "../projects/roulette/assets/light-1440.png",
-      "../projects/roulette/assets/locked-1440.png",
+      "../projects/roulette/assets/overview-1440.png",
+      "../projects/roulette/assets/second-chance-1440.png",
       "../projects/roulette/assets/result-1440.png",
-      "../projects/roulette/assets/second-chance-1440.png"
+      "../projects/roulette/assets/locked-1440.png"
     ],
     "document": "../projects/roulette/case.md",
     "research": "../review/roulette.html",

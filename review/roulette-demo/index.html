@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>Колесо Фортуны</title>
+  <style>
+    :root{--bg1:#2c3e50;--bg2:#223043;--btn:#4c86ff;--btnText:#fff}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{
+      margin:0;
+      padding:0;
+      width:100%;
+      height:100%;
+      height:100vh;
+      background:radial-gradient(1000px 600px at 50% 0%,#34495e 0%,var(--bg1) 50%,var(--bg2) 100%);
+      background-color:var(--bg1);
+    }
+    body{
+      margin:0;
+      padding:0;
+      color:#fff;
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial;
+      width:100%;
+      height:100%;
+      height:100vh;
+      min-height:100vh;
+      background:radial-gradient(1000px 600px at 50% 0%,#34495e 0%,var(--bg1) 50%,var(--bg2) 100%);
+      background-color:var(--bg1);
+    }
+    .container{
+      text-align:center;
+      padding:20px 16px;
+      width:100%;
+      height:100%;
+      height:100vh;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+    }
+    h1{margin:0 0 18px;font-weight:800;letter-spacing:.2px}
+
+    .wheel-wrap{position:relative;margin:0 auto;flex-shrink:0}
+    canvas{display:block;margin:0 auto;background:transparent}
+
+    /* единственная стрелка */
+    #pointer{
+      position:absolute;top:50%;right:-6px;transform:translateY(-50%);
+      width:0;height:0;border-top:12px solid transparent;border-bottom:12px solid transparent;
+      border-right:26px solid #ff3b30;filter:drop-shadow(0 2px 2px rgba(0,0,0,.4));
+    }
+
+    #spin-btn{
+      margin-top:22px;padding:14px 28px;font-size:16px;font-weight:700;cursor:pointer;
+      border:none;border-radius:12px;background:var(--btn);color:var(--btnText);
+      box-shadow:0 10px 24px rgba(76,134,255,.35),inset 0 0 0 1px rgba(255,255,255,.12);
+      transition:transform .08s ease,filter .2s ease
+    }
+    #spin-btn:hover{filter:brightness(1.06)}
+    #spin-btn:active{transform:translateY(1px)}
+    #spin-btn:disabled{background:#8a8a8a;cursor:not-allowed;box-shadow:none}
+    .hint{opacity:.85;font-size:13px;margin:10px 0 0}
+
+    /* модалка результата */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,.55);
+      display:flex;align-items:center;justify-content:center;padding:16px}
+    .hidden{display:none}
+    .modal-card{width:min(520px,92vw);background:#1e2736;border-radius:16px;padding:22px 20px;
+      box-shadow:0 12px 30px rgba(0,0,0,.45);text-align:left}
+    .modal-title{font-size:18px;font-weight:800;margin:0 0 10px}
+    .modal-text{font-size:16px;line-height:1.6;color:#e9eef9;margin:0;white-space:pre-line;letter-spacing:.2px}
+    .modal-text b{color:#fff}
+    .modal-btn{margin-top:16px;padding:12px 18px;border:none;border-radius:10px;background:#36b37e;
+      color:#fff;font-weight:700;cursor:pointer;box-shadow:0 6px 16px rgba(54,179,126,.35)}
+    .meme{display:block;width:100%;max-height:360px;object-fit:contain;margin-top:14px;border-radius:10px}
+
+
+    /* на десктопах — компактный размер, но занимает всю высоту */
+    @media (min-width:1024px){
+      .container{
+        width:100%;
+        height:100%;
+        height:100vh;
+        min-height:100vh;
+        max-width:none;
+        padding:20px;
+      }
+      .wheel-wrap{
+        width:440px;
+        max-width:440px;
+      }
+      canvas{
+        width:440px;
+        height:440px;
+        max-width:440px;
+      }
+    }
+ .demo-label{font-size:11px;opacity:.65;margin-bottom:15px}.modal{overflow:auto}.modal-card{max-height:90vh;overflow:auto}button:focus-visible{outline:3px solid white;outline-offset:4px}@media(max-height:600px){.container{height:auto;min-height:100vh;padding-block:30px}}
+
+    html,body{height:auto;min-height:100%;background:#171e24;color:#f6f1e6}
+    body{font-family:Inter,'Segoe UI',Arial,sans-serif}
+    .container{width:min(1380px,100%);height:auto;min-height:100svh;margin:auto;padding:74px clamp(24px,6vw,86px);display:grid;grid-template-columns:minmax(0,.94fr) minmax(0,1.06fr);gap:clamp(30px,6vw,90px);align-items:center;text-align:left}
+    .roulette-intro{padding:30px 0;border-top:1px solid #f6f1e642;border-bottom:1px solid #f6f1e642}
+    .roulette-overline{font-size:11px;letter-spacing:.2em;color:#b8c4bc;margin-bottom:42px}
+    h1{font-size:clamp(46px,5.8vw,86px);line-height:.98;letter-spacing:-.06em;font-weight:590;margin:0 0 26px}
+    h1 em{font-family:Georgia,serif;font-weight:400;color:#d1b48a}
+    .roulette-description{font-size:clamp(16px,1.5vw,19px);line-height:1.65;max-width:470px;color:#bbc2c0}
+    .roulette-facts{display:flex;gap:55px;margin-top:48px;color:#e7ded0;font-size:30px;line-height:1}
+    .roulette-facts span{min-width:100px;border-top:1px solid #f6f1e642;padding-top:14px}
+    .roulette-facts small{display:block;margin-top:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#aab5ae}
+    .demo-label{font-size:11px;color:#aab5ae;opacity:1;margin:42px 0 0}
+    .roulette-stage{display:flex;flex-direction:column;align-items:center;min-width:0}
+    .wheel-wrap{width:min(100%,510px);max-width:510px;padding:18px;border:1px solid #f6f1e63d;border-radius:50%;background:#23303a;box-shadow:0 28px 55px #0005}
+    canvas,.wheel-wrap canvas{width:100%;height:auto;max-width:none;aspect-ratio:1}
+    #pointer{right:6px;border-top-width:13px;border-bottom-width:13px;border-right:28px solid #e8dbbe;filter:drop-shadow(0 1px 3px #0008)}
+    .roulette-action{display:flex;flex-direction:column;align-items:center;gap:8px;width:100%;margin-top:29px}
+    #spin-btn{width:min(100%,340px);margin:0;display:flex;align-items:center;justify-content:space-between;padding:18px 23px;background:#d4b98e;color:#1c252b;border-radius:4px;box-shadow:none;font-size:16px;letter-spacing:-.01em}
+    #spin-btn:hover{filter:brightness(1.08)}
+    #spin-btn:disabled{background:#566169;color:#e8e7e0}
+    .hint{font-size:13px;color:#bdc4be;text-align:center;line-height:1.45;min-height:20px}
+    .modal{background:#0d1519d9;backdrop-filter:blur(8px);z-index:20}
+    .modal-card{background:#f4f0e6;color:#1b252a;border-radius:4px;padding:34px;border-top:5px solid #c0a97f;max-width:500px}
+    .modal-title{font-size:28px;letter-spacing:-.04em}
+    .modal-text,.modal-text b{color:#344348}
+    .modal-btn{background:#263a40;border-radius:4px;box-shadow:none;padding:14px 24px}
+    @media(max-width:840px){.container{grid-template-columns:1fr;gap:20px;padding:36px 25px 44px;min-height:100svh}.roulette-intro{padding:18px 0 14px}.roulette-overline{margin-bottom:22px}h1{font-size:clamp(42px,9vw,68px);margin-bottom:14px}.roulette-description{font-size:15px;line-height:1.5}.roulette-facts{display:none}.demo-label{margin:18px 0 0}.wheel-wrap{width:min(100%,470px);padding:14px}.roulette-action{margin-top:20px}}
+    @media(min-width:501px) and (max-width:840px){.container{gap:12px;padding:24px 25px}.roulette-intro{padding:12px 0}.roulette-overline{margin-bottom:14px}h1{font-size:clamp(42px,8vw,62px);margin-bottom:10px}.demo-label{margin-top:12px}.wheel-wrap{width:min(100%,400px);padding:12px}.roulette-action{margin-top:14px}}
+    @media(max-width:500px){.container{padding:22px 18px 32px;gap:18px}.roulette-intro{padding:12px 0}.roulette-overline{font-size:9px;margin-bottom:17px}h1{font-size:43px}.roulette-description{font-size:14px}.demo-label{font-size:10px;margin-top:12px}.wheel-wrap{width:min(100%,370px);padding:11px}.roulette-action{margin-top:16px}#spin-btn{min-height:50px;padding:14px 19px}.modal-card{padding:24px}}
+    @media(prefers-reduced-motion:reduce){#spin-btn{transition:none}}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="roulette-intro">
+      <p class="roulette-overline">ЛОГИСТИКА / КОЛЕСО ФОРТУНЫ</p>
+      <h1>Ваша отправка.<br><em>Ваш шанс.</em></h1>
+      <p class="roulette-description">Небольшой сюрприз к следующей доставке. Восемь секторов — от полезного бонуса до шутки логиста.</p>
+      <div class="roulette-facts"><span>08<br><small>секторов</small></span><span>01<br><small>попытка</small></span></div>
+      <p class="demo-label">Локальная демонстрация · призы не выдаются</p>
+    </div>
+    <div class="roulette-stage">
+      <div class="wheel-wrap">
+        <canvas id="roulette" width="350" height="350" aria-label="Колесо с восемью возможными результатами"></canvas>
+        <div id="pointer"></div>
+      </div>
+      <div class="roulette-action"><button id="spin-btn">Вращать колесо <span aria-hidden="true">↗</span></button><p id="hint" class="hint"></p></div>
+    </div>
+  </main>
+
+  <!-- модалка результата -->
+  <div id="result-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="result-title">
+    <div class="modal-card">
+      <div id="result-title" class="modal-title">Демонстрационный результат</div>
+      <div id="result-text" class="modal-text"></div>
+      <img id="meme" class="meme hidden" alt="мем"/>
+      <button id="close-modal" class="modal-btn">Понятно</button>
+    </div>
+  </div>
+
+  
+  <script>
+    /* ===== НАСТРОЙКА ===== */
+    // прод-вебхук n8n — поменяй на свой при необходимости
+    var WEBHOOK_URL = '';
+
+    // мемы для «дичь от логиста»
+    var LOGIST_MEMES = [
+      "meme-1.png",
+      "meme-2.png",
+      "meme-3.png",
+      "meme-4.png",
+      "meme-5.png"
+    ];
+
+    /* ===== Telegram SDK ===== */
+    var tg = (window.Telegram && window.Telegram.WebApp) ? window.Telegram.WebApp : null;
+    
+    // Инициализация Telegram WebApp
+    if (tg) {
+      try {
+        tg.ready && tg.ready();
+        tg.setHeaderColor && tg.setHeaderColor('#2c3e50');
+        tg.setBackgroundColor && tg.setBackgroundColor('#2c3e50');
+      } catch(e) {
+        console.warn('Telegram WebApp error:', e);
+      }
+    }
+  var user = (tg && tg.initDataUnsafe && tg.initDataUnsafe.user) ? tg.initDataUnsafe.user : null;
+  var TG_ID = user ? user.id : null;
+  var USERNAME = user ? user.username : null;
+
+    /* ===== Версионированный флаг «крутил» + dev/reset ===== */
+    var urlParams   = new URLSearchParams(location.search);
+    var APP_VERSION = urlParams.get('v') || '1';
+    var DEV_MODE    = urlParams.get('dev') === '1';
+    var RESET_FLAG  = urlParams.get('reset') === '1';
+    var STORAGE_KEY = 'roulette_played_v' + APP_VERSION;
+
+    /* ===== DOM ===== */
+    var canvas, ctx, spinBtn, hint, modal, resultText, memeImg, closeModal;
+
+    /* ===== ДАННЫЕ СЕКТОРОВ ===== */
+    var prizes = [
+      { label: 'дичь от логиста',            color: '#1f766c', weight: 45.45 }, // мемы — чаще всего
+      { label: 'сок благодарности',          color: '#b25349', weight: 27.27 }, // 100 ₽
+      { label: 'быстрая полка',              color: '#946a37', weight: 18.18 }, // приоритет на доставку
+      { label: 'прямой перевод',             color: '#36647d', weight: 5 },     // 300 ₽
+      { label: 'скидка на доставку -10%',    color: '#76506f', weight: 10 },    // скидка на следующую доставку
+      { label: 'сертификат Ozon',            color: '#4b5b9b', weight: 1 },     // минимальная вероятность
+      { label: 'страховка на отправку',      color: '#687b49', weight: 30 },    // бесплатная страховка
+      { label: 'второй шанс',                color: '#ae692e', weight: 10 }     // ещё одна попытка
+    ];
+    var sectors = prizes.length;
+    var arc = (2*Math.PI)/sectors;
+
+    /* ===== ГЕОМЕТРИЯ/ОТРИСОВКА ===== */
+    var spinning = false;
+    var alreadyPlayed = false;
+    var secondChanceAvailable = false;
+    var secondChanceConsumed = false;
+    var usingSecondChanceNow = false;
+    var DPR = 1;
+    var VISUAL_SIZE = 350; // CSS-пиксели
+
+    function getEffectiveDPR(){
+      var dv = (window.devicePixelRatio || 1);
+      var vs = (window.visualViewport && window.visualViewport.scale) ? window.visualViewport.scale : 1;
+      return Math.max(1, Math.round(dv * vs)); // целое => чётче
+    }
+
+    function resizeCanvas(){
+      // The canvas fits the framed stage, including its padding and border.
+      var stage = document.querySelector('.roulette-stage');
+      var available = stage ? stage.clientWidth : window.innerWidth - 36;
+      var outer = Math.min(510, available, window.innerHeight * (window.innerWidth < 500 ? .58 : .7));
+      var inset = window.innerWidth < 500 ? 22 : 36;
+      var side = Math.floor(outer - inset);
+      
+      VISUAL_SIZE = side;
+
+      var wheelWrap = document.querySelector('.wheel-wrap');
+      if (wheelWrap) {
+        wheelWrap.style.width = outer + 'px';
+        wheelWrap.style.height = outer + 'px';
+      }
+
+      canvas.style.width  = VISUAL_SIZE + 'px';
+      canvas.style.height = VISUAL_SIZE + 'px';
+
+      DPR = getEffectiveDPR();
+      canvas.width  = VISUAL_SIZE * DPR;
+      canvas.height = VISUAL_SIZE * DPR;
+
+      ctx.setTransform(1,0,0,1,0,0);
+      ctx.scale(DPR, DPR);
+      ctx.imageSmoothingEnabled = true;
+
+      drawStatic();
+    }
+
+    // Хелпер: авто-подгон шрифта + перенос до двух строк
+    function fitLabelToSector(ctx, label, maxWidthPx, baseFontPx, minFontPx) {
+      let fontPx = baseFontPx;
+      while (fontPx >= minFontPx) {
+        ctx.font = `600 ${fontPx}px -apple-system, Segoe UI, Roboto, Arial`;
+        if (ctx.measureText(label).width <= maxWidthPx) {
+          return { lines: [label], fontPx };
+        }
+        fontPx -= 1;
+      }
+      const words = label.split(' ');
+      if (words.length === 1) return { lines: [label], fontPx: minFontPx };
+
+      for (let cut = 1; cut < words.length; cut++) {
+        const l1 = words.slice(0, cut).join(' ');
+        const l2 = words.slice(cut).join(' ');
+        let fp = baseFontPx;
+        while (fp >= minFontPx) {
+          ctx.font = `600 ${fp}px -apple-system, Segoe UI, Roboto, Arial`;
+          if (Math.max(ctx.measureText(l1).width, ctx.measureText(l2).width) <= maxWidthPx) {
+            return { lines: [l1, l2], fontPx: fp };
+          }
+          fp -= 1;
+        }
+      }
+      return { lines: [label], fontPx: minFontPx };
+    }
+
+    function drawWheel(angle){
+      var W = VISUAL_SIZE, H = VISUAL_SIZE;
+
+      // «прищёлкнутые» координаты для чётких линий
+      var cx = Math.floor(W/2) + 0.5;
+      var cy = Math.floor(H/2) + 0.5;
+      var r  = Math.floor(Math.min(cx, cy) - 8) + 0.5;
+
+      ctx.save();
+      ctx.translate(cx, cy);
+      ctx.rotate(angle || 0);
+      ctx.translate(-cx, -cy);
+
+      for (var i=0;i<sectors;i++){
+        var a0 = i*arc, a1 = a0 + arc;
+
+        // сектор
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.fillStyle = prizes[i].color;
+        ctx.arc(cx, cy, r, a0, a1);
+        ctx.closePath();
+        ctx.fill();
+
+        // граница сектора
+        ctx.strokeStyle = 'rgba(0,0,0,.15)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(cx, cy, r, a0, a1);
+        ctx.stroke();
+
+        // подпись — крупная, читаемая, но не вылезает
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(a0 + arc/2);
+        ctx.fillStyle = '#fff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+
+        // динамика от радиуса
+        const baseFontPx = Math.round(Math.min(22, Math.max(13, r * 0.065)));
+        const minFontPx  = Math.max(11, baseFontPx - 5);
+
+        const maxTextWidth = r * 0.70; // безопасная ширина
+        const tx           = r * 0.55; // чуть глубже внутрь сектора
+
+        const fitted = fitLabelToSector(ctx, prizes[i].label, maxTextWidth, baseFontPx, minFontPx);
+        ctx.font = `600 ${fitted.fontPx}px -apple-system, Segoe UI, Roboto, Arial`;
+
+        // лёгкая тень: на мобилках слабее
+        var isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        ctx.shadowColor = isMobile ? 'rgba(0,0,0,.2)' : 'rgba(0,0,0,.28)';
+        ctx.shadowBlur  = isMobile ? 0.6 : 1.1;
+
+        if (fitted.lines.length === 1){
+          ctx.fillText(fitted.lines[0], tx, 0);
+        } else {
+          const lh = fitted.fontPx + 2;
+          ctx.fillText(fitted.lines[0], tx, -lh/2);
+          ctx.fillText(fitted.lines[1], tx,  lh/2);
+        }
+        ctx.restore();
+      }
+      ctx.restore();
+
+      // белый ободок
+      ctx.lineWidth = 6;
+      ctx.strokeStyle = 'rgba(255,255,255,.9)';
+      ctx.beginPath(); ctx.arc(cx, cy, r+2, 0, Math.PI*2); ctx.stroke();
+
+      // центр
+      ctx.fillStyle = '#e5ecff';
+      ctx.beginPath(); ctx.arc(cx, cy, 14, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,.12)'; ctx.lineWidth = 1; ctx.stroke();
+    }
+    function drawStatic(){ ctx.clearRect(0,0,canvas.width,canvas.height); drawWheel(0); }
+
+    /* ===== ТЕКСТЫ ===== */
+    function buildMessageHTML(prizeLabel){
+      if (prizeLabel === 'сок благодарности')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 🧃 <b>Сок благодарности</b>\n\n💸 100 ₽ на карту.\n📩 Пришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'быстрая полка')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 🚀 <b>Быстрая полка</b>\n\n📦 Приоритет на следующую доставку.\n📩 Пришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'прямой перевод')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 💳 <b>Прямой перевод</b>\n\n💵 300 ₽ на карту.\n📩 Пришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'скидка на доставку -10%')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 📉 <b>Скидка на следующую доставку</b>\n\n🔟 -10% на ближайшую доставку.\n📩 Пришлите скрин вашему логисту — он применит скидку.';
+      if (prizeLabel === 'сертификат Ozon')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 🛍️ <b>Подарочный сертификат Ozon</b>\n\n🎁 Логист отправит промокод после сверки.';
+      if (prizeLabel === 'страховка на отправку')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 🛡️ <b>Бесплатная страховка</b>\n\n📦 Защитим одну отправку за наш счёт.\n📩 Пришлите скрин вашему логисту — он всё оформит.';
+      if (prizeLabel === 'второй шанс')
+        return '✨ <b>Второй шанс!</b>\n\nКрутите колесо ещё раз.';
+      if (prizeLabel === 'дичь от логиста')
+        return '🎉 <b>Поздравляем!</b> Вам выпал приз: 😂 <b>Дичь от логиста</b>\n\nЛови мем! 😉';
+      return '🎉 <b>Поздравляем!</b> Ваш приз: ' + prizeLabel;
+    }
+    function textForModal(prizeLabel){
+      if (prizeLabel === 'сок благодарности')
+        return 'Сок благодарности — 100 руб. на карту.\nПришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'быстрая полка')
+        return 'Быстрая полка — приоритет на следующую доставку.\nПришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'прямой перевод')
+        return 'Прямой перевод — 300 руб. на карту.\nПришлите скрин вашему логисту — он всё организует.';
+      if (prizeLabel === 'дичь от логиста')
+        return 'Дичь от логиста — лови мем 😄';
+      if (prizeLabel === 'скидка на доставку -10%')
+        return 'Скидка -10% на следующую доставку.\nСвяжитесь с логистом и покажите скрин.';
+      if (prizeLabel === 'сертификат Ozon')
+        return 'Подарочный сертификат Ozon.\nЛогист пришлёт промокод после подтверждения.';
+      if (prizeLabel === 'страховка на отправку')
+        return 'Бесплатная страховка для одной отправки.\nЛогист оформит всё по скрину.';
+      if (prizeLabel === 'второй шанс')
+        return 'Вам выпал второй шанс! Закройте окно и крутите колесо ещё раз.';
+      return prizeLabel;
+    }
+
+    /* ===== ВЕБХУК ===== */
+    function postPrize(payload){ window.demoLastPrize=payload.prize; return Promise.resolve(); }
+
+/* ===== СПИН (веса) ===== */
+function pickIndexByWeight(arr) {
+  const total = arr.reduce((s, x) => s + (x.weight || 1), 0);
+  let r = Math.random() * total;
+  for (let i = 0; i < arr.length; i++) {
+    r -= (arr[i].weight || 1);
+    if (r <= 0) return i;
+  }
+  return arr.length - 1;
+}
+
+function spin(){
+  if (spinning) return;
+  if (!DEV_MODE && alreadyPlayed && !secondChanceAvailable) return; // «1 раз» (кроме dev), кроме второго шанса
+
+  usingSecondChanceNow = false;
+  if (hint) hint.textContent = '';
+
+  if (secondChanceAvailable){
+    usingSecondChanceNow = true;
+    secondChanceAvailable = false;
+    secondChanceConsumed = true;
+    try{ if(!DEV_MODE) localStorage.setItem(STORAGE_KEY, '1'); }catch(_){}
+  }
+
+  spinning = true; 
+  spinBtn.disabled = true;
+
+  // выбор сектора по весам + целевая остановка
+  var chosenIdx = pickIndexByWeight(prizes);
+  var stopAngle = chosenIdx * arc + arc/2;
+  var total = (Math.floor(Math.random()*5) + 8)*2*Math.PI + (2*Math.PI - stopAngle);
+  var start = null, duration = 6000;
+
+  function frame(ts){
+    if(!start) start = ts;
+    var p = Math.min(1, (ts - start)/duration);
+    var ease = 1 - Math.pow(1 - p, 4);
+    var angle = ease * total;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawWheel(angle);
+
+    if (p < 1){
+      requestAnimationFrame(frame);
+    } else {
+      var current = angle % (2 * Math.PI);
+      var winAngle = (2 * Math.PI - current) % (2 * Math.PI);
+      var idx = Math.floor(winAngle / arc) % sectors;
+      var prizeLabel = prizes[idx].label;;
+
+      var memeUrl = '';
+      if (prizeLabel === 'дичь от логиста' && LOGIST_MEMES.length){
+        memeUrl = LOGIST_MEMES[Math.floor(Math.random()*LOGIST_MEMES.length)];
+      }
+
+      var messageHTML = buildMessageHTML(prizeLabel, memeUrl);
+      var modalText   = textForModal(prizeLabel);
+
+      // модалка
+      resultText.textContent = modalText;
+      if (memeUrl){
+        memeImg.src = memeUrl; 
+        memeImg.classList.remove('hidden'); 
+        memeImg.style.display = 'block';
+      } else {
+        memeImg.removeAttribute('src'); 
+        memeImg.classList.add('hidden'); 
+        memeImg.style.display = 'none';
+      }
+      modal.classList.remove('hidden'); closeModal.focus();
+
+      var isSecondChance = (prizeLabel === 'второй шанс');
+
+      if (isSecondChance && !secondChanceConsumed){
+        secondChanceAvailable = true;
+        secondChanceConsumed = false;
+        spinBtn.disabled = false;
+        alreadyPlayed = true;
+        hint.textContent = 'Вам выпал второй шанс — можно крутить ещё раз!';
+        try{ if(!DEV_MODE) localStorage.setItem(STORAGE_KEY, 'second_chance'); }catch(_){}
+      } else {
+        secondChanceAvailable = false;
+        try{ if(!DEV_MODE) localStorage.setItem(STORAGE_KEY, '1'); }catch(_){}
+        alreadyPlayed = !DEV_MODE;
+        spinBtn.disabled = alreadyPlayed;
+        if (!DEV_MODE && alreadyPlayed){
+          hint.textContent = 'Вы уже крутили колесо на этом устройстве.';
+        } else {
+          hint.textContent = '';
+        }
+      }
+
+      usingSecondChanceNow = false;
+      spinning = false;
+
+      // отправка в n8n
+      postPrize({
+        tg_id: TG_ID,
+        username: USERNAME,
+        prize: prizeLabel,
+        message_html: messageHTML,
+        meme_url: memeUrl,
+        ts: Date.now(),
+        event_id: String(TG_ID||'0') + '-' + String(Date.now())
+      });
+    }
+  }
+  requestAnimationFrame(frame);
+}
+
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal){modal.classList.add('hidden');spinBtn.focus();}});
+    /* ===== INIT ===== */
+    function init(){
+      // DOM
+      canvas     = document.getElementById('roulette');
+      ctx        = canvas.getContext('2d');
+      spinBtn    = document.getElementById('spin-btn');
+      hint       = document.getElementById('hint');
+      modal      = document.getElementById('result-modal');
+      resultText = document.getElementById('result-text');
+      memeImg    = document.getElementById('meme');
+      closeModal = document.getElementById('close-modal');
+
+      // reset по параметру
+      try{ if (RESET_FLAG) localStorage.removeItem(STORAGE_KEY); }catch(_){}
+
+      // «1 раз» (кроме dev) + обработка второго шанса
+      try{
+        if (!DEV_MODE){
+          var storedState = localStorage.getItem(STORAGE_KEY);
+          if (storedState === '1'){
+            alreadyPlayed = true;
+            spinBtn.disabled = true;
+            hint.textContent = 'Вы уже крутили колесо на этом устройстве.';
+          } else if (storedState === 'second_chance'){
+            alreadyPlayed = true;
+            secondChanceAvailable = true;
+            secondChanceConsumed = false;
+            hint.textContent = 'У вас есть второй шанс — воспользуйтесь им!';
+          }
+        }
+      }catch(_){}
+
+      resizeCanvas();
+      window.addEventListener('resize', function(){
+        resizeCanvas();
+      });
+      
+      window.addEventListener('orientationchange', function(){
+        setTimeout(resizeCanvas, 100);
+      });
+      spinBtn.addEventListener('click', spin);
+      closeModal.addEventListener('click', function(){
+        modal.classList.add('hidden'); spinBtn.focus();
+        try{ tg && tg.close && tg.close(); }catch(_){}
+      });
+    }
+
+    if (document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
