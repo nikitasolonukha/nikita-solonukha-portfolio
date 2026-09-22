@@ -8,7 +8,7 @@
 *{box-sizing:border-box}body{margin:0;background:#eeeae3;color:#292923;font:16px/1.6 Arial,sans-serif}main{max-width:1600px;margin:auto;padding:24px}a{color:inherit}aside{font-size:14px;margin-bottom:20px}img,video{width:100%;display:block}.cover{margin-bottom:42px}.media{display:grid;grid-template-columns:2fr 1fr;gap:32px;margin:24px 0 52px;align-items:start}figure{margin:0;min-width:0}figcaption{font-size:14px;margin:10px 0 24px}.mobile{max-width:390px;justify-self:center}.screens{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:24px 0 44px}.note,footer{font-size:14px}footer{padding:24px 0}@media(max-width:760px){main{padding:12px}.media,.screens{grid-template-columns:1fr;gap:12px}}
 </style>
 <main>
-  <aside><a id="live" href="http://127.0.0.1:4344/">Открыть текущую локальную версию ↗</a> · Сайт психоаналитика · portfolio polish.</aside>
+  <aside><a id="live" href="tatiana-redesign/index.html">Открыть интерактивную версию ↗</a> · Сайт психоаналитика · portfolio polish.</aside>
   <img class="cover" src="../projects/tatiana/assets/art-v2-overview-1440.png?v=art-v2" alt="Татьяна — обновлённый сайт психоаналитика">
   <h2>Текущая portfolio-версия</h2>
   <div class="media">
@@ -24,5 +24,10 @@
   <p class="note">ORIGINAL и PORTFOLIO POLISH разделены в описании. Контактный номер в новых материалах скрыт; внешние сообщения и звонки не выполнялись.</p>
   <footer><a href="https://github.com/nikitasolonukha/nikita-solonukha-portfolio/blob/main/projects/tatiana/case.md">Факты и источники</a> · <a href="index.html">Все проекты</a></footer>
 </main>
-<script>document.querySelector('#live').href=location.protocol+'//'+location.hostname+':4344/'</script>
+<script>
+  const live = document.querySelector('#live');
+  if (live && (location.hostname === '127.0.0.1' || location.hostname === 'localhost')) {
+    live.href = location.protocol + '//' + location.hostname + ':4344/';
+  }
+</script>
 </html>
