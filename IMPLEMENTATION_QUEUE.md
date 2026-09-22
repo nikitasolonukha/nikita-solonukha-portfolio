@@ -4,7 +4,7 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Site shell
 
-- Home / Work / About / Archive / Contact / navigation / mobile navigation — READY; global final QA remains after case queue.
+- Home / Work / About / Archive / Contact / navigation / mobile navigation — READY; новая редакционная оболочка проверена на 390/1440 и для 35 кейсов.
 
 | # | Project | Case ID | Presentation status | Next action |
 |---:|---|---|---|---|
@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: Global QA / READY. Published build verified.
-CHANGES: All 35 case pages checked at 390/1440. Home, Work, About, Archive, navigation, filters, motion and reduced-motion checked. 441 internal links and 353 media files verified; no broken links, missing assets, duplicate IDs, removed-project reappearances, or NDA leakage found by automated checks. Secondary videos now load only on interaction and were played successfully. GitHub Pages built commit `7d0b8e0`; 16 live views passed at 390/1440. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
-NEXT: Resume only when original assets for archival cases become available or new project material is supplied.
+STATUS: Local QA / READY; public build verification pending.
+CHANGES: Portrait-first Home, 12-row Work, 23-row Archive, About and visual case template. All 35 cases checked at 390/1440 with 0 errors. 437 internal links and 353 project media files verified. Filters, 5 media previews, mobile menu and reduced motion passed. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: Publish new shell, verify live build at 390/1440, record commit in QA report.

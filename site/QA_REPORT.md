@@ -1,4 +1,6 @@
-# QA · новое портфолио
+# QA · редакционная оболочка портфолио
+
+22 сентября 2026: Home, Work, About, Archive и Case перестроены в персональную редакционную систему. Первый экран показывает собственный портрет Никиты и имя; проекты начинаются ниже. Реальные проектные медиа и границы достоверности сохранены. Геометрия и адаптация референса записаны в `references/DENNIS_SYSTEM.md`.
 
 Проверка локального сайта `/site/` после разделения Home / Work / About / Archive. Источник проектов — канонический `portfolio/data.json`; research и review не заменены.
 
@@ -9,16 +11,17 @@
 | 35 кейсов | 390 и 1440 | 70 views, ошибок 0 |
 | Навигация / разные типы кейсов | Home, Work, About, Archive, Shopify, Meta, Portnoy, AI Support на 320, 390, 768, 1440 | 32 views, ошибок 0 |
 | Media | Скриншоты и master video берутся из сохранённых материалов проектов | Пропавших изображений и пустых video-секций в проверенных views нет |
-| Motion | Семь коротких фрагментов из существующих master videos | Проигрываются без звука при hover/focus; `prefers-reduced-motion` отключает превью |
-| Взаимодействия | Четыре фильтра Work, семь видео-превью, мобильное меню, reduced-motion | Ошибок 0; локальные video URL возвращают 200 |
+| Motion | Пять коротких фрагментов из существующих master videos | Проигрываются без звука при hover/focus; `prefers-reduced-motion` отключает превью |
+| Взаимодействия | Фильтры Work, пять видео-превью, мобильное меню, reduced-motion | Ошибок 0; локальные video URL возвращают 200 |
 | Feature moments | Пифпаф Reels, Портной 3D, AI Support webchat + Telegram на 390/1440 | 6 визуальных проверок, ошибок 0 |
-| Ссылки | Home, Work, About, Archive и все 35 case pages | 39 страниц, 441 внутренняя ссылка, ошибок 0 |
+| Ссылки | Home, Work, About, Archive и все 35 case pages | 39 страниц, 437 внутренних ссылок, ошибок 0 |
 | Целостность контента | `portfolio/data.json`, assets, исключённые проекты, NDA-границы | 35 кейсов, 353 media-файла, ошибок 0 |
 | Загрузка | Home, Work, Shopify, B2B на 390/1440 | Нет autoplay и переполнения; на страницах кейсов при открытии загружаются метаданные только основного видео |
 | Дополнительные видео | Shopify и B2B на мобильной ширине | `preload=none`; воспроизведение запускается по действию пользователя |
-| Публикация | GitHub Pages, Home / Work / About / Archive и 4 ключевых кейса на 390/1440 | Коммит `7d0b8e0` собран; 16 опубликованных views, ошибок 0 |
+| Новый первый экран | 390 и 1440 | Портрет загружен; горизонтального переполнения нет |
+| Публикация | GitHub Pages, Home / Work / About / Archive и 4 ключевых кейса на 390/1440 | Проверка после публикации новой оболочки ожидается |
 
-Проверки измеряли горизонтальное переполнение, runtime JS errors, наличие H1, битые изображения, количество видео и наличие архивной пометки там, где нет записи. Снимки результата лежат в `site/qa/`: `home-1440.png`, `home-390.png`, `work-1440.png`, `work-390.png`, `shopify-1440.png`, `shopify-390.png`, отдельные top screenshots About/Archive/Meta/Portnoy/Support.
+Проверки измеряли горизонтальное переполнение, runtime JS errors, наличие H1, битые изображения, количество видео и наличие архивной пометки там, где нет записи. Снимки новой оболочки лежат в `site/qa/`: `editorial-portrait-{390,1440}.png`, `editorial-work-{390,1440}.png`, `editorial-about-{390,1440}.png`, `editorial-archive-{390,1440}.png`, `editorial-fix-shopify-store-builder-{390,1440}.png` и кадры Meta/Portnoy/Support.
 
 Локальные замеры загрузки — диагностика, а не публичные Core Web Vitals. Отчёты: `site/qa/all-cases.json`, `site/qa/links.json`, `site/qa/content-integrity.json`, `site/qa/performance.json`, `site/qa/public-smoke.json`.
 
