@@ -1,0 +1,25 @@
+{
+  "checks": [
+    {
+      "route": "Home",
+      "libraries": {
+        "gsap": true,
+        "lenis": true,
+        "scrollTrigger": true
+      },
+      "marqueeMoves": true
+    },
+    {
+      "route": "Work",
+      "preview": {
+        "image": 2400,
+        "top": 574.8118286132812
+      }
+    },
+    {
+      "route": "About mobile",
+      "menu": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,145 @@
+{
+  "views": [
+    {
+      "width": 320,
+      "route": "index.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Никита Солонуха"
+    },
+    {
+      "width": 320,
+      "route": "work.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "От идеидо продукта."
+    },
+    {
+      "width": 320,
+      "route": "contact.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Давайте создадимчто-то полезное."
+    },
+    {
+      "width": 320,
+      "route": "case.html?id=shopify-store-builder",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Shopify Store Builder"
+    },
+    {
+      "width": 430,
+      "route": "index.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Никита Солонуха"
+    },
+    {
+      "width": 430,
+      "route": "work.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "От идеидо продукта."
+    },
+    {
+      "width": 430,
+      "route": "contact.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Давайте создадимчто-то полезное."
+    },
+    {
+      "width": 430,
+      "route": "case.html?id=shopify-store-builder",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Shopify Store Builder"
+    },
+    {
+      "width": 768,
+      "route": "index.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Никита Солонуха"
+    },
+    {
+      "width": 768,
+      "route": "work.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "От идеидо продукта."
+    },
+    {
+      "width": 768,
+      "route": "contact.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Давайте создадимчто-то полезное."
+    },
+    {
+      "width": 768,
+      "route": "case.html?id=shopify-store-builder",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Shopify Store Builder"
+    },
+    {
+      "width": 1024,
+      "route": "index.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Никита Солонуха"
+    },
+    {
+      "width": 1024,
+      "route": "work.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "От идеидо продукта."
+    },
+    {
+      "width": 1024,
+      "route": "contact.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Давайте создадимчто-то полезное."
+    },
+    {
+      "width": 1024,
+      "route": "case.html?id=shopify-store-builder",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Shopify Store Builder"
+    },
+    {
+      "width": 1920,
+      "route": "index.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Никита Солонуха"
+    },
+    {
+      "width": 1920,
+      "route": "work.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "От идеидо продукта."
+    },
+    {
+      "width": 1920,
+      "route": "contact.html",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Давайте создадимчто-то полезное."
+    },
+    {
+      "width": 1920,
+      "route": "case.html?id=shopify-store-builder",
+      "overflow": 0,
+      "broken": [],
+      "h1": "Shopify Store Builder"
+    }
+  ],
+  "errors": []
+}

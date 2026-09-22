@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: Local motion QA / READY; public motion build verification pending.
-CHANGES: Portrait-first Home now has scroll-reactive desktop marquee and a readable two-line mobile name. Lenis + GSAP/ScrollTrigger coordinate scroll, reveals, hover preview and transitions. Contact page added. All 35 cases checked at 390/1440 with 0 errors. 443 internal links across 40 pages and 353 media files verified. 12 motion views and real transitions passed; 8 performance views have no autoplay/overflow. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
-NEXT: Publish motion pass and verify live build on desktop/mobile.
+STATUS: Global motion QA / READY. Published build verified.
+CHANGES: Portrait-first Home has scroll-reactive desktop marquee and a readable two-line mobile name. Lenis + GSAP/ScrollTrigger coordinate scroll, reveals, hover preview and transitions. Contact page added. All 35 cases checked at 390/1440 with 0 errors. 443 internal links across 40 pages and 353 media files verified. 12 motion views, 20 extra breakpoint views and real transitions passed; 8 performance views have no autoplay/overflow. GitHub Pages built `3af7454`; 18 live views and public marquee/preview/menu passed. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: Original assets for four archival cases if provided; new projects can enter the queue without changing this shell.
