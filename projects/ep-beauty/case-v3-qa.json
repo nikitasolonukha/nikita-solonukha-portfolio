@@ -1,0 +1,48 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "offenders": [],
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-mobile.mp4"
+    ]
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "offenders": [],
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-mobile.mp4"
+    ]
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "offenders": [
+      {
+        "tag": "DIV",
+        "class": "heroWord",
+        "left": 3.890625,
+        "right": 618.921875
+      },
+      {
+        "tag": "IMG",
+        "class": "heroScreen",
+        "left": 42.5,
+        "right": 452
+      }
+    ],
+    "broken": [],
+    "videos": [
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-desktop.mp4",
+      "http://127.0.0.1:4315/projects/ep-beauty/assets/master-mobile.mp4"
+    ]
+  }
+]
