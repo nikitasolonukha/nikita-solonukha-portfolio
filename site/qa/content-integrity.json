@@ -1,0 +1,29 @@
+{
+  "publicCases": 35,
+  "canonicalIds": 35,
+  "checkedMedia": 353,
+  "totalVideoMiB": 121,
+  "largestVideos": [
+    {
+      "reference": "../projects/shopify-store-builder/assets/complete-desktop.mp4?v=complete-flow",
+      "MiB": 8
+    },
+    {
+      "reference": "../projects/shopify-store-builder/assets/complete-mobile.mp4?v=complete-flow",
+      "MiB": 8
+    },
+    {
+      "reference": "../projects/magnum/assets/master-desktop.mp4?v=natural",
+      "MiB": 6
+    },
+    {
+      "reference": "../projects/magnum/assets/master-mobile.mp4?v=natural",
+      "MiB": 5
+    },
+    {
+      "reference": "../projects/portfolio-archive/assets/master-live-1440.webm",
+      "MiB": 5
+    }
+  ],
+  "errors": []
+}

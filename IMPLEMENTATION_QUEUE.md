@@ -16,28 +16,28 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 | 06 | Портной | portnoy | READY | Existing 3D feature video and actual model preserved; 390/1440 checked |
 | 07 | AI Support | support-rag | READY | Real Telegram screenshot plus webchat demo; mobile cover and 390/1440 checked |
 | 08 | Vibe AutoRouter | vibe-autorouter | READY | Ranking explanation and budget state featured; 390/1440 checked |
-| 09 | B2B Lead Generator | maps-lead-generator | IN PROGRESS | Inspect existing pipeline/table evidence; focus case on workflow and scored results |
-| 10 | Ритм | ritm | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 11 | Живые фото | photo-animation | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 12 | GARMONY | garmony | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 13 | LexLegal | lexlegal | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 14 | Колесо Фортуны | roulette | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 15 | Татьяна | tatiana | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 16 | PP BOT | ppbot | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 17 | GIGANT | gigant | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 18 | Desert Wheels | desert-wheels | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 19 | Women Strange | women-strange | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 20 | Linux Lab | linux-lab | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 21 | Трек в подарок | trekpodarok | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 22 | EP Beauty | ep-beauty | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 23 | Solonflow | portfolio-archive | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 24 | Степ | stepbystep | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 25 | СказкаМоя | skazka | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 26 | Twitter / X Automation | twitter-automation | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 27 | Telegram Schedule | telegram-schedule | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 28 | Telegram Intel | telegram-intel | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 29 | Telegram AI Lead Hunter | telegram-leads | TODO | Targeted art-direction pass; preserve real product surfaces |
-| 30 | TopGadalkin | topgadalkin | TODO | Targeted art-direction pass; preserve real product surfaces |
+| 09 | B2B Lead Generator | maps-lead-generator | READY | Atlas workflow and Beauty scoring shown as two implementations; 390/1440 checked |
+| 10 | Ритм | ritm | READY | Existing violet/lime redesign and full master retained; 390/1440 case checked |
+| 11 | Живые фото | photo-animation | READY | Existing original-design videos/comparison retained; 390/1440 case checked |
+| 12 | GARMONY | garmony | READY | Approved door-scroll presentation retained; 390/1440 case checked |
+| 13 | LexLegal | lexlegal | READY | Mobirise original and current polish distinguished; 390/1440 checked |
+| 14 | Колесо Фортуны | roulette | READY | Master includes two spins and local limit; 390/1440 checked |
+| 15 | Татьяна | tatiana | READY | Existing site and four recordings retained; 390/1440 case checked |
+| 16 | PP BOT | ppbot | READY | Telegram-first materials retained; 390/1440 case checked |
+| 17 | GIGANT | gigant | READY | Existing product presentation retained; 390/1440 case checked |
+| 18 | Desert Wheels | desert-wheels | READY | Existing product presentation retained; 390/1440 case checked |
+| 19 | Women Strange | women-strange | READY | Existing site presentation retained; 390/1440 case checked |
+| 20 | Linux Lab | linux-lab | READY | Existing technical presentation retained; 390/1440 case checked |
+| 21 | Трек в подарок | trekpodarok | READY | Existing story/product media retained; 390/1440 case checked |
+| 22 | EP Beauty | ep-beauty | READY | Approved magazine-style presentation retained; 390/1440 case checked |
+| 23 | Solonflow | portfolio-archive | READY | Original portfolio preserved as historical case; 390/1440 checked |
+| 24 | Степ | stepbystep | READY | Existing full mobile/product walkthrough retained; 390/1440 case checked |
+| 25 | СказкаМоя | skazka | READY | Existing site/product presentation retained; 390/1440 case checked |
+| 26 | Twitter / X Automation | twitter-automation | READY | X-first result interface retained; 390/1440 case checked |
+| 27 | Telegram Schedule | telegram-schedule | READY | Telegram publishing result retained; 390/1440 case checked |
+| 28 | Telegram Intel | telegram-intel | READY | Telegram-first interaction retained; 390/1440 case checked |
+| 29 | Telegram AI Lead Hunter | telegram-leads | READY | Sanitized Telegram lead topic retained; 390/1440 case checked |
+| 30 | TopGadalkin | topgadalkin | READY | Existing site presentation retained; 390/1440 case checked |
 | 31 | Личный AI-ассистент | personal-assistant | BLOCKED | Use existing case.md; missing originals recorded in PORTFOLIO_CORRECTION_QUEUE.md |
 | 32 | Telegram News · две версии | news-aggregator-archive | BLOCKED | Use existing case.md; missing originals recorded in PORTFOLIO_CORRECTION_QUEUE.md |
 | 33 | n8n Copilot | copilot | BLOCKED | Use existing case.md; missing originals recorded in PORTFOLIO_CORRECTION_QUEUE.md |
@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: B2B Lead Generator / IN PROGRESS.
-CHANGES: KONTUR, MAGNUM, Пифпаф and Vibe AutoRouter gained evidence-led feature moments; Портной and AI Support remain verified at 390/1440.
-NEXT: inspect B2B pipeline/table, then Ритм; global QA only after queue.
+STATUS: Global QA / READY. Public build verification pending.
+CHANGES: All 35 case pages checked at 390/1440. Home, Work, About, Archive, navigation, filters, motion and reduced-motion checked. 441 internal links and 353 media files verified; no broken links, missing assets, duplicate IDs, removed-project reappearances, or NDA leakage found by automated checks. Secondary videos now load only on interaction and were played successfully. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: publish final changes, verify the GitHub Pages build and live Home/Work/key cases, then close the site-wide checkpoint.

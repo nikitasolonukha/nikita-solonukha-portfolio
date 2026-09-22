@@ -1,0 +1,110 @@
+{
+  "views": [
+    {
+      "route": "index.html",
+      "width": 390,
+      "videoRequests": 0,
+      "imageMiB": 2.01,
+      "h1": "Создаюцифровыепродукты.",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "navigationMs": 42
+    },
+    {
+      "route": "work.html",
+      "width": 390,
+      "videoRequests": 0,
+      "imageMiB": 0,
+      "h1": "Работы.",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 13
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 390,
+      "videoRequests": 1,
+      "imageMiB": 2.75,
+      "h1": "Shopify Store Builder",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 45
+    },
+    {
+      "route": "case.html?id=maps-lead-generator",
+      "width": 390,
+      "videoRequests": 1,
+      "imageMiB": 0.64,
+      "h1": "B2B Lead Generator",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 38
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "videoRequests": 0,
+      "imageMiB": 2.01,
+      "h1": "Создаюцифровыепродукты.",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "navigationMs": 16
+    },
+    {
+      "route": "work.html",
+      "width": 1440,
+      "videoRequests": 0,
+      "imageMiB": 1.12,
+      "h1": "Работы.",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 79
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 1440,
+      "videoRequests": 1,
+      "imageMiB": 2.29,
+      "h1": "Shopify Store Builder",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 38
+    },
+    {
+      "route": "case.html?id=maps-lead-generator",
+      "width": 1440,
+      "videoRequests": 1,
+      "imageMiB": 0.6,
+      "h1": "B2B Lead Generator",
+      "overflow": 0,
+      "autoplay": 0,
+      "loops": [],
+      "navigationMs": 38
+    }
+  ],
+  "errors": [],
+  "note": "Local server timings are diagnostic, not public Core Web Vitals. Videos use preload=metadata or none and do not autoplay."
+}

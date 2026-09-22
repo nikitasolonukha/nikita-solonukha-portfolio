@@ -110,3 +110,18 @@ body[data-case-id=pifpaf] .case-screen-grid figure{background:#f5eaed}
 body[data-case-id=vibe-autorouter] .case-cover{background:#172126}
 body[data-case-id=vibe-autorouter] .case-screen-grid figure{background:#202d31}
 @media(max-width:760px){.autorouter-heading,.autorouter-facts{grid-template-columns:1fr}.autorouter-facts{gap:30px}.autorouter-budget{margin-top:55px!important}}
+.case-feature-b2b{background:#dfe7e2;color:#1c2521}
+.case-feature-b2b .eyebrow{color:#3a6955}
+.case-feature-b2b h2{margin-bottom:18px}
+.case-feature-b2b .b2b-lead{color:#41564d;max-width:830px;margin-bottom:clamp(40px,6vw,85px)}
+.b2b-implementations{display:grid;grid-template-columns:1fr 1fr;gap:clamp(15px,2.5vw,36px)}
+.b2b-implementations figure{margin:0;min-width:0;background:#f3f5f2;padding:clamp(14px,2vw,30px)}
+.b2b-label{display:grid;gap:7px;padding-bottom:22px}
+.b2b-label span,.b2b-implementations figcaption{font:600 11px ui-monospace,Consolas,monospace;letter-spacing:.06em;color:#547064}
+.b2b-label strong{font-size:clamp(22px,2.3vw,34px);letter-spacing:-.04em}
+.b2b-implementations img{display:block;width:100%;height:clamp(320px,31vw,500px);object-fit:cover;object-position:top;background:#fff}
+.b2b-implementations figcaption{margin-top:18px;line-height:1.5}
+.case-feature.case-feature-b2b .b2b-proof{font-size:13px;line-height:1.5;color:#53685d;margin-top:38px;max-width:900px}
+body[data-case-id=maps-lead-generator] .case-screen-grid figure{background:#dfe7e2}
+@media(max-width:760px){.b2b-implementations{grid-template-columns:1fr;gap:30px}.b2b-implementations img{height:300px}}
+.case-feature.case-feature-b2b .b2b-lead{color:#41564d}
