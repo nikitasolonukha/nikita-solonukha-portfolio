@@ -13,7 +13,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 07 | GARMONY | garmony | READY | Hero door, four collections/dialogs, approach, form/download and reduced motion manually reviewed; 1440/768/390 public video/image/overflow QA passed |
 | 08 | AI Support + Webchat | support-rag | READY | Evidence-first case: real sanitized Telegram remains primary, polished webchat shows entry/history/mobile safe area, and the RAG replay is explicitly secondary. Reference lock, section map, before/after, combined V3 walkthrough and manual 1440/768/390 art QA complete. |
 | 09 | STEP | stepbystep | READY | All 20 routes reviewed as one consumer mini-app; tree/progress identity, article completion, chat composer, settings, routes and honest incomplete states verified. Reference lock, route map, before/after, post-polish desktop/mobile masters, production build and 1440/768/390 case QA complete. |
-| 10 | Ритм | ritm | IN PROGRESS | Violet/lime retained as restrained state color; sync debug badge removed in demo, workout copy and dense program layout polished; 390/768/1440 core QA and full masters refreshed; remaining editor/conflict-state art review pending |
+| 10 | Ритм | ritm | READY | Future Goals reference locked; every core screen and settings editor manually reviewed; sync badge removed from portfolio capture; 390/768/1440 QA clean; V3 desktop/mobile walkthrough and product-led case published |
 | 11 | LexLegal | lexlegal | READY | Original legal site retained as a calm consulting experience; 1440/768/390 visual QA, mobile menu, service disclosures and FAQ checked |
 | 12 | Татьяна | tatiana | TODO | Actual site, responsive and media polish |
 | 13 | Women Strange | women-strange | TODO | Actual site, button and layout polish |
