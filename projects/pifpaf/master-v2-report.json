@@ -4,67 +4,67 @@
     "marks": [
       {
         "screen": "overview",
-        "seconds": 3.569
+        "seconds": 3.57
       },
       {
         "screen": "ranking",
-        "seconds": 6.223
+        "seconds": 6.2
       },
       {
         "screen": "search",
-        "seconds": 10.306
+        "seconds": 8.815
       },
       {
         "screen": "table",
-        "seconds": 12.085
+        "seconds": 10.592
       },
       {
         "screen": "add",
-        "seconds": 14.647
+        "seconds": 13.196
       },
       {
         "screen": "processing",
-        "seconds": 15.339
+        "seconds": 13.876
       },
       {
         "screen": "imported",
-        "seconds": 18.024
+        "seconds": 16.56
       },
       {
         "screen": "detail",
-        "seconds": 19.514
+        "seconds": 18.043
       },
       {
         "screen": "growth",
-        "seconds": 23.366
+        "seconds": 21.893
       },
       {
         "screen": "analytics-30",
-        "seconds": 26.178
+        "seconds": 24.701
       },
       {
         "screen": "analytics-months",
-        "seconds": 29.929
+        "seconds": 28.447
       },
       {
         "screen": "synced",
-        "seconds": 32.067
+        "seconds": 30.58
       },
       {
         "screen": "account",
-        "seconds": 34.544
+        "seconds": 34
       },
       {
         "screen": "second-account",
-        "seconds": 41.08
+        "seconds": 40.538
       },
       {
         "screen": "empty-profile",
-        "seconds": 43.749
+        "seconds": 43.19
       },
       {
         "screen": "result",
-        "seconds": 45.391
+        "seconds": 44.846
       }
     ],
     "errors": []
@@ -74,67 +74,67 @@
     "marks": [
       {
         "screen": "overview",
-        "seconds": 3.546
+        "seconds": 3.539
       },
       {
         "screen": "ranking",
-        "seconds": 6.094
+        "seconds": 6.14
       },
       {
         "screen": "search",
-        "seconds": 8.606
+        "seconds": 8.649
       },
       {
         "screen": "table",
-        "seconds": 10.32
+        "seconds": 10.397
       },
       {
         "screen": "add",
-        "seconds": 12.802
+        "seconds": 12.9
       },
       {
         "screen": "processing",
-        "seconds": 13.413
+        "seconds": 13.49
       },
       {
         "screen": "imported",
-        "seconds": 16.509
+        "seconds": 16.56
       },
       {
         "screen": "detail",
-        "seconds": 17.974
+        "seconds": 18.034
       },
       {
         "screen": "growth",
-        "seconds": 21.774
+        "seconds": 21.843
       },
       {
         "screen": "analytics-30",
-        "seconds": 25.107
+        "seconds": 24.591
       },
       {
         "screen": "analytics-months",
-        "seconds": 28.823
+        "seconds": 28.31
       },
       {
         "screen": "synced",
-        "seconds": 30.964
+        "seconds": 30.452
       },
       {
         "screen": "account",
-        "seconds": 33.405
+        "seconds": 32.874
       },
       {
         "screen": "second-account",
-        "seconds": 39.89
+        "seconds": 39.382
       },
       {
         "screen": "empty-profile",
-        "seconds": 42.505
+        "seconds": 42.027
       },
       {
         "screen": "result",
-        "seconds": 44.057
+        "seconds": 43.578
       }
     ],
     "errors": []

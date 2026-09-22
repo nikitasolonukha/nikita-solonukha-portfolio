@@ -1,0 +1,116 @@
+[
+  {
+    "width": 1440,
+    "route": "dashboard",
+    "heading": "Обзор Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "reels",
+    "heading": "Мои Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "analytics",
+    "heading": "Аналитика",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "account",
+    "heading": "Мой аккаунт",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "table",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "dashboard",
+    "heading": "Обзор Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "reels",
+    "heading": "Мои Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "analytics",
+    "heading": "Аналитика",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "account",
+    "heading": "Мой аккаунт",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "route": "table",
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "dashboard",
+    "heading": "Обзор Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "reels",
+    "heading": "Мои Reels",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "analytics",
+    "heading": "Аналитика",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "account",
+    "heading": "Мой аккаунт",
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "table",
+    "overflow": false,
+    "errors": []
+  }
+]

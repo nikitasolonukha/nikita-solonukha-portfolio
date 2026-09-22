@@ -9,7 +9,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 03 | MAGNUM | magnum | IN PROGRESS | Authentic archive preserved; separate interactive V2 reconstruction, 1440/768/390 QA and new desktop/mobile walkthrough captured; public/final art check pending |
 | 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |
 | 05 | Meta Ads | meta-ads | READY | Verified results-first replay, scope guard, 20-record sample/6 visual rows; search → processing → result/detail → jobs/API captured and 1440/768/390 public QA passed |
-| 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
+| 06 | Пифпаф | pifpaf | READY | Reels-led dashboard, compact analytics; dashboard/feed/table/analytics/profile QA at 1440/768/390 plus 320 analytics; refreshed full masters and failure clips verified |
 | 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
 | 08 | AI Support + Webchat | support-rag | IN PROGRESS | Real webchat → Telegram → AI draft → operator response; original Telegram evidence re-sanitized and combined video refreshed, product art QA remains |
 | 09 | STEP | stepbystep | IN PROGRESS | Actual demo source: 20 routes audited at 390/768/1440; V2 seeded actions, screenshots, 58-second mobile/desktop walkthrough captured; final visual review and public case integration pending |
