@@ -8,25 +8,26 @@
     "flow": "Предложение → устройство системы → отрасли → процесс → контакт.",
     "boundary": "Frontend и демонстрационная форма. Реальные объекты и инженерные расчёты не заявляются.",
     "category": "Сайты",
-    "desktop": "../projects/protective-structures/assets/hero-redesign-1440.png",
-    "mobile": "../projects/protective-structures/assets/hero-redesign-390.png",
+    "desktop": "../projects/protective-structures/assets/hero-v4-1440.png",
+    "mobile": "../projects/protective-structures/assets/hero-v4-390.png",
     "media": [
       {
-        "src": "../projects/protective-structures/assets/master-desktop.webm",
-        "poster": "../projects/protective-structures/assets/hero-redesign-1440.png",
+        "src": "../projects/protective-structures/assets/master-v4-desktop.mp4",
+        "poster": "../projects/protective-structures/assets/hero-v4-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/protective-structures/assets/master-mobile.webm",
-        "poster": "../projects/protective-structures/assets/hero-redesign-390.png",
+        "src": "../projects/protective-structures/assets/master-v4-mobile.mp4",
+        "poster": "../projects/protective-structures/assets/hero-v4-390.png",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/protective-structures/assets/1440-how.png",
-      "../projects/protective-structures/assets/1440-services.png",
-      "../projects/protective-structures/assets/system-redesign-1440.png",
-      "../projects/protective-structures/assets/1440-contacts.png"
+      "../projects/protective-structures/assets/principle-v4-1440.png",
+      "../projects/protective-structures/assets/solutions-v4-1440.png",
+      "../projects/protective-structures/assets/system-v4-1440.png",
+      "../projects/protective-structures/assets/company-v4-1440.png",
+      "../projects/protective-structures/assets/contact-v4-1440.png"
     ],
     "document": "../projects/protective-structures/case.md",
     "research": "../review/protective-structures.html",

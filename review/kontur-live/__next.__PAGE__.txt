@@ -1,0 +1,26 @@
+1:"$Sreact.fragment"
+2:I[9031,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"HeroEditorial"]
+3:I[7837,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"HowItWorks"]
+4:I[1476,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"Services"]
+5:I[8378,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"Industries"]
+6:I[4782,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"Advantages"]
+7:I[5983,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"SystemComposition"]
+8:I[7438,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"ProcessTimeline"]
+9:I[201,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"BusinessValue"]
+a:I[495,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"About"]
+b:I[6914,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"FinalCTA"]
+c:I[6367,["898","static/chunks/898-e871d4813d253dd0.js","911","static/chunks/911-cfa30cab46d45115.js","122","static/chunks/122-2b435767bc8e0da6.js","974","static/chunks/app/page-da8a80f15bcfcba7.js"],"Contacts"]
+d:I[8677,[],"OutletBoundary"]
+e:"$Sreact.suspense"
+12:I[8677,[],"ViewportBoundary"]
+13:I[8677,[],"MetadataBoundary"]
+14:I[2144,[],"IconMark"]
+11:X
+0:{"buildId":"CNvInbJGTSHzNqC3z-66P","data":[{"rsc":["$","$1","c",{"children":[[["$","$L2",null,{}],["$","$L3",null,{}],["$","$L4",null,{}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}]],null,["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"isPartial":"$@10","staleTime":"$11","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L12",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L13",null,{"children":["$","$e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"KONTUR — защитные сетчатые системы от БПЛА"}],["$","meta","1",{"name":"description","content":"Проектирование, производство и монтаж защитных сетчатых конструкций для защиты промышленных и инфраструктурных объектов от БПЛА."}],["$","meta","2",{"name":"robots","content":"index, follow"}],["$","meta","3",{"property":"og:title","content":"KONTUR — защитные сетчатые системы от БПЛА"}],["$","meta","4",{"property":"og:description","content":"Проектирование, производство и монтаж защитных сетчатых конструкций для защиты промышленных и инфраструктурных объектов от БПЛА."}],["$","meta","5",{"property":"og:site_name","content":"KONTUR"}],["$","meta","6",{"property":"og:locale","content":"ru_RU"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"KONTUR — защитные сетчатые системы от БПЛА"}],["$","meta","10",{"name":"twitter:description","content":"Проектирование, производство и монтаж защитных сетчатых конструкций для защиты промышленных и инфраструктурных объектов от БПЛА."}],["$","link","11",{"rel":"icon","href":"/nikita-solonukha-portfolio/review/kontur-live/icon.svg?07c3d950dc152c17","type":"image/svg+xml","sizes":"any"}],["$","$L14","12",{}]]}]}]}],null]}],"isPartial":"$@15","staleTime":"$11","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@16","rootVaryParams":null,"needsRuntimeRequest":"$@17"}
+f:null
+17:true
+11:300
+11:C
+16:0
+15:"$undefined"
+10:"$undefined"

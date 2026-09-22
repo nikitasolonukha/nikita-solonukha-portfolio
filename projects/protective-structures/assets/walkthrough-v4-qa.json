@@ -1,0 +1,110 @@
+[
+  {
+    "width": 1440,
+    "height": 900,
+    "marks": [
+      {
+        "name": "hero",
+        "seconds": 0
+      },
+      {
+        "name": "principle",
+        "seconds": 5.8
+      },
+      {
+        "name": "solutions",
+        "seconds": 8
+      },
+      {
+        "name": "industries",
+        "seconds": 9.8
+      },
+      {
+        "name": "object-fit",
+        "seconds": 13.5
+      },
+      {
+        "name": "system",
+        "seconds": 15
+      },
+      {
+        "name": "process",
+        "seconds": 18.3
+      },
+      {
+        "name": "business-value",
+        "seconds": 20.1
+      },
+      {
+        "name": "company",
+        "seconds": 21.8
+      },
+      {
+        "name": "cta",
+        "seconds": 23.6
+      },
+      {
+        "name": "contact",
+        "seconds": 25.1
+      }
+    ],
+    "errors": [],
+    "overflow": 0,
+    "brokenVisibleImages": [],
+    "target": "C:\\Users\\Никита\\Documents\\Codex\\2026-09-20\\files-pasted-by-the-user-full\\work\\kontur-v4-video-raw\\master-desktop.webm"
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "marks": [
+      {
+        "name": "hero",
+        "seconds": 0
+      },
+      {
+        "name": "principle",
+        "seconds": 6.8
+      },
+      {
+        "name": "solutions",
+        "seconds": 9
+      },
+      {
+        "name": "industries",
+        "seconds": 10.8
+      },
+      {
+        "name": "object-fit",
+        "seconds": 14.3
+      },
+      {
+        "name": "system",
+        "seconds": 15.8
+      },
+      {
+        "name": "process",
+        "seconds": 19.1
+      },
+      {
+        "name": "business-value",
+        "seconds": 20.8
+      },
+      {
+        "name": "company",
+        "seconds": 22.6
+      },
+      {
+        "name": "cta",
+        "seconds": 24.4
+      },
+      {
+        "name": "contact",
+        "seconds": 25.9
+      }
+    ],
+    "errors": [],
+    "overflow": 0,
+    "brokenVisibleImages": [],
+    "target": "C:\\Users\\Никита\\Documents\\Codex\\2026-09-20\\files-pasted-by-the-user-full\\work\\kontur-v4-video-raw\\master-mobile.webm"
+  }
+]

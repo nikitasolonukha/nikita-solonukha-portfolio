@@ -1,0 +1,172 @@
+{
+  "desktop": {
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "overflow": 0,
+    "brokenImages": [
+      "http://127.0.0.1:4331/_next/image?url=%2Fimages%2Findustries%2Findustry-logistics.jpg&w=3840&q=75",
+      "http://127.0.0.1:4331/_next/image?url=%2Fimages%2Fsystem%2Fsystem-support-structure.jpg&w=3840&q=75"
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "height": 1675
+      },
+      {
+        "id": "how-it-works",
+        "height": 1774
+      },
+      {
+        "id": "solutions",
+        "height": 2203
+      },
+      {
+        "id": "industries",
+        "height": 1179
+      },
+      {
+        "id": "advantages",
+        "height": 1127
+      },
+      {
+        "id": "system",
+        "height": 1316
+      },
+      {
+        "id": "process",
+        "height": 1060
+      },
+      {
+        "id": "value",
+        "height": 1363
+      },
+      {
+        "id": "company",
+        "height": 900
+      },
+      {
+        "id": "cta",
+        "height": 828
+      },
+      {
+        "id": "contact",
+        "height": 1024
+      }
+    ],
+    "consoleErrors": []
+  },
+  "tablet": {
+    "width": 768,
+    "height": 900,
+    "scrollWidth": 768,
+    "overflow": 0,
+    "brokenImages": [
+      "http://127.0.0.1:4331/_next/image?url=%2Fimages%2Findustries%2Findustry-logistics.jpg&w=3840&q=75"
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "height": 1719
+      },
+      {
+        "id": "how-it-works",
+        "height": 1432
+      },
+      {
+        "id": "solutions",
+        "height": 1608
+      },
+      {
+        "id": "industries",
+        "height": 937
+      },
+      {
+        "id": "advantages",
+        "height": 992
+      },
+      {
+        "id": "system",
+        "height": 1185
+      },
+      {
+        "id": "process",
+        "height": 1142
+      },
+      {
+        "id": "value",
+        "height": 1167
+      },
+      {
+        "id": "company",
+        "height": 900
+      },
+      {
+        "id": "cta",
+        "height": 828
+      },
+      {
+        "id": "contact",
+        "height": 994
+      }
+    ],
+    "consoleErrors": []
+  },
+  "mobile": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "overflow": 0,
+    "brokenImages": [
+      "http://127.0.0.1:4331/_next/image?url=%2Fimages%2Findustries%2Findustry-logistics.jpg&w=3840&q=75"
+    ],
+    "sections": [
+      {
+        "id": "top",
+        "height": 1378
+      },
+      {
+        "id": "how-it-works",
+        "height": 1596
+      },
+      {
+        "id": "solutions",
+        "height": 2299
+      },
+      {
+        "id": "industries",
+        "height": 1003
+      },
+      {
+        "id": "advantages",
+        "height": 1162
+      },
+      {
+        "id": "system",
+        "height": 1191
+      },
+      {
+        "id": "process",
+        "height": 1254
+      },
+      {
+        "id": "value",
+        "height": 1244
+      },
+      {
+        "id": "company",
+        "height": 1096
+      },
+      {
+        "id": "cta",
+        "height": 760
+      },
+      {
+        "id": "contact",
+        "height": 1333
+      }
+    ],
+    "consoleErrors": []
+  },
+  "capturedAt": "2026-09-22T19:33:36.110Z"
+}
