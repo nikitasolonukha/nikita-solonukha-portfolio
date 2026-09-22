@@ -88,8 +88,9 @@
     const preview = document.createElement('div');
     preview.className = 'work-preview';
     preview.innerHTML = '<img alt="">';
-    document.body.append(preview);
     const img = $('img', preview);
+    img.src = $('.row-preview', rows[0])?.src || '';
+    document.body.append(preview);
     let targetX = innerWidth * .5, targetY = innerHeight * .5, x = targetX, y = targetY, rotation = 0, active = false;
     const move = event => { targetX = Math.min(innerWidth - 180, Math.max(180, event.clientX + 90)); targetY = Math.min(innerHeight - 160, Math.max(160, event.clientY - 35)); };
     rows.forEach(row => {

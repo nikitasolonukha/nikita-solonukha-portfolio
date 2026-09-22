@@ -8,6 +8,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -23,6 +24,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -38,6 +40,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -53,6 +56,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -68,6 +72,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -83,6 +88,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -98,6 +104,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -113,6 +120,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -121,14 +129,14 @@
       ],
       "preview": {
         "rect": {
-          "x": 591.8299560546875,
-          "y": 15.941933631896973,
-          "width": 427.524658203125,
-          "height": 316.5213623046875,
-          "top": 15.941933631896973,
-          "right": 1019.3546142578125,
-          "bottom": 332.4632959365845,
-          "left": 591.8299560546875
+          "x": 592.620849609375,
+          "y": 258.77703857421875,
+          "width": 427.1771240234375,
+          "height": 316.0455322265625,
+          "top": 258.77703857421875,
+          "right": 1019.7979736328125,
+          "bottom": 574.8225708007812,
+          "left": 592.620849609375
         },
         "opacity": "1",
         "image": 2400
@@ -142,6 +150,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -157,6 +166,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -172,6 +182,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
@@ -187,6 +198,7 @@
       "overflow": 0,
       "font": true,
       "scripts": true,
+      "brokenImages": [],
       "links": [
         "work.html",
         "about.html",
