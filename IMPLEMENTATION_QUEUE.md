@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: Local QA / READY; public build verification pending.
-CHANGES: Portrait-first Home, 12-row Work, 23-row Archive, About and visual case template. All 35 cases checked at 390/1440 with 0 errors. 437 internal links and 353 project media files verified. Filters, 5 media previews, mobile menu and reduced motion passed. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
-NEXT: Publish new shell, verify live build at 390/1440, record commit in QA report.
+STATUS: Global QA / READY. Published build verified.
+CHANGES: Portrait-first Home, 12-row Work, 23-row Archive, About and visual case template. All 35 cases checked at 390/1440 with 0 errors. 437 internal links and 353 project media files verified. Filters, 5 media previews, mobile menu and reduced motion passed. GitHub Pages built `4c297bd`; 16 live views passed at 390/1440. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: Original assets for four archival cases, if provided; new projects can enter the queue without changing the shell.
