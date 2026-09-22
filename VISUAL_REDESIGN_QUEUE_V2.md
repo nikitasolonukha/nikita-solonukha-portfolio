@@ -15,7 +15,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 09 | STEP | stepbystep | IN PROGRESS | 20 routes audited at 390/768/1440; article completion overlay manually corrected at all widths; full desktop/mobile masters recaptured and public case integrated; remaining art-direction sign-off pending |
 | 10 | Ритм | ritm | IN PROGRESS | Violet/lime retained as restrained state color; sync debug badge removed in demo, workout copy and dense program layout polished; 390/768/1440 core QA and full masters refreshed; remaining editor/conflict-state art review pending |
 | 11 | LexLegal | lexlegal | READY | Original legal site retained as a calm consulting experience; 1440/768/390 visual QA, mobile menu, service disclosures and FAQ checked |
-| 12 | Татьяна | tatiana | TODO | Actual site, responsive and media polish |
+| 12 | Татьяна | tatiana | READY | Real portrait and content retained; decorative AI motifs removed, editorial 1440/768/390 layout verified, current masters and screens refreshed |
 | 13 | Women Strange | women-strange | TODO | Actual site, button and layout polish |
 | 14 | EP Beauty | ep-beauty | TODO | Approved magazine character, consistent sections |
 | 15 | Трек в подарок | trekpodarok | TODO | Individual music-gift identity |
