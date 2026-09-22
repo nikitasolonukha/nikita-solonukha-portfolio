@@ -170,22 +170,12 @@
     "subtitle": "Сайт психоаналитика",
     "intro": "Знакомство со специалистом, направления помощи и формат консультации в одном спокойном интерфейсе.",
     "stack": "Подробности в исследовании",
-    "flow": "Знакомство → образование → три направления → формат консультации → контакт.",
+    "flow": "Три направления, адаптивная навигация, карточки и контактные переходы.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "../projects/tatiana/assets/art-v2-overview-1440.png",
-    "mobile": "../projects/tatiana/assets/art-v2-overview-390.png",
+    "desktop": "images/tatiana.webp",
+    "mobile": "../projects/tatiana/assets/overview-390.png",
     "media": [
-      {
-        "src": "../projects/tatiana/assets/master-desktop-v2.mp4",
-        "poster": "../projects/tatiana/assets/poster-desktop-v2.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/tatiana/assets/master-mobile-v2.mp4",
-        "poster": "../projects/tatiana/assets/poster-mobile-v2.webp",
-        "mobile": true
-      },
       {
         "src": "../projects/tatiana/assets/user-desktop-clean-web.mp4",
         "poster": "../projects/tatiana/assets/user-desktop-clean-poster.webp",
@@ -195,13 +185,23 @@
         "src": "../projects/tatiana/assets/user-mobile-clean-web.mp4",
         "poster": "../projects/tatiana/assets/user-mobile-clean-poster.webp",
         "mobile": true
+      },
+      {
+        "src": "../projects/tatiana/assets/master-desktop.mp4",
+        "poster": "../projects/tatiana/assets/poster-desktop.webp",
+        "mobile": false
+      },
+      {
+        "src": "../projects/tatiana/assets/master-mobile.mp4",
+        "poster": "../projects/tatiana/assets/poster-mobile.webp",
+        "mobile": true
       }
     ],
     "screens": [
-      "../projects/tatiana/assets/art-v2-directions-1440.png",
-      "../projects/tatiana/assets/art-v2-contact-1440.png",
-      "../projects/tatiana/assets/art-v2-directions-390.png",
-      "../projects/tatiana/assets/art-v2-contact-390.png"
+      "../projects/tatiana/assets/contacts-1440.png",
+      "../projects/tatiana/assets/direction-0-1440.png",
+      "../projects/tatiana/assets/direction-1-1440.png",
+      "../projects/tatiana/assets/direction-2-1440.png"
     ],
     "document": "../projects/tatiana/case.md",
     "research": "../review/tatiana.html",
