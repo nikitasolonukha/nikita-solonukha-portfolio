@@ -573,7 +573,7 @@
     "mobile": "../projects/webchat/assets/conversation-390.png",
     "media": [
       {
-        "src": "../projects/support-rag/assets/master-combined.mp4",
+        "src": "../projects/support-rag/assets/master-combined-v2.mp4",
         "poster": "../projects/support-rag/assets/poster-combined.webp",
         "mobile": false
       },

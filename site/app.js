@@ -44,7 +44,7 @@ const caseArt = {
  'ritm':['product','#b6ff00',null,'Привычки, действие и прогресс в собственном интерфейсе.'],
  'portnoy':['fashion','#d6c1ab','../projects/portnoy/assets/technical-3d.png','Ткани, конфигуратор и настоящая 3D-модель.'],
  'vibe-autorouter':['product','#edba82',null,'Модельный роутинг и детали решения.'],
- 'support-rag':['telegram','#88b9dd','../projects/support-rag/assets/telegram-support-sanitized.png','Webchat и Telegram — одна система поддержки.'],
+ 'support-rag':['telegram','#88b9dd','../projects/support-rag/assets/telegram-support-sanitized.png?v=redaction-v2','Webchat и Telegram — одна система поддержки.'],
  'trekpodarok':['story','#d9a79b',null,'Личный продукт и его путь к заказу.'],
  'garmony':['story','#e2c7aa',null,'Сайт, пространство и движение.'],
  'ep-beauty':['story','#e6c2b5',null,'Редакционная подача сайта студии.'],
@@ -54,7 +54,7 @@ const caseArt = {
  'twitter-automation':['telegram','#a5bacc',null,'Twitter/X как площадка результата.'],
  'telegram-schedule':['telegram','#9fbbd9',null,'Публикация и расписание внутри Telegram.'],
  'telegram-intel':['telegram','#a5c3df',null,'Бот и его ответы.'],
- 'telegram-leads':['telegram','#91b8d0','../projects/telegram-leads/assets/telegram-leads-sanitized.png','Найденный лид и работа с ним в Telegram topics.'],
+ 'telegram-leads':['telegram','#91b8d0','../projects/telegram-leads/assets/telegram-leads-sanitized.png?v=redaction-v2','Найденный лид и работа с ним в Telegram topics.'],
  'topgadalkin':['story','#d5a6a0',null,'Лендинг и пользовательский сценарий.'],
  'maps-lead-generator':['results','#b4d3c7','../projects/maps-lead-generator/assets/company-table-1440-v2.png','Pipeline и таблица компаний — результат B2B-поиска.'],
  'personal-assistant':['archive','#b8afd0',null,'Архивные свидетельства без подмены n8n workflow.'],
@@ -153,7 +153,7 @@ function casePage(projects) {
   ))];
   const feature = (id === 'magnum' ? magnumFeature() : id === 'pifpaf' ? pifpafFeature() : id === 'vibe-autorouter' ? autorouterFeature() : id === 'maps-lead-generator' ? b2bFeature() : projectFeature(id)) ||
     (id === 'portnoy' ? `<section class="case-feature case-feature-3d"><div class="shell"><p class="eyebrow">3D / материал на модели</p><h2>Ткань меняет <em>модель.</em></h2><video controls playsinline preload="none" poster="${asset('../projects/portnoy/assets/technical-3d.png')}" aria-label="Портной — 3D-конфигуратор"><source src="${asset('../projects/portnoy/assets/feature-3d.mp4')}" type="video/mp4"></video></div></section>` :
-    id === 'support-rag' ? `<section class="case-feature case-feature-split"><div class="shell"><p class="eyebrow">Webchat → Telegram</p><h2>Две стороны <em>поддержки.</em></h2><div class="case-feature-pair"><figure><img src="${asset('../projects/webchat/assets/conversation-1440.png')}" alt="Локальная демо-версия webchat"><figcaption>01 / Webchat · демо</figcaption></figure><figure><img src="${asset('../projects/support-rag/assets/telegram-support-sanitized.png')}" alt="Обезличенный Telegram topic поддержки"><figcaption>02 / Telegram оператора</figcaption></figure></div></div></section>` : '');
+    id === 'support-rag' ? `<section class="case-feature case-feature-split"><div class="shell"><p class="eyebrow">Webchat → Telegram</p><h2>Две стороны <em>поддержки.</em></h2><div class="case-feature-pair"><figure><img src="${asset('../projects/webchat/assets/conversation-1440.png')}" alt="Локальная демо-версия webchat"><figcaption>01 / Webchat · демо</figcaption></figure><figure><img src="${asset('../projects/support-rag/assets/telegram-support-sanitized.png?v=redaction-v2')}" alt="Обезличенный Telegram topic поддержки"><figcaption>02 / Telegram оператора</figcaption></figure></div></div></section>` : '');
   const status = archivalIds.has(id) ? 'Архив · оригинальные материалы неполны' : id === 'legal-automation' ? 'Обезличенный NDA-кейс' : item.category;
   const mainVideo = media.length ? `<section class="case-video-section"><div class="shell"><p class="eyebrow">Продукт в действии</p>${videoFigure(media[0], 0, item.name)}</div></section>` : `<section class="case-archive-section shell"><p>Полная оригинальная запись интерфейса пока не найдена. Ниже — сохранившиеся материалы.</p></section>`;
   const secondary = media.length > 1 ? `<section class="case-secondary shell"><p class="eyebrow">Другие сценарии / mobile</p><div class="case-media-secondary">${media.slice(1, 5).map((entry, index) => videoFigure(entry, index + 1, item.name)).join('')}</div></section>` : '';

@@ -11,7 +11,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |
 | 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
 | 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
-| 08 | AI Support + Webchat | support-rag | TODO | Real webchat → Telegram → AI draft → operator response |
+| 08 | AI Support + Webchat | support-rag | IN PROGRESS | Real webchat → Telegram → AI draft → operator response; original Telegram evidence re-sanitized and combined video refreshed, product art QA remains |
 | 09 | STEP | stepbystep | TODO | Finish actual mobile product and all states |
 | 10 | Ритм | ritm | TODO | Violet/lime habit tracker, all screens |
 | 11 | LexLegal | lexlegal | TODO | Original legal site with clean presentation |
@@ -33,7 +33,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 27 | Twitter / X Automation | twitter-automation | TODO | X interface and safe action/result |
 | 28 | Telegram Schedule | telegram-schedule | TODO | Telegram publishing flow |
 | 29 | Telegram Intel | telegram-intel | TODO | Telegram-first |
-| 30 | Telegram AI Lead Hunter | telegram-leads | TODO | MTProto/topics/lead handling in Telegram |
+| 30 | Telegram AI Lead Hunter | telegram-leads | IN PROGRESS | MTProto/topics/lead handling in Telegram; original Telegram evidence re-sanitized, product art QA remains |
 | 31 | Личный AI-ассистент | personal-assistant | TODO | Locate real n8n canvas and Telegram |
 | 32 | Telegram News · две версии | news-aggregator-archive | TODO | Distinguish in-development and university versions |
 | 33 | n8n Copilot | copilot | TODO | Original recording, search workflow export |
