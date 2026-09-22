@@ -163,10 +163,10 @@ function casePage(projects) {
     <section class="case-story shell"><span class="eyebrow">${escapeHtml(item.name)} / о проекте</span><div><h2>${escapeHtml(item.intro)}</h2><p>${escapeHtml(art[3] || item.subtitle)}</p></div></section>
     ${mainVideo}${feature}${gallery}${secondary}
     <section class="case-notes shell"><span class="eyebrow">Реализация</span><div><h2>Как это работает</h2><p>${escapeHtml(notes.outcome || item.flow)}</p><details><summary>Технологии и границы демонстрации</summary><p>${escapeHtml(item.stack)}</p><p>${escapeHtml(notes.technical || item.boundary)}</p><p>${escapeHtml(item.boundary)}</p></details></div></section>
-    <div class="case-next shell"><a href="${projectUrl(next.id)}"><span><small>Следующий кейс</small><br>${escapeHtml(next.name)}</span><span aria-hidden="true">↗</span></a><a class="case-all-work" href="work.html">Все работы ↗</a></div>`;
+    <div class="case-next shell"><a href="${projectUrl(next.id)}"><span><small>Следующий кейс</small><br>${escapeHtml(next.name)}</span><span aria-hidden="true">↗</span></a><a class="case-all-work" href="work.html">Все работы ↗</a></div><section class="contact-section compact-contact"><div class="shell"><p class="eyebrow">Есть задача?</p><h2>Давайте<br><span>поработаем вместе.</span></h2><a class="contact-circle" href="contact.html">Связаться ↗</a></div></section>`;
   root.querySelectorAll('.case-screen-grid img').forEach(img => {
     const sizeImage = () => { if (img.naturalHeight > img.naturalWidth * 2) img.classList.add('is-tall'); };
     if (img.complete) sizeImage(); else img.addEventListener('load', sizeImage, {once:true});
   });
 }
-setupMenu();loadProjects().then(projects=>{const page=document.body.dataset.page;if(page==='home')home(projects);if(page==='work')work(projects);if(page==='archive')archive(projects);if(page==='case')casePage(projects);}).catch(error=>{const target=$('#selected-list')||$('#work-grid')||$('#archive-list')||$('#case-root');if(target)target.innerHTML='<p>Не удалось загрузить проекты. Обновите страницу.</p>';console.error(error);});
+setupMenu();loadProjects().then(projects=>{const page=document.body.dataset.page;if(page==='home')home(projects);if(page==='work')work(projects);if(page==='archive')archive(projects);if(page==='case')casePage(projects);document.dispatchEvent(new Event('portfolio:rendered'));}).catch(error=>{const target=$('#selected-list')||$('#work-grid')||$('#archive-list')||$('#case-root');if(target)target.innerHTML='<p>Не удалось загрузить проекты. Обновите страницу.</p>';console.error(error);});

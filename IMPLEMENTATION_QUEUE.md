@@ -4,7 +4,7 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Site shell
 
-- Home / Work / About / Archive / Contact / navigation / mobile navigation — READY; новая редакционная оболочка проверена на 390/1440 и для 35 кейсов.
+- Home / Work / About / Archive / Contact / navigation / mobile navigation — READY; единая motion-система проверена на 390/1440 и для 35 кейсов.
 
 | # | Project | Case ID | Presentation status | Next action |
 |---:|---|---|---|---|
@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: Global QA / READY. Published build verified.
-CHANGES: Portrait-first Home, 12-row Work, 23-row Archive, About and visual case template. All 35 cases checked at 390/1440 with 0 errors. 437 internal links and 353 project media files verified. Filters, 5 media previews, mobile menu and reduced motion passed. GitHub Pages built `4c297bd`; 16 live views passed at 390/1440. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
-NEXT: Original assets for four archival cases, if provided; new projects can enter the queue without changing the shell.
+STATUS: Local motion QA / READY; public motion build verification pending.
+CHANGES: Portrait-first Home now has scroll-reactive desktop marquee and a readable two-line mobile name. Lenis + GSAP/ScrollTrigger coordinate scroll, reveals, hover preview and transitions. Contact page added. All 35 cases checked at 390/1440 with 0 errors. 443 internal links across 40 pages and 353 media files verified. 12 motion views and real transitions passed; 8 performance views have no autoplay/overflow. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: Publish motion pass and verify live build on desktop/mobile.

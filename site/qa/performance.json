@@ -5,7 +5,7 @@
       "width": 390,
       "videoRequests": 0,
       "imageMiB": 1,
-      "h1": "НикитаСолонуха.",
+      "h1": "Никита Солонуха",
       "overflow": 0,
       "autoplay": 0,
       "loops": [
@@ -15,7 +15,7 @@
         "none",
         "none"
       ],
-      "navigationMs": 747
+      "navigationMs": 185
     },
     {
       "route": "work.html",
@@ -26,7 +26,7 @@
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 679
+      "navigationMs": 104
     },
     {
       "route": "case.html?id=shopify-store-builder",
@@ -37,25 +37,25 @@
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 664
+      "navigationMs": 150
     },
     {
       "route": "case.html?id=maps-lead-generator",
       "width": 390,
       "videoRequests": 1,
-      "imageMiB": 0.29,
+      "imageMiB": 0.64,
       "h1": "B2B Lead Generator",
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 643
+      "navigationMs": 174
     },
     {
       "route": "index.html",
       "width": 1440,
       "videoRequests": 0,
       "imageMiB": 1,
-      "h1": "НикитаСолонуха.",
+      "h1": "Никита Солонуха",
       "overflow": 0,
       "autoplay": 0,
       "loops": [
@@ -65,18 +65,18 @@
         "none",
         "none"
       ],
-      "navigationMs": 742
+      "navigationMs": 143
     },
     {
       "route": "work.html",
       "width": 1440,
       "videoRequests": 0,
-      "imageMiB": 1.12,
+      "imageMiB": 0,
       "h1": "От идеидо продукта.",
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 719
+      "navigationMs": 98
     },
     {
       "route": "case.html?id=shopify-store-builder",
@@ -87,7 +87,7 @@
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 721
+      "navigationMs": 148
     },
     {
       "route": "case.html?id=maps-lead-generator",
@@ -98,7 +98,7 @@
       "overflow": 0,
       "autoplay": 0,
       "loops": [],
-      "navigationMs": 651
+      "navigationMs": 191
     }
   ],
   "errors": [],

@@ -1,0 +1,199 @@
+{
+  "views": [
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": 200,
+      "title": "Никита Солонуха",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "work.html",
+      "width": 390,
+      "status": 200,
+      "title": "От идеидо продукта.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "about.html",
+      "width": 390,
+      "status": 200,
+      "title": "Разработкаот замысла до запуска.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "archive.html",
+      "width": 390,
+      "status": 200,
+      "title": "Архив (23)",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "contact.html",
+      "width": 390,
+      "status": 200,
+      "title": "Давайте создадимчто-то полезное.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 390,
+      "status": 200,
+      "title": "Shopify Store Builder",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Никита Солонуха",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "work.html",
+      "width": 1440,
+      "status": 200,
+      "title": "От идеидо продукта.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ],
+      "preview": {
+        "rect": {
+          "x": 591.8299560546875,
+          "y": 15.941933631896973,
+          "width": 427.524658203125,
+          "height": 316.5213623046875,
+          "top": 15.941933631896973,
+          "right": 1019.3546142578125,
+          "bottom": 332.4632959365845,
+          "left": 591.8299560546875
+        },
+        "opacity": "1",
+        "image": 2400
+      }
+    },
+    {
+      "route": "about.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Разработкаот замысла до запуска.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "archive.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Архив (23)",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "contact.html",
+      "width": 1440,
+      "status": 200,
+      "title": "Давайте создадимчто-то полезное.",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 1440,
+      "status": 200,
+      "title": "Shopify Store Builder",
+      "overflow": 0,
+      "font": true,
+      "scripts": true,
+      "links": [
+        "work.html",
+        "about.html",
+        "archive.html",
+        "contact.html"
+      ]
+    }
+  ],
+  "errors": []
+}
