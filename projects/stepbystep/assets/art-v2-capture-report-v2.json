@@ -1,0 +1,214 @@
+[
+  {
+    "width": 390,
+    "marks": [
+      {
+        "route": "/",
+        "label": "home",
+        "second": 4
+      },
+      {
+        "route": "/progress",
+        "label": "progress",
+        "second": 7.2
+      },
+      {
+        "route": "/notes",
+        "label": "notes",
+        "second": 11.7
+      },
+      {
+        "route": "/goals",
+        "label": "goals",
+        "second": 16.1
+      },
+      {
+        "route": "/articles",
+        "label": "articles",
+        "second": 19.9
+      },
+      {
+        "route": "/articles/1",
+        "label": "article",
+        "second": 22.3
+      },
+      {
+        "route": "/water",
+        "label": "water",
+        "second": 28.2
+      },
+      {
+        "route": "/achievements",
+        "label": "achievements",
+        "second": 32.8
+      },
+      {
+        "route": "/chat",
+        "label": "chat",
+        "second": 34.4
+      },
+      {
+        "route": "/sos",
+        "label": "sos",
+        "second": 38.4
+      },
+      {
+        "route": "/meditations",
+        "label": "meditations",
+        "second": 40.3
+      },
+      {
+        "route": "/sleep",
+        "label": "sleep",
+        "second": 42.1
+      },
+      {
+        "route": "/stress",
+        "label": "stress",
+        "second": 44
+      },
+      {
+        "route": "/knowledge",
+        "label": "knowledge",
+        "second": 45.8
+      },
+      {
+        "route": "/bot-program",
+        "label": "program",
+        "second": 47.6
+      },
+      {
+        "route": "/extras",
+        "label": "extras",
+        "second": 49.5
+      },
+      {
+        "route": "/stepcoins",
+        "label": "stepcoins",
+        "second": 51.7
+      },
+      {
+        "route": "/settings",
+        "label": "settings",
+        "second": 53.5
+      },
+      {
+        "route": "/about",
+        "label": "about",
+        "second": 55.4
+      },
+      {
+        "route": "/feedback",
+        "label": "feedback",
+        "second": 57.2
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "marks": [
+      {
+        "route": "/",
+        "label": "home",
+        "second": 4
+      },
+      {
+        "route": "/progress",
+        "label": "progress",
+        "second": 7.3
+      },
+      {
+        "route": "/notes",
+        "label": "notes",
+        "second": 11.9
+      },
+      {
+        "route": "/goals",
+        "label": "goals",
+        "second": 16.4
+      },
+      {
+        "route": "/articles",
+        "label": "articles",
+        "second": 20.3
+      },
+      {
+        "route": "/articles/1",
+        "label": "article",
+        "second": 22.7
+      },
+      {
+        "route": "/water",
+        "label": "water",
+        "second": 28.7
+      },
+      {
+        "route": "/achievements",
+        "label": "achievements",
+        "second": 33.4
+      },
+      {
+        "route": "/chat",
+        "label": "chat",
+        "second": 35.1
+      },
+      {
+        "route": "/sos",
+        "label": "sos",
+        "second": 39.1
+      },
+      {
+        "route": "/meditations",
+        "label": "meditations",
+        "second": 41.1
+      },
+      {
+        "route": "/sleep",
+        "label": "sleep",
+        "second": 43
+      },
+      {
+        "route": "/stress",
+        "label": "stress",
+        "second": 44.9
+      },
+      {
+        "route": "/knowledge",
+        "label": "knowledge",
+        "second": 46.8
+      },
+      {
+        "route": "/bot-program",
+        "label": "program",
+        "second": 48.7
+      },
+      {
+        "route": "/extras",
+        "label": "extras",
+        "second": 50.6
+      },
+      {
+        "route": "/stepcoins",
+        "label": "stepcoins",
+        "second": 52.8
+      },
+      {
+        "route": "/settings",
+        "label": "settings",
+        "second": 54.7
+      },
+      {
+        "route": "/about",
+        "label": "about",
+        "second": 56.6
+      },
+      {
+        "route": "/feedback",
+        "label": "feedback",
+        "second": 58.5
+      }
+    ],
+    "errors": []
+  }
+]

@@ -789,29 +789,24 @@
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
     "desktop": "../projects/stepbystep/assets/cover-v3.png",
-    "mobile": "../projects/stepbystep/assets/overview-390.png?v=premium-v2",
+    "mobile": "../projects/stepbystep/assets/art-v2-demo-home-390.png",
     "media": [
       {
-        "src": "../projects/stepbystep/assets/master-desktop-v2.webm",
-        "poster": "../projects/stepbystep/assets/poster-desktop-v2.webp",
+        "src": "../projects/stepbystep/assets/art-v2-master-desktop-v2.mp4",
+        "poster": "../projects/stepbystep/assets/art-v2-demo-home-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/stepbystep/assets/master-mobile-v2.webm",
-        "poster": "../projects/stepbystep/assets/poster-mobile-v2.webp",
-        "mobile": true
-      },
-      {
-        "src": "../projects/stepbystep/assets/extra-mobile-v2.webm",
-        "poster": "../projects/stepbystep/assets/poster-extra-v2.webp",
+        "src": "../projects/stepbystep/assets/art-v2-master-mobile-v2.mp4",
+        "poster": "../projects/stepbystep/assets/art-v2-demo-home-390.png",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/stepbystep/assets/articles-1440.png",
-      "../projects/stepbystep/assets/calendar-1440.png",
-      "../projects/stepbystep/assets/charts-1440.png",
-      "../projects/stepbystep/assets/chat-1440.png"
+      "../projects/stepbystep/assets/art-v2-demo-progress-390.png",
+      "../projects/stepbystep/assets/art-v2-demo-notes-390.png",
+      "../projects/stepbystep/assets/art-v2-demo-article-result-390.png",
+      "../projects/stepbystep/assets/art-v2-demo-chat-390.png"
     ],
     "document": "../projects/stepbystep/case.md",
     "research": "../review/stepbystep.html",
