@@ -1,0 +1,38 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "count": 5,
+    "covers": [
+      {
+        "src": "http://127.0.0.1:4399/projects/pifpaf/assets/cover-redesign.png",
+        "loaded": true,
+        "broken": false
+      },
+      {
+        "src": "http://127.0.0.1:4399/projects/pifpaf/assets/cover-redesign.png",
+        "loaded": false,
+        "broken": false
+      }
+    ],
+    "overflow": false
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "count": 5,
+    "covers": [
+      {
+        "src": "http://127.0.0.1:4399/projects/pifpaf/assets/cover-redesign.png",
+        "loaded": true,
+        "broken": false
+      },
+      {
+        "src": "http://127.0.0.1:4399/projects/pifpaf/assets/cover-redesign.png",
+        "loaded": false,
+        "broken": false
+      }
+    ],
+    "overflow": false
+  }
+]

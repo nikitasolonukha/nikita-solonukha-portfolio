@@ -1,0 +1,142 @@
+[
+  {
+    "width": 1440,
+    "marks": [
+      {
+        "screen": "overview",
+        "seconds": 3.415
+      },
+      {
+        "screen": "ranking",
+        "seconds": 6.008
+      },
+      {
+        "screen": "search",
+        "seconds": 8.598
+      },
+      {
+        "screen": "table",
+        "seconds": 10.356
+      },
+      {
+        "screen": "add",
+        "seconds": 12.914
+      },
+      {
+        "screen": "processing",
+        "seconds": 13.581
+      },
+      {
+        "screen": "imported",
+        "seconds": 16.253
+      },
+      {
+        "screen": "detail",
+        "seconds": 17.762
+      },
+      {
+        "screen": "growth",
+        "seconds": 21.58
+      },
+      {
+        "screen": "analytics-30",
+        "seconds": 24.374
+      },
+      {
+        "screen": "analytics-months",
+        "seconds": 28.135
+      },
+      {
+        "screen": "synced",
+        "seconds": 30.281
+      },
+      {
+        "screen": "account",
+        "seconds": 32.732
+      },
+      {
+        "screen": "second-account",
+        "seconds": 39.538
+      },
+      {
+        "screen": "empty-profile",
+        "seconds": 42.178
+      },
+      {
+        "screen": "result",
+        "seconds": 43.839
+      }
+    ],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "marks": [
+      {
+        "screen": "overview",
+        "seconds": 3.484
+      },
+      {
+        "screen": "ranking",
+        "seconds": 6.032
+      },
+      {
+        "screen": "search",
+        "seconds": 8.539
+      },
+      {
+        "screen": "table",
+        "seconds": 10.261
+      },
+      {
+        "screen": "add",
+        "seconds": 12.711
+      },
+      {
+        "screen": "processing",
+        "seconds": 13.305
+      },
+      {
+        "screen": "imported",
+        "seconds": 16.392
+      },
+      {
+        "screen": "detail",
+        "seconds": 17.873
+      },
+      {
+        "screen": "growth",
+        "seconds": 21.666
+      },
+      {
+        "screen": "analytics-30",
+        "seconds": 24.402
+      },
+      {
+        "screen": "analytics-months",
+        "seconds": 28.131
+      },
+      {
+        "screen": "synced",
+        "seconds": 30.256
+      },
+      {
+        "screen": "account",
+        "seconds": 32.693
+      },
+      {
+        "screen": "second-account",
+        "seconds": 39.169
+      },
+      {
+        "screen": "empty-profile",
+        "seconds": 41.765
+      },
+      {
+        "screen": "result",
+        "seconds": 43.336
+      }
+    ],
+    "errors": []
+  }
+]

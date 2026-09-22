@@ -1,0 +1,214 @@
+[
+  {
+    "slug": "pifpaf",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/mp4",
+        "extension": "mp4"
+      },
+      {
+        "type": "video/mp4",
+        "extension": "mp4"
+      }
+    ]
+  },
+  {
+    "slug": "pifpaf",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/mp4",
+        "extension": "mp4"
+      },
+      {
+        "type": "video/mp4",
+        "extension": "mp4"
+      }
+    ]
+  },
+  {
+    "slug": "portnoy",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "portnoy",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "stepbystep",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "stepbystep",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "meta-ads",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "meta-ads",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "protective-structures",
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  },
+  {
+    "slug": "protective-structures",
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "brokenImages": [],
+    "missingVideos": 0,
+    "mediaTypes": [
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      },
+      {
+        "type": "video/webm",
+        "extension": "webm"
+      }
+    ]
+  }
+]

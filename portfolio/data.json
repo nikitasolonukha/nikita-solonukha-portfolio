@@ -8,24 +8,24 @@
     "flow": "Предложение → устройство системы → отрасли → процесс → контакт.",
     "boundary": "Frontend и демонстрационная форма. Реальные объекты и инженерные расчёты не заявляются.",
     "category": "Сайты",
-    "desktop": "../projects/protective-structures/assets/cover.webp",
-    "mobile": "../projects/protective-structures/assets/390-hero.png",
+    "desktop": "../projects/protective-structures/assets/hero-redesign-1440.png",
+    "mobile": "../projects/protective-structures/assets/hero-redesign-390.png",
     "media": [
       {
         "src": "../projects/protective-structures/assets/master-desktop.webm",
-        "poster": "../projects/protective-structures/assets/poster-desktop.webp",
+        "poster": "../projects/protective-structures/assets/hero-redesign-1440.png",
         "mobile": false
       },
       {
         "src": "../projects/protective-structures/assets/master-mobile.webm",
-        "poster": "../projects/protective-structures/assets/poster-mobile.webp",
+        "poster": "../projects/protective-structures/assets/hero-redesign-390.png",
         "mobile": true
       }
     ],
     "screens": [
       "../projects/protective-structures/assets/1440-how.png",
       "../projects/protective-structures/assets/1440-services.png",
-      "../projects/protective-structures/assets/1440-system.png",
+      "../projects/protective-structures/assets/system-redesign-1440.png",
       "../projects/protective-structures/assets/1440-contacts.png"
     ],
     "document": "../projects/protective-structures/case.md",
@@ -381,17 +381,17 @@
     "flow": "Добавление ролика, поиск, графики, настройки и обработка ошибок.",
     "boundary": "Запись использует локальные ответы API и вымышленные ролики. Живой сбор Apify не выполнялся.",
     "category": "Продукты",
-    "desktop": "../projects/pifpaf/assets/reels-wall-1440.png",
+    "desktop": "../projects/pifpaf/assets/cover-redesign.png",
     "mobile": "../projects/pifpaf/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/pifpaf/assets/master-desktop.mp4",
-        "poster": "../projects/pifpaf/assets/poster-desktop.webp",
+        "src": "../projects/pifpaf/assets/master-redesign-desktop.webm",
+        "poster": "../projects/pifpaf/assets/dashboard-redesign-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/pifpaf/assets/master-mobile.mp4",
-        "poster": "../projects/pifpaf/assets/poster-mobile.webp",
+        "src": "../projects/pifpaf/assets/master-redesign-mobile.webm",
+        "poster": "../projects/pifpaf/assets/dashboard-redesign-390.png",
         "mobile": true
       },
       {
@@ -406,11 +406,11 @@
       }
     ],
     "screens": [
-      "../projects/pifpaf/assets/reels-wall-1440.png",
-      "../projects/pifpaf/assets/account-1440.png",
-      "../projects/pifpaf/assets/add-1440.png",
+      "../projects/pifpaf/assets/reels-redesign-1440.png",
+      "../projects/pifpaf/assets/imported-1440.png",
+      "../projects/pifpaf/assets/detail-1440.png",
       "../projects/pifpaf/assets/analytics-30-1440.png",
-      "../projects/pifpaf/assets/analytics-months-1440.png"
+      "../projects/pifpaf/assets/empty-profile-390.png"
     ],
     "document": "../projects/pifpaf/case.md",
     "research": "../review/pifpaf.html",
@@ -496,29 +496,29 @@
     "intro": "Каталог материалов и интерфейс продукта для задач ателье.",
     "stack": "Next.js · React · TypeScript",
     "flow": "Навигация, рабочие экраны и проверенные пользовательские сценарии.",
-    "boundary": "Локальная версия с подготовленными данными; ограничения 3D и интеграций описаны в исследовании.",
+    "boundary": "Локальная версия с подготовленными данными. 3D-модель — работа Style3D CG по CC Attribution; конструктивные отличия костюма достоверно показаны в 2D.",
     "category": "Продукты",
-    "desktop": "../projects/portnoy/assets/cover.webp",
+    "desktop": "../projects/portnoy/assets/cover-redesign.png",
     "mobile": "../projects/portnoy/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/portnoy/assets/master-desktop.mp4",
-        "poster": "../projects/portnoy/assets/poster-desktop.webp",
+        "src": "../projects/portnoy/assets/master-redesign-desktop.webm",
+        "poster": "../projects/portnoy/assets/overview-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/portnoy/assets/master-mobile.mp4",
-        "poster": "../projects/portnoy/assets/poster-mobile.webp",
+        "src": "../projects/portnoy/assets/master-redesign-mobile.webm",
+        "poster": "../projects/portnoy/assets/overview-390.png",
         "mobile": true
       },
       {
-        "src": "../projects/portnoy/assets/feature-3d.mp4",
-        "poster": "../projects/portnoy/assets/technical-3d.png",
+        "src": "../projects/portnoy/assets/feature-3d-redesign-desktop.webm",
+        "poster": "../projects/portnoy/assets/3d-fabric-redesign-1440.png",
         "mobile": false
       }
     ],
     "screens": [
-      "../projects/portnoy/assets/technical-3d.png",
+      "../projects/portnoy/assets/3d-fabric-redesign-1440.png",
       "../projects/portnoy/assets/catalog-1440.png",
       "../projects/portnoy/assets/comparison-1440.png",
       "../projects/portnoy/assets/configurator-1440.png"
@@ -755,23 +755,23 @@
     "boundary": "Исходный backend и live collection verified. Portfolio UI — отдельный presentation layer; публичные Meta creatives используются как replay/demo evidence.",
     "category": "Автоматизация",
     "desktop": "../projects/meta-ads/assets/cover-v3.webp",
-    "mobile": "../projects/meta-ads/assets/results-390-v3.png",
+    "mobile": "../projects/meta-ads/assets/results-redesign-390.png",
     "media": [
       {
         "src": "../projects/meta-ads/assets/master-desktop-v3.webm",
-        "poster": "../projects/meta-ads/assets/poster-desktop-v3.webp",
+        "poster": "../projects/meta-ads/assets/search-redesign-1440.png",
         "mobile": false
       },
       {
         "src": "../projects/meta-ads/assets/master-mobile-v3.webm",
-        "poster": "../projects/meta-ads/assets/poster-mobile-v3.webp",
+        "poster": "../projects/meta-ads/assets/search-redesign-390.png",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/meta-ads/assets/search-1440-v3.png",
-      "../projects/meta-ads/assets/results-1440-v3.png",
-      "../projects/meta-ads/assets/detail-1440-v3.png",
+      "../projects/meta-ads/assets/search-redesign-1440.png",
+      "../projects/meta-ads/assets/results-redesign-1440.png",
+      "../projects/meta-ads/assets/detail-redesign-1440.png",
       "../projects/meta-ads/assets/jobs-1440-v3.png",
       "../projects/meta-ads/assets/contract-1440-v3.png"
     ],
@@ -788,7 +788,7 @@
     "flow": "20 экранов: заметки → прогресс → общая цель → полив → статьи → чат → настройки и библиотека.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
-    "desktop": "../projects/stepbystep/assets/cover-v2.webp",
+    "desktop": "../projects/stepbystep/assets/cover-v3.png",
     "mobile": "../projects/stepbystep/assets/overview-390.png?v=premium-v2",
     "media": [
       {

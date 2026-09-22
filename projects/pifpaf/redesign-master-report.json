@@ -1,0 +1,130 @@
+[
+  {
+    "label": "desktop",
+    "errors": [],
+    "marks": [
+      {
+        "name": "Обзор",
+        "seconds": 1.6
+      },
+      {
+        "name": "Лучшие ролики",
+        "seconds": 4.1
+      },
+      {
+        "name": "Мои Reels",
+        "seconds": 6.9
+      },
+      {
+        "name": "Поиск Reels",
+        "seconds": 9.1
+      },
+      {
+        "name": "Таблица",
+        "seconds": 10.3
+      },
+      {
+        "name": "Добавление",
+        "seconds": 11.5
+      },
+      {
+        "name": "Ссылка на ролик",
+        "seconds": 12.3
+      },
+      {
+        "name": "Каталог",
+        "seconds": 14.6
+      },
+      {
+        "name": "Карточка ролика",
+        "seconds": 16.8
+      },
+      {
+        "name": "История просмотров",
+        "seconds": 19.2
+      },
+      {
+        "name": "Аналитика",
+        "seconds": 22
+      },
+      {
+        "name": "Период 30 дней",
+        "seconds": 24.2
+      },
+      {
+        "name": "Графики",
+        "seconds": 26.7
+      },
+      {
+        "name": "Профиль",
+        "seconds": 29.3
+      }
+    ],
+    "overflow": false,
+    "broken": []
+  },
+  {
+    "label": "mobile",
+    "errors": [],
+    "marks": [
+      {
+        "name": "Обзор",
+        "seconds": 1.7
+      },
+      {
+        "name": "Лучшие ролики",
+        "seconds": 4.2
+      },
+      {
+        "name": "Мои Reels",
+        "seconds": 7
+      },
+      {
+        "name": "Поиск Reels",
+        "seconds": 9.1
+      },
+      {
+        "name": "Таблица",
+        "seconds": 10.3
+      },
+      {
+        "name": "Добавление",
+        "seconds": 11.6
+      },
+      {
+        "name": "Ссылка на ролик",
+        "seconds": 12.4
+      },
+      {
+        "name": "Каталог",
+        "seconds": 14.7
+      },
+      {
+        "name": "Карточка ролика",
+        "seconds": 16.9
+      },
+      {
+        "name": "История просмотров",
+        "seconds": 19
+      },
+      {
+        "name": "Аналитика",
+        "seconds": 21.7
+      },
+      {
+        "name": "Период 30 дней",
+        "seconds": 23.9
+      },
+      {
+        "name": "Графики",
+        "seconds": 26.4
+      },
+      {
+        "name": "Профиль",
+        "seconds": 28.9
+      }
+    ],
+    "overflow": false,
+    "broken": []
+  }
+]

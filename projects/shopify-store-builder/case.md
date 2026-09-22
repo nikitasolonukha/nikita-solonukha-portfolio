@@ -16,3 +16,7 @@ Master walkthrough теперь показывает один полный flow:
 
 ## Ограничения
 Shopify preview может запросить пароль или перестать открываться. Credentials, authenticated state, платёж и создание заказа не публикуются и не выполняются.
+
+## Дополнительный визуальный проход — 22.09.2026
+
+В отдельной локальной demo-копии генератора витрина Lumina получила крупную композицию «Light, shaped.» с исходными фото лампы, более ясную типографику и компактную корзину без пустой панели на всю высоту экрана. Записаны `assets/demo-lumina-desktop.webm` и `assets/demo-lumina-mobile.webm`, а также кадры home/catalog/PDP/cart из этого **локального** flow. `lumina-demo-capture-qa.json`: 1440 и 390, page errors 0, horizontal overflow 0, broken images 0; 768 проверен отдельным визуальным проходом. Это portfolio polish локальной версии. Главным опубликованным доказательством остаётся прежний полный `complete-*` walkthrough с настоящим Shopify preview; изменения локальной копии не выдаются за изменения живой темы магазина.
