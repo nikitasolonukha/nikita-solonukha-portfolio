@@ -1,0 +1,374 @@
+[
+  {
+    "width": 390,
+    "route": "/",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/progress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/achievements",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/articles",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/articles/1",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/settings",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/sos",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/chat",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/about",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/stepcoins",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/water",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/notes",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/extras",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/meditations",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/sleep",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/stress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/knowledge",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/bot-program",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/ritual",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "route": "/feedback",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 390,
+    "pageErrors": []
+  },
+  {
+    "width": 768,
+    "route": "/",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/progress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/achievements",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/articles",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/articles/1",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/settings",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/sos",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/chat",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/about",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/stepcoins",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/water",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/notes",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/extras",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/meditations",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/sleep",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/stress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/knowledge",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/bot-program",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/ritual",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "route": "/feedback",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 768,
+    "pageErrors": []
+  },
+  {
+    "width": 1440,
+    "route": "/",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/progress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/achievements",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/articles",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/articles/1",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/settings",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/sos",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/chat",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/about",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/stepcoins",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/water",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/notes",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/extras",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/meditations",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/sleep",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/stress",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/knowledge",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/bot-program",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/ritual",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "route": "/feedback",
+    "overflow": false,
+    "broken": 0
+  },
+  {
+    "width": 1440,
+    "pageErrors": []
+  }
+]
