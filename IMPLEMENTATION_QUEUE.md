@@ -46,6 +46,6 @@ Final portfolio art-direction pass. `MASTER_CASE_QUEUE.md` records evidence stat
 
 ## Checkpoint
 
-STATUS: Global QA / READY. Public build verification pending.
-CHANGES: All 35 case pages checked at 390/1440. Home, Work, About, Archive, navigation, filters, motion and reduced-motion checked. 441 internal links and 353 media files verified; no broken links, missing assets, duplicate IDs, removed-project reappearances, or NDA leakage found by automated checks. Secondary videos now load only on interaction and were played successfully. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
-NEXT: publish final changes, verify the GitHub Pages build and live Home/Work/key cases, then close the site-wide checkpoint.
+STATUS: Global QA / READY. Published build verified.
+CHANGES: All 35 case pages checked at 390/1440. Home, Work, About, Archive, navigation, filters, motion and reduced-motion checked. 441 internal links and 353 media files verified; no broken links, missing assets, duplicate IDs, removed-project reappearances, or NDA leakage found by automated checks. Secondary videos now load only on interaction and were played successfully. GitHub Pages built commit `7d0b8e0`; 16 live views passed at 390/1440. Four archival cases remain BLOCKED for original media; one NDA case stays sanitized.
+NEXT: Resume only when original assets for archival cases become available or new project material is supplied.

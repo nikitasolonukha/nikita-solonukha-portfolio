@@ -1,0 +1,165 @@
+{
+  "views": [
+    {
+      "route": "index.html",
+      "width": 390,
+      "status": 200,
+      "h1": "Создаюцифровыепродукты.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "work.html",
+      "width": 390,
+      "status": 200,
+      "h1": "Работы.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "about.html",
+      "width": 390,
+      "status": 200,
+      "h1": "Дизайн должен работать.Код — объяснять решение.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "archive.html",
+      "width": 390,
+      "status": 200,
+      "h1": "Архив.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 390,
+      "status": 200,
+      "h1": "Shopify Store Builder",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=maps-lead-generator",
+      "width": 390,
+      "status": 200,
+      "h1": "B2B Lead Generator",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=support-rag",
+      "width": 390,
+      "status": 200,
+      "h1": "AI Support",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=portnoy",
+      "width": 390,
+      "status": 200,
+      "h1": "Портной",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "index.html",
+      "width": 1440,
+      "status": 200,
+      "h1": "Создаюцифровыепродукты.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "work.html",
+      "width": 1440,
+      "status": 200,
+      "h1": "Работы.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "about.html",
+      "width": 1440,
+      "status": 200,
+      "h1": "Дизайн должен работать.Код — объяснять решение.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "archive.html",
+      "width": 1440,
+      "status": 200,
+      "h1": "Архив.",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=shopify-store-builder",
+      "width": 1440,
+      "status": 200,
+      "h1": "Shopify Store Builder",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=maps-lead-generator",
+      "width": 1440,
+      "status": 200,
+      "h1": "B2B Lead Generator",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=support-rag",
+      "width": 1440,
+      "status": 200,
+      "h1": "AI Support",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    },
+    {
+      "route": "case.html?id=portnoy",
+      "width": 1440,
+      "status": 200,
+      "h1": "Портной",
+      "overflow": 0,
+      "brokenImages": [],
+      "script": "app.js?v=20260922-j",
+      "runtimeErrors": []
+    }
+  ],
+  "errors": []
+}
