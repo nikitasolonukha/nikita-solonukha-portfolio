@@ -8,7 +8,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 02 | KONTUR | protective-structures | IN PROGRESS | Three live hero compositions compared; technical typography + wide image implemented, all 11 sections surveyed, final CTA reworked; responsive/menu/system/form QA and new full masters captured; build/final sign-off pending |
 | 03 | MAGNUM | magnum | IN PROGRESS | Authentic archive preserved; separate interactive V2 reconstruction, 1440/768/390 QA and new desktop/mobile walkthrough captured; public/final art check pending |
 | 04 | Портной / 3D | portnoy | READY | Six routes plus 3D and A/B compare QA at 1440/768/390; mobile variant layout fixed at 320/390/768/1440; refreshed mobile master, separate 3D feature and public case verified |
-| 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |
+| 05 | Meta Ads | meta-ads | READY | Verified results-first replay, scope guard, 20-record sample/6 visual rows; search → processing → result/detail → jobs/API captured and 1440/768/390 public QA passed |
 | 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
 | 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
 | 08 | AI Support + Webchat | support-rag | IN PROGRESS | Real webchat → Telegram → AI draft → operator response; original Telegram evidence re-sanitized and combined video refreshed, product art QA remains |

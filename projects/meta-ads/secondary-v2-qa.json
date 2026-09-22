@@ -1,0 +1,47 @@
+[
+  {
+    "width": 1440,
+    "empty": true,
+    "endpoints": [
+      "Создать search job",
+      "Получить lifecycle status",
+      "Получить нормализованный result",
+      "Отменить работу"
+    ],
+    "guarded": "Демо-набор ограничен. Выберите Nike · US · ACTIVE; другие запросы требуют исходного сервиса и доступа к Meta.",
+    "rows": 6,
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 768,
+    "empty": true,
+    "endpoints": [
+      "Создать search job",
+      "Получить lifecycle status",
+      "Получить нормализованный result",
+      "Отменить работу"
+    ],
+    "guarded": "Демо-набор ограничен. Выберите Nike · US · ACTIVE; другие запросы требуют исходного сервиса и доступа к Meta.",
+    "rows": 6,
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  },
+  {
+    "width": 390,
+    "empty": true,
+    "endpoints": [
+      "Создать search job",
+      "Получить lifecycle status",
+      "Получить нормализованный result",
+      "Отменить работу"
+    ],
+    "guarded": "Демо-набор ограничен. Выберите Nike · US · ACTIVE; другие запросы требуют исходного сервиса и доступа к Meta.",
+    "rows": 6,
+    "overflow": false,
+    "broken": [],
+    "errors": []
+  }
+]

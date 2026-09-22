@@ -5,23 +5,23 @@
     "marks": [
       {
         "name": "search",
-        "seconds": 3.772
+        "seconds": 3.738
       },
       {
         "name": "results",
-        "seconds": 10.536
+        "seconds": 10.456
       },
       {
         "name": "detail",
-        "seconds": 13.46
+        "seconds": 13.363
       },
       {
         "name": "jobs",
-        "seconds": 19.311
+        "seconds": 19.179
       },
       {
         "name": "contract",
-        "seconds": 24.562
+        "seconds": 24.422
       }
     ],
     "overflow": false,
@@ -34,23 +34,23 @@
     "marks": [
       {
         "name": "search",
-        "seconds": 3.678
+        "seconds": 3.686
       },
       {
         "name": "results",
-        "seconds": 10.376
+        "seconds": 10.363
       },
       {
         "name": "detail",
-        "seconds": 13.285
+        "seconds": 13.293
       },
       {
         "name": "jobs",
-        "seconds": 19.141
+        "seconds": 19.171
       },
       {
         "name": "contract",
-        "seconds": 24.348
+        "seconds": 24.392
       }
     ],
     "overflow": false,
