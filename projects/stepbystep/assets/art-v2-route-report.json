@@ -1,0 +1,122 @@
+[
+  {
+    "route": "/",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/progress",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/achievements",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/articles",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/articles/1",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/settings",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/sos",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/chat",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/about",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/stepcoins",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/water",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/notes",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/extras",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/meditations",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/sleep",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/stress",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/knowledge",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/bot-program",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/ritual",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  },
+  {
+    "route": "/feedback",
+    "overflow": false,
+    "broken": 0,
+    "errors": []
+  }
+]
