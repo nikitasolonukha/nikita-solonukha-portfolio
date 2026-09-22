@@ -1,0 +1,38 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/support-rag/assets/master-combined-v3.mp4"
+    ]
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/support-rag/assets/master-combined-v3.mp4"
+    ]
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/support-rag/assets/master-combined-v3.mp4"
+    ]
+  }
+]
