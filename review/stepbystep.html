@@ -1,3 +1,53 @@
-<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>СТЕП — кейс</title><style>*{box-sizing:border-box}body{margin:0;background:#eeeae3;color:#292923;font:16px/1.6 Arial,sans-serif}main{max-width:1600px;margin:auto;padding:24px}a{color:inherit}aside{font-size:14px;margin-bottom:20px}img{width:100%;display:block}.media{display:grid;grid-template-columns:2fr 1fr;gap:32px;margin-top:32px;align-items:start}figure{margin:0;min-width:0}video{width:100%;display:block}figcaption{font-size:14px;margin:10px 0 24px}footer{font-size:14px;padding:24px 0}@media(max-width:760px){main{padding:12px}.media{grid-template-columns:1fr;gap:12px}}</style><link rel="stylesheet" href="devices.css?v=fit-audit"><main><aside><a href="http://127.0.0.1:4336/">Открыть сайт СТЕП ↗</a> · Ежедневная практика Telegram Mini App · демонстрационные данные.</aside><img src="../projects/stepbystep/assets/cover-v3.png" alt="СТЕП — Ежедневная практика Telegram Mini App"><div class="media"><figure><div class="device-laptop"><div class="device-display"><video style="--media-ratio:1440/900" controls playsinline preload="metadata" poster="../projects/stepbystep/assets/poster-desktop-v2.webp"><source src="../projects/stepbystep/assets/master-desktop-v2.webm" type="video/webm"></video></div><div class="device-base"></div></div><figcaption>MacBook · Полный пользовательский сценарий</figcaption></figure><figure><div class="device-phone"><video style="--media-ratio:390/844" controls playsinline preload="metadata" poster="../projects/stepbystep/assets/poster-mobile-v2.webp"><source src="../projects/stepbystep/assets/master-mobile-v2.webm" type="video/webm"></video></div><figcaption>iPhone · полный обзор всех основных разделов</figcaption></figure></div><section style="max-width:390px;margin:40px auto"><h2 style="font-size:20px">Остальные разделы</h2><div class="device-phone"><video controls playsinline preload="metadata" style="--media-ratio:390/844" poster="../projects/stepbystep/assets/poster-extra-v2.webp"><source src="../projects/stepbystep/assets/extra-mobile-v2.webm" type="video/webm"></video></div><p>Библиотека, достижения и настройки. Незавершённые возможности отмечены в кейсе.</p></section><p id="provenance-note" style="font-size:14px;max-width:850px;margin:32px 0;color:#55554e">Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании. READY — локальный пакет, не разрешение на публикацию.</p><footer><a href="https://github.com/nikitasolonukha/nikita-solonukha-portfolio/blob/main/projects/stepbystep/case.md">Факты и источники</a> · <a href="index.html">Все проекты</a></footer></main></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>СТЕП — кейс</title>
+  <link rel="stylesheet" href="devices.css?v=fit-audit">
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;background:#eeeae3;color:#292923;font:16px/1.6 Arial,sans-serif}
+    main{max-width:1600px;margin:auto;padding:clamp(16px,3vw,42px)}
+    a{color:inherit}img,video{width:100%;display:block}
+    .eyebrow{font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin:0 0 16px}
+    h1{font-size:clamp(36px,6vw,86px);line-height:1;letter-spacing:-.055em;margin:0 0 18px}
+    .intro{max-width:750px;font-size:clamp(17px,2vw,23px);line-height:1.45;margin:0 0 30px}
+    .media{display:grid;grid-template-columns:minmax(0,2fr) minmax(270px,1fr);gap:clamp(18px,2vw,36px);align-items:start}
+    figure{margin:0;min-width:0}figcaption{font-size:14px;margin:12px 0 22px}
+    .screen-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:36px 0}
+    .screen-grid img{border-radius:20px;max-height:600px;object-fit:contain;background:#101b16}
+    .facts{border-top:1px solid #bcb8ae;padding:24px 0;max-width:900px;font-size:14px}
+    footer{border-top:1px solid #bcb8ae;padding:25px 0;font-size:14px}
+    @media(max-width:760px){.media{grid-template-columns:1fr}.screen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.screen-grid img{border-radius:12px}}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow"><a href="index.html">Все проекты ↗</a> / Telegram Mini App / portfolio demo</p>
+  <h1>Один шаг сегодня.</h1>
+  <p class="intro">СТЕП — приложение для ежедневной практики. В walkthrough показаны реальные экраны локальной demo-копии: календарь, заметки, цели, статья с отметкой, дерево, чат и настройки.</p>
+  <div class="media">
+    <figure>
+      <div class="device-laptop"><div class="device-display">
+        <video style="--media-ratio:1440/900" controls playsinline preload="metadata" poster="../projects/stepbystep/assets/art-v2-demo-home-1440.png"><source src="../projects/stepbystep/assets/art-v2-master-desktop.mp4" type="video/mp4"></video>
+      </div><div class="device-base"></div></div>
+      <figcaption>Desktop · полный сценарий · 59 секунд</figcaption>
+    </figure>
+    <figure>
+      <div class="device-phone"><video style="--media-ratio:390/844" controls playsinline preload="metadata" poster="../projects/stepbystep/assets/art-v2-demo-home-390.png"><source src="../projects/stepbystep/assets/art-v2-master-mobile.mp4" type="video/mp4"></video></div>
+      <figcaption>Mobile · действия и результат · 59 секунд</figcaption>
+    </figure>
+  </div>
+  <div class="screen-grid" aria-label="Ключевые экраны">
+    <img src="../projects/stepbystep/assets/art-v2-demo-progress-390.png" alt="Календарь прогресса и цели" loading="lazy">
+    <img src="../projects/stepbystep/assets/art-v2-demo-notes-390.png" alt="Созданная заметка" loading="lazy">
+    <img src="../projects/stepbystep/assets/art-v2-demo-article-result-390.png" alt="Результат выполнения материала" loading="lazy">
+    <img src="../projects/stepbystep/assets/art-v2-demo-chat-390.png" alt="Локальный чат" loading="lazy">
+  </div>
+  <p class="facts">Показаны вымышленные demo-данные в изолированном профиле. Ответ чата — сохранённый шаблон, не подключённая AI-модель. Визуальные доработки сделаны для портфолио и отделены от исходного продукта в <a href="https://github.com/nikitasolonukha/nikita-solonukha-portfolio/blob/main/projects/stepbystep/case.md">описании кейса и проверке</a>.</p>
+  <footer><a href="index.html">Все проекты</a></footer>
+</main>
 <script src="video-playback.js?v=1" defer></script>
-<script>const live=document.querySelector("aside a");live.href=location.protocol+"//"+location.hostname+":4336/";</script>
+</body>
+</html>

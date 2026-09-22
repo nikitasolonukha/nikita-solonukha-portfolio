@@ -12,7 +12,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
 | 07 | GARMONY | garmony | IN PROGRESS | Actual Galant door detail replaces unrelated building crop; full door/menu/collections/form V2 capture checked |
 | 08 | AI Support + Webchat | support-rag | IN PROGRESS | Real webchat → Telegram → AI draft → operator response; original Telegram evidence re-sanitized and combined video refreshed, product art QA remains |
-| 09 | STEP | stepbystep | IN PROGRESS | Actual demo source: home, articles, progress, settings, water, goals, about, chat, achievements, program and honest stress state; audited 20 routes at 390/768/1440; remaining states/video pending |
+| 09 | STEP | stepbystep | IN PROGRESS | Actual demo source: 20 routes audited at 390/768/1440; V2 seeded actions, screenshots, 58-second mobile/desktop walkthrough captured; final visual review and public case integration pending |
 | 10 | Ритм | ritm | TODO | Violet/lime habit tracker, all screens |
 | 11 | LexLegal | lexlegal | TODO | Original legal site with clean presentation |
 | 12 | Татьяна | tatiana | TODO | Actual site, responsive and media polish |
