@@ -1,0 +1,41 @@
+[
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/stepbystep/assets/art-v2-master-desktop-v2.mp4",
+      "../projects/stepbystep/assets/art-v2-master-mobile-v2.mp4"
+    ]
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/stepbystep/assets/art-v2-master-desktop-v2.mp4",
+      "../projects/stepbystep/assets/art-v2-master-mobile-v2.mp4"
+    ]
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "errors": [],
+    "overflow": false,
+    "broken": [],
+    "videos": [
+      "../projects/stepbystep/assets/art-v2-master-desktop-v2.mp4",
+      "../projects/stepbystep/assets/art-v2-master-mobile-v2.mp4"
+    ]
+  }
+]
