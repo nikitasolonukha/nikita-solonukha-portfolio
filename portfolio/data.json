@@ -570,21 +570,21 @@
     "boundary": "Webchat и Telegram — один продукт. Telegram screenshot обезличен; webchat replay и AI/backend демо проверялись отдельно, сквозная production-интеграция сейчас не заявляется.",
     "category": "AI и автоматизация",
     "desktop": "../projects/support-rag/assets/telegram-support-sanitized.png",
-    "mobile": "../projects/webchat/assets/conversation-390.png",
+    "mobile": "../projects/support-rag/assets/webchat-conversation-390.png",
     "media": [
       {
-        "src": "../projects/support-rag/assets/master-combined-v2.mp4",
-        "poster": "../projects/support-rag/assets/poster-combined.webp",
+        "src": "../projects/support-rag/assets/master-combined-v3.mp4",
+        "poster": "../projects/support-rag/assets/poster-combined-v3.webp",
         "mobile": false
       },
       {
-        "src": "../projects/webchat/assets/master-desktop.mp4",
-        "poster": "../projects/webchat/assets/poster-desktop.webp",
+        "src": "../projects/support-rag/assets/webchat-master-1440.mp4",
+        "poster": "../projects/support-rag/assets/webchat-poster-1440.webp",
         "mobile": false
       },
       {
-        "src": "../projects/webchat/assets/master-mobile.mp4",
-        "poster": "../projects/webchat/assets/poster-mobile.webp",
+        "src": "../projects/support-rag/assets/webchat-master-390.mp4",
+        "poster": "../projects/support-rag/assets/webchat-poster-390.webp",
         "mobile": true
       },
       {
@@ -600,11 +600,11 @@
     ],
     "screens": [
       "../projects/support-rag/assets/telegram-support-sanitized.png",
-      "../projects/webchat/assets/conversation-1440.png",
+      "../projects/support-rag/assets/webchat-conversation-1440.png",
       "../projects/support-rag/assets/sources-1440.png",
       "../projects/support-rag/assets/approved-1440.png",
       "../projects/support-rag/assets/history-1440.png",
-      "../projects/webchat/assets/host-1440.png"
+      "../projects/support-rag/assets/webchat-host-1440.png"
     ],
     "document": "../projects/support-rag/case.md",
     "research": "../review/support-rag.html",
