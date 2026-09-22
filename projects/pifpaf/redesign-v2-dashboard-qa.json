@@ -1,0 +1,23 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "broken": 0,
+    "reelTiles": 4
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "broken": 0,
+    "reelTiles": 4
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "broken": 0,
+    "reelTiles": 4
+  }
+]

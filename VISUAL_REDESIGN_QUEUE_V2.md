@@ -9,7 +9,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 03 | MAGNUM | magnum | BLOCKED | Original recorded site differs from located source; preserve authentic video, locate matching source before UI redesign |
 | 04 | Портной / 3D | portnoy | IN PROGRESS | Compact fabric-led workspace QA at 1440/768/390; refreshed walkthrough in progress; retain 3D feature |
 | 05 | Meta Ads | meta-ads | IN PROGRESS | Results-first creative/data UI; refreshed capture and visual QA underway |
-| 06 | Пифпаф | pifpaf | TODO | Reels and link analytics, distinctive rhythm |
+| 06 | Пифпаф | pifpaf | IN PROGRESS | Reels placed before charts; dashboard QA 1440/768/390 and full V2 capture; secondary states still need art review |
 | 07 | GARMONY | garmony | TODO | Retain door interaction, polish full site |
 | 08 | AI Support + Webchat | support-rag | TODO | Real webchat → Telegram → AI draft → operator response |
 | 09 | STEP | stepbystep | TODO | Finish actual mobile product and all states |
