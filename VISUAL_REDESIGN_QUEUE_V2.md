@@ -18,7 +18,7 @@ This is an **art-direction** ledger. `MASTER_CASE_QUEUE.md`, `PROJECT_PATHS.md` 
 | 12 | Татьяна | tatiana | READY | Original light site restored and retained; author desktop/mobile recordings remain primary; The Damai reference informs only the editorial case rhythm; 1440/768/390 case QA complete |
 | 13 | Women Strange | women-strange | READY | Actual storefront retained; all CTA buttons verified pill-rounded; FABRIC/The Damai reference lock, media-first case, desktop/mobile walkthrough and 1440/768/390 QA complete |
 | 14 | EP Beauty | ep-beauty | READY | Ivory magazine case; real services, booking, FAQ and contacts; desktop/mobile QA clean |
-| 15 | Трек в подарок | trekpodarok | TODO | Individual music-gift identity |
+| 15 | Трек в подарок | trekpodarok | READY | Music-release art direction; real occasion selector and Telegram handoff; responsive QA clean |
 | 16 | СказкаМоя | skazka | TODO | Individual storybook identity |
 | 17 | TopGadalkin | topgadalkin | TODO | Actual dark site and full flow |
 | 18 | Живые фото | photo-animation | TODO | Original site and working before/after |
