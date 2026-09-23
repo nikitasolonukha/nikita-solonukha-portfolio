@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "node scripts/build-vercel.mjs",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/", "destination": "/site/", "permanent": false }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.(mp4|webm)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=604800" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.(png|jpg|jpeg|webp|svg|woff2)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=86400, s-maxage=604800" }
+      ]
+    }
+  ]
+}
