@@ -40,8 +40,8 @@ const scan = async directory => {
     const original = await fs.readFile(filename, 'utf8');
     const source = original.replaceAll(oldOrigin, vercelOrigin);
     if (source !== original) await fs.writeFile(filename, source);
-    for (const match of source.matchAll(/projects\/[\w./%-]+/g)) {
-      const relative = decodeURIComponent(match[0].split(/[?#]/, 1)[0]);
+    for (const match of source.matchAll(/projects\/[\p{L}\p{N}_./% -]+/gu)) {
+      const relative = decodeURIComponent(match[0].split(/[?#]/, 1)[0].trimEnd());
       if (!relative.startsWith('projects/') || relative.includes('..')) continue;
       referencedProjects.add(relative);
     }
