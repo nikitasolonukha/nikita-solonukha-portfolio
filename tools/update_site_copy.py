@@ -7,6 +7,10 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 BASE = 'https://nikitasolonukha.github.io/nikita-solonukha-portfolio'
 data = {p['id']:p for p in json.loads((ROOT/'portfolio/data.json').read_text(encoding='utf-8'))}
+app_js=(ROOT/'site/app.js').read_text(encoding='utf-8')
+selected_ids=re.findall(r"'([^']+)'",re.search(r'const selectedIds = \[(.*?)\];',app_js).group(1))
+work_ids=re.findall(r"'([^']+)'",re.search(r'const workIds = \[(.*?)\];',app_js).group(1))
+archive_ids=[id for id in data if id not in work_ids]
 
 def esc(s): return html.escape(s, quote=True)
 
@@ -15,6 +19,27 @@ def clear_generated_meta(page):
     page = re.sub(r'<meta property="og:[^"]+" content="[^"]*">', '', page)
     page = re.sub(r'<meta name="twitter:[^"]+" content="[^"]*">', '', page)
     return page
+
+def project_url(id):
+    if id in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin'):
+        return f'../review/{id}.html'
+    return f'case-{id}.html'
+
+def static_rows(ids):
+    return ''.join(f'<a class="project-row" href="{project_url(id)}" aria-label="Открыть кейс {esc(data[id]["name"])}"><span class="project-row-name"><strong>{esc(data[id]["shortTitle"])}</strong><small>{esc(data[id]["shortDescription"])}</small></span><span class="project-row-category">{esc(data[id]["category"])}</span><span class="project-row-type">Разработка</span><span class="project-row-evidence">Кейс</span></a>' for id in ids)
+
+def static_selected(ids):
+    result=[]
+    for n,id in enumerate(ids,1):
+        p=data[id]; image='../portfolio/'+p['desktop']
+        result.append(f'<article class="featured"><a class="featured-image" href="{project_url(id)}" aria-label="Открыть кейс {esc(p["name"])}"><img src="{esc(image)}" alt="{esc(p["shortDescription"])}" loading="lazy"></a><div class="featured-copy"><div><span class="featured-index">{n:02d} / 05</span><span>{esc(p["category"])}</span></div><h3><a href="{project_url(id)}">{esc(p["name"])} <span aria-hidden="true">↗</span></a></h3><p>{esc(p["shortDescription"])}</p></div></article>')
+    return ''.join(result)
+
+def add_fallback(page, opening_tag, markup):
+    start='<!-- STATIC_CONTENT_START -->'; end='<!-- STATIC_CONTENT_END -->'
+    if start in page:
+        return re.sub(re.escape(start)+r'.*?'+re.escape(end),start+markup+end,page,count=1,flags=re.S)
+    return page.replace(opening_tag+'</div>',opening_tag+start+markup+end+'</div>',1)
 
 PAGES = {
     'index.html': ('Никита Солонуха — Full-stack разработчик | AI-автоматизация и веб-продукты', 'Разрабатываю веб-сервисы, AI-агентов, RAG-системы, Telegram-ботов и автоматизации на Python, React и n8n. От интерфейса до API и запуска.', '/site/'),
@@ -55,14 +80,17 @@ for filename, (title, desc, path) in PAGES.items():
             {'@type':'WebSite','name':'Никита Солонуха — портфолио','url':BASE+'/site/','inLanguage':'ru-RU'}]}
         page = re.sub(r'<script type="application/ld\+json">.*?</script>', '', page, count=1)
         page = page.replace('</head>', '<script type="application/ld+json">'+json.dumps(schema,ensure_ascii=False,separators=(',',':'))+'</script></head>',1)
+        page=add_fallback(page,'<div id="selected-list" class="selected-list" aria-live="polite">',static_selected(selected_ids))
     elif filename == 'about.html':
         page = page.replace('Я собираю цифровые продукты целиком: разбираюсь в задаче, проектирую сценарий, создаю интерфейс, backend и интеграции — затем проверяю результат в использовании.', 'Я full-stack разработчик: могу взять задачу от идеи или неполного ТЗ и довести её до работающего продукта. Проектирую сценарий, собираю интерфейс и backend, подключаю базы данных, AI-модели и внешние API, затем проверяю результат тестами.')
         page = page.replace('Мне интересна работа, в которой за красивым экраном стоит настоящая система: бот помогает человеку, магазин вырастает из данных товара, а внутренний процесс становится проще.', 'Чаще всего работаю с веб-сервисами, AI-автоматизацией, Telegram, RAG, n8n и внутренними инструментами бизнеса. Мне интересны задачи, где интерфейс, данные и бизнес-логика работают вместе.')
         page = page.replace('Показываю интерфейсы самих продуктов. Если запись оригинала недоступна, это отмечено; демо и полировка для портфолио не выдаются за production.', 'Работаю и с MVP, и с существующими продуктами: разбираю код, исправляю слабые места, подключаю интеграции и довожу интерфейс до рабочего состояния.')
     elif filename == 'work.html':
         page = page.replace('Сайты, сервисы и автоматизации. Внутри — настоящий интерфейс и сценарий, а не символическая картинка проекта.', 'Веб-продукты, AI-системы, автоматизация и сайты. В каждом кейсе показываю задачу, свою работу и результат — от интерфейса до backend и интеграций.')
+        page=add_fallback(page,'<div id="work-grid" class="work-rows">',static_rows(work_ids))
     elif filename == 'archive.html':
         page = page.replace('Более ранние и специализированные проекты. Там, где оригинальные материалы сохранились не полностью, это обозначено в кейсе.', 'Ранние и специализированные работы: сайты, боты, автоматизации и учебные проекты. В каждом кейсе указано, что удалось подтвердить.')
+        page=add_fallback(page,'<div id="archive-list" class="archive-rows">',static_rows(archive_ids))
     file.write_text(page, encoding='utf-8')
 
 for id in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin'):

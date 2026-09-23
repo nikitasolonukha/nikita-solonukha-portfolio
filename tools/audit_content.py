@@ -61,6 +61,9 @@ for p in projects:
 urls=ET.parse(ROOT/'sitemap.xml').getroot().findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url')
 if len(urls)!=40: errors.append(f'Sitemap URLs: {len(urls)}, expected 40')
 if not (ROOT/'robots.txt').exists(): errors.append('robots.txt missing')
+for filename, marker, expected in [('index.html','class="featured"',5),('work.html','class="project-row"',12),('archive.html','class="project-row"',23)]:
+    count=(ROOT/'site'/filename).read_text(encoding='utf-8').count(marker)
+    if count!=expected: errors.append(f'{filename}: {count} static project links, expected {expected}')
 
 lines=['# SEO audit','',f'- Canonical projects: **{len(projects)}**',f'- Indexable HTML pages audited: **{len(pages)}**',f'- Unique page titles: **{len(titles)}**',f'- Unique meta descriptions: **{len(descriptions)}**',f'- Projects with Result: **{sum(bool(p.get("result")) for p in projects)}**',f'- Projects with Proof: **{sum(bool(p.get("proof")) for p in projects)}**',f'- Parsed image tags: **{image_count}**',f'- Sitemap URLs: **{len(urls)}**','',
 'Canonical URLs use the current GitHub Pages project address. They should be revised when a final domain is chosen. For cases with limited source material, “Proof” describes the surviving evidence and its limits rather than a fabricated performance metric. The legal report figures are provided directly by the author; the NDA report is not published.','',

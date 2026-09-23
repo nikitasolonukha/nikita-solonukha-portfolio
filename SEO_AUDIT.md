@@ -6,7 +6,7 @@
 - Unique meta descriptions: **40**
 - Projects with Result: **35**
 - Projects with Proof: **35**
-- Parsed image tags: **26**
+- Parsed image tags: **31**
 - Sitemap URLs: **40**
 
 Canonical URLs use the current GitHub Pages project address. They should be revised when a final domain is chosen. For cases with limited source material, “Proof” describes the surviving evidence and its limits rather than a fabricated performance metric. The legal report figures are provided directly by the author; the NDA report is not published.
