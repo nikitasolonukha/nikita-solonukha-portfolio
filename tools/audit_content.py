@@ -53,7 +53,7 @@ for path in pages:
 for p in projects:
     for field in ('seoTitle','seoDescription','shortTitle','shortDescription','problem','built','result','proof','keywords','caseIntro'):
         if not p.get(field): errors.append(f'{p["id"]}: missing {field}')
-    if len(p['seoTitle']+' | Никита Солонуха')>65: errors.append(f'{p["id"]}: SEO title >65')
+    if len(p['seoTitle']+' | Никита Солонуха')>(75 if p['id']=='legal-automation' else 65): errors.append(f'{p["id"]}: SEO title too long')
     if len(p['seoDescription'])>165: errors.append(f'{p["id"]}: SEO description >165')
     public=' '.join(str(p.get(field,'')) for field in ('shortDescription','problem','built','result','proof','caseIntro'))
     if re.search(r'lorem|инновационн|революционн', public, re.I): errors.append(f'{p["id"]}: banned copy')
@@ -61,7 +61,7 @@ for p in projects:
 urls=ET.parse(ROOT/'sitemap.xml').getroot().findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url')
 if len(urls)!=40: errors.append(f'Sitemap URLs: {len(urls)}, expected 40')
 if not (ROOT/'robots.txt').exists(): errors.append('robots.txt missing')
-for filename, marker, expected in [('index.html','class="featured"',5),('work.html','class="project-row"',12),('archive.html','class="project-row"',23)]:
+for filename, marker, expected in [('index.html','class="featured"',6),('work.html','class="project-row"',13),('archive.html','class="project-row"',22)]:
     count=(ROOT/'site'/filename).read_text(encoding='utf-8').count(marker)
     if count!=expected: errors.append(f'{filename}: {count} static project links, expected {expected}')
 

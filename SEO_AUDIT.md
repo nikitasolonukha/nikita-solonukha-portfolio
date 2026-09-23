@@ -6,7 +6,7 @@
 - Unique meta descriptions: **40**
 - Projects with Result: **35**
 - Projects with Proof: **35**
-- Parsed image tags: **31**
+- Parsed image tags: **32**
 - Sitemap URLs: **40**
 
 Canonical URLs use the current GitHub Pages project address. They should be revised when a final domain is chosen. For cases with limited source material, “Proof” describes the surviving evidence and its limits rather than a fabricated performance metric. The legal report figures are provided directly by the author; the NDA report is not published.
@@ -57,7 +57,7 @@ Canonical URLs use the current GitHub Pages project address. They should be revi
 | Telegram News · две версии | Telegram News — две версии новостных ботов / Никита Солонуха | Обе версии представлены как связанные по теме, но отдельные по назначению и готовности. | Университетский проект готов; личная версия в разработке. Оригинальный Telegram UI сохранён не полностью. | Telegram новости бот, AI дайджест Telegram, парсер новостей |
 | n8n Copilot | n8n Copilot — контент для Telegram / Никита Солонуха | Сценарий работы описан и частично показан; полная связка n8n и Telegram не подтверждена. | Найдено видео этапов Notion Raw/L1; оригинальный n8n export пока отсутствует. | n8n copilot, автоматизация Telegram контента, редакционный workflow |
 | Университетские проекты | Университетские проекты — NPM и Telegram / Никита Солонуха | Кейс показывает результаты каждой работы отдельно, без подачи их как единого коммерческого продукта. | Для parser найден исходный код; первые две работы представлены архивными материалами. | университетские IT проекты, защищенные сообщения, анализ NPM данных |
-| Внутренние продукты · NDA | AI-аналитика продаж и внутренние сервисы — NDA / Никита Солонуха | По данным автора, в управленческий отчёт вошли 155 звонков, из них 54 прошли AI-анализ. Отчёт собирал конверсию, возражения, ошибки менеджеров, точки потери денег и рейтинг сотрудников. | 155 звонков и 54 AI-анализа указаны автором; исходный управленческий отчёт публично не размещается из-за NDA. | AI анализ звонков, CRM автоматизация, внутренние сервисы бизнеса |
+| AI Sales Assistant | AI Sales Assistant — AI-анализ звонков и продаж / Никита Солонуха | По данным автора, в управленческий отчёт вошли 155 звонков, из них 54 прошли AI-анализ. Отчёт собирал конверсию, возражения, ошибки менеджеров, точки потери денег и рейтинг сотрудников. | Автор предоставил показатели рабочего отчёта: 155 звонков, 54 разговора с AI-анализом. Исходный отчёт и разговоры не публикуются из-за NDA; пример на странице демонстрационный. | AI-анализ звонков, автоматизация отдела продаж, Sipuni Bitrix24 Telegram, контроль качества продаж |
 
 ## Validation
 

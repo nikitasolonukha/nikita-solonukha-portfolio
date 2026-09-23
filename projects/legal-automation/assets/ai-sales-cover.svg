@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">AI Sales Assistant — презентационный постер кейса</title><desc id="desc">Типографика AI Sales Assistant, показатели 155 и 54 и путь от звонка до отчёта.</desc>
+<rect width="1600" height="1000" fill="#0b0d0e"/>
+<g stroke="#414747" stroke-width="1" opacity=".48"><path d="M64 96H1536M64 904H1536M64 96V904M1536 96V904M432 96V904M1168 96V904"/></g>
+<g fill="#9da5a1" font-family="Arial,sans-serif" font-size="17" letter-spacing="4"><text x="72" y="153">INTERNAL PRODUCT</text><text x="1175" y="153">AI / AUTOMATION / NDA</text></g>
+<g fill="#f3f2ec" font-family="Arial,sans-serif" font-weight="700" letter-spacing="-15"><text x="54" y="431" font-size="206">AI SALES</text><text x="54" y="629" font-size="206">ASSISTANT</text></g>
+<path d="M75 736H380M380 736C405 736 410 691 427 691S447 783 464 783 480 714 500 714 519 755 540 755 551 735 575 735H720" fill="none" stroke="#b6ff00" stroke-width="5" stroke-linecap="round"/>
+<g fill="#f3f2ec" font-family="Arial,sans-serif"><text x="745" y="789" font-weight="700" font-size="112" letter-spacing="-7">155</text><text x="1040" y="789" font-weight="700" font-size="112" letter-spacing="-7">54</text></g>
+<g fill="#a9b2af" font-family="Arial,sans-serif" font-size="16" letter-spacing="2"><text x="750" y="827">ЗВОНКОВ</text><text x="1045" y="827">AI-РАЗБОРА</text><text x="72" y="866">SIPUNI  →  BITRIX24  →  AI  →  TELEGRAM  →  REPORT</text></g>
+<circle cx="1505" cy="865" r="11" fill="#b6ff00"/>
+</svg>

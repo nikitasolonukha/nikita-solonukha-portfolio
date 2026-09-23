@@ -16,9 +16,9 @@ function pifpafFeature(){return `<section class="case-feature case-feature-pifpa
 function autorouterFeature(){return `<section class="case-feature case-feature-autorouter"><div class="shell"><p class="eyebrow">ROUTING / РЕШЕНИЕ</p><div class="autorouter-heading"><h2>Модель выбрана.<br><em>Причина видна.</em></h2><p>Система сопоставляет совместимость и смету. При нехватке бюджета она оставляет расчёт, но не запускает операцию.</p></div><div class="autorouter-facts"><div><span>01 / ВЫБОР</span><strong>z-image</strong><p>Подходит для image-запроса и проходит проверку параметров.</p></div><div><span>02 / СМЕТА</span><strong>1,20 ₽</strong><p>Демонстрационная цена исходного fake-каталога, не тариф провайдера.</p></div><div><span>03 / ЗАЩИТА</span><strong>Budget guard</strong><p>Если лимита не хватает, запуск недоступен.</p></div></div><figure><img src="${asset('../projects/vibe-autorouter/assets/estimate-1440.png')}" alt="Vibe AutoRouter: реальный экран локального расчёта модели и стоимости" loading="lazy"><figcaption>Расчёт и причины выбора · интерфейс локального demo</figcaption></figure><figure class="autorouter-budget"><img src="${asset('../projects/vibe-autorouter/assets/budget-1440.png')}" alt="Vibe AutoRouter: отказ в запуске из-за лимита бюджета" loading="lazy"><figcaption>Ограничение бюджета · тот же продукт, другое состояние</figcaption></figure><p class="autorouter-proof">Внешние модели не вызывались и деньги не списывались. Экран использует исходные classifier, ranking и FakeVibeClient через локальный adapter.</p></div></section>`;}
 function b2bFeature(){return `<section class="case-feature case-feature-b2b"><div class="shell"><p class="eyebrow">ДВА ПОДХОДА / ОДИН B2B-КЕЙС</p><h2>От поиска <em>к приоритету.</em></h2><p class="b2b-lead">Atlas / Leads собирает и обогащает компании через n8n. Beauty Lead Hunter отдельно оценивает найденные компании и выделяет приоритетные.</p><div class="b2b-implementations"><figure><div class="b2b-label"><span>01 / n8n + таблица</span><strong>Atlas / Leads</strong></div><img src="${asset('../projects/maps-lead-generator/assets/workflow-detail-1440-v2.png')}" alt="Atlas / Leads: проверенная топология workflow в локальном интерфейсе" loading="lazy"><figcaption>15 узлов, два прохода; скрин локального показа структуры.</figcaption></figure><figure><div class="b2b-label"><span>02 / Python + scoring</span><strong>Beauty Lead Hunter</strong></div><img src="${asset('../projects/beauty-lead/assets/detail-1440.png')}" alt="Beauty Lead Hunter: реальные поля и скоринг в локальном интерфейсе" loading="lazy"><figcaption>Фильтр и приоритетная компания; данные демонстрационные.</figcaption></figure></div><p class="b2b-proof">Это две реализации одного направления, а не один общий backend. Внешний сбор, Google Sheets и outreach в записи отключены; компании и контакты вымышлены.</p></div></section>`;}
 const archivalIds = new Set(['personal-assistant','news-aggregator-archive','copilot','university-projects']);
-const selectedIds = ['shopify-store-builder','meta-ads','protective-structures','magnum','pifpaf'];
+const selectedIds = ['legal-automation','shopify-store-builder','meta-ads','protective-structures','magnum','pifpaf'];
 const caseTitles = {'meta-ads':'Meta Ads','shopify-store-builder':'Shopify Store Builder'};
-const workIds = ['shopify-store-builder','meta-ads','protective-structures','magnum','pifpaf','portnoy','support-rag','vibe-autorouter','maps-lead-generator','ritm','photo-animation','garmony'];
+const workIds = ['legal-automation','shopify-store-builder','meta-ads','protective-structures','magnum','pifpaf','portnoy','support-rag','vibe-autorouter','maps-lead-generator','ritm','photo-animation','garmony'];
 const caseDetails = {
   'shopify-store-builder': {role:'Builder, генерация и storefront', outcome:'Исходные данные проходят через builder и превращаются в магазин Lumina Form: главная, каталог, карточка товара и корзина.', technical:'Генерация структуры магазина и storefront проверяются как один сценарий. Shopify preview и локальный builder показаны отдельно там, где они действительно разные среды.'},
   'meta-ads': {role:'Сбор, обработка и представление объявлений', outcome:'Задача проходит очередь и обработку; результатом становится список объявлений с креативами, рекламодателями, датами и ссылками.', technical:'Кейс показывает информационно плотную выдачу объявлений, а не сводку из нескольких декоративных метрик.'},
@@ -29,7 +29,7 @@ const caseDetails = {
   'magnum': {role:'Сайт и адаптивная презентация', outcome:'Сайт проводит посетителя через клуб, форматы, галерею, отзывы и контакт.', technical:'Приоритетная версия подтверждена авторскими видео; точный исходник этого среза не найден.'},
   'maps-lead-generator': {role:'Сбор и квалификация B2B-лидов', outcome:'N8n-сбор и enrichment компаний дополняются Python/Streamlit-поиском, оценкой и таблицей результата.', technical:'Beauty Lead Hunter и Atlas / Leads показаны как две реализации одного направления. Telegram AI Lead Hunter остаётся отдельным проектом.'},
   'telegram-leads': {role:'Telegram automation и MTProto', outcome:'Найденные лиды попадают в Telegram topics с источником и подготовленным ответом для менеджера.', technical:'Скриншот поддержки и скриншот лида проверены отдельно; общая операторская оболочка не означает общую задачу.'},
-  'legal-automation': {role:'Внутренние сервисы и интеграции', outcome:'Обезличенное описание работы с AI-анализом продаж, CRM, телефонией, отчётами, документами и контентными процессами.', technical:'NDA-кейс не раскрывает компанию и клиентов. Вымышленный интерфейс внутреннего продукта не используется.'},
+  'legal-automation': {role:'Full-stack разработка и интеграции', outcome:'Sipuni → расшифровка → контекст Bitrix24 → AI-разбор → Telegram и управленческий отчёт.', technical:'Обезличенная презентация процесса. Показатели 155/54 предоставлены автором; исходный отчёт и клиентские разговоры закрыты NDA.'},
   'university-projects': {role:'Три отдельные учебные работы', outcome:'Защищённые сообщения, анализ NPM и Telegram parser/search сведены под одну редакционную обложку.', technical:'Это не один технический продукт. Сохранившийся код parser отделён от архивных описаний первых двух работ.'}
 };
 
@@ -69,7 +69,7 @@ const caseArt = {
  'news-aggregator-archive':['archive','#a8bdc8',null,'Две версии Telegram News обозначены отдельно.'],
  'copilot':['archive','#c1afd4',null,'Доступные материалы workflow без вымышленной схемы.'],
  'university-projects':['archive','#b0bec8',null,'Отдельные университетские работы в одной редакционной обложке.'],
- 'legal-automation':['archive','#b8aea8',null,'Обезличенный NDA-кейс без вымышленного UI.']
+ 'legal-automation':['automation','#0b0d0e',null,'Обезличенная схема реального процесса без вымышленного UI.']
 };
 function setupMenu(){const toggle=$('.menu-toggle');if(!toggle)return;const menu=$('#mobile-nav');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');menu.hidden=open});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}));}
 async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-copy-v1',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
@@ -80,9 +80,9 @@ function home(projects) {
     <article class="featured">
       <a class="featured-image" href="${projectUrl(project.id)}" aria-label="Открыть кейс ${escapeHtml(project.name)}">
         <img src="${asset(project.desktop)}" alt="${escapeHtml(project.shortDescription || project.name)}" loading="${index ? 'lazy' : 'eager'}">
-        <video class="featured-loop" muted loop playsinline preload="none" aria-hidden="true"><source src="media/${project.id}-loop.mp4" type="video/mp4"></video>
+        ${project.id === 'legal-automation' ? '<span class="sales-card-flow" aria-hidden="true"><b>CALL</b><i>→</i><b>AI</b><i>→</i><b>REPORT</b></span>' : `<video class="featured-loop" muted loop playsinline preload="none" aria-hidden="true"><source src="media/${project.id}-loop.mp4" type="video/mp4"></video>`}
       </a>
-      <div class="featured-copy"><div><span class="featured-index">${String(index + 1).padStart(2, '0')} / 05</span><span>${escapeHtml(project.category)}</span></div>
+      <div class="featured-copy"><div><span class="featured-index">${String(index + 1).padStart(2, '0')} / ${String(selected.length).padStart(2, '0')}</span><span>${escapeHtml(project.category)}</span></div>
         <h3><a href="${projectUrl(project.id)}">${escapeHtml(project.name)} <span aria-hidden="true">↗</span></a></h3>
         <p>${escapeHtml(project.shortDescription || project.subtitle)}</p>
       </div>
@@ -90,6 +90,7 @@ function home(projects) {
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   document.querySelectorAll('.featured-image').forEach(link => {
     const video = link.querySelector('video');
+    if (!video) return;
     video.addEventListener('playing', () => link.classList.add('is-playing'));
     video.addEventListener('pause', () => link.classList.remove('is-playing'));
     link.addEventListener('pointerenter', () => { if (matchMedia('(hover:hover)').matches) video.play().catch(() => {}); });

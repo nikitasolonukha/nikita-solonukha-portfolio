@@ -32,7 +32,7 @@ def static_selected(ids):
     result=[]
     for n,id in enumerate(ids,1):
         p=data[id]; image='../portfolio/'+p['desktop']
-        result.append(f'<article class="featured"><a class="featured-image" href="{project_url(id)}" aria-label="Открыть кейс {esc(p["name"])}"><img src="{esc(image)}" alt="{esc(p["shortDescription"])}" loading="lazy"></a><div class="featured-copy"><div><span class="featured-index">{n:02d} / 05</span><span>{esc(p["category"])}</span></div><h3><a href="{project_url(id)}">{esc(p["name"])} <span aria-hidden="true">↗</span></a></h3><p>{esc(p["shortDescription"])}</p></div></article>')
+        result.append(f'<article class="featured"><a class="featured-image" href="{project_url(id)}" aria-label="Открыть кейс {esc(p["name"])}"><img src="{esc(image)}" alt="{esc(p["shortDescription"])}" loading="lazy"></a><div class="featured-copy"><div><span class="featured-index">{n:02d} / {len(ids):02d}</span><span>{esc(p["category"])}</span></div><h3><a href="{project_url(id)}">{esc(p["name"])} <span aria-hidden="true">↗</span></a></h3><p>{esc(p["shortDescription"])}</p></div></article>')
     return ''.join(result)
 
 def add_fallback(page, opening_tag, markup):
@@ -72,6 +72,7 @@ for filename, (title, desc, path) in PAGES.items():
     page = page.replace('app.js?v=20260923-roulette-v3', 'app.js?v=20260923-copy-v1')
     page = page.replace('editorial.css?v=20260922-d', 'editorial.css?v=20260923-copy-v1')
     if filename == 'index.html':
+        page = re.sub(r'(class="all-work-link"[^>]*>.*?<span>)\d+ проекта?ов?', rf'\g<1>{len(work_ids)} проектов', page, count=1, flags=re.S)
         page = page.replace('<h1 id="hero-title" class="sr-only">Никита Солонуха</h1>', '<h1 id="hero-title" class="sr-only">Никита Солонуха — Full-stack разработчик и специалист по AI-автоматизации</h1>')
         page = page.replace('Создаю цифровые продукты — от первого сценария до рабочего запуска.', 'Разрабатываю веб-продукты, AI-системы и автоматизации под реальные задачи бизнеса.')
         page = page.replace('Сайты, веб-сервисы, AI-системы, backend и интеграции.', 'Собираю интерфейс, backend, базы данных и интеграции в один работающий продукт — от Telegram-ботов и RAG-поддержки до внутренних сервисов, аналитики и ecommerce.')
@@ -86,9 +87,12 @@ for filename, (title, desc, path) in PAGES.items():
         page = page.replace('Мне интересна работа, в которой за красивым экраном стоит настоящая система: бот помогает человеку, магазин вырастает из данных товара, а внутренний процесс становится проще.', 'Чаще всего работаю с веб-сервисами, AI-автоматизацией, Telegram, RAG, n8n и внутренними инструментами бизнеса. Мне интересны задачи, где интерфейс, данные и бизнес-логика работают вместе.')
         page = page.replace('Показываю интерфейсы самих продуктов. Если запись оригинала недоступна, это отмечено; демо и полировка для портфолио не выдаются за production.', 'Работаю и с MVP, и с существующими продуктами: разбираю код, исправляю слабые места, подключаю интеграции и довожу интерфейс до рабочего состояния.')
     elif filename == 'work.html':
+        page = re.sub(r'(<button type="button" data-kind="all" aria-pressed="true">Все <span>)\d+', rf'\g<1>{len(work_ids)}', page, count=1)
+        page = re.sub(r'(<span>Архив <small>)\d+ проекта?ов?', rf'\g<1>{len(archive_ids)} проекта', page, count=1)
         page = page.replace('Сайты, сервисы и автоматизации. Внутри — настоящий интерфейс и сценарий, а не символическая картинка проекта.', 'Веб-продукты, AI-системы, автоматизация и сайты. В каждом кейсе показываю задачу, свою работу и результат — от интерфейса до backend и интеграций.')
         page=add_fallback(page,'<div id="work-grid" class="work-rows">',static_rows(work_ids))
     elif filename == 'archive.html':
+        page = re.sub(r'(<h1>Архив <small>\()\d+', rf'\g<1>{len(archive_ids)}', page, count=1)
         page = page.replace('Более ранние и специализированные проекты. Там, где оригинальные материалы сохранились не полностью, это обозначено в кейсе.', 'Ранние и специализированные работы: сайты, боты, автоматизации и учебные проекты. В каждом кейсе указано, что удалось подтвердить.')
         page=add_fallback(page,'<div id="archive-list" class="archive-rows">',static_rows(archive_ids))
     file.write_text(page, encoding='utf-8')

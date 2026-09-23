@@ -70,6 +70,16 @@ for id, title in {
     entries[id]['seoTitle'] = title
 entries['legal-automation']['result'] = ('По данным автора, в управленческий отчёт вошли 155 звонков, из них 54 прошли AI-анализ. '
     'Отчёт собирал конверсию, возражения, ошибки менеджеров, точки потери денег и рейтинг сотрудников.')
+entries['legal-automation'].update({
+    'seoTitle': 'AI Sales Assistant — AI-анализ звонков и продаж',
+    'shortTitle': 'AI Sales Assistant',
+    'shortDescription': 'Звонки из Sipuni связываются с контекстом Bitrix24; AI-разбор приходит в Telegram и управленческий отчёт.',
+    'problem': 'Руководителю нужен структурированный разбор звонков отдела продаж без ручного прослушивания каждого разговора.',
+    'built': 'Связал запись звонка Sipuni, расшифровку, контекст сделки Bitrix24, AI-анализ, доставку в Telegram и отчётность.',
+    'proof': 'Автор предоставил показатели рабочего отчёта: 155 звонков, 54 разговора с AI-анализом. Исходный отчёт и разговоры не публикуются из-за NDA; пример на странице демонстрационный.',
+    'keywords': ['AI-анализ звонков','автоматизация отдела продаж','Sipuni Bitrix24 Telegram','контроль качества продаж'],
+    'caseIntro': 'Обезличенный кейс внутреннего сервиса: звонок проходит расшифровку и AI-разбор с контекстом CRM, а выводы попадают в Telegram и отчёт.'
+})
 entries['support-rag'].update({
     'shortDescription': 'Сообщения в аккаунт поддержки и webchat синхронизируются; AI готовит черновик, а оператор решает, что отправить.',
     'problem': 'Свести обращения в аккаунт поддержки и на сайте в один управляемый сценарий ответа.',
@@ -99,6 +109,8 @@ STACK_OVERRIDES = {
 
 def meta_description(record):
     # Build a distinct search snippet from the outcome, avoiding generic boilerplate.
+    if record['id'] == 'legal-automation':
+        return 'Внутренняя система связывает телефонию, CRM и AI-анализ разговоров. 155 звонков в отчёте, 54 разговора с AI-анализом.'
     outcome = record['result'].replace('По словам автора, ', '')
     value = f"{record['shortTitle']}: {outcome}"
     if len(value) > 164:
@@ -122,6 +134,21 @@ def main():
         if p['id'] == 'support-rag':
             p['flow'] = 'Аккаунт поддержки или webchat → синхронизация → Telegram-топик → FAQ/RAG-черновик → Edit/Regen/Send → ответ от аккаунта поддержки.'
             p['boundary'] = 'Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.'
+        if p['id'] == 'legal-automation':
+            p['name'] = 'AI Sales Assistant'
+            p['desktop'] = '../projects/legal-automation/assets/ai-sales-cover.svg'
+            p['mobile'] = p['desktop']
+            p['flow'] = 'Sipuni → расшифровка звонка → контекст сделки Bitrix24 → AI-анализ → Telegram → управленческий отчёт.'
+            p['boundary'] = 'Визуальная подача — обезличенная презентация подтверждённого автором процесса, не снимок внутреннего интерфейса. 155/54 — показатели автора; исходный отчёт закрыт NDA.'
+            p['research'] = '../site/case-legal-automation.html'
+            p['media'] = [
+                {'src':'../projects/legal-automation/assets/ai-sales-desktop-walkthrough.webm','poster':'../projects/legal-automation/assets/ai-sales-cover.png','mobile':False},
+                {'src':'../projects/legal-automation/assets/ai-sales-mobile-walkthrough.webm','poster':'../projects/legal-automation/assets/ai-sales-cover.png','mobile':True},
+            ]
+            p['screens'] = [
+                '../projects/legal-automation/assets/ai-sales-desktop-full.png',
+                '../projects/legal-automation/assets/ai-sales-mobile-full.png',
+            ]
         p['seoDescription'] = meta_description(c)
         p['subtitle'] = c['shortDescription']
         p['intro'] = c['caseIntro']
@@ -144,7 +171,7 @@ def main():
         title = p['seoTitle'] + ' | Никита Солонуха'
         canonical = f"{BASE}/site/case-{quote(p['id'])}.html"
         image = f"{BASE}/portfolio/{p['desktop'].removeprefix('../portfolio/')}" if not p['desktop'].startswith('../') else f"{BASE}/{p['desktop'][3:]}"
-        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin'):
+        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation'):
             # Their original visual-first case pages stay the public route; reviewed separately.
             continue
         content = template.replace('<title>Кейс — Никита Солонуха</title>', f'<title>{escape(title)}</title>')
