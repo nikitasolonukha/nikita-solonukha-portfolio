@@ -141,17 +141,17 @@
     "flow": "Вращение, приз, второй шанс и защита от повторного запуска после reload.",
     "boundary": "В публичном preview Telegram SDK и webhook отключены, реальные призы не выдаются. Демо показывает существующий пользовательский сценарий.",
     "category": "Продукты",
-    "desktop": "../projects/roulette/assets/overview-1440.png",
-    "mobile": "../projects/roulette/assets/overview-390.png",
+    "desktop": "../projects/roulette/assets/poster-desktop.webp?v=ticket-v3",
+    "mobile": "../projects/roulette/assets/poster-mobile.webp?v=ticket-v3",
     "media": [
       {
-        "src": "../projects/roulette/assets/master-desktop.mp4",
-        "poster": "../projects/roulette/assets/poster-desktop.webp",
+        "src": "../projects/roulette/assets/master-desktop.mp4?v=ticket-v3",
+        "poster": "../projects/roulette/assets/poster-desktop.webp?v=ticket-v3",
         "mobile": false
       },
       {
-        "src": "../projects/roulette/assets/master-mobile.mp4",
-        "poster": "../projects/roulette/assets/poster-mobile.webp",
+        "src": "../projects/roulette/assets/master-mobile.mp4?v=ticket-v3",
+        "poster": "../projects/roulette/assets/poster-mobile.webp?v=ticket-v3",
         "mobile": true
       }
     ],

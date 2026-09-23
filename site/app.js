@@ -1,6 +1,7 @@
 const $ = (selector, root=document) => root.querySelector(selector);
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
 const editorialCaseRoutes = {
+  'roulette':'../review/roulette.html',
   'photo-animation':'../review/photo-animation.html',
   'ep-beauty':'../review/ep-beauty.html',
   'trekpodarok':'../review/trekpodarok.html',
@@ -71,7 +72,7 @@ const caseArt = {
  'legal-automation':['archive','#b8aea8',null,'Обезличенный NDA-кейс без вымышленного UI.']
 };
 function setupMenu(){const toggle=$('.menu-toggle');if(!toggle)return;const menu=$('#mobile-nav');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');menu.hidden=open});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}));}
-async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-editorial-sync',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
+async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-roulette-v3',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
 
 function home(projects) {
   const selected = selectedIds.map(id => projects.find(project => project.id === id)).filter(Boolean);
