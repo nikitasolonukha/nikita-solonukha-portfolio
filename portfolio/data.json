@@ -108,8 +108,8 @@
     "flow": "Сравнение, воспроизведение видео, услуги и адаптивная версия.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "images/photo-animation.webp?v=mobile-aligned-20260921",
-    "mobile": "../projects/photo-animation/assets/overview-390.png?v=mobile-aligned-20260921",
+    "desktop": "../projects/photo-animation/assets/poster-desktop.webp?v=editorial-20260923",
+    "mobile": "../projects/photo-animation/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/photo-animation/assets/master-desktop.mp4?v=mobile-aligned-20260921",
@@ -623,8 +623,8 @@
     "flow": "Разделы сайта и исходные взаимодействия frontend. Генерация музыки и backend не подтверждены.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "../projects/trekpodarok/assets/cover.webp",
-    "mobile": "../projects/trekpodarok/assets/overview-390.png",
+    "desktop": "../projects/trekpodarok/assets/poster-desktop.webp?v=editorial-20260923",
+    "mobile": "../projects/trekpodarok/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/trekpodarok/assets/master-desktop.mp4",
@@ -689,8 +689,8 @@
     "flow": "Четыре направления услуг, галерея, вопросы и сценарий записи.",
     "boundary": "Новый дизайн подготовлен для портфолио. Изображения не выдаются за реальные фотографии студии.",
     "category": "Сайты",
-    "desktop": "images/ep-beauty.webp",
-    "mobile": "../projects/ep-beauty/assets/overview-390.png",
+    "desktop": "../projects/ep-beauty/assets/poster-desktop.webp?v=editorial-20260923",
+    "mobile": "../projects/ep-beauty/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/ep-beauty/assets/master-desktop.mp4",
@@ -825,8 +825,8 @@
     "flow": "Четыре тарифа, FAQ и переход к боту. Работа бота, PDF и аудио не проверена.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "../projects/skazka/assets/cover.webp",
-    "mobile": "../projects/skazka/assets/overview-390.png",
+    "desktop": "../projects/skazka/assets/poster-desktop.webp?v=editorial-20260923",
+    "mobile": "../projects/skazka/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/skazka/assets/master-desktop.mp4",
@@ -993,8 +993,8 @@
     "flow": "Frontend и пять групп API-контрактов с mocks. Реальные платежи и бот не запускались.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "images/topgadalkin.webp",
-    "mobile": "../projects/topgadalkin/assets/overview-390.png",
+    "desktop": "../projects/topgadalkin/assets/poster-desktop.webp?v=editorial-20260923",
+    "mobile": "../projects/topgadalkin/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/topgadalkin/assets/master-desktop.mp4",

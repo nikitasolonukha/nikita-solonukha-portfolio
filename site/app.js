@@ -1,6 +1,13 @@
 const $ = (selector, root=document) => root.querySelector(selector);
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, character => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
-const projectUrl = id => `case.html?id=${encodeURIComponent(id)}`;
+const editorialCaseRoutes = {
+  'photo-animation':'../review/photo-animation.html',
+  'ep-beauty':'../review/ep-beauty.html',
+  'trekpodarok':'../review/trekpodarok.html',
+  'skazka':'../review/skazka.html',
+  'topgadalkin':'../review/topgadalkin.html'
+};
+const projectUrl = id => editorialCaseRoutes[id] || `case.html?id=${encodeURIComponent(id)}`;
 const portfolioBase = new URL('../portfolio/', location.href);
 const asset = path => new URL(path, portfolioBase).href;
 function magnumFeature(){return `<section class="case-feature case-feature-magnum"><div class="shell"><p class="eyebrow">MAGNUM / ВЕРСИЯ ИЗ АВТОРСКОЙ ЗАПИСИ</p><div class="magnum-feature-heading"><h2>Форматы игры.<br><em>Атмосфера клуба.</em></h2><p>Карточка формата раскрывается прямо на сайте. Дальше посетитель видит галерею пространства и путь к записи.</p></div><figure class="magnum-formats"><img src="${asset('../projects/magnum/assets/export/video-desktop-formats-open.webp')}" alt="MAGNUM: открытая карточка формата игры в авторской записи" loading="lazy"><figcaption>01 / Открытие формата · кадр из авторского видео</figcaption></figure><figure class="magnum-gallery"><img src="${asset('../projects/magnum/assets/export/video-desktop-gallery.webp')}" alt="MAGNUM: галерея клуба в авторской записи" loading="lazy"><figcaption>02 / Галерея клуба · кадр из авторского видео</figcaption></figure><p class="magnum-proof">Показанная версия подтверждена авторскими desktop и mobile записями. Точный исходник именно этой версии не найден; код другой версии не используется как доказательство её поведения.</p></div></section>`;}
@@ -64,7 +71,7 @@ const caseArt = {
  'legal-automation':['archive','#b8aea8',null,'Обезличенный NDA-кейс без вымышленного UI.']
 };
 function setupMenu(){const toggle=$('.menu-toggle');if(!toggle)return;const menu=$('#mobile-nav');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');menu.hidden=open});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}));}
-async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260922-k',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
+async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-editorial-sync',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
 
 function home(projects) {
   const selected = selectedIds.map(id => projects.find(project => project.id === id)).filter(Boolean);
