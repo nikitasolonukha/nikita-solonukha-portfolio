@@ -8,7 +8,7 @@ const editorialCaseRoutes = {
   'skazka':'../review/skazka.html',
   'topgadalkin':'../review/topgadalkin.html'
 };
-const projectUrl = id => editorialCaseRoutes[id] || `case.html?id=${encodeURIComponent(id)}`;
+const projectUrl = id => editorialCaseRoutes[id] || `case-${encodeURIComponent(id)}.html`;
 const portfolioBase = new URL('../portfolio/', location.href);
 const asset = path => new URL(path, portfolioBase).href;
 function magnumFeature(){return `<section class="case-feature case-feature-magnum"><div class="shell"><p class="eyebrow">MAGNUM / ВЕРСИЯ ИЗ АВТОРСКОЙ ЗАПИСИ</p><div class="magnum-feature-heading"><h2>Форматы игры.<br><em>Атмосфера клуба.</em></h2><p>Карточка формата раскрывается прямо на сайте. Дальше посетитель видит галерею пространства и путь к записи.</p></div><figure class="magnum-formats"><img src="${asset('../projects/magnum/assets/export/video-desktop-formats-open.webp')}" alt="MAGNUM: открытая карточка формата игры в авторской записи" loading="lazy"><figcaption>01 / Открытие формата · кадр из авторского видео</figcaption></figure><figure class="magnum-gallery"><img src="${asset('../projects/magnum/assets/export/video-desktop-gallery.webp')}" alt="MAGNUM: галерея клуба в авторской записи" loading="lazy"><figcaption>02 / Галерея клуба · кадр из авторского видео</figcaption></figure><p class="magnum-proof">Показанная версия подтверждена авторскими desktop и mobile записями. Точный исходник именно этой версии не найден; код другой версии не используется как доказательство её поведения.</p></div></section>`;}
@@ -72,19 +72,19 @@ const caseArt = {
  'legal-automation':['archive','#b8aea8',null,'Обезличенный NDA-кейс без вымышленного UI.']
 };
 function setupMenu(){const toggle=$('.menu-toggle');if(!toggle)return;const menu=$('#mobile-nav');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');menu.hidden=open});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}));}
-async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-roulette-v3',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
+async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-copy-v1',location.href),{cache:'no-store'});if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
 
 function home(projects) {
   const selected = selectedIds.map(id => projects.find(project => project.id === id)).filter(Boolean);
   $('#selected-list').innerHTML = selected.map((project, index) => `
     <article class="featured">
       <a class="featured-image" href="${projectUrl(project.id)}" aria-label="Открыть кейс ${escapeHtml(project.name)}">
-        <img src="${asset(project.desktop)}" alt="${escapeHtml(project.name)} — настоящий интерфейс" loading="${index ? 'lazy' : 'eager'}">
+        <img src="${asset(project.desktop)}" alt="${escapeHtml(project.shortDescription || project.name)}" loading="${index ? 'lazy' : 'eager'}">
         <video class="featured-loop" muted loop playsinline preload="none" aria-hidden="true"><source src="media/${project.id}-loop.mp4" type="video/mp4"></video>
       </a>
       <div class="featured-copy"><div><span class="featured-index">${String(index + 1).padStart(2, '0')} / 05</span><span>${escapeHtml(project.category)}</span></div>
         <h3><a href="${projectUrl(project.id)}">${escapeHtml(project.name)} <span aria-hidden="true">↗</span></a></h3>
-        <p>${escapeHtml(project.subtitle)}</p>
+        <p>${escapeHtml(project.shortDescription || project.subtitle)}</p>
       </div>
     </article>`).join('');
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -103,7 +103,7 @@ function workRow(item, index, archive = false) {
   const evidence = archivalIds.has(item.id) ? 'Частично' : item.id === 'legal-automation' ? 'NDA' : (item.media || []).length ? 'Видео и экраны' : 'Экраны';
   const role = roleByCategory[item.category] || 'Разработка';
   return `<a class="project-row" href="${projectUrl(item.id)}" aria-label="Открыть кейс ${escapeHtml(item.name)}">
-    <span class="project-row-name"><strong>${escapeHtml(item.name)}</strong></span>
+    <span class="project-row-name"><strong>${escapeHtml(item.shortTitle || item.name)}</strong><small>${escapeHtml(item.shortDescription || item.subtitle)}</small></span>
     <span class="project-row-category">${escapeHtml(item.category)}</span>
     <span class="project-row-type">${escapeHtml(role)}</span>
     <span class="project-row-evidence">${escapeHtml(evidence)}</span>
@@ -136,7 +136,7 @@ function videoFigure(entry,index,name){const phone=entry.mobile;const src=asset(
 function projectFeature(id){if(id!=='protective-structures')return '';return `<section class="case-feature case-feature-kontur"><div class="shell"><p class="eyebrow">СИСТЕМА / САЙТ</p><div class="kontur-intro"><h2>Сложная система.<br><em>Ясное объяснение.</em></h2><p>Сайт раскрывает устройство защитной конструкции, затем показывает сферы применения и приводит к запросу расчёта.</p></div><figure class="kontur-main"><img src="${asset('../projects/protective-structures/assets/1440-how.png')}" alt="Реальный экран KONTUR: схема опорной конструкции, каркаса и защитного полотна" loading="lazy"><figcaption>01 / Состав системы · экран сайта</figcaption></figure><div class="kontur-detail"><div><span>01</span><strong>Конструкция</strong><p>Три элемента объясняются на одном экране: опоры, каркас, сетчатое полотно.</p></div><div><span>02</span><strong>Применение</strong><p>От устройства системы — к энергетике, промышленности и другим объектам.</p></div><div><span>03</span><strong>Действие</strong><p>Посетитель может открыть контактную форму и запросить обсуждение объекта.</p></div></div><figure class="kontur-secondary"><img src="${asset('../projects/protective-structures/assets/1440-industries.png')}" alt="Реальный экран KONTUR: отрасли применения" loading="lazy"><figcaption>02 / Области применения · экран сайта</figcaption></figure><p class="kontur-caveat">Изображения объектов в демонстрационном сайте — иллюстративный материал. Они не подтверждают построенные сооружения.</p></div></section>`;}
 
 function casePage(projects) {
-  const id = new URLSearchParams(location.search).get('id');
+  const id = new URLSearchParams(location.search).get('id') || location.pathname.match(/\/case-([a-z0-9-]+)\.html$/)?.[1];
   const item = projects.find(project => project.id === id);
   const root = $('#case-root');
   if (!item) {
@@ -144,7 +144,7 @@ function casePage(projects) {
     document.title = 'Проект не найден — Никита Солонуха';
     return;
   }
-  document.title = `${item.name} — Никита Солонуха`;
+  document.title = `${item.seoTitle} | Никита Солонуха`;
   const notes = caseDetails[id] || {};
   const art = caseArt[id] || ['product', '#b6ff00', null, ''];
   document.body.dataset.caseStyle = art[0];
@@ -165,12 +165,12 @@ function casePage(projects) {
   const status = archivalIds.has(id) ? 'Архив · оригинальные материалы неполны' : id === 'legal-automation' ? 'Обезличенный NDA-кейс' : item.category;
   const mainVideo = media.length ? `<section class="case-video-section"><div class="shell"><p class="eyebrow">Продукт в действии</p>${videoFigure(media[0], 0, item.name)}</div></section>` : `<section class="case-archive-section shell"><p>Полная оригинальная запись интерфейса пока не найдена. Ниже — сохранившиеся материалы.</p></section>`;
   const secondary = media.length > 1 ? `<section class="case-secondary shell"><p class="eyebrow">Другие сценарии / mobile</p><div class="case-media-secondary">${media.slice(1, 5).map((entry, index) => videoFigure(entry, index + 1, item.name)).join('')}</div></section>` : '';
-  const gallery = screens.length ? `<section class="case-screens shell"><p class="eyebrow">Экраны / детали</p><div class="case-screen-grid">${screens.map((src, index) => `<figure><a href="${asset(src)}" target="_blank" rel="noopener" aria-label="Открыть экран ${index + 1} проекта ${escapeHtml(item.name)}"><img src="${asset(src)}" alt="${escapeHtml(item.name)} — экран ${index + 1}" loading="lazy"></a><figcaption>${String(index + 1).padStart(2, '0')} / ${escapeHtml(item.name)}</figcaption></figure>`).join('')}</div></section>` : '';
-  root.innerHTML = `<div class="case-title shell"><a class="back-link" href="work.html">← Работы</a><p class="eyebrow">${escapeHtml(status)}</p><h1>${escapeHtml(caseTitles[id] || item.name)}</h1><div class="case-title-meta"><div><span>Роль / услуги</span><strong>${escapeHtml(notes.role || item.subtitle)}</strong></div><div><span>Проект</span><strong>${escapeHtml(item.category)}</strong></div><div><span>Сценарий</span><strong>${escapeHtml(item.flow)}</strong></div></div></div>
-    <div class="case-cover"><picture><source media="(max-width:760px)" srcset="${asset(id === 'shopify-store-builder' ? item.desktop : (item.mobile || art[2] || item.desktop))}"><img src="${asset(id === 'shopify-store-builder' ? item.desktop : (art[2] || item.desktop))}" alt="${escapeHtml(item.name)} — настоящий экран проекта" fetchpriority="high"></picture></div>
-    <section class="case-story shell"><span class="eyebrow">${escapeHtml(item.name)} / о проекте</span><div><h2>${escapeHtml(item.intro)}</h2><p>${escapeHtml(art[3] || item.subtitle)}</p></div></section>
+  const gallery = screens.length ? `<section class="case-screens shell"><p class="eyebrow">Экраны / детали</p><div class="case-screen-grid">${screens.map((src, index) => `<figure><a href="${asset(src)}" target="_blank" rel="noopener" aria-label="Открыть экран ${index + 1} проекта ${escapeHtml(item.name)}"><img src="${asset(src)}" alt="${escapeHtml(item.shortDescription || item.name)} — кадр ${index + 1}" loading="lazy"></a><figcaption>${String(index + 1).padStart(2, '0')} / ${escapeHtml(item.name)}</figcaption></figure>`).join('')}</div></section>` : '';
+  root.innerHTML = `<div class="case-title shell"><a class="back-link" href="work.html">← Работы</a><p class="eyebrow">${escapeHtml(status)}</p><h1>${escapeHtml(caseTitles[id] || item.name)}</h1><p class="case-deck">${escapeHtml(item.shortDescription || item.subtitle)}</p><div class="case-title-meta"><div><span>Роль / услуги</span><strong>${escapeHtml(notes.role || 'Разработка')}</strong></div><div><span>Проект</span><strong>${escapeHtml(item.category)}</strong></div><div><span>Технологии</span><strong>${escapeHtml(item.stack === 'Подробности в исследовании' ? 'Указаны в материалах кейса' : item.stack)}</strong></div></div></div>
+    <div class="case-cover"><picture><source media="(max-width:760px)" srcset="${asset(id === 'shopify-store-builder' ? item.desktop : (item.mobile || art[2] || item.desktop))}"><img src="${asset(id === 'shopify-store-builder' ? item.desktop : (art[2] || item.desktop))}" alt="${escapeHtml(item.shortDescription || item.name)}" fetchpriority="high"></picture></div>
+    <section class="case-story shell"><span class="eyebrow">${escapeHtml(item.name)} / о проекте</span><div><h2>${escapeHtml(item.caseIntro || item.intro)}</h2><div class="case-story-facts"><div><h3>Задача</h3><p>${escapeHtml(item.problem)}</p></div><div><h3>Что я сделал</h3><p>${escapeHtml(item.built)}</p></div><div><h3>Результат</h3><p>${escapeHtml(item.result)}</p></div></div></div></section>
     ${mainVideo}${feature}${gallery}${secondary}
-    <section class="case-notes shell"><span class="eyebrow">Реализация</span><div><h2>Как это работает</h2><p>${escapeHtml(notes.outcome || item.flow)}</p><details><summary>Технологии и границы демонстрации</summary><p>${escapeHtml(item.stack)}</p><p>${escapeHtml(notes.technical || item.boundary)}</p><p>${escapeHtml(item.boundary)}</p></details></div></section>
+    <section class="case-notes shell"><span class="eyebrow">Подробности</span><div><h2>Что подтверждено</h2><p>${escapeHtml(item.proof)}</p><details><summary>Технические решения и условия демонстрации</summary><p>${escapeHtml(item.stack === 'Подробности в исследовании' ? 'Стек в доступных материалах не установлен.' : item.stack)}</p><p>${escapeHtml(item.boundary)}</p></details></div></section>
     <div class="case-next shell"><a href="${projectUrl(next.id)}"><span><small>Следующий кейс</small><br>${escapeHtml(next.name)}</span><span aria-hidden="true">↗</span></a><a class="case-all-work" href="work.html">Все работы ↗</a></div><section class="contact-section compact-contact"><div class="shell"><p class="eyebrow">Есть задача?</p><h2>Давайте<br><span>поработаем вместе.</span></h2><a class="contact-circle" href="contact.html">Связаться ↗</a></div></section>`;
   root.querySelectorAll('.case-screen-grid img').forEach(img => {
     const sizeImage = () => { if (img.naturalHeight > img.naturalWidth * 2) img.classList.add('is-tall'); };
