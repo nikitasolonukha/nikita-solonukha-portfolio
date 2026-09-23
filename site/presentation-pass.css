@@ -1,0 +1,23 @@
+/* Closed-scope presentation-first calibration. Existing site shell remains intact. */
+.pf-evidence{padding-block:clamp(85px,10vw,160px)}
+.pf-evidence-head{max-width:850px;margin:0 0 clamp(34px,5vw,80px)}
+.pf-evidence-head small{font:700 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.13em}
+.pf-evidence-head h2{font-size:clamp(46px,6vw,90px);font-weight:500;line-height:1.04;letter-spacing:-.065em;margin:25px 0 30px}
+.pf-evidence-head p{font-size:clamp(17px,1.5vw,23px);line-height:1.5;max-width:720px}
+.pf-evidence figure{margin:0}
+.pf-evidence-support{border-top:1px solid #d1d1c8}
+.pf-evidence-support .support-real-screen{max-width:100%}
+.pf-evidence-leads{border-top:1px solid #b6c7c9}
+.pf-evidence-leads .leads-real{max-width:100%}
+.pf-schedule-statement{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:3vw;border-top:1px solid #6e7774;border-bottom:1px solid #6e7774;padding:clamp(28px,5vw,70px) 0;margin-top:clamp(50px,7vw,100px)}
+.pf-schedule-statement>div:not(.pf-schedule-divider){display:flex;flex-direction:column;min-width:0}
+.pf-schedule-statement strong{font:700 clamp(105px,21vw,340px)/.8 Manrope,Arial,sans-serif;letter-spacing:-.11em}
+.pf-schedule-statement span{font:700 clamp(30px,5vw,76px)/1 Manrope,Arial,sans-serif;letter-spacing:-.07em;margin-top:16px}
+.pf-schedule-statement small{font-size:11px;letter-spacing:.13em;margin-top:24px}
+.pf-schedule-divider{font-size:clamp(40px,7vw,90px);padding-bottom:12vw;color:#da6846}
+.pf-x-poster{margin-top:clamp(60px,8vw,120px);padding:clamp(28px,5vw,70px);min-height:440px;background:#eff0ea;color:#1a2328;display:grid;grid-template-columns:1fr auto;align-content:space-between;gap:30px;border-top:13px solid #1c5bc0}
+.pf-x-poster span{font:700 clamp(16px,2.2vw,32px)/1.2 Manrope,Arial,sans-serif;letter-spacing:.06em}
+.pf-x-poster strong{font:700 clamp(110px,21vw,320px)/.78 Manrope,Arial,sans-serif;letter-spacing:-.12em;grid-column:1/-1;color:#175ac8}
+.pf-x-poster i{font-style:normal;font-size:65px;color:#175ac8}
+.twitter-case .twitter-question small{letter-spacing:.1em}
+@media(max-width:760px){.pf-schedule-statement{gap:10px;margin-top:45px}.pf-schedule-statement strong{font-size:clamp(88px,26vw,155px)}.pf-schedule-statement span{font-size:clamp(20px,6vw,34px)}.pf-schedule-statement small{font-size:8px;letter-spacing:.04em}.pf-schedule-divider{font-size:30px;padding-bottom:75px}.pf-x-poster{min-height:360px;gap:20px}.pf-x-poster strong{font-size:clamp(100px,28vw,160px)}.pf-x-poster span{font-size:15px}}

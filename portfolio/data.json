@@ -797,42 +797,13 @@
     "flow": "Аккаунт поддержки или webchat → синхронизация → Telegram-топик → FAQ/RAG-черновик → Edit/Regen/Send → ответ от аккаунта поддержки.",
     "boundary": "Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.",
     "category": "AI и автоматизация",
-    "desktop": "../projects/support-rag/assets/ai-support-cover.png",
-    "mobile": "../projects/support-rag/assets/webchat-conversation-390.png",
-    "media": [
-      {
-        "src": "../projects/support-rag/assets/master-combined-v3.mp4",
-        "poster": "../projects/support-rag/assets/poster-combined-v3.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/support-rag/assets/webchat-master-1440.mp4",
-        "poster": "../projects/support-rag/assets/webchat-poster-1440.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/support-rag/assets/webchat-master-390.mp4",
-        "poster": "../projects/support-rag/assets/webchat-poster-390.webp",
-        "mobile": true
-      },
-      {
-        "src": "../projects/support-rag/assets/master-desktop.mp4",
-        "poster": "../projects/support-rag/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/support-rag/assets/master-mobile.mp4",
-        "poster": "../projects/support-rag/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
+    "desktop": "../portfolio/images/presentation/support-rag.svg",
+    "mobile": "../portfolio/images/presentation/support-rag.svg",
+    "media": [],
     "screens": [
       "../projects/support-rag/assets/telegram-support-sanitized.png",
-      "../projects/support-rag/assets/webchat-conversation-1440.png",
-      "../projects/support-rag/assets/sources-1440.png",
-      "../projects/support-rag/assets/approved-1440.png",
-      "../projects/support-rag/assets/history-1440.png",
-      "../projects/support-rag/assets/webchat-host-1440.png"
+      "../projects/support-rag/assets/webchat-host-1440.png",
+      "../projects/support-rag/assets/webchat-conversation-390.png"
     ],
     "document": "../projects/support-rag/case.md",
     "research": "../site/case-support-rag.html",
@@ -1195,26 +1166,10 @@
     "flow": "X community → source message → participants → repost states → source trace.",
     "boundary": "X-first demo replay. Профили и публикации вымышлены; аккаунты, DOM X и внешние действия отключены.",
     "category": "Автоматизация",
-    "desktop": "../projects/twitter-automation/assets/cover-v3.webp",
-    "mobile": "../projects/twitter-automation/assets/x-feed-result-390-v3.png",
-    "media": [
-      {
-        "src": "../projects/twitter-automation/assets/master-desktop-v3.webm",
-        "poster": "../projects/twitter-automation/assets/poster-desktop-v3.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/twitter-automation/assets/master-mobile-v3.webm",
-        "poster": "../projects/twitter-automation/assets/poster-mobile-v3.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/twitter-automation/assets/x-community-1440-v3.png",
-      "../projects/twitter-automation/assets/x-repost-result-1440-v3.png",
-      "../projects/twitter-automation/assets/x-source-trace-1440-v3.png",
-      "../projects/twitter-automation/assets/x-partial-result-1440-v3.png"
-    ],
+    "desktop": "../portfolio/images/presentation/twitter-automation.svg",
+    "mobile": "../portfolio/images/presentation/twitter-automation.svg",
+    "media": [],
+    "screens": [],
     "document": "../projects/twitter-automation/case.md",
     "research": "../site/case-twitter-automation.html",
     "local": true,
@@ -1242,25 +1197,10 @@
     "flow": "Telegram source → folder → chat → immediate message → 23 scheduled messages → result.",
     "boundary": "Логика проверена на исходной функции; Telegram UI и данные обезличены, внешние отправки отключены.",
     "category": "Автоматизация",
-    "desktop": "../projects/telegram-schedule/assets/cover-v2.webp",
-    "mobile": "../projects/telegram-schedule/assets/telegram-result-390-v2.png",
-    "media": [
-      {
-        "src": "../projects/telegram-schedule/assets/master-desktop-v2.mp4",
-        "poster": "../projects/telegram-schedule/assets/poster-desktop-v2.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/telegram-schedule/assets/master-mobile-v2.mp4",
-        "poster": "../projects/telegram-schedule/assets/poster-mobile-v2.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/telegram-schedule/assets/telegram-entry-1440-v2.png",
-      "../projects/telegram-schedule/assets/telegram-schedule-1440-v2.png",
-      "../projects/telegram-schedule/assets/telegram-result-1440-v2.png"
-    ],
+    "desktop": "../portfolio/images/presentation/telegram-schedule.svg",
+    "mobile": "../portfolio/images/presentation/telegram-schedule.svg",
+    "media": [],
+    "screens": [],
     "document": "../projects/telegram-schedule/case.md",
     "research": "../site/case-telegram-schedule.html",
     "local": true,
@@ -1336,28 +1276,11 @@
     "flow": "Telegram topic → source message → qualification → draft → operator Edit/Send/Regen/Close → linked MTProto transport boundary.",
     "boundary": "Главный экран — реальный обезличенный Telegram UI. Видео ниже — безопасный локальный replay исходной parser/webhook/ingest-логики; внешних отправок нет.",
     "category": "AI и автоматизация",
-    "desktop": "../projects/telegram-leads/assets/telegram-leads-sanitized.png",
-    "mobile": "../projects/telegram-leads/assets/telegram-draft-390-v2.png",
-    "media": [
-      {
-        "src": "../projects/telegram-leads/assets/master-desktop-v2.mp4",
-        "poster": "../projects/telegram-leads/assets/poster-desktop-v2.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/telegram-leads/assets/master-mobile-v2.mp4",
-        "poster": "../projects/telegram-leads/assets/poster-mobile-v2.webp",
-        "mobile": true
-      }
-    ],
+    "desktop": "../portfolio/images/presentation/telegram-leads.svg",
+    "mobile": "../portfolio/images/presentation/telegram-leads.svg",
+    "media": [],
     "screens": [
-      "../projects/telegram-leads/assets/telegram-leads-sanitized.png",
-      "../projects/telegram-leads/assets/telegram-entry-1440-v2.png",
-      "../projects/telegram-leads/assets/telegram-qualified-1440-v2.png",
-      "../projects/telegram-leads/assets/telegram-draft-1440-v2.png",
-      "../projects/telegram-leads/assets/telegram-mtproto-1440-v2.png",
-      "../projects/telegram-leads/assets/telegram-duplicate-1440-v2.png",
-      "../projects/telegram-leads/assets/telegram-anonymous-1440-v2.png"
+      "../projects/telegram-leads/assets/telegram-leads-sanitized.png"
     ],
     "document": "../projects/telegram-leads/case.md",
     "research": "../site/case-telegram-leads.html",
@@ -1637,22 +1560,8 @@
     "category": "Автоматизация",
     "desktop": "../projects/legal-automation/assets/ai-sales-cover.svg",
     "mobile": "../projects/legal-automation/assets/ai-sales-cover.svg",
-    "media": [
-      {
-        "src": "../projects/legal-automation/assets/ai-sales-desktop-walkthrough.webm",
-        "poster": "../projects/legal-automation/assets/ai-sales-cover.png",
-        "mobile": false
-      },
-      {
-        "src": "../projects/legal-automation/assets/ai-sales-mobile-walkthrough.webm",
-        "poster": "../projects/legal-automation/assets/ai-sales-cover.png",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/legal-automation/assets/ai-sales-desktop-full.png",
-      "../projects/legal-automation/assets/ai-sales-mobile-full.png"
-    ],
+    "media": [],
+    "screens": [],
     "document": "../projects/legal-automation/case.md",
     "research": "../site/case-legal-automation.html",
     "published": true,

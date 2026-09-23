@@ -134,14 +134,29 @@ def main():
         if p['id'] == 'support-rag':
             p['flow'] = 'Аккаунт поддержки или webchat → синхронизация → Telegram-топик → FAQ/RAG-черновик → Edit/Regen/Send → ответ от аккаунта поддержки.'
             p['boundary'] = 'Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.'
-            p['desktop'] = '../projects/support-rag/assets/ai-support-cover.png'
+            p['desktop'] = '../portfolio/images/presentation/support-rag.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = ['../projects/support-rag/assets/telegram-support-sanitized.png','../projects/support-rag/assets/webchat-host-1440.png','../projects/support-rag/assets/webchat-conversation-390.png']
             p['research'] = '../site/case-support-rag.html'
         if p['id'] == 'telegram-leads':
             p['research'] = '../site/case-telegram-leads.html'
+            p['desktop'] = '../portfolio/images/presentation/telegram-leads.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = ['../projects/telegram-leads/assets/telegram-leads-sanitized.png']
         if p['id'] == 'telegram-schedule':
             p['research'] = '../site/case-telegram-schedule.html'
+            p['desktop'] = '../portfolio/images/presentation/telegram-schedule.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = []
         if p['id'] == 'twitter-automation':
             p['research'] = '../site/case-twitter-automation.html'
+            p['desktop'] = '../portfolio/images/presentation/twitter-automation.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = []
         if p['id'] == 'vibe-autorouter':
             p['research'] = '../site/case-vibe-autorouter.html'
         if p['id'] == 'telegram-intel':
@@ -153,14 +168,8 @@ def main():
             p['flow'] = 'Sipuni → расшифровка звонка → контекст сделки Bitrix24 → AI-анализ → Telegram → управленческий отчёт.'
             p['boundary'] = 'Визуальная подача — обезличенная презентация подтверждённого автором процесса, не снимок внутреннего интерфейса. 155/54 — показатели автора; исходный отчёт закрыт NDA.'
             p['research'] = '../site/case-legal-automation.html'
-            p['media'] = [
-                {'src':'../projects/legal-automation/assets/ai-sales-desktop-walkthrough.webm','poster':'../projects/legal-automation/assets/ai-sales-cover.png','mobile':False},
-                {'src':'../projects/legal-automation/assets/ai-sales-mobile-walkthrough.webm','poster':'../projects/legal-automation/assets/ai-sales-cover.png','mobile':True},
-            ]
-            p['screens'] = [
-                '../projects/legal-automation/assets/ai-sales-desktop-full.png',
-                '../projects/legal-automation/assets/ai-sales-mobile-full.png',
-            ]
+            p['media'] = []
+            p['screens'] = []
         p['seoDescription'] = meta_description(c)
         p['subtitle'] = c['shortDescription']
         p['intro'] = c['caseIntro']
