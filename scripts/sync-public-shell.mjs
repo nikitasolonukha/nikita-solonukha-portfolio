@@ -4,12 +4,13 @@ const root = new URL('../', import.meta.url);
 const site = path => new URL(`site/${path}`, root);
 const projects = JSON.parse(fs.readFileSync(new URL('portfolio/data.json', root), 'utf8')).filter(p => p.published !== false);
 const byId = id => projects.find(p => p.id === id);
-const selectedIds = ['legal-automation','shopify-store-builder','support-rag','meta-ads','maps-lead-generator','portnoy','magnum'];
-const workIds = ['legal-automation','internal-legal','shopify-store-builder','support-rag','meta-ads','maps-lead-generator','vibe-autorouter','portnoy','pifpaf','ritm','magnum','garmony','protective-structures','photo-animation'];
+const selectedIds = ['legal-automation','shopify-store-builder','support-rag','ppbot','meta-ads','maps-lead-generator','portnoy'];
+const workIds = ['legal-automation','shopify-store-builder','support-rag','ppbot','meta-ads','maps-lead-generator','internal-legal','vibe-autorouter','portnoy','pifpaf','ritm','magnum','garmony','protective-structures','photo-animation'];
 const reviewIds = new Set(['roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin']);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href = id => reviewIds.has(id) ? `../review/${id}.html` : `case-${id}.html`;
 const image = p => `../portfolio/${p.desktop}`;
+const ppbotCover = src => `<div class="ppbot-editorial"><div class="ppbot-editorial-copy"><span class="ppbot-editorial-label">PP BOT / ПЕРВЫЕ 3 ДНЯ</span><strong>Запуск,<br>за которым<br>стоят продажи.</strong><div class="ppbot-editorial-metrics"><div><b>111</b><span>пользователей</span></div><div><b>28</b><span>оплат</span></div><div><b>≈25%</b><span>в покупку</span></div></div></div><div class="ppbot-editorial-media"><img src="${src}" alt="Реальный Telegram-сценарий PP BOT: меню и выбор приёма пищи" loading="lazy"></div></div>`;
 function replaceBlock(file, content) {
   const path = site(file);
   let html = fs.readFileSync(path, 'utf8');
@@ -20,7 +21,7 @@ function replaceBlock(file, content) {
 }
 const selected = selectedIds.map(byId).filter(Boolean);
 const presentationIds = new Set(['legal-automation','internal-legal','support-rag','telegram-leads','telegram-schedule','telegram-intel','twitter-automation','vibe-autorouter','gigant','personal-assistant','news-aggregator-archive','copilot','university-projects','linux-lab']);
-replaceBlock('index.html', selected.map((p,i) => `<article class="featured"><a class="featured-image${presentationIds.has(p.id) ? ' is-presentation' : ''}" data-project="${esc(p.id)}" href="${href(p.id)}" aria-label="Открыть кейс ${esc(p.name)}"><img src="${esc(image(p))}" alt="${esc(p.shortDescription || p.name)}" loading="${i ? 'lazy' : 'eager'}"></a><div class="featured-copy"><div><span class="featured-index">${String(i+1).padStart(2,'0')} / ${String(selected.length).padStart(2,'0')}</span><span>${esc(p.category)}</span></div><h3><a href="${href(p.id)}">${esc(p.name)} <span aria-hidden="true">↗</span></a></h3><p>${esc(p.shortDescription || p.subtitle)}</p></div></article>`).join(''));
+replaceBlock('index.html', selected.map((p,i) => `<article class="featured"><a class="featured-image${presentationIds.has(p.id) ? ' is-presentation' : ''}" data-project="${esc(p.id)}" href="${href(p.id)}" aria-label="Открыть кейс ${esc(p.name)}">${p.id === 'ppbot' ? ppbotCover(esc(image(p))) : `<img src="${esc(image(p))}" alt="${esc(p.shortDescription || p.name)}" loading="${i ? 'lazy' : 'eager'}">`}</a><div class="featured-copy"><div><span class="featured-index">${String(i+1).padStart(2,'0')} / ${String(selected.length).padStart(2,'0')}</span><span>${esc(p.category)}</span></div><h3><a href="${href(p.id)}">${esc(p.name)} <span aria-hidden="true">↗</span></a></h3><p>${esc(p.shortDescription || p.subtitle)}</p></div></article>`).join(''));
 const role = {'Сайты':'Дизайн и разработка','Продукты':'Продукт и разработка','Автоматизация':'Архитектура и интеграции','Автоматизации':'Архитектура и интеграции','AI':'AI и интеграции','Исследования':'Исследование'};
 const row = p => `<a class="project-row" href="${href(p.id)}" aria-label="Открыть кейс ${esc(p.name)}"><span class="project-row-name"><strong>${esc(p.shortTitle || p.name)}</strong><small>${esc(p.shortDescription || p.subtitle)}</small></span><span class="project-row-category">${esc(p.category)}</span><span class="project-row-type">${esc(role[p.category] || 'Разработка')}</span><span class="project-row-evidence">${p.id === 'internal-legal' || p.id === 'legal-automation' ? 'NDA' : 'Кейс'}</span></a>`;
 const work = workIds.map(byId).filter(Boolean);

@@ -23,6 +23,9 @@
   line-height: 1.42;
   letter-spacing: -.015em;
 }
+.pa-legal-role{display:grid;grid-template-columns:1fr 2fr;gap:35px;margin-block:clamp(64px,7vw,110px) 0;font-size:clamp(20px,2vw,29px);line-height:1.35}
+.pa-legal-role span{font:600 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.14em;color:#c5a36e}
 @media (max-width: 700px) {
   .public-impact { grid-template-columns: 1fr; gap: 30px; }
+  .pa-legal-role{grid-template-columns:1fr;gap:16px}
 }
