@@ -26,6 +26,13 @@ Status: **PASS / ART READY**
 - Walkthroughs: desktop and mobile captured.
 - External map and Telegram destination remain external dependencies.
 
+## Dark palette correction · 23.09.2026
+
+- Публичный кейс использует только чёрные, графитовые и бордовые поверхности; общий белый фон портфолио для MAGNUM переопределён.
+- Cover и walkthrough возвращены к реальной красно-чёрной версии MAGNUM из авторских записей.
+- Светлые V3-экраны исключены из публичной галереи; вместо них показаны реальные тёмные состояния: about, formats, gallery и reviews.
+- Автоматическая проверка `dark-case-qa.json`: 1440 / 768 / 390, без горизонтального overflow, page errors и светлых секций.
+
 ## Manual verdict
 
 V3 можно показывать клиенту без объяснения композиции. ORIGINAL и PORTFOLIO POLISH на странице кейса разведены явно; реальные материалы не подменены генерацией.

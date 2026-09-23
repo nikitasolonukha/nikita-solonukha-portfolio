@@ -1,0 +1,209 @@
+[
+  {
+    "width": 1440,
+    "errors": [],
+    "overflow": false,
+    "body": "rgb(11, 7, 9)",
+    "surfaces": [
+      {
+        "selector": "body",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-title",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-cover",
+        "exists": true,
+        "background": "rgb(21, 9, 13)"
+      },
+      {
+        "selector": ".case-story",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-video-section",
+        "exists": true,
+        "background": "rgb(22, 8, 12)"
+      },
+      {
+        "selector": ".case-feature-magnum",
+        "exists": true,
+        "background": "rgb(35, 13, 20)"
+      },
+      {
+        "selector": ".case-screens",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-secondary",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-notes",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-next",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".contact-section",
+        "exists": true,
+        "background": "rgb(18, 8, 11)"
+      },
+      {
+        "selector": ".site-footer",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      }
+    ],
+    "lightSections": []
+  },
+  {
+    "width": 768,
+    "errors": [],
+    "overflow": false,
+    "body": "rgb(11, 7, 9)",
+    "surfaces": [
+      {
+        "selector": "body",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-title",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-cover",
+        "exists": true,
+        "background": "rgb(21, 9, 13)"
+      },
+      {
+        "selector": ".case-story",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-video-section",
+        "exists": true,
+        "background": "rgb(22, 8, 12)"
+      },
+      {
+        "selector": ".case-feature-magnum",
+        "exists": true,
+        "background": "rgb(35, 13, 20)"
+      },
+      {
+        "selector": ".case-screens",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-secondary",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-notes",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-next",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".contact-section",
+        "exists": true,
+        "background": "rgb(18, 8, 11)"
+      },
+      {
+        "selector": ".site-footer",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      }
+    ],
+    "lightSections": []
+  },
+  {
+    "width": 390,
+    "errors": [],
+    "overflow": false,
+    "body": "rgb(11, 7, 9)",
+    "surfaces": [
+      {
+        "selector": "body",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-title",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-cover",
+        "exists": true,
+        "background": "rgb(21, 9, 13)"
+      },
+      {
+        "selector": ".case-story",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-video-section",
+        "exists": true,
+        "background": "rgb(22, 8, 12)"
+      },
+      {
+        "selector": ".case-feature-magnum",
+        "exists": true,
+        "background": "rgb(35, 13, 20)"
+      },
+      {
+        "selector": ".case-screens",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-secondary",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-notes",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".case-next",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      },
+      {
+        "selector": ".contact-section",
+        "exists": true,
+        "background": "rgb(18, 8, 11)"
+      },
+      {
+        "selector": ".site-footer",
+        "exists": true,
+        "background": "rgb(11, 7, 9)"
+      }
+    ],
+    "lightSections": []
+  }
+]

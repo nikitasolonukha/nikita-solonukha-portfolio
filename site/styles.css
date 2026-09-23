@@ -76,6 +76,66 @@ body[data-case-id=protective-structures] .case-video-section{background:#101615}
 body[data-case-id=magnum] .case-cover{background:#230d14}
 body[data-case-id=magnum] .case-screen-grid figure{background:#28171c}
 body[data-case-id=magnum] .case-video-section{background:#160c11}
+body[data-page=case][data-case-id=magnum]{--bg:#0b0709;--ink:#f6efeb;--muted:#bdaeb1;--line:#4b242d;--paper:#0b0709;--paper-ink:#f6efeb;--case-accent:#e13a34;background:#0b0709;color:#f6efeb;color-scheme:dark}
+body[data-case-id=magnum] main,body[data-case-id=magnum] #case-root,body[data-case-id=magnum] .site-footer{background:#0b0709;color:#c7b7ba}
+body[data-case-id=magnum] .site-footer{border-top:1px solid #4b242d}
+body[data-case-id=magnum] .site-header{background:rgba(11,7,9,.96);border-color:#4b242d}
+body[data-case-id=magnum] .brand-mark,body[data-case-id=magnum] .case-hero .eyebrow,body[data-case-id=magnum] .case-video-section .eyebrow,body[data-case-id=magnum] .case-screens .eyebrow,body[data-case-id=magnum] .case-art-caption span,body[data-case-id=magnum] .case-flow span{color:#e13a34}
+body[data-case-id=magnum] .case-page,body[data-case-id=magnum] .case-section,body[data-case-id=magnum] .case-screens,body[data-case-id=magnum] .case-next{background:#0b0709;color:#f6efeb}
+body[data-case-id=magnum] .case-cover{background:#15090d}
+body[data-case-id=magnum] .case-art-caption{background:#10080a;border-color:#4b242d}
+body[data-case-id=magnum] .case-video-section{background:#16080c}
+body[data-case-id=magnum] .case-video{background:#050304;border-color:#5a2933}
+body[data-case-id=magnum] .case-screen-grid figure,body[data-case-id=magnum] .case-screen-grid figure:nth-child(4n+2),body[data-case-id=magnum] .case-screen-grid figure:nth-child(4n+3){background:#211015}
+body[data-case-id=magnum] .case-screen-grid figcaption,body[data-case-id=magnum] .case-video-caption,body[data-case-id=magnum] .case-hero .summary,body[data-case-id=magnum] .case-columns p:not(.eyebrow){color:#bdaeb1}
+body[data-case-id=magnum] .case-technical{background:#17090d;color:#f6efeb;border-top:1px solid #4b242d;border-bottom:1px solid #4b242d}
+body[data-case-id=magnum] .case-technical .eyebrow{color:#e13a34}
+body[data-case-id=magnum] .case-technical p:not(.eyebrow){color:#c7b7ba}
+body[data-case-id=magnum] .case-stack,body[data-case-id=magnum] .case-boundary{border-color:#5a2933}
+body[data-case-id=magnum] .case-next{border-color:#4b242d}
+body[data-case-id=magnum] .case-next a:hover,body[data-case-id=magnum] .back-link:hover,body[data-case-id=magnum] .nav a:hover,body[data-case-id=magnum] .nav a[aria-current]{color:#e13a34}
+body[data-case-id=magnum] a:focus-visible,body[data-case-id=magnum] button:focus-visible{outline-color:#e13a34}
+body[data-case-id=magnum] .case-title,
+body[data-case-id=magnum] .case-story,
+body[data-case-id=magnum] .case-secondary,
+body[data-case-id=magnum] .case-notes,
+body[data-case-id=magnum] .case-next{background:#0b0709;color:#f6efeb}
+body[data-case-id=magnum] .case-title-meta,
+body[data-case-id=magnum] .case-story,
+body[data-case-id=magnum] .case-notes,
+body[data-case-id=magnum] .case-notes details,
+body[data-case-id=magnum] .case-next{border-color:#4b242d}
+body[data-case-id=magnum] .case-title .back-link,
+body[data-case-id=magnum] .case-title .eyebrow,
+body[data-case-id=magnum] .case-story .eyebrow,
+body[data-case-id=magnum] .case-secondary .eyebrow,
+body[data-case-id=magnum] .case-notes .eyebrow{color:#e13a34}
+body[data-case-id=magnum] .case-title-meta span,
+body[data-case-id=magnum] .case-story p,
+body[data-case-id=magnum] .case-secondary figcaption,
+body[data-case-id=magnum] .case-notes p,
+body[data-case-id=magnum] .case-notes details p,
+body[data-case-id=magnum] .case-next small{color:#c7b7ba}
+body[data-case-id=magnum] .case-notes summary{color:#f6efeb}
+body[data-case-id=magnum] .case-secondary video{background:#050304}
+body[data-case-id=magnum] .case-all-work{color:#e13a34}
+body[data-case-id=magnum] .contact-section{background:#12080b;color:#f6efeb}
+body[data-case-id=magnum] .contact-section h2 span,
+body[data-case-id=magnum] .contact-section h2 em{color:#d8bfc3}
+body[data-case-id=magnum] .contact-circle{background:#b51f2d;color:#fff4ef}
+body[data-case-id=magnum] .contact-circle:hover{background:#d02a37}
+body[data-case-id=magnum] .contact-bottom{border-color:#5a2933}
+body[data-case-id=magnum] .contact-bottom>p,
+body[data-case-id=magnum] .contact-links a span{color:#c7b7ba}
+body[data-case-id=magnum] .contact-links a{border-color:#5a2933}
+body[data-page=case][data-case-id=magnum] .case-screen-grid figure,
+body[data-page=case][data-case-id=magnum] .case-screen-grid figure:first-child,
+body[data-page=case][data-case-id=magnum] .case-screen-grid figure:nth-child(4n+2),
+body[data-page=case][data-case-id=magnum] .case-screen-grid figure:nth-child(4n+3){background:#211015}
+body[data-page=case][data-case-id=magnum] .case-screen-grid figcaption{color:#c7b7ba}
+body[data-case-id=magnum] .contact-section::before{display:none!important}
+body[data-case-id=magnum] .contact-circle::before{background:#7d131d}
+body[data-case-id=magnum] .page-transition{background:#0b0709}
 @media(max-width:760px){.magnum-feature-heading{grid-template-columns:1fr}.magnum-formats img,.magnum-gallery img{max-height:480px}.magnum-gallery{margin-top:55px!important}}
 .case-feature-pifpaf{background:#f7f1ef;color:#252225}
 .case-feature-pifpaf .eyebrow{color:#ad516b}

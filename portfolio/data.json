@@ -75,25 +75,25 @@
     "flow": "Вход → этапы вечера → пространство клуба → живая галерея → отзывы → запись.",
     "boundary": "ORIGINAL подтверждён авторскими видео. Новая интерактивная версия честно обозначена как PORTFOLIO POLISH по реальным материалам проекта.",
     "category": "Сайты",
-    "desktop": "../projects/magnum/assets/v3/hero-1440.png",
-    "mobile": "../projects/magnum/assets/v3/hero-390.png",
+    "desktop": "../projects/magnum/assets/poster-desktop.webp",
+    "mobile": "../projects/magnum/assets/poster-mobile.webp",
     "media": [
       {
-        "src": "../projects/magnum/assets/v3/master-desktop.webm",
-        "poster": "../projects/magnum/assets/v3/hero-1440.png",
+        "src": "../projects/magnum/assets/master-desktop.mp4",
+        "poster": "../projects/magnum/assets/poster-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/magnum/assets/v3/master-mobile.webm",
-        "poster": "../projects/magnum/assets/v3/hero-390.png",
+        "src": "../projects/magnum/assets/master-mobile.mp4",
+        "poster": "../projects/magnum/assets/poster-mobile.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/magnum/assets/v3/evening-1440.png",
-      "../projects/magnum/assets/v3/evening-active-1440.png",
-      "../projects/magnum/assets/v3/gallery-1440.png",
-      "../projects/magnum/assets/v3/cta-1440.png"
+      "../projects/magnum/assets/export/video-desktop-about.webp",
+      "../projects/magnum/assets/export/video-desktop-formats-open.webp",
+      "../projects/magnum/assets/export/video-desktop-gallery.webp",
+      "../projects/magnum/assets/export/video-desktop-reviews.webp"
     ],
     "document": "../projects/magnum/case.md",
     "research": "../review/magnum.html",
