@@ -3,6 +3,8 @@
 .ppbot-impact strong{font:500 clamp(44px,6.5vw,106px)/.95 Manrope,Arial,sans-serif;letter-spacing:-.075em;color:#242628}
 .ppbot-impact span{font:500 clamp(12px,1.1vw,16px)/1.4 Manrope,Arial,sans-serif;color:#626968}
 .featured-image.is-presentation{background:#111312}
+.intro-arrow{width:clamp(32px,3vw,50px);height:clamp(32px,3vw,50px);fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square;stroke-linejoin:miter}
+.round-link svg{display:block;width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:square;stroke-linejoin:miter}
 .featured-image.is-presentation[data-project="support-rag"]{background:#eee9dd}
 .featured-image.is-presentation img{object-fit:contain;object-position:center}
 .featured-image[data-project="ppbot"]{background:#191b18}
