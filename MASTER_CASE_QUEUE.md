@@ -31,7 +31,7 @@
 | 25 | Twitter / X Automation | READY | [twitter-automation](review/twitter-automation.html) |
 | 26 | Telegram Schedule | READY | [telegram-schedule](review/telegram-schedule.html) |
 | 27 | Telegram Intel | READY | [telegram-intel](review/telegram-intel.html) |
-| 28 | Telegram AI Lead Hunter | READY | [telegram-leads](review/telegram-leads.html) |
+| 28 | Telegram AI Lead Hunter | READY | [telegram-leads](site/case-telegram-leads.html) |
 | 29 | TopGadalkin | READY | [topgadalkin](review/topgadalkin.html) |
 | 30 | B2B Lead Generator | READY | [maps-lead-generator](review/maps-lead-generator.html) |
 | 31 | Личный AI-ассистент | BLOCKED | [personal-assistant](review/personal-assistant.html) |

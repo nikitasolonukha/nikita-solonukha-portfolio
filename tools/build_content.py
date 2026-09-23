@@ -136,6 +136,8 @@ def main():
             p['boundary'] = 'Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.'
             p['desktop'] = '../projects/support-rag/assets/ai-support-cover.png'
             p['research'] = '../site/case-support-rag.html'
+        if p['id'] == 'telegram-leads':
+            p['research'] = '../site/case-telegram-leads.html'
         if p['id'] == 'legal-automation':
             p['name'] = 'AI Sales Assistant'
             p['desktop'] = '../projects/legal-automation/assets/ai-sales-cover.svg'
@@ -173,7 +175,7 @@ def main():
         title = p['seoTitle'] + ' | Никита Солонуха'
         canonical = f"{BASE}/site/case-{quote(p['id'])}.html"
         image = f"{BASE}/portfolio/{p['desktop'].removeprefix('../portfolio/')}" if not p['desktop'].startswith('../') else f"{BASE}/{p['desktop'][3:]}"
-        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag'):
+        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag','telegram-leads'):
             # Their original visual-first case pages stay the public route; reviewed separately.
             continue
         content = template.replace('<title>Кейс — Никита Солонуха</title>', f'<title>{escape(title)}</title>')
@@ -189,7 +191,7 @@ def main():
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{escape(BASE+x)}</loc></url>\n' for x in public_paths) + '</urlset>\n'
     (ROOT/'sitemap.xml').write_text(sitemap, encoding='utf-8')
     (ROOT/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n', encoding='utf-8')
-    print(f'Built {len(projects)} content records, 29 static case pages, sitemap and robots.')
+    print(f'Built {len(projects)} content records, 27 generated case pages, sitemap and robots.')
 
 if __name__ == '__main__':
     main()

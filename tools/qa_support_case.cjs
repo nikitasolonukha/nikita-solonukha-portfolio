@@ -5,7 +5,7 @@ const path=require('path');
   const browser=await chromium.launch({headless:true,args:['--no-sandbox']});
   const out=path.resolve(__dirname,'../projects/support-rag/assets');
   const issues=[];
-  for(const [label,width,height] of [['1440',1440,900],['390',390,844]]){
+  for(const [label,width,height] of [['1440',1440,900],['768',768,1024],['390',390,844]]){
     const page=await browser.newPage({viewport:{width,height},deviceScaleFactor:1,reducedMotion:'reduce'});
     page.on('pageerror',e=>issues.push(`${label}: ${e.message}`));
     await page.goto('http://127.0.0.1:4315/site/case-support-rag.html',{waitUntil:'networkidle'});
