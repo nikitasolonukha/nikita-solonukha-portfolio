@@ -96,6 +96,78 @@
     "errors": []
   },
   {
+    "slug": "internal-legal",
+    "width": 1440,
+    "title": "Внутренние продукты · NDA | Никита Солонуха",
+    "h1": [
+      "Невидимаячасть бизнеса."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "personal-assistant",
+    "width": 1440,
+    "title": "Личный AI-ассистент · архив | Никита Солонуха",
+    "h1": [
+      "Запрос.Маршрут.Действие."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "news-aggregator-archive",
+    "width": 1440,
+    "title": "Telegram News · две отдельные версии | Никита Солонуха",
+    "h1": [
+      "Одна тема.Две разные работы."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "copilot",
+    "width": 1440,
+    "title": "n8n Copilot · редакционный процесс | Никита Солонуха",
+    "h1": [
+      "Текст проходитчерез четыре роли."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 1,
+    "errors": []
+  },
+  {
+    "slug": "university-projects",
+    "width": 1440,
+    "title": "Университетские проекты · три отдельные работы | Никита Солонуха",
+    "h1": [
+      "Три задачи.Три технических подхода."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "linux-lab",
+    "width": 1440,
+    "title": "Linux Lab · технический архив | Никита Солонуха",
+    "h1": [
+      "Команда.Правило.Проверка."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
     "slug": "legal-automation",
     "width": 768,
     "title": "AI Sales Assistant — AI-анализ звонков и продаж | Никита Солонуха",
@@ -192,6 +264,78 @@
     "errors": []
   },
   {
+    "slug": "internal-legal",
+    "width": 768,
+    "title": "Внутренние продукты · NDA | Никита Солонуха",
+    "h1": [
+      "Невидимаячасть бизнеса."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "personal-assistant",
+    "width": 768,
+    "title": "Личный AI-ассистент · архив | Никита Солонуха",
+    "h1": [
+      "Запрос.Маршрут.Действие."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "news-aggregator-archive",
+    "width": 768,
+    "title": "Telegram News · две отдельные версии | Никита Солонуха",
+    "h1": [
+      "Одна тема.Две разные работы."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "copilot",
+    "width": 768,
+    "title": "n8n Copilot · редакционный процесс | Никита Солонуха",
+    "h1": [
+      "Текст проходитчерез четыре роли."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 1,
+    "errors": []
+  },
+  {
+    "slug": "university-projects",
+    "width": 768,
+    "title": "Университетские проекты · три отдельные работы | Никита Солонуха",
+    "h1": [
+      "Три задачи.Три технических подхода."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "linux-lab",
+    "width": 768,
+    "title": "Linux Lab · технический архив | Никита Солонуха",
+    "h1": [
+      "Команда.Правило.Проверка."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
     "slug": "legal-automation",
     "width": 390,
     "title": "AI Sales Assistant — AI-анализ звонков и продаж | Никита Солонуха",
@@ -281,6 +425,78 @@
     "title": "GIGANT — агент с подтверждением действий | Никита Солонуха",
     "h1": [
       "Действиеждёт решения."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "internal-legal",
+    "width": 390,
+    "title": "Внутренние продукты · NDA | Никита Солонуха",
+    "h1": [
+      "Невидимаячасть бизнеса."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "personal-assistant",
+    "width": 390,
+    "title": "Личный AI-ассистент · архив | Никита Солонуха",
+    "h1": [
+      "Запрос.Маршрут.Действие."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "news-aggregator-archive",
+    "width": 390,
+    "title": "Telegram News · две отдельные версии | Никита Солонуха",
+    "h1": [
+      "Одна тема.Две разные работы."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "copilot",
+    "width": 390,
+    "title": "n8n Copilot · редакционный процесс | Никита Солонуха",
+    "h1": [
+      "Текст проходитчерез четыре роли."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 1,
+    "errors": []
+  },
+  {
+    "slug": "university-projects",
+    "width": 390,
+    "title": "Университетские проекты · три отдельные работы | Никита Солонуха",
+    "h1": [
+      "Три задачи.Три технических подхода."
+    ],
+    "overflow": 0,
+    "images": [],
+    "videos": 0,
+    "errors": []
+  },
+  {
+    "slug": "linux-lab",
+    "width": 390,
+    "title": "Linux Lab · технический архив | Никита Солонуха",
+    "h1": [
+      "Команда.Правило.Проверка."
     ],
     "overflow": 0,
     "images": [],

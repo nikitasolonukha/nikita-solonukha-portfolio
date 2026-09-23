@@ -1,0 +1,4 @@
+@media (prefers-reduced-motion: no-preference){
+  body.presentation-motion-ready [data-flow-item]{opacity:.35;transform:translateY(18px);transition:opacity .52s ease,transform .52s cubic-bezier(.22,.8,.2,1);transition-delay:var(--flow-delay,0ms)}
+  body.presentation-motion-ready [data-flow-item].is-seen{opacity:1;transform:none}
+}

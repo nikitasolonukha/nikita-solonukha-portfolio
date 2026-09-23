@@ -1,13 +1,13 @@
 # SEO audit
 
-- Canonical projects: **35**
-- Indexable HTML pages audited: **40**
-- Unique page titles: **40**
-- Unique meta descriptions: **40**
-- Projects with Result: **35**
-- Projects with Proof: **35**
-- Parsed image tags: **39**
-- Sitemap URLs: **40**
+- Canonical projects: **36**
+- Indexable HTML pages audited: **41**
+- Unique page titles: **41**
+- Unique meta descriptions: **41**
+- Projects with Result: **36**
+- Projects with Proof: **36**
+- Parsed image tags: **41**
+- Sitemap URLs: **41**
 
 Canonical URLs use the current GitHub Pages project address. They should be revised when a final domain is chosen. For cases with limited source material, “Proof” describes the surviving evidence and its limits rather than a fabricated performance metric. The legal report figures are provided directly by the author; the NDA report is not published.
 
@@ -58,11 +58,12 @@ Canonical URLs use the current GitHub Pages project address. They should be revi
 | n8n Copilot | n8n Copilot — контент для Telegram / Никита Солонуха | Сценарий работы описан и частично показан; полная связка n8n и Telegram не подтверждена. | Найдено видео этапов Notion Raw/L1; оригинальный n8n export пока отсутствует. | n8n copilot, автоматизация Telegram контента, редакционный workflow |
 | Университетские проекты | Университетские проекты — NPM и Telegram / Никита Солонуха | Кейс показывает результаты каждой работы отдельно, без подачи их как единого коммерческого продукта. | Для parser найден исходный код; первые две работы представлены архивными материалами. | университетские IT проекты, защищенные сообщения, анализ NPM данных |
 | AI Sales Assistant | AI Sales Assistant — AI-анализ звонков и продаж / Никита Солонуха | По данным автора, в управленческий отчёт вошли 155 звонков, из них 54 прошли AI-анализ. Отчёт собирал конверсию, возражения, ошибки менеджеров, точки потери денег и рейтинг сотрудников. | Автор предоставил показатели рабочего отчёта: 155 звонков, 54 разговора с AI-анализом. Исходный отчёт и разговоры не публикуются из-за NDA; пример на странице демонстрационный. | AI-анализ звонков, автоматизация отдела продаж, Sipuni Bitrix24 Telegram, контроль качества продаж |
+| Внутренние продукты · NDA | Внутренние продукты · NDA / Никита Солонуха | Публично показана структура работы без раскрытия компании и клиентских данных. | Авторское описание; для AI Sales подтверждены 155 звонков и 54 AI-разбора, другие результаты не заявляются. | внутренние продукты, CRM интеграции, автоматизация юридической компании |
 
 ## Validation
 
 No automated content or metadata failures.
 
-Browser check: all 35 canonical case routes opened locally with one H1, visible project facts and no horizontal overflow in the tested narrow viewport. Home, Work and the Shopify case were also visually inspected. This is a copy/layout check, not a revalidation of product integrations.
+Browser check: the earlier 35-case browser pass covered the original catalog. The added NDA umbrella is separately checked in the 14-case presentation QA at 1440/768/390. This is a copy/layout check, not a revalidation of product integrations.
 
 Static HTML case pages contain a readable fallback for search crawlers and render the full visual case after JavaScript loads. The six custom visual-first review cases keep their original composition and include project-specific facts.

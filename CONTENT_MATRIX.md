@@ -1,6 +1,6 @@
 # Content matrix
 
-Canonical catalog: 35 projects. Runtime source: `portfolio/data.json`. Copy is grounded in `projects/<id>/case.md`; proof and limits remain explicit.
+Canonical catalog: 36 projects. Runtime source: `portfolio/data.json`. Copy is grounded in `projects/<id>/case.md`; proof and limits remain explicit.
 
 ## KONTUR · `protective-structures`
 
@@ -526,3 +526,11 @@ Canonical catalog: 35 projects. Runtime source: `portfolio/data.json`. Copy is g
 - **Stack:** Web · API · автоматизация · AI · Telegram
 - **Keywords:** AI-анализ звонков, автоматизация отдела продаж, Sipuni Bitrix24 Telegram, контроль качества продаж
 - **Case intro:** Обезличенный кейс внутреннего сервиса: звонок проходит расшифровку и AI-разбор с контекстом CRM, а выводы попадают в Telegram и отчёт.
+
+## Внутренние продукты · NDA · `internal-legal`
+
+- **Category:** Автоматизации
+- **SEO title:** Внутренние продукты юридической компании — NDA
+- **Short card title:** Внутренние продукты · NDA
+- **Problem:** Связь внутренних процессов, телефонии, CRM, документов и контента.
+- **Proof:** Авторское описание; клиентские данные закрыты. AI Sales Assistant документирован отдельно.

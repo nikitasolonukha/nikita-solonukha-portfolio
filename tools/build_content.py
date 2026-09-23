@@ -49,6 +49,7 @@ news-aggregator-archive|Telegram News — две версии новостных
 copilot|n8n Copilot — редакционный workflow для Telegram|n8n Copilot|Редакционный процесс проводит материал через уровни L1–L4 к публикации в Telegram.|Подготовку контента хотелось разбить на понятные этапы проверки и доработки.|Спроектировал цепочку Raw → L1 → L2 → L3 → L4 → Body и сохранил доступные материалы этапов.|Сценарий работы описан и частично показан; полная связка n8n и Telegram не подтверждена.|Найдено видео этапов Notion Raw/L1; оригинальный n8n export пока отсутствует.|n8n copilot, автоматизация Telegram контента, редакционный workflow|Кейс отделяет задокументированную редакционную схему от тех шагов, для которых пока не сохранилось видео.
 university-projects|Университетские проекты — безопасность, NPM и Telegram|Университетские проекты|Три отдельные учебные работы: защищённые сообщения, анализ NPM и Telegram parser.|В учебных заданиях требовалось решить разные задачи по обмену данными, анализу и поиску.|Реализовал отдельные модули защищённых сообщений, визуализации NPM и Telegram-парсера.|Кейс показывает результаты каждой работы отдельно, без подачи их как единого коммерческого продукта.|Для parser найден исходный код; первые две работы представлены архивными материалами.|университетские IT проекты, защищенные сообщения, анализ NPM данных|Под одной обложкой собраны три самостоятельные университетские работы с разной технической задачей и уровнем сохранившихся материалов.
 legal-automation|AI-аналитика продаж и внутренние сервисы — NDA|Внутренние продукты · NDA|Обезличенный кейс о телефонии, CRM, AI-анализе звонков и внутренних автоматизациях.|Отделу продаж нужны были проверка разговоров и единый управленческий отчёт.|Связал телефонию, CRM и LLM-анализ; работал также с документами, контентом и внутренними web-сервисами.|По словам автора, отчёт охватывал 155 звонков, 54 разговора прошли AI-анализ; сводились возражения, ошибки и показатели менеджеров.|155 звонков и 54 AI-анализа указаны автором; исходный управленческий отчёт публично не размещается из-за NDA.|AI анализ звонков, CRM автоматизация, внутренние сервисы бизнеса|Обезличенный кейс показывает, как данные звонков и AI-анализ превращались в управленческий отчёт без раскрытия клиентов.
+internal-legal|Внутренние продукты юридической компании — NDA|Внутренние продукты · NDA|Обезличенный обзор CRM, телефонии, web-инструментов, контента, документов и интеграций.|Внутренние процессы требовали связи разных сервисов и рабочих шагов.|Работал над интеграциями и инструментами для внутренних процессов; AI Sales Assistant описан отдельно.|Направления работы можно показать без раскрытия компании и данных клиентов.|Авторское описание; для AI Sales подтверждены 155 звонков и 54 AI-разбора, другие результаты не заявляются.|внутренние продукты, CRM интеграции, автоматизация юридической компании|Шесть направлений внутренней разработки показаны как обезличенная система, без вымышленных интерфейсов и результатов.
 """.strip()
 
 FIELDS = ('id','seoTitle','shortTitle','shortDescription','problem','built','result','proof','keywords','caseIntro')
@@ -124,7 +125,7 @@ def main():
     path = ROOT/'portfolio/data.json'
     projects = json.loads(path.read_text(encoding='utf-8'))
     ids = [p['id'] for p in projects]
-    if len(ids) != 35 or set(ids) != set(entries):
+    if len(ids) != 36 or set(ids) != set(entries):
         raise ValueError(f'Catalog mismatch: {set(ids)^set(entries)}; count {len(ids)}')
     for p in projects:
         c = entries[p['id']]
@@ -174,6 +175,12 @@ def main():
             p['mobile'] = p['desktop']
             p['media'] = []
             p['screens'] = []
+        if p['id'] in ('internal-legal','personal-assistant','news-aggregator-archive','copilot','university-projects','linux-lab'):
+            p['desktop'] = f"../portfolio/images/presentation/{p['id']}.svg"
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = ['../projects/copilot/assets/notion-result.webp'] if p['id']=='copilot' else []
+            p['research'] = f"../site/case-{p['id']}.html"
         if p['id'] == 'legal-automation':
             p['name'] = 'AI Sales Assistant'
             p['desktop'] = '../projects/legal-automation/assets/ai-sales-cover.svg'
@@ -187,7 +194,7 @@ def main():
         p['subtitle'] = c['shortDescription']
         p['intro'] = c['caseIntro']
     path.write_text(json.dumps(projects, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')
-    matrix = ['# Content matrix','', 'Canonical catalog: 35 projects. Runtime source: `portfolio/data.json`. Copy is grounded in `projects/<id>/case.md`; proof and limits remain explicit.','']
+    matrix = ['# Content matrix','', f'Canonical catalog: {len(projects)} projects. Runtime source: `portfolio/data.json`. Copy is grounded in `projects/<id>/case.md`; proof and limits remain explicit.','']
     for p in projects:
         matrix += [f"## {p['name']} · `{p['id']}`", '',
           f"- **Category:** {p['category']}", f"- **SEO title:** {p['seoTitle']}", f"- **SEO description:** {p['seoDescription']}",
@@ -205,7 +212,7 @@ def main():
         title = p['seoTitle'] + ' | Никита Солонуха'
         canonical = f"{BASE}/site/case-{quote(p['id'])}.html"
         image = f"{BASE}/portfolio/{p['desktop'].removeprefix('../portfolio/')}" if not p['desktop'].startswith('../') else f"{BASE}/{p['desktop'][3:]}"
-        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','vibe-autorouter','telegram-intel','gigant'):
+        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','vibe-autorouter','telegram-intel','gigant','internal-legal','personal-assistant','news-aggregator-archive','copilot','university-projects','linux-lab'):
             # Their original visual-first case pages stay the public route; reviewed separately.
             continue
         content = template.replace('<title>Кейс — Никита Солонуха</title>', f'<title>{escape(title)}</title>')
@@ -221,7 +228,7 @@ def main():
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + ''.join(f'  <url><loc>{escape(BASE+x)}</loc></url>\n' for x in public_paths) + '</urlset>\n'
     (ROOT/'sitemap.xml').write_text(sitemap, encoding='utf-8')
     (ROOT/'robots.txt').write_text(f'User-agent: *\nAllow: /\nSitemap: {BASE}/sitemap.xml\n', encoding='utf-8')
-    print(f'Built {len(projects)} content records, 23 generated case pages, sitemap and robots.')
+    print(f'Built {len(projects)} content records and sitemap; custom presentation case pages were preserved.')
 
 if __name__ == '__main__':
     main()

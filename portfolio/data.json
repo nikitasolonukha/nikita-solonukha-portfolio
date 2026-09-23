@@ -473,26 +473,10 @@
     "flow": "Оригинальные снимки KGpg, iptables и ClamAV из учебных отчётов. Виртуальная машина сейчас не запускалась.",
     "boundary": "Архивные снимки из отчётов. Это не запись работающей виртуальной машины.",
     "category": "Исследования",
-    "desktop": "images/linux-lab.webp",
-    "mobile": "../projects/linux-lab/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/linux-lab/assets/master-desktop.mp4",
-        "poster": "../projects/linux-lab/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/linux-lab/assets/master-mobile.mp4",
-        "poster": "../projects/linux-lab/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/linux-lab/assets/archive-1440.png",
-      "../projects/linux-lab/assets/topic-0-step-0-1440.png",
-      "../projects/linux-lab/assets/topic-0-step-1-1440.png",
-      "../projects/linux-lab/assets/topic-0-step-2-1440.png"
-    ],
+    "desktop": "../portfolio/images/presentation/linux-lab.svg",
+    "mobile": "../portfolio/images/presentation/linux-lab.svg",
+    "media": [],
+    "screens": [],
     "document": "../projects/linux-lab/case.md",
     "research": "../review/linux-lab.html",
     "local": true,
@@ -1375,8 +1359,8 @@
     "flow": "Описанный исторически сценарий: Telegram/почта/расписание → n8n → инструменты → ответ. Точный исполняемый flow не восстановлен.",
     "boundary": "Авторство подтверждено автором. Архивная обложка — иллюстрация; точный n8n canvas и Telegram flow ещё отсутствуют. Видео реконструкции не используется как доказательство.",
     "category": "Автоматизация",
-    "desktop": "../projects/personal-assistant/assets/cover.webp",
-    "mobile": "../projects/personal-assistant/assets/overview-390.png",
+    "desktop": "../portfolio/images/presentation/personal-assistant.svg",
+    "mobile": "../portfolio/images/presentation/personal-assistant.svg",
     "media": [],
     "screens": [],
     "document": "../projects/personal-assistant/case.md",
@@ -1408,8 +1392,8 @@
     "flow": "Личный проект: каналы → отбор → AI-дайджест (архивное описание). Университетский: Telegram → Telethon/parser → SQLite → поиск/ответ.",
     "boundary": "Версии не смешаны. Исходный Telegram UI личного дайджеста не найден; университетский исходный код проверен, но Telegram-запись также не найдена. Архивное видео реконструкции не выдаётся за Telegram.",
     "category": "Автоматизация",
-    "desktop": "../projects/news-aggregator-archive/assets/cover.webp",
-    "mobile": "../projects/news-aggregator-archive/assets/overview-390.png",
+    "desktop": "../portfolio/images/presentation/news-aggregator-archive.svg",
+    "mobile": "../portfolio/images/presentation/news-aggregator-archive.svg",
     "media": [],
     "screens": [],
     "document": "../projects/news-aggregator-archive/case.md",
@@ -1441,17 +1425,10 @@
     "flow": "Raw → L1 → L2 → L3 → L4 → Body; переработка одного слоя по комментарию.",
     "boundary": "Главный визуал — настоящий Notion UI из записи Никиты от 10.01.2026. Видео подтверждает первый слой; остальные слои описаны в исходной спецификации. Оно не показывает n8n nodes или Telegram.",
     "category": "Автоматизация",
-    "desktop": "../projects/copilot/assets/notion-result.webp",
-    "mobile": "../projects/copilot/assets/notion-result.webp",
-    "media": [
-      {
-        "src": "../projects/copilot/assets/original-notion-flow.mp4",
-        "poster": "../projects/copilot/assets/notion-overview.webp",
-        "mobile": false
-      }
-    ],
+    "desktop": "../portfolio/images/presentation/copilot.svg",
+    "mobile": "../portfolio/images/presentation/copilot.svg",
+    "media": [],
     "screens": [
-      "../projects/copilot/assets/notion-overview.webp",
       "../projects/copilot/assets/notion-result.webp"
     ],
     "document": "../projects/copilot/case.md",
@@ -1481,8 +1458,8 @@
     "flow": "Защищённые сообщения: обработка и шифрование. NPM: API → статистика → визуализация. Telegram parser: сбор → SQLite → поиск через бота.",
     "boundary": "Umbrella-case, не один технический продукт. Для первых двух работ runtime не найден; для parser исходный код доступен, но реальный Telegram UI пока не записан.",
     "category": "Исследования",
-    "desktop": "../projects/university-projects/assets/cover.svg",
-    "mobile": "../projects/university-projects/assets/cover.svg",
+    "desktop": "../portfolio/images/presentation/university-projects.svg",
+    "mobile": "../portfolio/images/presentation/university-projects.svg",
     "media": [],
     "screens": [],
     "document": "../projects/university-projects/case.md",
@@ -1534,5 +1511,36 @@
     ],
     "caseIntro": "Обезличенный кейс внутреннего сервиса: звонок проходит расшифровку и AI-разбор с контекстом CRM, а выводы попадают в Telegram и отчёт.",
     "seoDescription": "Внутренняя система связывает телефонию, CRM и AI-анализ разговоров. 155 звонков в отчёте, 54 разговора с AI-анализом."
+  },
+  {
+    "id": "internal-legal",
+    "name": "Внутренние продукты · NDA",
+    "subtitle": "Обезличенный обзор внутренних сервисов юридической компании: телефония, CRM, контент, документы и интеграции.",
+    "intro": "Обезличенная презентация внутренних направлений разработки для юридической компании.",
+    "stack": "CRM · Telephony · Web · Automation · Integrations",
+    "flow": "Запрос бизнеса → интеграции и внутренние инструменты → рабочий процесс.",
+    "boundary": "Название компании, данные клиентов и внутренние интерфейсы скрыты; подробные результаты доступны только по AI Sales Assistant.",
+    "category": "Автоматизации",
+    "desktop": "../portfolio/images/presentation/internal-legal.svg",
+    "mobile": "../portfolio/images/presentation/internal-legal.svg",
+    "media": [],
+    "screens": [],
+    "document": "../projects/internal-legal/case.md",
+    "research": "../site/case-internal-legal.html",
+    "published": true,
+    "seoTitle": "Внутренние продукты · NDA",
+    "shortTitle": "Внутренние продукты · NDA",
+    "shortDescription": "Обезличенный обзор внутренних сервисов юридической компании: телефония, CRM, контент, документы и интеграции.",
+    "problem": "Процессы компании требовали связи телефонии, CRM, документов и внутренних веб-инструментов.",
+    "built": "Работал над интеграциями, AI Sales Assistant и другими внутренними направлениями; детали обезличены.",
+    "result": "Публично показана структура работы без раскрытия компании и клиентских данных.",
+    "proof": "Авторское описание; для AI Sales подтверждены 155 звонков и 54 AI-разбора, другие результаты не заявляются.",
+    "keywords": [
+      "внутренние продукты",
+      "CRM интеграции",
+      "автоматизация юридической компании"
+    ],
+    "caseIntro": "Обезличенный обзор внутренней разработки: шесть направлений без вымышленных интерфейсов.",
+    "seoDescription": "Обезличенный обзор внутренних сервисов юридической компании: телефония, CRM, контент, документы и интеграции."
   }
 ]

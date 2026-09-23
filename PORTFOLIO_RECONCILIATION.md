@@ -1,47 +1,48 @@
-# Portfolio reconciliation · 22.09.2026
+# Portfolio reconciliation · 23.09.2026
 
-Одна строка = одна публичная карточка. `VIDEO` и `SCREENSHOTS` показывают количество доступных файлов; 0/0 у архивных работ означает, что вымышленное UI-видео не опубликовано.
+Each row is one public card. VIDEO and SCREENSHOTS count **publicly linked media in `portfolio/data.json`**, not archived reconstruction files. A zero is valid for presentation-first projects. Source-evidence limits remain in each case.md and MASTER_CASE_QUEUE.md.
 
 | PROJECT | PUBLIC CARD | REVIEW | CASE.MD | VIDEO | SCREENSHOTS | STATUS |
 |---|---|---|---|---:|---:|---|
-| KONTUR | YES | YES | YES | 2/2 | 6/6 | READY |
-| LexLegal | YES | YES | YES | 2/2 | 6/6 | READY |
-| MAGNUM | YES | YES | YES | 2/2 | 6/6 | READY |
-| Живые фото | YES | YES | YES | 2/2 | 6/6 | READY |
-| Колесо Фортуны | YES | YES | YES | 2/2 | 6/6 | READY |
-| Татьяна | YES | YES | YES | 4/4 | 6/6 | READY |
-| PP BOT | YES | YES | YES | 2/2 | 6/6 | READY |
-| GIGANT | YES | YES | YES | 2/2 | 6/6 | READY |
-| Desert Wheels | YES | YES | YES | 2/2 | 6/6 | READY |
-| Women Strange | YES | YES | YES | 2/2 | 6/6 | READY |
-| Linux Lab | YES | YES | YES | 2/2 | 6/6 | READY |
-| Пифпаф | YES | YES | YES | 4/4 | 6/6 | READY |
-| Shopify Store Builder | YES | YES | YES | 2/2 | 8/8 | READY |
-| Ритм | YES | YES | YES | 2/2 | 11/11 | READY |
-| Портной | YES | YES | YES | 3/3 | 6/6 | READY |
-| Vibe AutoRouter | YES | YES | YES | 2/2 | 6/6 | READY |
-| AI Support | YES | YES | YES | 5/5 | 7/7 | READY |
-| Трек в подарок | YES | YES | YES | 2/2 | 6/6 | READY |
-| GARMONY | YES | YES | YES | 2/2 | 6/6 | READY |
-| EP Beauty | YES | YES | YES | 2/2 | 6/6 | READY |
-| Solonflow | YES | YES | YES | 2/2 | 9/9 | READY |
-| Meta Ads Library Collector | YES | YES | YES | 2/2 | 7/7 | READY |
-| Степ | YES | YES | YES | 3/3 | 6/6 | READY |
-| СказкаМоя | YES | YES | YES | 2/2 | 6/6 | READY |
-| Twitter / X Automation | YES | YES | YES | 2/2 | 6/6 | READY |
-| Telegram Schedule | YES | YES | YES | 2/2 | 5/5 | READY |
-| Telegram Intel | YES | YES | YES | 2/2 | 6/6 | READY |
-| Telegram AI Lead Hunter | YES | YES | YES | 2/2 | 9/9 | READY |
-| TopGadalkin | YES | YES | YES | 2/2 | 6/6 | READY |
-| B2B Lead Generator | YES | YES | YES | 5/5 | 9/9 | READY |
-| Личный AI-ассистент | YES | YES | YES | 0/0 | 2/2 | BLOCKED |
-| Telegram News · две версии | YES | YES | YES | 0/0 | 2/2 | BLOCKED |
-| n8n Copilot | YES | YES | YES | 0/0 | 2/2 | BLOCKED |
-| Университетские проекты | YES | YES | YES | 0/0 | 2/2 | BLOCKED |
-| Внутренние продукты · NDA | YES | YES | YES | 0/0 | 2/2 | PRIVATE/NDA |
+| KONTUR (`protective-structures`) | YES | YES | YES | 2/2 | 5/5 | READY |
+| LexLegal (`lexlegal`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| MAGNUM (`magnum`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Живые фото (`photo-animation`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Колесо Фортуны (`roulette`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Татьяна (`tatiana`) | YES | YES | YES | 4/4 | 4/4 | READY |
+| PP BOT (`ppbot`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| GIGANT (`gigant`) | YES | YES | YES | 0/0 | 0/0 | READY |
+| Desert Wheels (`desert-wheels`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Women Strange (`women-strange`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Linux Lab (`linux-lab`) | YES | YES | YES | 0/0 | 0/0 | READY |
+| Пифпаф (`pifpaf`) | YES | YES | YES | 4/4 | 5/5 | READY |
+| Shopify Store Builder (`shopify-store-builder`) | YES | YES | YES | 2/2 | 9/9 | READY |
+| Ритм (`ritm`) | YES | YES | YES | 2/2 | 9/9 | READY |
+| Портной (`portnoy`) | YES | YES | YES | 3/3 | 4/4 | READY |
+| Vibe AutoRouter (`vibe-autorouter`) | YES | YES | YES | 0/0 | 1/1 | READY |
+| AI Support (`support-rag`) | YES | YES | YES | 0/0 | 3/3 | READY |
+| Трек в подарок (`trekpodarok`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| GARMONY (`garmony`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| EP Beauty (`ep-beauty`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Solonflow (`portfolio-archive`) | YES | YES | YES | 2/2 | 7/7 | READY |
+| Meta Ads Library Collector (`meta-ads`) | YES | YES | YES | 2/2 | 5/5 | READY |
+| Степ (`stepbystep`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| СказкаМоя (`skazka`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| Twitter / X Automation (`twitter-automation`) | YES | YES | YES | 0/0 | 0/0 | READY |
+| Telegram Schedule (`telegram-schedule`) | YES | YES | YES | 0/0 | 0/0 | READY |
+| Telegram Intel (`telegram-intel`) | YES | YES | YES | 0/0 | 0/0 | READY |
+| Telegram AI Lead Hunter (`telegram-leads`) | YES | YES | YES | 0/0 | 1/1 | READY |
+| TopGadalkin (`topgadalkin`) | YES | YES | YES | 2/2 | 4/4 | READY |
+| B2B Lead Generator (`maps-lead-generator`) | YES | YES | YES | 5/5 | 7/7 | READY |
+| Личный AI-ассистент (`personal-assistant`) | YES | YES | YES | 0/0 | 0/0 | BLOCKED |
+| Telegram News · две версии (`news-aggregator-archive`) | YES | YES | YES | 0/0 | 0/0 | BLOCKED |
+| n8n Copilot (`copilot`) | YES | YES | YES | 0/0 | 1/1 | BLOCKED |
+| Университетские проекты (`university-projects`) | YES | YES | YES | 0/0 | 0/0 | BLOCKED |
+| AI Sales Assistant (`legal-automation`) | YES | YES | YES | 0/0 | 0/0 | PRIVATE/NDA |
+| Внутренние продукты · NDA (`internal-legal`) | YES | YES | YES | 0/0 | 0/0 | PRIVATE/NDA |
 
-**Карточек:** 35. **Строк в data.json:** 35. **Ошибок сверки:** 0.
+**Cards:** 36. **Queue:** 36. **Review entries:** 36. **Issues:** 0.
 
-Объединённые источники: Webchat → AI Support; Beauty Lead Hunter → B2B Lead Generator; защищённые сообщения, NPM и университетский parser → университетский umbrella-case. Их исходные материалы сохранены как компоненты, без отдельных карточек.
+The 14 presentation-first projects are tracked separately in [PRESENTATION_CASE_QUEUE.md](PRESENTATION_CASE_QUEUE.md). Underlying historical evidence gaps in Personal Assistant, Telegram News, n8n Copilot and University Projects remain BLOCKED even though their honest case presentation is ready.
 
-Недостающие доказательства: точный n8n workflow и Telegram UI личного ассистента и Copilot; подлинный Telegram UI двух версий Telegram News и университетского parser. Эти пробелы помечены `BLOCKED`, они не заменены web-реконструкцией.
+Issues: none.

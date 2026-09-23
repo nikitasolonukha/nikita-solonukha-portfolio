@@ -38,7 +38,8 @@
 | 32 | Telegram News · две версии | BLOCKED | [news-aggregator-archive](review/news-aggregator-archive.html) |
 | 33 | n8n Copilot | BLOCKED | [copilot](review/copilot.html) |
 | 34 | Университетские проекты | BLOCKED | [university-projects](review/university-projects.html) |
-| 35 | AI Sales Assistant · NDA (внутренние продукты — контекст) | PRIVATE/NDA | [legal-automation](site/case-legal-automation.html) |
+| 35 | AI Sales Assistant · NDA | PRIVATE/NDA | [legal-automation](site/case-legal-automation.html) |
+| 36 | Внутренние продукты юридической компании · NDA | PRIVATE/NDA | [internal-legal](site/case-internal-legal.html) |
 
 ## Ограничения и непубличные кандидаты
 

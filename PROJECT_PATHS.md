@@ -1,6 +1,6 @@
 # Project paths
 
-Canonical paths for the existing 35-case portfolio. Source provenance is in each case.md when a safe exact path cannot be exposed here; no repository-wide rediscovery is required.
+Canonical paths for the existing 36-case portfolio. Source provenance is in each case.md when a safe exact path cannot be exposed here; no repository-wide rediscovery is required.
 
 | PROJECT | CANONICAL ID | CASE | SOURCE | DEMO SOURCE | ASSETS | VIDEO | REVIEW | STATUS |
 |---|---|---|---|---|---|---|---|---|
@@ -39,3 +39,4 @@ Canonical paths for the existing 35-case portfolio. Source provenance is in each
 | n8n Copilot | copilot | projects/copilot/case.md | C:/HONOR Share/Screenshot/20260110_002510.mp4; original n8n export absent | Original Notion recording + specification; see case.md | projects/copilot/assets/ | original-notion-flow.mp4 (silent public edit) | review/copilot.html | BLOCKED: n8n/Telegram still missing |
 | Университетские проекты | university-projects | projects/university-projects/case.md | Provenance in case.md; no verified global source path | See case.md (ORIGINAL vs DEMO) | projects/university-projects/assets/ | none — archival/NDA | review/university-projects.html | BLOCKED |
 | AI Sales Assistant · NDA | legal-automation | projects/legal-automation/case.md | Author-provided Sipuni/Bitrix24/Telegram flow and 155/54; originals withheld under NDA | Presentation poster + sanitized example; see case.md | projects/legal-automation/assets/ | ai-sales-desktop-walkthrough.webm, ai-sales-mobile-walkthrough.webm (case presentation, not production UI) | site/case-legal-automation.html | PRIVATE/NDA |
+| Internal Products · NDA | internal-legal | projects/internal-legal/case.md | Author-described internal legal-company work; client data withheld | Typographic umbrella presentation, no invented UI | portfolio/images/presentation/internal-legal.svg | None; video is not required | site/case-internal-legal.html | PRIVATE/NDA |

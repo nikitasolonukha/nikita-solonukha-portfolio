@@ -59,9 +59,10 @@ for p in projects:
     if re.search(r'lorem|инновационн|революционн', public, re.I): errors.append(f'{p["id"]}: banned copy')
     if re.search(r'\b\d+[.,]?\d*\s*%', public): errors.append(f'{p["id"]}: percentage requires evidence review')
 urls=ET.parse(ROOT/'sitemap.xml').getroot().findall('{http://www.sitemaps.org/schemas/sitemap/0.9}url')
-if len(urls)!=40: errors.append(f'Sitemap URLs: {len(urls)}, expected 40')
+expected_urls=len(projects)+5
+if len(urls)!=expected_urls: errors.append(f'Sitemap URLs: {len(urls)}, expected {expected_urls}')
 if not (ROOT/'robots.txt').exists(): errors.append('robots.txt missing')
-for filename, marker, expected in [('index.html','class="featured"',6),('work.html','class="project-row"',13),('archive.html','class="project-row"',22)]:
+for filename, marker, expected in [('index.html','class="featured"',6),('work.html','class="project-row"',14),('archive.html','class="project-row"',22)]:
     count=(ROOT/'site'/filename).read_text(encoding='utf-8').count(marker)
     if count!=expected: errors.append(f'{filename}: {count} static project links, expected {expected}')
 
@@ -78,7 +79,7 @@ for p in projects:
     lines.append('| '+' | '.join(map(clean,(p['name'],p['seoTitle']+' / Никита Солонуха',p['result'],p['proof'],', '.join(p['keywords']))))+' |')
 lines += ['', '## Validation','']
 lines += ['- '+e for e in errors] if errors else ['No automated content or metadata failures.']
-lines += ['','Browser check: all 35 canonical case routes opened locally with one H1, visible project facts and no horizontal overflow in the tested narrow viewport. Home, Work and the Shopify case were also visually inspected. This is a copy/layout check, not a revalidation of product integrations.']
+lines += ['',f'Browser check: the earlier 35-case browser pass covered the original catalog. The added NDA umbrella is separately checked in the 14-case presentation QA at 1440/768/390. This is a copy/layout check, not a revalidation of product integrations.']
 lines += ['', 'Static HTML case pages contain a readable fallback for search crawlers and render the full visual case after JavaScript loads. The six custom visual-first review cases keep their original composition and include project-specific facts.','']
 (ROOT/'SEO_AUDIT.md').write_text('\n'.join(lines),encoding='utf-8')
 print(f'{len(projects)} projects; {len(pages)} pages; {len(titles)} titles; {len(descriptions)} descriptions; {len(errors)} issues')

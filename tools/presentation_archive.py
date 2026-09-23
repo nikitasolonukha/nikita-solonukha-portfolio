@@ -1,0 +1,93 @@
+"""One-time, source-bounded presentation pages for archival and NDA cases."""
+from pathlib import Path
+from lxml import html
+import json, re
+
+ROOT = Path(__file__).resolve().parents[1]
+SITE = ROOT/'site'
+BASE = 'https://nikitasolonukha.github.io/nikita-solonukha-portfolio'
+REF = html.parse(str(SITE/'case-gigant.html')).getroot()
+HEADER = html.tostring(REF.xpath('//header')[0],encoding='unicode')
+FOOTER = html.tostring(REF.xpath('//footer')[0],encoding='unicode')
+
+CASES = {
+'internal-legal': {
+ 'title':'Внутренние продукты · NDA', 'desc':'Обезличенный обзор внутренних сервисов юридической компании: телефония, CRM, контент, документы и интеграции.',
+ 'cover':('INTERNAL / NDA','#18191b','#f1eadf','#c0a074','CRM  /  TELEPHONY  /  DOCUMENTS'),
+ 'body':'''<main id="main" class="pa pa-legal"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>INTERNAL SYSTEMS / NDA</p><h1>Невидимая<br>часть бизнеса.</h1><p class="pa-lead">Внутренние продукты юридической компании: связь процессов, данных и сотрудников. Публичный кейс показывает направления моей работы, сохраняя клиентские и корпоративные сведения закрытыми.</p><div class="pa-hero-rule">CRM / TELEPHONY / WEB / CONTENT / DOCUMENTS / INTEGRATIONS</div></section><section class="pa-legal-chapters shell"><h2>Шесть направлений.<br>Одна рабочая среда.</h2><ol><li><b>01</b><h3>AI Sales Assistant</h3><p>Звонки, контекст сделки и AI-анализ собирались в управленческий отчёт.</p><a href="case-legal-automation.html">Отдельный проверенный кейс ↗</a></li><li><b>02</b><h3>CRM / Telephony</h3><p>Интеграционная работа на стыке звонков и записей о сделках. Детали внутренней конфигурации закрыты.</p></li><li><b>03</b><h3>Internal Web Products</h3><p>Веб-инструменты для внутренних процессов. Скриншоты реальных кабинетов с данными компании не публикуются.</p></li><li><b>04</b><h3>Content Automation</h3><p>Автоматизация подготовки и движения контента. Отдельный Autopost не включён: его связь с этим направлением пока не подтверждена.</p></li><li><b>05</b><h3>Document Workflows</h3><p>Работа с документами и связанными состояниями. Содержимое документов и клиентов здесь не показывается.</p></li><li><b>06</b><h3>Integrations</h3><p>Связь сервисов и передача результата между системами.</p></li></ol></section><section class="pa-boundary shell"><span>PUBLICATION BOUNDARY</span><h2>Показать механизм.<br>Сохранить доверие.</h2><p>Название компании, персональные данные, CRM ID, телефоны, записи разговоров и реальные документы исключены. Для пяти направлений, кроме AI Sales, не заявлены неподтверждённые метрики или отдельные выпущенные интерфейсы.</p></section></main>''',
+},
+'personal-assistant': {
+ 'title':'Личный AI-ассистент · архив', 'desc':'Авторский n8n-ассистент для задач в Telegram. Историческое описание сохранилось; точный workflow и запись чата пока не найдены.',
+ 'cover':('ASSISTANT','#d9d5cc','#253139','#b56e4c','TELEGRAM  →  ROUTER  →  TOOLS'),
+ 'body':'''<main id="main" class="pa pa-assistant"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>PERSONAL AI ASSISTANT / ARCHIVE</p><h1>Запрос.<br>Маршрут.<br>Действие.</h1><p class="pa-lead">Личный ассистент работал через Telegram; n8n связывал запросы с инструментами для почты, расписания, расходов, контента и файлов. Это архивная презентация авторского проекта.</p></section><section class="pa-assistant-flow shell"><small>DOCUMENTED ROUTE</small><ol><li>TELEGRAM</li><li>REQUEST</li><li>ROUTER</li><li>TOOLS</li><li>ACTION</li><li>RESPONSE</li></ol></section><section class="pa-boundary shell"><span>ЧТО СОХРАНИЛОСЬ</span><h2>Описание есть.<br>Точный canvas ищем.</h2><p>Авторство подтверждено Никитой; сохранилась историческая карточка. Найденный файл «Ai sekretar.json» относится к другой конфигурации и не выдаётся за n8n workflow этого ассистента. Реального Telegram-сценария и экспорта точной схемы пока нет; этот кейс не утверждает, что интеграции сейчас работают.</p></section></main>''',
+},
+'news-aggregator-archive': {
+ 'title':'Telegram News · две отдельные версии', 'desc':'Два разных проекта: личный AI News Digest в разработке и реализованный университетский Telegram parser/search.',
+ 'cover':('NEWS / 02','#dce3dd','#192a2d','#c3533b','DEVELOPMENT  /  UNIVERSITY'),
+ 'body':'''<main id="main" class="pa pa-news"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>TELEGRAM NEWS / TWO PROJECTS</p><h1>Одна тема.<br>Две разные работы.</h1><p class="pa-lead">Оба проекта связаны с Telegram-новостями, но не являются версиями одного кода. Их нельзя объединять в выдуманную единую систему.</p></section><section class="pa-news-chapters shell"><article><span>VERSION 01 / PERSONAL / DEVELOPMENT</span><h2>AI News Digest</h2><p>Историческая карточка описывает сбор публикаций, отбор под интересы и AI-суммаризацию. Проект был отмечен как находящийся в разработке.</p><div>TELETHON → FILTER → SUMMARY → PROFILE → DIGEST</div><small>Точный исходный архив и Telegram-запись этой версии не найдены.</small></article><article><span>VERSION 02 / UNIVERSITY / IMPLEMENTED</span><h2>Telegram Parser / Search</h2><p>Отдельный университетский репозиторий <code>parser-tg-muiv</code>: Telegram-бот, Telethon-сбор, SQLite и поиск по сохранённым сообщениям.</p><div>CHANNELS → PARSER → SQLITE → SEARCH → BOT</div><small>Исходный код найден; подлинный экран бота не найден.</small></article></section><section class="pa-boundary shell"><span>PROJECT RELATION</span><h2>Общая тема.<br>Разный статус.</h2><p>Университетский парсер также описан в кейсе «Университетские проекты». AI News Digest не объявляется его продолжением или готовым продуктом без соответствующих исходников.</p></section></main>''',
+},
+'copilot': {
+ 'title':'n8n Copilot · редакционный процесс', 'desc':'Raw, четыре слоя редактуры и Final Body. Реальный Notion-фрагмент подтверждает первый слой; точный n8n canvas пока не найден.',
+ 'cover':('RAW → L4','#1b1d20','#f2ede1','#d7b663','L1  /  L2  /  L3  /  L4  /  FINAL BODY'),
+ 'body':'''<main id="main" class="pa pa-copilot"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>N8N COPILOT / EDITORIAL PIPELINE</p><h1>Текст проходит<br>через четыре роли.</h1><p class="pa-lead">Исходный материал не переписывается одним непрозрачным запросом. Документация описывает последовательную работу слоёв и отдельную переработку выбранного этапа.</p></section><section class="pa-copilot-layers shell"><small>DOCUMENTED PIPELINE</small><ol><li><b>00</b><strong>RAW</strong><span>Исходный материал</span></li><li><b>01</b><strong>L1</strong><span>Первый AI Draft</span></li><li><b>02</b><strong>L2</strong><span>Следующий редакционный слой</span></li><li><b>03</b><strong>L3</strong><span>Отдельная доработка</span></li><li><b>04</b><strong>L4</strong><span>Финальная редактура</span></li><li><b>05</b><strong>BODY</strong><span>Итоговая версия</span></li></ol></section><section class="pa-copilot-rework shell"><small>REWORK</small><h2>Комментарий → выбранный слой → новая версия.</h2><p>По найденной спецификации переработка не должна уничтожать Raw и чужие этапы. Запись реального Notion показывает подготовку Raw, появление L1 Draft / L1 Final и изменение статуса. Она не доказывает L2–L4 или точную схему n8n.</p></section><section class="pa-copilot-evidence shell"><div><small>ORIGINAL EVIDENCE / NOTION</small><h2>Рабочая база,<br>не реконструкция.</h2><p>Стоп-кадр из предоставленной Никитой записи от января 2026 года. Аккаунт и рабочий стол убраны из публичного фрагмента.</p></div><figure><img src="../projects/copilot/assets/notion-result.webp" alt="Подлинная запись Notion: Raw, L1 AI Draft, L1 Final и статус"><figcaption>NOTION POSTS / ПОДЛИННЫЙ СТОП-КАДР</figcaption></figure><details><summary>Посмотреть оригинальный фрагмент Notion ↗</summary><video controls playsinline preload="none" poster="../projects/copilot/assets/notion-overview.webp"><source src="../projects/copilot/assets/original-notion-flow.mp4" type="video/mp4"></video></details></section><section class="pa-boundary shell"><span>EVIDENCE LIMIT</span><h2>Canvas n8n пока не найден.</h2><p>Техническая документация и промпты сохранились; реальный Notion UI подтверждён записью. Экспорт именно этого n8n workflow и Telegram flow пока отсутствуют. Web-симулятор исключён из основного визуального доказательства.</p></section></main>''',
+},
+'university-projects': {
+ 'title':'Университетские проекты · три отдельные работы', 'desc':'Учебные работы Никиты: защищённые сообщения, анализ данных NPM и Telegram parser/search. Отдельные технические результаты, не единый коммерческий продукт.',
+ 'cover':('03 STUDIES','#e8e4d9','#192326','#698d87','MESSAGES  /  DATA  /  TELEGRAM'),
+ 'body':'''<main id="main" class="pa pa-university"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>UNIVERSITY WORK / ARCHIVE</p><h1>Три задачи.<br>Три технических подхода.</h1><p class="pa-lead">Это редакционная коллекция отдельных учебных работ, не один продукт и не коммерческий заказ.</p></section><section class="pa-university-chapters shell"><article><b>01 / SECURITY</b><h2>Защищённые сообщения</h2><p>Историческая карточка описывает Python, Tkinter, Flask и шифрование сообщений в web/admin-сценарии.</p><small>Исходная реализация и новая запись интерфейса не найдены.</small></article><article><b>02 / DATA</b><h2>Анализ данных NPM</h2><p>Архивное описание: NPM Downloads API, Requests, Pandas, NumPy и Matplotlib для расчётов и визуализации.</p><small>Notebook, dataset и воспроизводимый runtime не сохранились.</small></article><article><b>03 / TELEGRAM</b><h2>Parser / Search</h2><p>Найден репозиторий <code>parser-tg-muiv</code> с Python-ботом, Telethon parser, SQLite и поиском по сообщениям.</p><small>Код подтверждён; исходный Telegram screenshot не найден.</small></article></section><section class="pa-boundary shell"><span>ACADEMIC RECORD</span><h2>Разделены по фактам.</h2><p>Подтверждение авторства дано Никитой. Для первых двух работ сохранились описания, для третьей — код. Недостающие интерфейсы не заменены макетами.</p></section></main>''',
+},
+'linux-lab': {
+ 'title':'Linux Lab · технический архив', 'desc':'Учебные отчёты по KGpg, iptables и ClamAV с оригинальными кадрами выполнения. Технический архив, не коммерческий продукт.',
+ 'cover':('LINUX / LAB','#161d1b','#e6e3d5','#9baa8b','K G P G  /  I P T A B L E S  /  C L A M A V'),
+ 'body':'''<main id="main" class="pa pa-linux"><section class="pa-hero shell"><a href="work.html">↖ Все работы</a><p>TECHNICAL EDITORIAL ARCHIVE</p><h1>Команда.<br>Правило.<br>Проверка.</h1><p class="pa-lead">Учебная практика по Linux и информационной безопасности. В архиве десять отчётов; опубликованные кадры происходят из документов, а не из новой виртуальной машины.</p></section><section class="pa-linux-index shell"><article><b>01 / KGpg</b><h2>Зашифровать → расшифровать.</h2><p>Три оригинальных кадра показывают тестовую строку, блок PGP MESSAGE и возвращение исходного текста.</p></article><article><b>02 / iptables</b><h2>До правила → DROP → тайм-аут.</h2><p>Перед блокировкой Apache отвечал HTTP 500: сервис был доступен, но это не доказывает корректность приложения. После правила запрос завершался тайм-аутом.</p></article><article><b>03 / ClamAV</b><h2>Сигнатура → обнаружение → карантин.</h2><p>Проверка выполнялась на учебном EICAR в виртуальной машине.</p></article></section><section class="pa-linux-evidence shell"><div><small>ORIGINAL REPORT FRAGMENT</small><h2>Кадр из учебного отчёта.</h2><p>Оригинальный снимок KGpg сохранён внутри архивного viewer. Оболочка страницы создана для показа, интерфейс программы не перерисован.</p></div><figure><img src="../projects/linux-lab/assets/topic-0-step-0-1440.png" alt="Архивный кадр KGpg из учебного отчёта внутри презентационного viewer"><figcaption>KGpg / ИСХОДНЫЙ ТЕКСТ</figcaption></figure></section><section class="pa-boundary shell"><span>ПРОВЕРКА И ГРАНИЦЫ</span><h2>Учебные результаты,<br>не production-аудит.</h2><p>Повторный запуск VM не проводился. Презентация основана на исходных DOCX и встроенных кадрах; полные отчёты с данными преподавателя и группы не опубликованы. Видео просмотра архива исключено из кейса.</p></section></main>''',
+},
+}
+
+cover_dir = ROOT/'portfolio/images/presentation'
+for slug, cfg in CASES.items():
+    title, desc, (big,bg,fg,accent,foot), body = cfg['title'],cfg['desc'],cfg['cover'],cfg['body']
+    if slug == 'linux-lab':
+        chapter_start = body.index('<section class="pa-linux-index')
+        evidence_start = body.index('<section class="pa-linux-evidence')
+        boundary_start = body.index('<section class="pa-boundary', evidence_start)
+        body = body[:chapter_start] + body[evidence_start:boundary_start] + body[chapter_start:evidence_start] + body[boundary_start:]
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000"><rect width="1600" height="1000" fill="{bg}"/><text x="80" y="110" fill="{fg}" font-family="Arial" font-size="26" letter-spacing="5">NIKITA SOLONUKHA / CASE FILE</text><path d="M80 145H1520M80 860H1520" stroke="{fg}" stroke-width="2" opacity=".4"/><text x="80" y="520" fill="{fg}" font-family="Arial" font-weight="700" font-size="{125 if len(big)<13 else 95}" letter-spacing="-7">{big}</text><rect x="80" y="595" width="310" height="12" fill="{accent}"/><text x="80" y="930" fill="{fg}" font-family="Arial" font-size="25" letter-spacing="4">{foot}</text></svg>'''
+    (cover_dir/f'{slug}.svg').write_text(svg,encoding='utf-8')
+    meta = f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{title} | Никита Солонуха</title><meta name="description" content="{desc}"><link rel="canonical" href="{BASE}/site/case-{slug}.html"><meta property="og:type" content="article"><meta property="og:title" content="{title} | Никита Солонуха"><meta property="og:description" content="{desc}"><meta property="og:url" content="{BASE}/site/case-{slug}.html"><meta property="og:image" content="{BASE}/portfolio/images/presentation/{slug}.svg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{title} | Никита Солонуха"><meta name="twitter:description" content="{desc}"><meta name="twitter:image" content="{BASE}/portfolio/images/presentation/{slug}.svg"><link rel="stylesheet" href="styles.css?v=20260923-magnum-dark"><link rel="stylesheet" href="editorial.css?v=20260923-copy-v1"><link rel="stylesheet" href="presentation-archive.css?v=3"><script src="app.js?v=20260923-copy-v1" defer></script></head><body data-page="presentation" class="archive-{slug}"><a class="skip" href="#main">К содержанию</a>{HEADER}{body}{FOOTER}</body></html>'''
+    meta=meta.replace('<script src="app.js?v=20260923-copy-v1" defer></script>','<link rel="stylesheet" href="presentation-motion.css?v=1"><script src="app.js?v=20260923-copy-v1" defer></script><script src="presentation-motion.js?v=1" defer></script>')
+    (SITE/f'case-{slug}.html').write_text(meta,encoding='utf-8')
+
+catalog_path=ROOT/'portfolio/data.json'
+catalog=json.loads(catalog_path.read_text(encoding='utf-8'))
+for p in catalog:
+    if p['id'] in CASES:
+        slug=p['id']
+        p['desktop']=f'../portfolio/images/presentation/{slug}.svg'
+        p['mobile']=p['desktop']
+        p['media']=[]
+        p['screens']=['../projects/copilot/assets/notion-result.webp'] if slug=='copilot' else []
+
+if not any(p['id']=='internal-legal' for p in catalog):
+    catalog.append({
+      'id':'internal-legal','name':'Внутренние продукты · NDA','subtitle':CASES['internal-legal']['desc'],'intro':'Обезличенная презентация внутренних направлений разработки для юридической компании.','stack':'CRM · Telephony · Web · Automation · Integrations','flow':'Запрос бизнеса → интеграции и внутренние инструменты → рабочий процесс.','boundary':'Название компании, данные клиентов и внутренние интерфейсы скрыты; подробные результаты доступны только по AI Sales Assistant.','category':'Автоматизации','desktop':'../portfolio/images/presentation/internal-legal.svg','mobile':'../portfolio/images/presentation/internal-legal.svg','media':[],'screens':[],'document':'../projects/internal-legal/case.md','research':'../site/case-internal-legal.html','published':True,
+      'seoTitle':CASES['internal-legal']['title'],'shortTitle':'Внутренние продукты · NDA','shortDescription':CASES['internal-legal']['desc'],'problem':'Процессы компании требовали связи телефонии, CRM, документов и внутренних веб-инструментов.','built':'Работал над интеграциями, AI Sales Assistant и другими внутренними направлениями; детали обезличены.','result':'Публично показана структура работы без раскрытия компании и клиентских данных.','proof':'Авторское описание; для AI Sales подтверждены 155 звонков и 54 AI-разбора, другие результаты не заявляются.','keywords':['внутренние продукты','CRM интеграции','автоматизация юридической компании'],'caseIntro':'Обезличенный обзор внутренней разработки: шесть направлений без вымышленных интерфейсов.','seoDescription':CASES['internal-legal']['desc']
+    })
+catalog_path.write_text(json.dumps(catalog,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+review_path=ROOT/'review/index.html'
+review=html.parse(str(review_path)).getroot()
+for slug in CASES:
+    if slug=='internal-legal':
+        continue
+    matches=review.xpath(f'.//article[.//a[contains(@href,"{slug}")]]')
+    if not matches:
+        raise ValueError(f'No review card for {slug}')
+    card=matches[0]
+    for img in card.xpath('.//img'):
+        img.set('src',f'../portfolio/images/presentation/{slug}.svg')
+    for link in card.xpath('.//a[not(contains(@class,"facts"))]'):
+        link.set('href',f'../site/case-{slug}.html')
+if not review.xpath('.//article[@data-name="internal legal"]'):
+    sales=review.xpath('.//article[@data-name="ai sales assistant"]')[0]
+    sales.addnext(html.fragment_fromstring('''<article data-name="internal legal"><a class="preview" href="../site/case-internal-legal.html"><img loading="lazy" src="../portfolio/images/presentation/internal-legal.svg" alt="Обложка: Внутренние продукты NDA"></a><div class="card-copy"><small>PRIVATE/NDA · ОБЕЗЛИЧЕНО</small><h2><a href="../site/case-internal-legal.html">Внутренние продукты · NDA</a></h2><p>CRM, телефония, внутренние web-инструменты, контент, документы и интеграции — без клиентских данных.</p><a class="facts" href="https://github.com/nikitasolonukha/nikita-solonukha-portfolio/blob/main/projects/internal-legal/case.md">Факты и границы ↗</a></div></article>'''))
+review_path.write_bytes(html.tostring(review,encoding='utf-8',doctype='<!doctype html>'))
+print('Six archival and NDA presentation pages created/updated; catalog:',len(catalog))

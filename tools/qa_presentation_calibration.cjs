@@ -4,7 +4,7 @@ const fs = require('fs');
 const root = path.resolve(__dirname, '..');
 const out = path.join(root, 'site', 'qa', 'presentation');
 fs.mkdirSync(out, { recursive: true });
-const pages = ['legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','telegram-intel','vibe-autorouter','gigant'];
+const pages = ['legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','telegram-intel','vibe-autorouter','gigant','internal-legal','personal-assistant','news-aggregator-archive','copilot','university-projects','linux-lab'];
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const results = [];
@@ -37,6 +37,6 @@ const pages = ['legal-automation','support-rag','telegram-leads','telegram-sched
   }
   fs.writeFileSync(path.join(out, 'qa.json'), JSON.stringify(results, null, 2));
   await browser.close();
-  if (results.some(x => x.overflow || x.images.length || x.videos || x.errors.length || x.h1.length !== 1)) process.exitCode = 1;
+  if (results.some(x => x.overflow || x.images.length || (x.slug !== 'copilot' && x.videos) || x.errors.length || x.h1.length !== 1)) process.exitCode = 1;
   console.log(JSON.stringify(results.map(({slug,width,overflow,images,videos,errors}) => ({slug,width,overflow,images:images.length,videos,errors})), null, 2));
 })();
