@@ -348,26 +348,10 @@
     "flow": "План, подтверждение, отказ и память. Вызовы инструментов локальные, внешний браузер не управляется.",
     "boundary": "Новая демонстрационная панель; исходная логика и локальные адаптеры описаны в кейсе.",
     "category": "Автоматизация",
-    "desktop": "images/gigant.webp",
-    "mobile": "../projects/gigant/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/gigant/assets/master-desktop.mp4",
-        "poster": "../projects/gigant/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/gigant/assets/master-mobile.mp4",
-        "poster": "../projects/gigant/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/gigant/assets/approval-1440.png",
-      "../projects/gigant/assets/empty-1440.png",
-      "../projects/gigant/assets/environment-1440.png",
-      "../projects/gigant/assets/history-1440.png"
-    ],
+    "desktop": "../portfolio/images/presentation/gigant.svg",
+    "mobile": "../portfolio/images/presentation/gigant.svg",
+    "media": [],
+    "screens": [],
     "document": "../projects/gigant/case.md",
     "research": "../review/gigant.html",
     "local": true,
@@ -750,25 +734,11 @@
     "flow": "Запрос → классификация → совместимость → смета → запуск или бюджетный отказ.",
     "boundary": "Локальное demo использует исходные classifier, ranking и FakeVibeClient. Production worker, PostgreSQL и внешние генерации не проверены в этом показе.",
     "category": "Продукты",
-    "desktop": "images/vibe-autorouter.webp",
-    "mobile": "../projects/vibe-autorouter/assets/overview-390.png",
-    "media": [
-      {
-        "src": "../projects/vibe-autorouter/assets/master-desktop.mp4",
-        "poster": "../projects/vibe-autorouter/assets/poster-desktop.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/vibe-autorouter/assets/master-mobile.mp4",
-        "poster": "../projects/vibe-autorouter/assets/poster-mobile.webp",
-        "mobile": true
-      }
-    ],
+    "desktop": "../portfolio/images/presentation/vibe-autorouter.svg",
+    "mobile": "../portfolio/images/presentation/vibe-autorouter.svg",
+    "media": [],
     "screens": [
-      "../projects/vibe-autorouter/assets/attempts-1440.png",
-      "../projects/vibe-autorouter/assets/budget-1440.png",
-      "../projects/vibe-autorouter/assets/candidates-1440.png",
-      "../projects/vibe-autorouter/assets/estimate-1440.png"
+      "../projects/vibe-autorouter/assets/overview-390.png"
     ],
     "document": "../projects/vibe-autorouter/case.md",
     "research": "../site/case-vibe-autorouter.html",
@@ -1228,26 +1198,10 @@
     "flow": "Telegram → выбор тем → публикации → алерт → digest → Mini App.",
     "boundary": "Команды и карточки подтверждены исходником; данные синтетические, Telegram network отключён.",
     "category": "Автоматизация",
-    "desktop": "../projects/telegram-intel/assets/cover-v2.webp",
-    "mobile": "../projects/telegram-intel/assets/telegram-digest-390-v2.png",
-    "media": [
-      {
-        "src": "../projects/telegram-intel/assets/master-desktop-v2.mp4",
-        "poster": "../projects/telegram-intel/assets/poster-desktop-v2.webp",
-        "mobile": false
-      },
-      {
-        "src": "../projects/telegram-intel/assets/master-mobile-v2.mp4",
-        "poster": "../projects/telegram-intel/assets/poster-mobile-v2.webp",
-        "mobile": true
-      }
-    ],
-    "screens": [
-      "../projects/telegram-intel/assets/telegram-start-1440-v2.png",
-      "../projects/telegram-intel/assets/telegram-today-1440-v2.png",
-      "../projects/telegram-intel/assets/telegram-alert-1440-v2.png",
-      "../projects/telegram-intel/assets/telegram-digest-1440-v2.png"
-    ],
+    "desktop": "../portfolio/images/presentation/telegram-intel.svg",
+    "mobile": "../portfolio/images/presentation/telegram-intel.svg",
+    "media": [],
+    "screens": [],
     "document": "../projects/telegram-intel/case.md",
     "research": "../site/case-telegram-intel.html",
     "local": true,

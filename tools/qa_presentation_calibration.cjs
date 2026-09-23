@@ -4,7 +4,7 @@ const fs = require('fs');
 const root = path.resolve(__dirname, '..');
 const out = path.join(root, 'site', 'qa', 'presentation');
 fs.mkdirSync(out, { recursive: true });
-const pages = ['legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation'];
+const pages = ['legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','telegram-intel','vibe-autorouter','gigant'];
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const results = [];

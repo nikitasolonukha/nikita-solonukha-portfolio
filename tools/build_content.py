@@ -159,8 +159,21 @@ def main():
             p['screens'] = []
         if p['id'] == 'vibe-autorouter':
             p['research'] = '../site/case-vibe-autorouter.html'
+            p['desktop'] = '../portfolio/images/presentation/vibe-autorouter.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = ['../projects/vibe-autorouter/assets/overview-390.png']
         if p['id'] == 'telegram-intel':
             p['research'] = '../site/case-telegram-intel.html'
+            p['desktop'] = '../portfolio/images/presentation/telegram-intel.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = []
+        if p['id'] == 'gigant':
+            p['desktop'] = '../portfolio/images/presentation/gigant.svg'
+            p['mobile'] = p['desktop']
+            p['media'] = []
+            p['screens'] = []
         if p['id'] == 'legal-automation':
             p['name'] = 'AI Sales Assistant'
             p['desktop'] = '../projects/legal-automation/assets/ai-sales-cover.svg'
@@ -192,7 +205,7 @@ def main():
         title = p['seoTitle'] + ' | Никита Солонуха'
         canonical = f"{BASE}/site/case-{quote(p['id'])}.html"
         image = f"{BASE}/portfolio/{p['desktop'].removeprefix('../portfolio/')}" if not p['desktop'].startswith('../') else f"{BASE}/{p['desktop'][3:]}"
-        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','vibe-autorouter','telegram-intel'):
+        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag','telegram-leads','telegram-schedule','twitter-automation','vibe-autorouter','telegram-intel','gigant'):
             # Their original visual-first case pages stay the public route; reviewed separately.
             continue
         content = template.replace('<title>Кейс — Никита Солонуха</title>', f'<title>{escape(title)}</title>')
