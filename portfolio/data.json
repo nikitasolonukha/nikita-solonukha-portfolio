@@ -1309,7 +1309,7 @@
       "../projects/telegram-intel/assets/telegram-digest-1440-v2.png"
     ],
     "document": "../projects/telegram-intel/case.md",
-    "research": "../review/telegram-intel.html",
+    "research": "../site/case-telegram-intel.html",
     "local": true,
     "published": true,
     "seoTitle": "Telegram Intel — бот мониторинга каналов",

@@ -30,7 +30,7 @@ This tracks the presentation pass across every public portfolio card. `MASTER_CA
 | 24 | СказкаМоя | TODO | [case](review/skazka.html) |
 | 25 | Twitter / X Automation | READY | [case](site/case-twitter-automation.html) |
 | 26 | Telegram Schedule | READY | [case](site/case-telegram-schedule.html) |
-| 27 | Telegram Intel | TODO | [case](site/case-telegram-intel.html) |
+| 27 | Telegram Intel | READY | [case](site/case-telegram-intel.html) |
 | 28 | Telegram AI Lead Hunter | READY | [case](site/case-telegram-leads.html) |
 | 29 | TopGadalkin | TODO | [case](review/topgadalkin.html) |
 | 30 | B2B Lead Generator | TODO | [case](site/case-maps-lead-generator.html) |
@@ -40,4 +40,4 @@ This tracks the presentation pass across every public portfolio card. `MASTER_CA
 | 34 | Университетские проекты | TODO | [case](site/case-university-projects.html) |
 | 35 | AI Sales Assistant | READY | [case](site/case-legal-automation.html) |
 
-READY now: 6 of 35. Remaining cases retain their existing public material while their editorial pass is pending. Do not mark a project READY here solely because its older review package exists.
+READY now: 7 of 35. Remaining cases retain their existing public material while their editorial pass is pending. Do not mark a project READY here solely because its older review package exists.

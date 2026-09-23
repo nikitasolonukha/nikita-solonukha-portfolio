@@ -30,7 +30,7 @@
 | 24 | СказкаМоя | READY | [skazka](review/skazka.html) |
 | 25 | Twitter / X Automation | READY | [twitter-automation](site/case-twitter-automation.html) |
 | 26 | Telegram Schedule | READY | [telegram-schedule](site/case-telegram-schedule.html) |
-| 27 | Telegram Intel | READY | [telegram-intel](review/telegram-intel.html) |
+| 27 | Telegram Intel | READY | [telegram-intel](site/case-telegram-intel.html) |
 | 28 | Telegram AI Lead Hunter | READY | [telegram-leads](site/case-telegram-leads.html) |
 | 29 | TopGadalkin | READY | [topgadalkin](review/topgadalkin.html) |
 | 30 | B2B Lead Generator | READY | [maps-lead-generator](review/maps-lead-generator.html) |
