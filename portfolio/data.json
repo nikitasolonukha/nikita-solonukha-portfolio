@@ -771,7 +771,7 @@
       "../projects/vibe-autorouter/assets/estimate-1440.png"
     ],
     "document": "../projects/vibe-autorouter/case.md",
-    "research": "../review/vibe-autorouter.html",
+    "research": "../site/case-vibe-autorouter.html",
     "local": true,
     "seoTitle": "Vibe AutoRouter — выбор AI-модели под запрос",
     "shortTitle": "Vibe AutoRouter",
