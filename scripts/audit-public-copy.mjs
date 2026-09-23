@@ -16,6 +16,13 @@ for (const p of projects) {
   const file = new URL(route, root);
   if (!fs.existsSync(file)) { failures.push(`${p.id}: missing ${route}`); continue; }
   const html = fs.readFileSync(file, 'utf8');
+  if (html.includes('class="case-fallback shell"')) {
+    const main = html.match(/<main id="main">([\s\S]*?)<\/main>/)?.[1] || '';
+    for (const heading of ['Задача','Что я сделал','Результат','Польза']) {
+      const occurrences = main.split(`<h2>${heading}</h2>`).length - 1;
+      if (occurrences !== 1) failures.push(`${route}: ${heading} appears ${occurrences} times in fallback`);
+    }
+  }
   const visible = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, ' ')
     .replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi, ' ')
     .replace(/<[^>]+>/g, '\n').replace(/&nbsp;/g, ' ');

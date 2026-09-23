@@ -44,12 +44,13 @@ for (const p of projects) {
   const target = site(`case-${p.id}.html`);
   if (!fs.existsSync(target)) continue;
   const html = fs.readFileSync(target, 'utf8');
-  const fallback = /<div class="case-fallback shell">[\s\S]*?<\/div>/;
+  const fallback = /<main id="main"><div id="case-root">[\s\S]*?<\/main>/;
+  if (!html.includes('class="case-fallback shell"')) continue;
   if (!fallback.test(html)) continue;
   const facts = [['Задача',p.problem],['Что я сделал',p.built],['Результат',p.result],['Польза',p.businessValue]];
   const impact = p.id === 'ppbot' ? '<div class="ppbot-impact" aria-label="Результаты первых трёх дней"><div><strong>111</strong><span>пользователей</span></div><div><strong>28</strong><span>оплат</span></div><div><strong>≈25%</strong><span>конверсия в оплату</span></div></div>' : '';
   const content = `<div class="case-fallback shell"><h1>${esc(p.name)}</h1><p>${esc(p.caseIntro || p.intro)}</p>${impact}${facts.map(([title,value]) => `<h2>${title}</h2><p>${esc(value)}</p>`).join('')}</div>`;
-  fs.writeFileSync(target, html.replace(fallback, content));
+  fs.writeFileSync(target, html.replace(fallback, `<main id="main"><div id="case-root">${content}</div></main>`));
 }
 const publicText = ['# Публичные тексты портфолио','','Публичная версия. Источником отображаемых текстов служит `portfolio/data.json`.',''];
 for (const p of projects) publicText.push(`## ${p.name}`,'',`PROJECT: ${p.name}`,`WHAT IT IS: ${p.caseIntro || p.intro}`,`RESULT: ${p.result}`,`BUSINESS VALUE: ${p.businessValue}`,`MY ROLE: ${p.built}`,'');
