@@ -134,6 +134,8 @@ def main():
         if p['id'] == 'support-rag':
             p['flow'] = 'Аккаунт поддержки или webchat → синхронизация → Telegram-топик → FAQ/RAG-черновик → Edit/Regen/Send → ответ от аккаунта поддержки.'
             p['boundary'] = 'Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.'
+            p['desktop'] = '../projects/support-rag/assets/ai-support-cover.png'
+            p['research'] = '../site/case-support-rag.html'
         if p['id'] == 'legal-automation':
             p['name'] = 'AI Sales Assistant'
             p['desktop'] = '../projects/legal-automation/assets/ai-sales-cover.svg'
@@ -171,7 +173,7 @@ def main():
         title = p['seoTitle'] + ' | Никита Солонуха'
         canonical = f"{BASE}/site/case-{quote(p['id'])}.html"
         image = f"{BASE}/portfolio/{p['desktop'].removeprefix('../portfolio/')}" if not p['desktop'].startswith('../') else f"{BASE}/{p['desktop'][3:]}"
-        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation'):
+        if p['id'] in ('roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin','legal-automation','support-rag'):
             # Their original visual-first case pages stay the public route; reviewed separately.
             continue
         content = template.replace('<title>Кейс — Никита Солонуха</title>', f'<title>{escape(title)}</title>')

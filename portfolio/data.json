@@ -797,7 +797,7 @@
     "flow": "Аккаунт поддержки или webchat → синхронизация → Telegram-топик → FAQ/RAG-черновик → Edit/Regen/Send → ответ от аккаунта поддержки.",
     "boundary": "Отправка от аккаунта поддержки подтверждена автором как часть исходного продукта. Сквозной live-run с аккаунтом сейчас не переснят; Telegram-экран обезличен, webchat и AI replay проверены отдельно.",
     "category": "AI и автоматизация",
-    "desktop": "../projects/support-rag/assets/telegram-support-sanitized.png",
+    "desktop": "../projects/support-rag/assets/ai-support-cover.png",
     "mobile": "../projects/support-rag/assets/webchat-conversation-390.png",
     "media": [
       {
@@ -835,7 +835,7 @@
       "../projects/support-rag/assets/webchat-host-1440.png"
     ],
     "document": "../projects/support-rag/case.md",
-    "research": "../review/support-rag.html",
+    "research": "../site/case-support-rag.html",
     "local": true,
     "seoTitle": "AI Support — RAG-поддержка в Telegram",
     "shortTitle": "AI Support",

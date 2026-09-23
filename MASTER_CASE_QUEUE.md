@@ -20,7 +20,7 @@
 | 14 | Ритм | READY | [ritm](review/ritm.html) |
 | 15 | Портной | READY | [portnoy](review/portnoy.html) |
 | 16 | Vibe AutoRouter | READY | [vibe-autorouter](review/vibe-autorouter.html) |
-| 17 | AI Support | READY | [support-rag](review/support-rag.html) |
+| 17 | AI Support | READY | [support-rag](site/case-support-rag.html) |
 | 18 | Трек в подарок | READY | [trekpodarok](review/trekpodarok.html) |
 | 19 | GARMONY | READY | [garmony](review/garmony.html) |
 | 20 | EP Beauty | READY | [ep-beauty](review/ep-beauty.html) |

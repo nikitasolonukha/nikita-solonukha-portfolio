@@ -77,3 +77,7 @@ Webchat и AI Support — один проект по подтверждению 
 ## Evidence-first art direction, 23.09.2026
 
 Финальная presentation-версия начинается с настоящего обезличенного Telegram UI, затем показывает принцип человеческого контроля, master walkthrough, webchat entry и только после этого — технический RAG replay. Telegram не перерисован и не заменён dashboard-макетом. Добавлены `REFERENCE_LOCK.md`, `SECTION_MAP.md`, `ART_QA.md`, before/after и отдельная проверка собранного кейса на 1440/768/390. На всех трёх размерах: page errors 0, broken images 0, horizontal overflow 0.
+
+## Основное портфолио, 23.09.2026
+
+`site/case-support-rag.html` использует тот же проверенный пакет внутри общего portfolio shell: настоящий обезличенный Telegram-экран открывает кейс; на мобильном показан его кроп с отдельной ссылкой на полный кадр. Webchat, локальный RAG replay и master video подписаны по происхождению. `assets/ai-support-cover.png` — редакционная композиция из исходного обезличенного screenshot и типографики; UI не перерисован. Сценарий отправки от аккаунта поддержки подтверждён автором, сквозная отправка не переснята.
