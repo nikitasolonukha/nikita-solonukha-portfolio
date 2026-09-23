@@ -1262,7 +1262,7 @@
       "../projects/telegram-schedule/assets/telegram-result-1440-v2.png"
     ],
     "document": "../projects/telegram-schedule/case.md",
-    "research": "../review/telegram-schedule.html",
+    "research": "../site/case-telegram-schedule.html",
     "local": true,
     "seoTitle": "Telegram Schedule — очередь публикаций в чаты",
     "shortTitle": "Telegram Schedule",
