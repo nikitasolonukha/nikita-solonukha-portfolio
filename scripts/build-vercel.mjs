@@ -28,6 +28,8 @@ await copyTree(path.join(root, 'review'), path.join(output, 'review'));
 await copyTree(path.join(root, 'portfolio'), path.join(output, 'portfolio'));
 
 const textExtensions = new Set(['.html', '.css', '.js', '.json']);
+const oldOrigin = 'https://nikitasolonukha.github.io/nikita-solonukha-portfolio';
+const vercelOrigin = 'https://nikita-solonukha-portfolio.vercel.app';
 const referencedProjects = new Set();
 const scan = async directory => {
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
@@ -35,7 +37,9 @@ const scan = async directory => {
     if (entry.isDirectory()) { await scan(filename); continue; }
     if (!entry.isFile() || !textExtensions.has(path.extname(entry.name).toLowerCase())) continue;
     if (entry.name.endsWith('.json') && filename !== path.join(output, 'portfolio', 'data.json')) continue;
-    const source = await fs.readFile(filename, 'utf8');
+    const original = await fs.readFile(filename, 'utf8');
+    const source = original.replaceAll(oldOrigin, vercelOrigin);
+    if (source !== original) await fs.writeFile(filename, source);
     for (const match of source.matchAll(/projects\/[\w./%-]+/g)) {
       const relative = decodeURIComponent(match[0].split(/[?#]/, 1)[0]);
       if (!relative.startsWith('projects/') || relative.includes('..')) continue;
