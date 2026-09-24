@@ -188,4 +188,30 @@ function casePage(projects) {
     if (img.complete) sizeImage(); else img.addEventListener('load', sizeImage, {once:true});
   });
 }
-setupMenu();loadProjects().then(projects=>{const page=document.body.dataset.page;if(page==='home')home(projects);if(page==='work')work(projects);if(page==='archive')archive(projects);if(page==='case')casePage(projects);document.dispatchEvent(new Event('portfolio:rendered'));}).catch(error=>{const target=$('#selected-list')||$('#work-grid')||$('#archive-list')||$('#case-root');if(target)target.innerHTML='<p>Не удалось загрузить проекты. Обновите страницу.</p>';console.error(error);});
+setupMenu();
+let pageLeaving = false;
+let projectsLoaded = false;
+function renderProjects() {
+  loadProjects().then(projects => {
+    if (pageLeaving) return;
+    const page = document.body.dataset.page;
+    if (page === 'home') home(projects);
+    if (page === 'work') work(projects);
+    if (page === 'archive') archive(projects);
+    if (page === 'case') casePage(projects);
+    projectsLoaded = true;
+    document.dispatchEvent(new Event('portfolio:rendered'));
+  }).catch(error => {
+    // WebKit cancels in-flight fetches when navigating away or entering BFCache.
+    if (pageLeaving || document.visibilityState === 'hidden' || error.name === 'AbortError') return;
+    const target = $('#selected-list') || $('#work-grid') || $('#archive-list') || $('#case-root');
+    if (target) target.innerHTML = '<p>Не удалось загрузить проекты. Обновите страницу.</p>';
+    console.error(error);
+  });
+}
+addEventListener('pagehide', () => { pageLeaving = true; });
+addEventListener('pageshow', event => {
+  pageLeaving = false;
+  if (event.persisted && !projectsLoaded) renderProjects();
+});
+renderProjects();

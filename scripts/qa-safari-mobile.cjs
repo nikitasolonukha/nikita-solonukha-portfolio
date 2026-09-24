@@ -5,7 +5,7 @@ const http = require('node:http');
 const { webkit } = require('playwright');
 
 const dist = path.resolve(__dirname, '../dist');
-const version = '20260924-safari-fix';
+const version = '20260924-safari-fix-2';
 const assets = ['styles.css', 'editorial.css', 'motion.css', 'app.js', 'motion.js', 'public-final.css'];
 const errors = [];
 
