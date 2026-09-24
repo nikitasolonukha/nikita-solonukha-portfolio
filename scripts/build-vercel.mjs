@@ -30,6 +30,8 @@ await copyTree(path.join(root, 'portfolio'), path.join(output, 'portfolio'));
 const textExtensions = new Set(['.html', '.css', '.js', '.json']);
 const oldOrigin = 'https://nikitasolonukha.github.io/nikita-solonukha-portfolio';
 const vercelOrigin = 'https://nikita-solonukha-portfolio.vercel.app';
+const assetVersion = '20260924-safari-fix';
+const versionedAssets = /\b(styles\.css|editorial\.css|motion\.css|app\.js|motion\.js|public-final\.css)(?:\?v=[^"'#\s<>]*)?/g;
 const referencedProjects = new Set();
 const scan = async directory => {
   for (const entry of await fs.readdir(directory, { withFileTypes: true })) {
@@ -38,7 +40,10 @@ const scan = async directory => {
     if (!entry.isFile() || !textExtensions.has(path.extname(entry.name).toLowerCase())) continue;
     if (entry.name.endsWith('.json') && filename !== path.join(output, 'portfolio', 'data.json')) continue;
     const original = await fs.readFile(filename, 'utf8');
-    const source = original.replaceAll(oldOrigin, vercelOrigin);
+    let source = original.replaceAll(oldOrigin, vercelOrigin);
+    if (filename.endsWith('.html')) {
+      source = source.replace(versionedAssets, (_, asset) => `${asset}?v=${assetVersion}`);
+    }
     if (source !== original) await fs.writeFile(filename, source);
     for (const match of source.matchAll(/projects\/[\p{L}\p{N}_./% -]+/gu)) {
       const relative = decodeURIComponent(match[0].split(/[?#]/, 1)[0].trimEnd());

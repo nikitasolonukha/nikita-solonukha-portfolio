@@ -16,4 +16,19 @@ html{scroll-behavior:auto}
 @keyframes menu-in{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}.hero-marquee{transform:none!important}.hero-portrait{transform:translateX(-50%)!important}.mobile-nav:not([hidden]){animation:none}.featured-image img,.contact-circle,.round-link,.project-row{transition:none!important}.page-transition,.motion-cursor{display:none!important}}
 @media(max-width:760px) and (prefers-reduced-motion:reduce){.hero-portrait{transform:none!important}}
+
+/* iOS/BFCache failsafe: content stays readable even when motion scripts do not run. */
+@media(max-width:760px),(pointer:coarse){
+  .page-transition{display:none!important}
+  .intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child,
+  .featured-image,.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure,.featured,.project-row,.about-services>div,.case-title-meta>div{
+    opacity:1!important;clip-path:none!important;transform:none!important
+  }
+}
+@media(max-width:760px){
+  .contact-methods a{grid-template-columns:minmax(0,1fr);gap:10px;min-width:0}
+  .contact-methods span:first-child{grid-column:auto}
+  .contact-methods strong{font-size:clamp(42px,12vw,56px)}
+  .contact-methods span:last-child{width:100%;max-width:none;text-align:left;white-space:nowrap;overflow-wrap:normal;word-break:normal;font-size:clamp(11px,3.1vw,14px);letter-spacing:-.02em}
+}
 @media(max-width:760px){.contact-circle{position:relative}}

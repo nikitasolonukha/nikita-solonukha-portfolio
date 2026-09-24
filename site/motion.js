@@ -2,6 +2,11 @@
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
+  const mobileUnsafe = matchMedia('(max-width: 760px), (pointer: coarse)');
+  if (mobileUnsafe.matches) {
+    sessionStorage.removeItem('portfolio-transition');
+    document.querySelectorAll('.page-transition').forEach(el => el.remove());
+  }
   const desktop = () => fine.matches && !reduce.matches;
   const $ = (s, root = document) => root.querySelector(s);
   const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -28,7 +33,7 @@
   }
 
   const hero = $('.hero');
-  if (hero && !reduce.matches) {
+  if (hero && !reduce.matches && !mobileUnsafe.matches) {
     const portrait = $('.hero-portrait', hero);
     const meta = $$('.hero-meta span', hero);
     const marquee = $('.hero-marquee', hero);
@@ -62,6 +67,14 @@
   function reveal() {
     if (reduce.matches) return;
     const text = $$('.intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child');
+    if (mobileUnsafe.matches) {
+      [...text, ...$$('.featured-image,.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure,.featured,.project-row,.about-services>div,.case-title-meta>div')].forEach(el => {
+        gsap.set(el, { clearProps: 'opacity,transform,clipPath' });
+        const img = $('img', el);
+        if (img) gsap.set(img, { clearProps: 'transform' });
+      });
+      return;
+    }
     text.forEach(el => {
       if (el.dataset.motionReady) return;
       el.dataset.motionReady = 'true';
@@ -117,7 +130,7 @@
       const target = e.target.closest('a,button,video,.project-row');
       const kind = target?.closest('.project-row') ? 'work' : target?.matches('video') ? 'video' : target?.matches('a[target="_blank"]') ? 'external' : '';
       el.dataset.kind = kind;
-      el.textContent = kind === 'work' ? 'View' : kind === 'video' ? 'Play' : kind === 'external' ? '↗' : '';
+      el.innerHTML = kind === 'work' ? 'View' : kind === 'video' ? 'Play' : kind === 'external' ? '<svg class="inline-arrow" aria-hidden="true" viewBox="0 0 24 24" fill="none"><path d="M5 19 19 5M8 5h11v11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>' : '';
       el.classList.toggle('has-label', !!kind);
     };
     document.addEventListener('pointermove', move, { passive: true });
@@ -135,11 +148,15 @@
   }
 
   function transitions() {
-    if (reduce.matches) return;
+    if (reduce.matches || mobileUnsafe.matches) {
+      sessionStorage.removeItem('portfolio-transition');
+      $$('.page-transition').forEach(el => el.remove());
+      return;
+    }
     const layer = document.createElement('div'); layer.className = 'page-transition'; document.body.append(layer);
     if (sessionStorage.getItem('portfolio-transition') === '1') {
       sessionStorage.removeItem('portfolio-transition');
-      gsap.fromTo(layer, { yPercent: 0 }, { yPercent: -101, duration: .42, ease: 'power3.inOut', onComplete: () => gsap.set(layer, { yPercent: 0 }) });
+      gsap.fromTo(layer, { yPercent: 0 }, { yPercent: -101, duration: .42, ease: 'power3.inOut' });
     }
     document.addEventListener('click', e => {
       const link = e.target.closest('a[href]'); if (!link || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || link.target || link.hasAttribute('download')) return;
@@ -149,7 +166,6 @@
       sessionStorage.setItem('portfolio-transition', '1');
       gsap.fromTo(layer, { yPercent: 101 }, { yPercent: 0, duration: .3, ease: 'power3.inOut', onComplete: () => location.assign(url.href) });
     });
-    addEventListener('pageshow', e => { if (e.persisted) gsap.set(layer, { yPercent: 101 }); });
   }
 
   function menu() {
@@ -160,5 +176,20 @@
 
   transitions(); menu(); cursor(); reveal();
   document.addEventListener('portfolio:rendered', () => { reveal(); workPreview(); magnetic(); });
-  addEventListener('pagehide', () => { cleanup.forEach(fn => fn()); ScrollTrigger.getAll().forEach(trigger => trigger.kill()); });
+  addEventListener('pageshow', event => {
+    sessionStorage.removeItem('portfolio-transition');
+    if (mobileUnsafe.matches) {
+      $$('.page-transition').forEach(el => el.remove());
+      reveal();
+    } else if (event.persisted) {
+      const layer = $('.page-transition');
+      if (layer) gsap.set(layer, { yPercent: 101 });
+    }
+    if (event.persisted) requestAnimationFrame(() => ScrollTrigger.refresh(true));
+  });
+  addEventListener('pagehide', event => {
+    if (event.persisted) return;
+    cleanup.forEach(fn => fn());
+    ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+  });
 })();
