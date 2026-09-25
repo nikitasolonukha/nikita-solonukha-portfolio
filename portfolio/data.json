@@ -518,12 +518,12 @@
     "mobile": "../projects/pifpaf/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/pifpaf/assets/master-redesign-desktop.webm",
+        "src": "../projects/pifpaf/assets/master-redesign-desktop.mp4",
         "poster": "../projects/pifpaf/assets/dashboard-redesign-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/pifpaf/assets/master-redesign-mobile.webm",
+        "src": "../projects/pifpaf/assets/master-redesign-mobile.mp4",
         "poster": "../projects/pifpaf/assets/dashboard-redesign-390.png",
         "mobile": true
       },
@@ -578,12 +578,12 @@
     "mobile": "../projects/shopify-store-builder/assets/demo-v3-home-390.png",
     "media": [
       {
-        "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-desktop.webm",
+        "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-desktop.mp4",
         "poster": "../projects/shopify-store-builder/assets/demo-v3-home-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-mobile.webm",
+        "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-mobile.mp4",
         "poster": "../projects/shopify-store-builder/assets/demo-v3-home-390.png",
         "mobile": true
       }
@@ -686,17 +686,17 @@
     "mobile": "../projects/portnoy/assets/overview-390.png",
     "media": [
       {
-        "src": "../projects/portnoy/assets/master-redesign-desktop.webm",
+        "src": "../projects/portnoy/assets/master-redesign-desktop.mp4",
         "poster": "../projects/portnoy/assets/overview-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/portnoy/assets/master-redesign-mobile.webm",
+        "src": "../projects/portnoy/assets/master-redesign-mobile.mp4",
         "poster": "../projects/portnoy/assets/overview-390.png",
         "mobile": true
       },
       {
-        "src": "../projects/portnoy/assets/feature-3d-redesign-desktop.webm",
+        "src": "../projects/portnoy/assets/feature-3d-redesign-desktop.mp4",
         "poster": "../projects/portnoy/assets/3d-fabric-redesign-1440.png",
         "mobile": false
       }
@@ -960,12 +960,12 @@
     "mobile": "../projects/portfolio-archive/assets/live-hero-390.png",
     "media": [
       {
-        "src": "../projects/portfolio-archive/assets/master-live-1440.webm",
+        "src": "../projects/portfolio-archive/assets/master-live-1440.mp4",
         "poster": "../projects/portfolio-archive/assets/poster-live-desktop.webp",
         "mobile": false
       },
       {
-        "src": "../projects/portfolio-archive/assets/master-live-390.webm",
+        "src": "../projects/portfolio-archive/assets/master-live-390.mp4",
         "poster": "../projects/portfolio-archive/assets/poster-live-mobile.webp",
         "mobile": true
       }
@@ -1012,12 +1012,12 @@
     "mobile": "../projects/meta-ads/assets/results-redesign-390.png",
     "media": [
       {
-        "src": "../projects/meta-ads/assets/master-desktop-v3.webm",
+        "src": "../projects/meta-ads/assets/master-desktop-v3.mp4",
         "poster": "../projects/meta-ads/assets/search-redesign-1440.png",
         "mobile": false
       },
       {
-        "src": "../projects/meta-ads/assets/master-mobile-v3.webm",
+        "src": "../projects/meta-ads/assets/master-mobile-v3.mp4",
         "poster": "../projects/meta-ads/assets/search-redesign-390.png",
         "mobile": true
       }
@@ -1073,6 +1073,7 @@
       }
     ],
     "screens": [
+      "../projects/stepbystep/assets/art-v2-demo-home-1440.png",
       "../projects/stepbystep/assets/art-v2-demo-progress-390.png",
       "../projects/stepbystep/assets/art-v2-demo-notes-390.png",
       "../projects/stepbystep/assets/art-v2-demo-article-result-390.png",
@@ -1349,12 +1350,12 @@
         "mobile": false
       },
       {
-        "src": "../projects/maps-lead-generator/assets/master-desktop-v2.webm",
+        "src": "../projects/maps-lead-generator/assets/master-desktop-v2.mp4",
         "poster": "../projects/maps-lead-generator/assets/poster-desktop-v2.webp",
         "mobile": false
       },
       {
-        "src": "../projects/maps-lead-generator/assets/master-mobile-v2.webm",
+        "src": "../projects/maps-lead-generator/assets/master-mobile-v2.mp4",
         "poster": "../projects/maps-lead-generator/assets/poster-mobile-v2.webp",
         "mobile": true
       },

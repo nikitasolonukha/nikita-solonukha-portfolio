@@ -55,3 +55,20 @@ main{animation:page-enter .65s cubic-bezier(.2,.7,.2,1) both}
 .featured-image .sales-card-flow{position:absolute;left:clamp(15px,2.4vw,38px);right:clamp(15px,2.4vw,38px);bottom:clamp(15px,2.4vw,38px);display:flex;gap:clamp(10px,2vw,30px);align-items:center;border-top:1px solid #748070;padding-top:14px;color:#b6ff00;font:700 clamp(9px,1vw,13px)/1.3 Manrope,Arial,sans-serif;letter-spacing:.1em;opacity:0;transform:translateY(8px);transition:opacity .3s,transform .3s}.featured-image .sales-card-flow i{font-style:normal;color:#eff5e8;transition:transform .3s}.featured-image:hover .sales-card-flow,.featured-image:focus-visible .sales-card-flow{opacity:1;transform:none}.featured-image:hover .sales-card-flow i,.featured-image:focus-visible .sales-card-flow i{transform:translateX(5px)}@media(prefers-reduced-motion:reduce){.featured-image .sales-card-flow,.featured-image .sales-card-flow i{transition:none}}
 .case-story-facts{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:36px}
 @media(max-width:760px){.case-story-facts{grid-template-columns:1fr;row-gap:24px}}
+
+/* Shared editorial overview for the generated case pages. */
+.case-story.case-summary{background:#f3f2ed;color:#232729;grid-template-columns:minmax(150px,1fr) minmax(0,2.2fr);padding-block:clamp(90px,10vw,150px)}
+.case-story.case-summary .eyebrow{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#6c7472;padding-top:.5em}
+.case-story.case-summary h2{font-size:clamp(34px,4.6vw,70px);line-height:1.1;letter-spacing:-.045em;max-width:1000px;margin-bottom:clamp(52px,7vw,95px)}
+.case-story.case-summary .case-story-facts{counter-reset:case-row;display:block;margin:0;padding:0;border-top:1px solid #bbc1bd}
+.case-story.case-summary .case-story-facts>div{counter-increment:case-row;display:grid;grid-template-columns:50px minmax(130px,.65fr) minmax(0,2fr);gap:clamp(16px,3vw,45px);align-items:start;padding:clamp(25px,3vw,41px) 0;border-bottom:1px solid #bbc1bd}
+.case-story.case-summary .case-story-facts>div::before{content:counter(case-row,decimal-leading-zero);color:#8b9390;font:600 11px/1.5 Manrope,sans-serif;padding-top:.45em}
+.case-story.case-summary .case-story-facts h3{font:600 11px/1.5 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;margin:0;padding-top:.45em}
+.case-story.case-summary .case-story-facts p{max-width:850px;margin:0;font:400 clamp(17px,1.5vw,23px)/1.5 Manrope,sans-serif;letter-spacing:-.025em;color:#343b39}
+@media(max-width:760px){.case-story.case-summary{grid-template-columns:1fr;gap:30px}.case-story.case-summary h2{font-size:clamp(33px,8vw,55px)}.case-story.case-summary .case-story-facts>div{grid-template-columns:36px minmax(0,1fr);gap:8px 14px}.case-story.case-summary .case-story-facts p{grid-column:2;font-size:17px}}
+
+/* Interface captures should remain complete and at native-quality display sizes. */
+.case-screen-grid img,.case-screen-grid figure:first-child img{height:auto;max-height:none;object-fit:contain;object-position:center top}
+.case-screen-grid img.is-tall,.case-screen-grid figure:first-child img.is-tall{display:block;width:auto;max-width:100%;height:auto;max-height:none;margin-inline:auto;object-fit:contain}
+.kontur-main img,.kontur-secondary img,.pifpaf-pair img{height:auto;max-height:none;object-fit:contain}
+.b2b-implementations img{height:auto;max-height:none;object-fit:contain}
