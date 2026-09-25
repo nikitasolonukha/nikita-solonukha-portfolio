@@ -16,9 +16,9 @@ const routes = fs.readFileSync(path.join(root, 'CASE_FULL_QA.md'), 'utf8').split
   const records = [];
   const links = new Set();
   try {
-    for (const route of routes) {
+    for (const [index, route] of routes.entries()) {
       await page.goto(new URL(route, base).href, { waitUntil: 'domcontentloaded' });
-      await page.waitForLoadState('networkidle', { timeout: 8000 }).catch(() => {});
+      await page.waitForFunction(() => !document.querySelector('#case-root .case-fallback'), { timeout: 8000 });
       const data = await page.evaluate(() => {
         const candidates = [...document.querySelectorAll('[class*="next"] a[href],.portfolio-chain-link')];
         const next = candidates.find(e => {
@@ -43,7 +43,7 @@ const routes = fs.readFileSync(path.join(root, 'CASE_FULL_QA.md'), 'utf8').split
           transition = await page.evaluate(() => ({ url: location.href, mainText: document.querySelector('main')?.innerText.trim().length || 0, mainOpacity: getComputedStyle(document.querySelector('main')).opacity }));
         } catch (error) { transition = { error: error.message }; }
       }
-      records.push({ route, next: data.next, transition });
+      records.push({ route, next: data.next, expectedNext: new URL(routes[(index + 1) % routes.length], base).href, transition });
       console.log(`${records.length}/${routes.length} ${route}: ${transition?.error || transition?.mainText || 'no next'}`);
     }
     const statuses = [];
@@ -56,7 +56,7 @@ const routes = fs.readFileSync(path.join(root, 'CASE_FULL_QA.md'), 'utf8').split
     fs.mkdirSync(path.dirname(output), { recursive: true });
     fs.writeFileSync(output, JSON.stringify({ base, records, statuses }, null, 2));
     const broken = statuses.filter(x => x.error || x.status >= 400);
-    const navigation = records.filter(x => !x.next || x.transition?.error || x.transition?.mainText < 100 || x.transition?.mainOpacity === '0');
+    const navigation = records.filter(x => !x.next || x.next !== x.expectedNext || x.transition?.error || x.transition?.mainText < 100 || x.transition?.mainOpacity === '0');
     console.log(JSON.stringify({ routes: records.length, localLinks: statuses.length, broken, navigation }, null, 2));
     if (broken.length || navigation.length) process.exitCode = 1;
   } finally { await browser.close(); }
