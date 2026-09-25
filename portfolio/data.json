@@ -271,11 +271,6 @@
         "src": "../projects/tatiana/assets/master-desktop.mp4",
         "poster": "../projects/tatiana/assets/poster-desktop.webp",
         "mobile": false
-      },
-      {
-        "src": "../projects/tatiana/assets/master-mobile.mp4",
-        "poster": "../projects/tatiana/assets/poster-mobile.webp",
-        "mobile": true
       }
     ],
     "screens": [
