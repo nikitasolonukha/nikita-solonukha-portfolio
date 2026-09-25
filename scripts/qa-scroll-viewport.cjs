@@ -40,15 +40,18 @@ const server = http.createServer((req, res) => {
         const result = {
           coarse: matchMedia('(pointer: coarse)').matches,
           phone: matchMedia('(max-width: 760px)').matches,
+          phoneMotionReady: document.documentElement.classList.contains('phone-motion-ready'),
           transition: !!document.querySelector('.page-transition'),
           lenis: document.documentElement.classList.contains('lenis'),
           opacity: style.opacity,
           clipPath: style.clipPath,
+          mobileTargets: document.querySelectorAll('[data-phone-motion-ready]').length,
+          featuredOpacity: getComputedStyle(document.querySelector('.featured')).opacity,
         };
         probe.remove();
         return result;
       });
-      if (device.phone !== state.phone || state.transition === device.phone || state.lenis === device.phone || state.opacity !== (device.phone ? '1' : '0.25') || (device.phone ? state.clipPath !== 'none' : state.clipPath === 'none') || errors.length) {
+      if (device.phone !== state.phone || state.transition === device.phone || state.lenis === device.phone || state.phoneMotionReady !== device.phone || state.opacity !== '0.25' || state.clipPath === 'none' || (device.phone && (state.mobileTargets < 3 || Number(state.featuredOpacity) < .85)) || errors.length) {
         throw new Error(`${device.name}: ${JSON.stringify({ ...state, errors })}`);
       }
       if (device.phone) await page.evaluate(() => scrollTo(0, 600));
@@ -61,5 +64,5 @@ const server = http.createServer((req, res) => {
     await browser.close();
     server.close();
   }
-  console.log('PASS: desktop scroll motion preserved; phone fallback isolated');
+  console.log('PASS: desktop scroll motion preserved; phone native scroll and soft reveals enabled');
 })().catch(error => { console.error(error); process.exitCode = 1; });

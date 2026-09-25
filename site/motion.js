@@ -68,11 +68,32 @@
     if (reduce.matches) return;
     const text = $$('.intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child');
     if (phoneViewport.matches) {
-      [...text, ...$$('.featured-image,.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure,.featured,.project-row,.about-services>div,.case-title-meta>div')].forEach(el => {
+      const mobileTargets = [...text, ...$$('.featured-image,.featured,.project-row,.about-services>div,.case-title-meta>div')];
+      [...mobileTargets, ...$$('.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure')].forEach(el => {
         gsap.set(el, { clearProps: 'opacity,transform,clipPath' });
         const img = $('img', el);
         if (img) gsap.set(img, { clearProps: 'transform' });
       });
+      // Content is visible before this observer runs; motion only begins after entry.
+      // Native touch scrolling and the phone page-transition fallback remain unchanged.
+      document.documentElement.classList.add('phone-motion-ready');
+      if (!('IntersectionObserver' in window)) return;
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          gsap.fromTo(entry.target, { y: 14, opacity: .88 }, {
+            y: 0, opacity: 1, duration: .46, ease: 'power3.out',
+            clearProps: 'transform,opacity', overwrite: true,
+          });
+        });
+      }, { rootMargin: '0px 0px -4% 0px', threshold: .05 });
+      mobileTargets.forEach(el => {
+        if (el.dataset.phoneMotionReady) return;
+        el.dataset.phoneMotionReady = 'true';
+        observer.observe(el);
+      });
+      cleanup.push(() => observer.disconnect());
       return;
     }
     text.forEach(el => {
