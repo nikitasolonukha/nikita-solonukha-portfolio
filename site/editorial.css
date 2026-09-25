@@ -79,3 +79,9 @@ main{animation:page-enter .65s cubic-bezier(.2,.7,.2,1) both}
 
 /* Leave room for descenders such as the g in LexLegal during title reveals. */
 .case-title h1{padding-bottom:.18em}
+
+/* MAGNUM keeps its dark palette; the shared light-case text color must not bleed into its summary. */
+body[data-case-id="magnum"] .case-story.case-summary{background:#0b0709;color:#f6efeb}
+body[data-case-id="magnum"] .case-story.case-summary .case-story-facts,body[data-case-id="magnum"] .case-story.case-summary .case-story-facts>div{border-color:#63484e}
+body[data-case-id="magnum"] .case-story.case-summary .case-story-facts p{color:#e4dadd}
+body[data-case-id="magnum"] .case-story.case-summary .eyebrow,body[data-case-id="magnum"] .case-story.case-summary .case-story-facts>div::before{color:#bbadb1}
