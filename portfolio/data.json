@@ -809,7 +809,7 @@
     "media": [
       {
         "src": "../projects/trekpodarok/assets/master-desktop.mp4",
-        "poster": "../projects/trekpodarok/assets/ideas-full-1440.png",
+        "poster": "../projects/trekpodarok/assets/ideas-full-1440.png?v=gallery-full-20260925",
         "mobile": false
       },
       {
@@ -819,7 +819,7 @@
       }
     ],
     "screens": [
-      "../projects/trekpodarok/assets/ideas-full-1440.png",
+      "../projects/trekpodarok/assets/ideas-full-1440.png?v=gallery-full-20260925",
       "../projects/trekpodarok/assets/continue-1440.png",
       "../projects/trekpodarok/assets/faq-1440.png",
       "../projects/trekpodarok/assets/occasion-День рождения-1440.png"
