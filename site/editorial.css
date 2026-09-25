@@ -85,3 +85,6 @@ body[data-case-id="magnum"] .case-story.case-summary{background:#0b0709;color:#f
 body[data-case-id="magnum"] .case-story.case-summary .case-story-facts,body[data-case-id="magnum"] .case-story.case-summary .case-story-facts>div{border-color:#63484e}
 body[data-case-id="magnum"] .case-story.case-summary .case-story-facts p{color:#e4dadd}
 body[data-case-id="magnum"] .case-story.case-summary .eyebrow,body[data-case-id="magnum"] .case-story.case-summary .case-story-facts>div::before{color:#bbadb1}
+
+/* Center MAGNUM's lone second gallery frame within the desktop grid. */
+@media(min-width:761px){body[data-case-id="magnum"] .case-screen-grid figure:last-child:nth-child(2){grid-column:1/-1;width:calc(50% - clamp(9px,1vw,17.5px));justify-self:center}}
