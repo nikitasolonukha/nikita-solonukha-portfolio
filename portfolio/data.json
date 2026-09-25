@@ -17,8 +17,8 @@
         "mobile": false
       },
       {
-        "src": "../projects/protective-structures/assets/master-v4-mobile.mp4",
-        "poster": "../projects/protective-structures/assets/hero-v4-390.png",
+        "src": "../projects/protective-structures/assets/master-v4-mobile-clean.mp4",
+        "poster": "../projects/protective-structures/assets/master-v4-mobile-poster.png",
         "mobile": true
       }
     ],
