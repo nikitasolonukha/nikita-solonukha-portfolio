@@ -2,9 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "node scripts/build-vercel.mjs",
   "outputDirectory": "dist",
-  "redirects": [
-    { "source": "/", "destination": "/site/", "permanent": false }
-  ],
   "headers": [
     {
       "source": "/(.*)\\.(mp4|webm)",
