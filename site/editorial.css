@@ -10,7 +10,7 @@ body[data-page=home] .site-header{color:#f9f9f6}body[data-page=work] .site-heade
 /* Home: name first, product evidence later. */
 .hero{width:100%;max-width:none;min-height:0;height:min(900px,100svh);padding:0;position:relative;background:#141c27;color:#fff;overflow:hidden;display:block}
 .hero-portrait{position:absolute;inset:0 auto auto 50%;transform:translateX(-50%);width:auto;height:108%;max-width:none;object-fit:cover;object-position:center 28%;filter:saturate(.82)}
-@media(min-width:761px){.hero-portrait{mask-image:linear-gradient(90deg,transparent 0%,#000 11%,#000 89%,transparent 100%)}}
+@media(min-width:1024px){.hero-portrait{top:-60px;height:140%;mask-image:linear-gradient(90deg,transparent 0%,#000 9%,#000 91%,transparent 100%)}}
 @media(max-width:760px){.hero-portrait{top:0}}
 .hero::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,#11192396,transparent 28%,transparent 74%,#11192369),linear-gradient(180deg,#10172045,transparent 45%,#1017206a);pointer-events:none}
 .hero-meta{position:absolute;top:28%;left:0;right:0;display:flex;justify-content:space-between;gap:30px;font-size:clamp(15px,1.5vw,22px);font-weight:600;line-height:1.35;z-index:2}.hero-meta span:last-child{margin-right:6vw}
