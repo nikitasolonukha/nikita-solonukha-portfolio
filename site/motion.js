@@ -2,8 +2,8 @@
 (() => {
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
   const fine = matchMedia('(hover: hover) and (pointer: fine)');
-  const mobileUnsafe = matchMedia('(max-width: 760px), (pointer: coarse)');
-  if (mobileUnsafe.matches) {
+  const phoneViewport = matchMedia('(max-width: 760px)');
+  if (phoneViewport.matches) {
     sessionStorage.removeItem('portfolio-transition');
     document.querySelectorAll('.page-transition').forEach(el => el.remove());
   }
@@ -18,7 +18,7 @@
   let lenis;
   let velocity = 0;
 
-  if (desktop() && window.Lenis) {
+  if (!phoneViewport.matches && !reduce.matches && window.Lenis) {
     lenis = new Lenis({ smoothWheel: true, lerp: .105, wheelMultiplier: .9, touchMultiplier: 1, autoRaf: false });
     lenis.on('scroll', e => { velocity = e.velocity || 0; ScrollTrigger.update(); });
     const tick = time => lenis.raf(time * 1000);
@@ -33,7 +33,7 @@
   }
 
   const hero = $('.hero');
-  if (hero && !reduce.matches && !mobileUnsafe.matches) {
+  if (hero && !reduce.matches && !phoneViewport.matches) {
     const portrait = $('.hero-portrait', hero);
     const meta = $$('.hero-meta span', hero);
     const marquee = $('.hero-marquee', hero);
@@ -67,7 +67,7 @@
   function reveal() {
     if (reduce.matches) return;
     const text = $$('.intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child');
-    if (mobileUnsafe.matches) {
+    if (phoneViewport.matches) {
       [...text, ...$$('.featured-image,.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure,.featured,.project-row,.about-services>div,.case-title-meta>div')].forEach(el => {
         gsap.set(el, { clearProps: 'opacity,transform,clipPath' });
         const img = $('img', el);
@@ -148,7 +148,7 @@
   }
 
   function transitions() {
-    if (reduce.matches || mobileUnsafe.matches) {
+    if (reduce.matches || phoneViewport.matches) {
       sessionStorage.removeItem('portfolio-transition');
       $$('.page-transition').forEach(el => el.remove());
       return;
@@ -178,7 +178,7 @@
   document.addEventListener('portfolio:rendered', () => { reveal(); workPreview(); magnetic(); });
   addEventListener('pageshow', event => {
     sessionStorage.removeItem('portfolio-transition');
-    if (mobileUnsafe.matches) {
+    if (phoneViewport.matches) {
       $$('.page-transition').forEach(el => el.remove());
       reveal();
     } else if (event.persisted) {
