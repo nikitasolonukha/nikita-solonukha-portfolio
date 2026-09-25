@@ -23,11 +23,11 @@
       }
     ],
     "screens": [
-      "../projects/protective-structures/assets/principle-v4-1440.png",
-      "../projects/protective-structures/assets/solutions-v4-1440.png",
-      "../projects/protective-structures/assets/system-v4-1440.png",
-      "../projects/protective-structures/assets/company-v4-1440.png",
-      "../projects/protective-structures/assets/contact-v4-1440.png"
+      "../projects/protective-structures/assets/how-clean-1440.png",
+      "../projects/protective-structures/assets/solutions-clean-1440.png",
+      "../projects/protective-structures/assets/system-clean-1440.png",
+      "../projects/protective-structures/assets/company-clean-1440.png",
+      "../projects/protective-structures/assets/contact-clean-1440.png"
     ],
     "document": "../projects/protective-structures/case.md",
     "research": "../review/protective-structures.html",
