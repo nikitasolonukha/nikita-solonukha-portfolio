@@ -10,7 +10,7 @@ const reviewIds = new Set(['roulette','photo-animation','ep-beauty','trekpodarok
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href = id => reviewIds.has(id) ? `../review/${id}.html` : `case-${id}.html`;
 const image = p => `../portfolio/${p.desktop}`;
-const ppbotCover = src => `<div class="ppbot-editorial"><div class="ppbot-editorial-copy"><span class="ppbot-editorial-label">PP BOT / ПЕРВЫЕ 3 ДНЯ</span><strong>Запуск,<br>за которым<br>стоят продажи.</strong><div class="ppbot-editorial-metrics"><div><b>111</b><span>пользователей</span></div><div><b>28</b><span>оплат</span></div><div><b>≈25%</b><span>в покупку</span></div></div></div><div class="ppbot-editorial-media"><img src="${src}" alt="Реальный Telegram-сценарий PP BOT: меню и выбор приёма пищи" loading="lazy"></div></div>`;
+const ppbotCover = src => `<div class="ppbot-editorial"><div class="ppbot-editorial-copy"><span class="ppbot-editorial-label">PP BOT / РЕЗУЛЬТАТ</span><strong>Запуск,<br>за которым<br>стоят продажи.</strong><div class="ppbot-editorial-metrics"><div><b>176</b><span>пользователей</span></div><div><b>62</b><span>оплативших</span></div><div><b>≈35%</b><span>в покупку</span></div></div></div><div class="ppbot-editorial-media"><img src="${src}" alt="Реальный Telegram-сценарий PP BOT: меню и выбор приёма пищи" loading="lazy"></div></div>`;
 function replaceBlock(file, content) {
   const path = site(file);
   let html = fs.readFileSync(path, 'utf8');
@@ -49,7 +49,7 @@ for (const p of projects) {
   if (!html.includes('class="case-fallback shell"')) continue;
   if (!fallback.test(html)) continue;
   const facts = [['Задача',p.problem],['Что я сделал',p.built],['Результат',p.result],['Польза',p.businessValue]];
-  const impact = p.id === 'ppbot' ? '<div class="ppbot-impact" aria-label="Результаты первых трёх дней"><div><strong>111</strong><span>пользователей</span></div><div><strong>28</strong><span>оплат</span></div><div><strong>≈25%</strong><span>конверсия в оплату</span></div></div>' : '';
+  const impact = p.id === 'ppbot' ? '<div class="ppbot-impact" aria-label="Результаты проекта"><div><strong>176</strong><span>пользователей</span></div><div><strong>62</strong><span>оплативших</span></div><div><strong>≈35%</strong><span>конверсия в оплату</span></div></div>' : '';
   const content = `<div class="case-fallback shell"><h1>${esc(p.name)}</h1><p>${esc(p.caseIntro || p.intro)}</p>${impact}${facts.map(([title,value]) => `<h2>${title}</h2><p>${esc(value)}</p>`).join('')}</div>`;
   fs.writeFileSync(target, html.replace(fallback, `<main id="main"><div id="case-root">${content}</div></main>`));
 }
