@@ -30,7 +30,7 @@ await copyTree(path.join(root, 'portfolio'), path.join(output, 'portfolio'));
 const textExtensions = new Set(['.html', '.css', '.js', '.json']);
 const oldOrigin = 'https://nikitasolonukha.github.io/nikita-solonukha-portfolio';
 const vercelOrigin = 'https://nikita-solonukha-portfolio.vercel.app';
-const assetVersion = '20260925-contact-layout';
+const assetVersion = '20260925-white-shirt';
 const versionedAssets = /\b(styles\.css|editorial\.css|motion\.css|app\.js|motion\.js|public-final\.css)(?:\?v=[^"'#\s<>]*)?/g;
 const referencedProjects = new Set();
 const scan = async directory => {
