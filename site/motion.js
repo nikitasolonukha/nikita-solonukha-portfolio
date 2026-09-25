@@ -52,7 +52,7 @@
       impulse += (target - impulse) * .065;
       if (Math.abs(velocity) > 1) direction += ((velocity > 0 ? -1 : 1) - direction) * .07;
       else direction += (-1 - direction) * .012;
-      offset += direction * (25 + impulse) * Math.min(delta / 1000, .05);
+      offset += direction * (50 + impulse) * Math.min(delta / 1000, .05);
       const width = unit.offsetWidth;
       offset = ((offset % width) + width) % width - width;
       gsap.set(marquee, { x: offset });
