@@ -23,11 +23,11 @@
       }
     ],
     "screens": [
-      "../projects/protective-structures/assets/how-clean-1440.png",
-      "../projects/protective-structures/assets/solutions-clean-1440.png",
-      "../projects/protective-structures/assets/system-clean-1440.png",
-      "../projects/protective-structures/assets/company-clean-1440.png",
-      "../projects/protective-structures/assets/contact-clean-1440.png"
+      "../projects/protective-structures/assets/how-clean-1440.png?v=settled-20260925-b",
+      "../projects/protective-structures/assets/solutions-clean-1440.png?v=settled-20260925-b",
+      "../projects/protective-structures/assets/system-clean-1440.png?v=settled-20260925-b",
+      "../projects/protective-structures/assets/company-clean-1440.png?v=settled-20260925-b",
+      "../projects/protective-structures/assets/contact-clean-1440.png?v=settled-20260925-b"
     ],
     "document": "../projects/protective-structures/case.md",
     "research": "../review/protective-structures.html",
