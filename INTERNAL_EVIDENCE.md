@@ -142,7 +142,7 @@ PROOF: Показаны desktop и mobile версии; отправка зая�
 LIMITATIONS: Новый дизайн подготовлен для портфолио. Изображения не выдаются за реальные фотографии студии.
 TESTS / QA: см. файлы проекта и исследовательские материалы.
 
-## Solonflow
+## solonflowai
 
 SOURCE: [case.md](projects/portfolio-archive/case.md)
 PROOF: Существовал опубликованный сайт solonflowai-portfolio.vercel.app; сохранены кадры и запись.

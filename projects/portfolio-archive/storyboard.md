@@ -1,4 +1,4 @@
-# Storyboard — живой Solonflow
+# Storyboard — живой solonflowai
 
 Источник: https://solonflowai-portfolio.vercel.app/ — без локальных визуальных изменений.
 
