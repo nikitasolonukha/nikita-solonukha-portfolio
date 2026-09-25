@@ -5,7 +5,7 @@ const http = require('node:http');
 const { webkit } = require('playwright');
 
 const dist = path.resolve(__dirname, '../dist');
-const version = '20260925-phone-scroll';
+const version = '20260925-desktop-motion';
 const assets = ['styles.css', 'editorial.css', 'motion.css', 'app.js', 'motion.js', 'public-final.css'];
 const errors = [];
 
@@ -53,7 +53,7 @@ const server = http.createServer((req, res) => {
         await page.waitForTimeout(450);
       };
       const check = async label => {
-        await page.waitForLoadState('load');
+        await page.waitForLoadState('domcontentloaded');
         await page.evaluate(() => document.fonts.ready);
         const state = await page.evaluate(() => {
           const email = document.querySelector('.contact-methods a[href^="mailto:"] span:last-child');
@@ -97,6 +97,8 @@ const server = http.createServer((req, res) => {
       await check('AI Support');
       await page.locator('.support-hero-top a[href="work.html"]').click();
       await check('work return');
+      await go('case-copilot.html');
+      await check('n8n Copilot');
       await go('contact.html');
       await check('contact');
       if (process.env.QA_SHOTS && width === 390) await page.screenshot({ path: path.join(os.tmpdir(), 'portfolio-safari-contact-390.png') });

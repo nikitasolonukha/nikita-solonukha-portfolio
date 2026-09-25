@@ -66,7 +66,7 @@
 
   function reveal() {
     if (reduce.matches) return;
-    const text = $$('.intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child');
+    const text = $$('.intro-statement h2,.selected-heading .eyebrow,.selected-heading h2,.page-intro .eyebrow,.page-intro h1,.about-page h1,.case-title .eyebrow,.case-title h1,.case-story h2,.contact-section .eyebrow,.contact-section h2,.contact-page h1,.case-next>a:first-child,.pa .pa-hero h1,.pa .pa-hero .pa-lead,.pa section h2');
     if (phoneViewport.matches) {
       const mobileTargets = [...text, ...$$('.featured-image,.featured,.project-row,.about-services>div,.case-title-meta>div')];
       [...mobileTargets, ...$$('.case-cover,.case-screen-grid figure,.case-video-section figure,.case-feature figure')].forEach(el => {
