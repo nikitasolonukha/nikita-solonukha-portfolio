@@ -33,14 +33,18 @@ const server = http.createServer((req, res) => {
     await page.waitForTimeout(120);
     const exiting = await page.evaluate(() => ({ stored: sessionStorage.getItem('portfolio-transition'), y: getComputedStyle(document.querySelector('.page-transition')).transform }));
     await page.waitForURL('**/work.html');
-    const entered = await page.evaluate(() => ({ overlay: !!document.querySelector('.page-transition'), stored: sessionStorage.getItem('portfolio-transition') }));
-    if (exiting.stored !== '1' || !entered.overlay || errors.length) throw new Error(JSON.stringify({ exiting, entered, errors }));
+    await page.waitForTimeout(700);
+    const entered = await page.evaluate(() => ({ overlayTop: document.querySelector('.page-transition')?.getBoundingClientRect().top, viewport: innerHeight, stored: sessionStorage.getItem('portfolio-transition') }));
+    if (exiting.stored !== '1' || entered.overlayTop < entered.viewport || errors.length) throw new Error(JSON.stringify({ exiting, entered, errors }));
     await page.goto(new URL('case-copilot.html', base).href, { waitUntil: 'load' });
     await page.waitForTimeout(750);
     const presentation = await page.locator('.pa-hero h1').evaluate(el => ({ ready: el.dataset.motionReady, opacity: getComputedStyle(el).opacity, triggers: window.ScrollTrigger?.getAll().length || 0, overlay: !!document.querySelector('.page-transition') }));
     if (presentation.ready !== 'true' || presentation.opacity !== '1' || presentation.triggers < 1 || !presentation.overlay || errors.length) throw new Error(JSON.stringify({ presentation, errors }));
     await page.evaluate(() => document.querySelector('.pa-hero a[href="work.html"]').click());
     await page.waitForURL('**/work.html');
+    await page.waitForTimeout(700);
+    const returnedTop = await page.locator('.page-transition').evaluate(el => el.getBoundingClientRect().top);
+    if (returnedTop < 900 || errors.length) throw new Error(JSON.stringify({ returnedTop, errors }));
     console.log(JSON.stringify({ base, before, after, motion, exiting, entered, presentation, errors }));
     console.log('PASS: desktop ScrollTrigger reveal and page transition');
   } finally {

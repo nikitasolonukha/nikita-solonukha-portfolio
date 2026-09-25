@@ -175,9 +175,14 @@
       return;
     }
     const layer = document.createElement('div'); layer.className = 'page-transition'; document.body.append(layer);
+    // The layer has no CSS transform: a CSS translate and GSAP yPercent add up,
+    // leaving the arriving page covered even after the entrance tween finishes.
+    layer.style.transform = 'none';
+    gsap.set(layer, { yPercent: 101 });
     if (sessionStorage.getItem('portfolio-transition') === '1') {
       sessionStorage.removeItem('portfolio-transition');
-      gsap.fromTo(layer, { yPercent: 0 }, { yPercent: -101, duration: .42, ease: 'power3.inOut' });
+      const incoming = gsap.fromTo(layer, { yPercent: 0 }, { yPercent: -101, duration: .42, ease: 'power3.inOut', onComplete: () => gsap.set(layer, { yPercent: 101 }) });
+      setTimeout(() => { if (incoming.isActive()) { incoming.kill(); gsap.set(layer, { yPercent: 101 }); } }, 1000);
     }
     document.addEventListener('click', e => {
       const link = e.target.closest('a[href]'); if (!link || e.defaultPrevented || e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || link.target || link.hasAttribute('download')) return;
