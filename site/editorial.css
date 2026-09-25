@@ -76,3 +76,6 @@ main{animation:page-enter .65s cubic-bezier(.2,.7,.2,1) both}
 .kontur-main img,.kontur-secondary img,.pifpaf-pair img{height:auto;max-height:none;object-fit:contain}
 .b2b-implementations img{height:auto;max-height:none;object-fit:contain}
 @media(max-width:760px){body[data-case-id="protective-structures"] .case-primary-mobile video{max-height:none;aspect-ratio:390/844}}
+
+/* Leave room for descenders such as the g in LexLegal during title reveals. */
+.case-title h1{padding-bottom:.18em}
