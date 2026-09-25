@@ -2,8 +2,9 @@
 .case-finale-contact .shell{display:flex;align-items:flex-end;justify-content:space-between;gap:40px}
 .case-finale-contact p{font:600 12px/1.5 Manrope,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#b9bfbc;margin:0 0 22px}
 .case-finale-contact h2{font:400 clamp(48px,8vw,112px)/.95 Manrope,Arial,sans-serif;letter-spacing:-.075em;margin:0;text-wrap:balance}
-.case-finale-contact a{display:inline-flex;align-items:center;justify-content:center;min-width:145px;min-height:145px;aspect-ratio:1;padding:15px;border:1px solid #e5e7e3;border-radius:50%;color:#f7f7f2;text-decoration:none;font:600 15px/1.3 Manrope,Arial,sans-serif;white-space:nowrap;transition:background .2s,color .2s}
+.case-finale-contact a{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:145px;min-height:145px;aspect-ratio:1;padding:15px;border:1px solid #e5e7e3;border-radius:50%;color:#f7f7f2;text-decoration:none;font:600 15px/1.3 Manrope,Arial,sans-serif;white-space:nowrap;transition:background .2s,color .2s}
 .case-finale-contact a:hover,.case-finale-contact a:focus-visible{background:#f7f7f2;color:#242629}
+.case-finale-contact a svg{width:17px;height:17px;flex:none}
 section[class*="-next"] > a.case-all-work{display:flex;align-items:center;justify-content:space-between;width:100%;min-height:0;max-width:none;margin:28px 0 0;padding:18px 0 0;border:0;border-top:1px solid currentColor;border-radius:0;background:transparent;color:inherit;opacity:.75;box-shadow:none;font:500 15px/1.4 Manrope,Arial,sans-serif;letter-spacing:0;text-decoration:none;text-transform:none;transform:none}
 section[class*="-next"] > a.case-all-work:hover,section[class*="-next"] > a.case-all-work:focus-visible{opacity:1;background:transparent;color:inherit;transform:none}
 section[class*="-next"] > a.case-all-work svg{width:18px;height:18px;flex:none}
