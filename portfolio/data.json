@@ -804,12 +804,12 @@
     "flow": "Разделы сайта и исходные взаимодействия frontend. Генерация музыки и backend не подтверждены.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "../projects/trekpodarok/assets/poster-desktop.webp?v=editorial-20260923",
+    "desktop": "../projects/trekpodarok/assets/ideas-full-1440.png?v=full-20260925",
     "mobile": "../projects/trekpodarok/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/trekpodarok/assets/master-desktop.mp4",
-        "poster": "../projects/trekpodarok/assets/poster-desktop.webp",
+        "poster": "../projects/trekpodarok/assets/ideas-full-1440.png",
         "mobile": false
       },
       {
@@ -819,7 +819,7 @@
       }
     ],
     "screens": [
-      "../projects/trekpodarok/assets/birthday-1440.png",
+      "../projects/trekpodarok/assets/ideas-full-1440.png",
       "../projects/trekpodarok/assets/continue-1440.png",
       "../projects/trekpodarok/assets/faq-1440.png",
       "../projects/trekpodarok/assets/occasion-День рождения-1440.png"
