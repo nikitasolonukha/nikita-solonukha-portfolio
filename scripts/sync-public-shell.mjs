@@ -5,7 +5,7 @@ const site = path => new URL(`site/${path}`, root);
 const projects = JSON.parse(fs.readFileSync(new URL('portfolio/data.json', root), 'utf8')).filter(p => p.published !== false);
 const byId = id => projects.find(p => p.id === id);
 const selectedIds = ['legal-automation','shopify-store-builder','support-rag','ppbot','meta-ads','maps-lead-generator','portnoy'];
-const workIds = ['legal-automation','shopify-store-builder','support-rag','ppbot','meta-ads','maps-lead-generator','internal-legal','vibe-autorouter','portnoy','pifpaf','ritm','magnum','garmony','protective-structures','photo-animation'];
+const workIds = ['legal-automation','shopify-store-builder','support-rag','ppbot','meta-ads','maps-lead-generator','internal-legal','vibe-autorouter','portnoy','pifpaf','ritm','premium-lms','magnum','garmony','protective-structures','photo-animation'];
 const reviewIds = new Set(['roulette','photo-animation','ep-beauty','trekpodarok','skazka','topgadalkin']);
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const href = id => reviewIds.has(id) ? `../review/${id}.html` : `case-${id}.html`;

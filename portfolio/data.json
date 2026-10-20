@@ -8,26 +8,26 @@
     "flow": "Предложение → устройство системы → отрасли → процесс → контакт.",
     "boundary": "Frontend и демонстрационная форма. Реальные объекты и инженерные расчёты не заявляются.",
     "category": "Сайты",
-    "desktop": "../projects/protective-structures/assets/hero-v4-1440.png",
-    "mobile": "../projects/protective-structures/assets/hero-v4-390.png",
+    "desktop": "../projects/protective-structures/assets/hero-v4-1440.webp",
+    "mobile": "../projects/protective-structures/assets/hero-v4-390.webp",
     "media": [
       {
         "src": "../projects/protective-structures/assets/master-v4-desktop.mp4",
-        "poster": "../projects/protective-structures/assets/hero-v4-1440.png",
+        "poster": "../projects/protective-structures/assets/hero-v4-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/protective-structures/assets/master-v4-mobile-clean.mp4",
-        "poster": "../projects/protective-structures/assets/master-v4-mobile-poster.png",
+        "poster": "../projects/protective-structures/assets/master-v4-mobile-poster.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/protective-structures/assets/how-clean-1440.png?v=settled-20260925-b",
-      "../projects/protective-structures/assets/solutions-clean-1440.png?v=settled-20260925-b",
-      "../projects/protective-structures/assets/system-clean-1440.png?v=settled-20260925-b",
-      "../projects/protective-structures/assets/company-clean-1440.png?v=settled-20260925-b",
-      "../projects/protective-structures/assets/contact-complete-1440.png"
+      "../projects/protective-structures/assets/how-clean-1440.webp?v=settled-20260925-b",
+      "../projects/protective-structures/assets/solutions-clean-1440.webp?v=settled-20260925-b",
+      "../projects/protective-structures/assets/system-clean-1440.webp?v=settled-20260925-b",
+      "../projects/protective-structures/assets/company-clean-1440.webp?v=settled-20260925-b",
+      "../projects/protective-structures/assets/contact-complete-1440.webp"
     ],
     "document": "../projects/protective-structures/case.md",
     "research": "../review/protective-structures.html",
@@ -59,7 +59,7 @@
     "boundary": "Редизайн найденного Mobirise-экспорта. Новый визуальный слой отделён от исторического проекта.",
     "category": "Сайты",
     "desktop": "images/lexlegal.webp",
-    "mobile": "../projects/lexlegal/assets/overview-390.png",
+    "mobile": "../projects/lexlegal/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/lexlegal/assets/master-desktop.mp4",
@@ -73,10 +73,10 @@
       }
     ],
     "screens": [
-      "../projects/lexlegal/assets/about-1440.png",
-      "../projects/lexlegal/assets/consultation-1440.png",
-      "../projects/lexlegal/assets/contact-1440.png",
-      "../projects/lexlegal/assets/contracts-1440.png"
+      "../projects/lexlegal/assets/about-1440.webp",
+      "../projects/lexlegal/assets/consultation-1440.webp",
+      "../projects/lexlegal/assets/contact-1440.webp",
+      "../projects/lexlegal/assets/contracts-1440.webp"
     ],
     "document": "../projects/lexlegal/case.md",
     "research": "../review/lexlegal.html",
@@ -171,10 +171,10 @@
       }
     ],
     "screens": [
-      "../projects/photo-animation/assets/overview-1440.png",
-      "../projects/photo-animation/assets/vertical-video-1440.png",
-      "../projects/photo-animation/assets/comparison-drag-1440.png",
-      "../projects/photo-animation/assets/services-1440.png"
+      "../projects/photo-animation/assets/overview-1440.webp",
+      "../projects/photo-animation/assets/vertical-video-1440.webp",
+      "../projects/photo-animation/assets/comparison-drag-1440.webp",
+      "../projects/photo-animation/assets/services-1440.webp"
     ],
     "document": "../projects/photo-animation/case.md",
     "research": "../review/photo-animation.html",
@@ -220,10 +220,10 @@
       }
     ],
     "screens": [
-      "../projects/roulette/assets/overview-1440.png",
-      "../projects/roulette/assets/second-chance-1440.png",
-      "../projects/roulette/assets/result-1440.png",
-      "../projects/roulette/assets/locked-1440.png"
+      "../projects/roulette/assets/overview-1440.webp",
+      "../projects/roulette/assets/second-chance-1440.webp",
+      "../projects/roulette/assets/result-1440.webp",
+      "../projects/roulette/assets/locked-1440.webp"
     ],
     "document": "../projects/roulette/case.md",
     "research": "../review/roulette.html",
@@ -255,7 +255,7 @@
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
     "desktop": "images/tatiana.webp",
-    "mobile": "../projects/tatiana/assets/overview-390.png",
+    "mobile": "../projects/tatiana/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/tatiana/assets/user-desktop-clean-web.mp4",
@@ -274,10 +274,10 @@
       }
     ],
     "screens": [
-      "../projects/tatiana/assets/contacts-1440.png",
-      "../projects/tatiana/assets/direction-0-1440.png",
-      "../projects/tatiana/assets/direction-1-1440.png",
-      "../projects/tatiana/assets/direction-2-1440.png"
+      "../projects/tatiana/assets/contacts-1440.webp",
+      "../projects/tatiana/assets/direction-0-1440.webp",
+      "../projects/tatiana/assets/direction-1-1440.webp",
+      "../projects/tatiana/assets/direction-2-1440.webp"
     ],
     "document": "../projects/tatiana/case.md",
     "research": "../review/tatiana.html",
@@ -308,13 +308,13 @@
     "flow": "Telegram → приём пищи → фильтры → рецепт → WebApp → ингредиенты → приготовление.",
     "boundary": "Запущенный Telegram-продукт и локальная portfolio-версия WebApp — разные слои. Реальные Telegram-материалы сохранены; экран синтетического рецепта удалён из публичной презентации по просьбе автора.",
     "category": "Продукты",
-    "desktop": "../projects/ppbot/assets/telegram-1-desktop.png",
+    "desktop": "../projects/ppbot/assets/telegram-1-desktop.webp",
     "mobile": "../projects/ppbot/assets/poster-mobile-v2.webp",
     "media": [],
     "screens": [
-      "../projects/ppbot/assets/telegram-1-desktop.png",
-      "../projects/ppbot/assets/telegram-2-desktop.png",
-      "../projects/ppbot/assets/telegram-3-desktop.png"
+      "../projects/ppbot/assets/telegram-1-desktop.webp",
+      "../projects/ppbot/assets/telegram-2-desktop.webp",
+      "../projects/ppbot/assets/telegram-3-desktop.webp"
     ],
     "document": "../projects/ppbot/case.md",
     "research": "../review/ppbot.html",
@@ -379,7 +379,7 @@
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
     "desktop": "images/desert-wheels.webp",
-    "mobile": "../projects/desert-wheels/assets/overview-390.png",
+    "mobile": "../projects/desert-wheels/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/desert-wheels/assets/master-desktop.mp4",
@@ -393,10 +393,10 @@
       }
     ],
     "screens": [
-      "../projects/desert-wheels/assets/breakdown-1440.png",
-      "../projects/desert-wheels/assets/formulas-1440.png",
-      "../projects/desert-wheels/assets/nonviable-1440.png",
-      "../projects/desert-wheels/assets/reset-1440.png"
+      "../projects/desert-wheels/assets/breakdown-1440.webp",
+      "../projects/desert-wheels/assets/formulas-1440.webp",
+      "../projects/desert-wheels/assets/nonviable-1440.webp",
+      "../projects/desert-wheels/assets/reset-1440.webp"
     ],
     "document": "../projects/desert-wheels/case.md",
     "research": "../review/desert-wheels.html",
@@ -428,7 +428,7 @@
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
     "desktop": "images/women-strange.webp",
-    "mobile": "../projects/women-strange/assets/overview-390.png",
+    "mobile": "../projects/women-strange/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/women-strange/assets/master-desktop.mp4",
@@ -442,10 +442,10 @@
       }
     ],
     "screens": [
-      "../projects/women-strange/assets/about-1440.png",
-      "../projects/women-strange/assets/contacts-1440.png",
-      "../projects/women-strange/assets/delivery-1440.png",
-      "../projects/women-strange/assets/error-404-1440.png"
+      "../projects/women-strange/assets/about-1440.webp",
+      "../projects/women-strange/assets/contacts-1440.webp",
+      "../projects/women-strange/assets/delivery-1440.webp",
+      "../projects/women-strange/assets/error-404-1440.webp"
     ],
     "document": "../projects/women-strange/case.md",
     "research": "../review/women-strange.html",
@@ -509,17 +509,17 @@
     "flow": "Добавление ролика, поиск, графики, настройки и обработка ошибок.",
     "boundary": "Запись использует локальные ответы API и вымышленные ролики. Живой сбор Apify не выполнялся.",
     "category": "Продукты",
-    "desktop": "../projects/pifpaf/assets/cover-redesign.png",
-    "mobile": "../projects/pifpaf/assets/overview-390.png",
+    "desktop": "../projects/pifpaf/assets/cover-redesign.webp",
+    "mobile": "../projects/pifpaf/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/pifpaf/assets/master-redesign-desktop.mp4",
-        "poster": "../projects/pifpaf/assets/dashboard-redesign-1440.png",
+        "poster": "../projects/pifpaf/assets/dashboard-redesign-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/pifpaf/assets/master-redesign-mobile.mp4",
-        "poster": "../projects/pifpaf/assets/dashboard-redesign-390.png",
+        "poster": "../projects/pifpaf/assets/dashboard-redesign-390.webp",
         "mobile": true
       },
       {
@@ -534,11 +534,11 @@
       }
     ],
     "screens": [
-      "../projects/pifpaf/assets/reels-redesign-1440.png",
-      "../projects/pifpaf/assets/imported-1440.png",
-      "../projects/pifpaf/assets/detail-1440.png",
-      "../projects/pifpaf/assets/analytics-30-1440.png",
-      "../projects/pifpaf/assets/empty-profile-390.png"
+      "../projects/pifpaf/assets/reels-redesign-1440.webp",
+      "../projects/pifpaf/assets/imported-1440.webp",
+      "../projects/pifpaf/assets/detail-1440.webp",
+      "../projects/pifpaf/assets/analytics-30-1440.webp",
+      "../projects/pifpaf/assets/empty-profile-390.webp"
     ],
     "document": "../projects/pifpaf/case.md",
     "research": "../review/pifpaf.html",
@@ -569,30 +569,30 @@
     "flow": "Input → generation → Shopify → Lumina Form home → catalog → PDP → cart.",
     "boundary": "V3 — локальный portfolio polish на проверенных данных и фотографиях. Отдельный original walkthrough сохраняет реальный Shopify preview. Платёж и заказ не выполнялись.",
     "category": "Продукты",
-    "desktop": "../projects/shopify-store-builder/assets/demo-v3-home-1440.png",
-    "mobile": "../projects/shopify-store-builder/assets/demo-v3-home-390.png",
+    "desktop": "../projects/shopify-store-builder/assets/demo-v3-home-1440.webp",
+    "mobile": "../projects/shopify-store-builder/assets/demo-v3-home-390.webp",
     "media": [
       {
         "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-desktop.mp4",
-        "poster": "../projects/shopify-store-builder/assets/demo-v3-home-1440.png",
+        "poster": "../projects/shopify-store-builder/assets/demo-v3-home-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/shopify-store-builder/assets/demo-lumina-v3-mobile.mp4",
-        "poster": "../projects/shopify-store-builder/assets/demo-v3-home-390.png",
+        "poster": "../projects/shopify-store-builder/assets/demo-v3-home-390.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/shopify-store-builder/assets/builder-1440.png",
-      "../projects/shopify-store-builder/assets/input-1440.png",
-      "../projects/shopify-store-builder/assets/generation-result-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-home-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-study-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-buy-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-catalog-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-product-1440.png",
-      "../projects/shopify-store-builder/assets/demo-v3-cart-1440.png"
+      "../projects/shopify-store-builder/assets/builder-1440.webp",
+      "../projects/shopify-store-builder/assets/input-1440.webp",
+      "../projects/shopify-store-builder/assets/generation-result-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-home-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-study-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-buy-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-catalog-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-product-1440.webp",
+      "../projects/shopify-store-builder/assets/demo-v3-cart-1440.webp"
     ],
     "document": "../projects/shopify-store-builder/case.md",
     "research": "../review/shopify-store-builder.html",
@@ -624,7 +624,7 @@
     "boundary": "Portfolio polish: Charcoal Violet #3C1A47 и ограниченный Cyber Lime #B6FF00. Данные демонстрационные; внешняя синхронизация не подключена.",
     "category": "Продукты",
     "desktop": "images/ritm.webp",
-    "mobile": "../projects/ritm/assets/today-390.png",
+    "mobile": "../projects/ritm/assets/today-390.webp",
     "media": [
       {
         "src": "../projects/ritm/assets/master-desktop-v2.mp4",
@@ -638,15 +638,15 @@
       }
     ],
     "screens": [
-      "../projects/ritm/assets/today-1440.png",
-      "../projects/ritm/assets/habit-done-1440.png",
-      "../projects/ritm/assets/program-1440.png",
-      "../projects/ritm/assets/rest-1440.png",
-      "../projects/ritm/assets/result-1440.png",
-      "../projects/ritm/assets/progress-1440.png",
-      "../projects/ritm/assets/journal-1440.png",
-      "../projects/ritm/assets/settings-1440.png",
-      "../projects/ritm/assets/settings-program-1440.png"
+      "../projects/ritm/assets/today-1440.webp",
+      "../projects/ritm/assets/habit-done-1440.webp",
+      "../projects/ritm/assets/program-1440.webp",
+      "../projects/ritm/assets/rest-1440.webp",
+      "../projects/ritm/assets/result-1440.webp",
+      "../projects/ritm/assets/progress-1440.webp",
+      "../projects/ritm/assets/journal-1440.webp",
+      "../projects/ritm/assets/settings-1440.webp",
+      "../projects/ritm/assets/settings-program-1440.webp"
     ],
     "document": "../projects/ritm/case.md",
     "research": "../review/ritm.html",
@@ -677,30 +677,30 @@
     "flow": "Навигация, рабочие экраны и проверенные пользовательские сценарии.",
     "boundary": "Локальная версия с подготовленными данными. 3D-модель — работа Style3D CG по CC Attribution; конструктивные отличия костюма достоверно показаны в 2D.",
     "category": "Продукты",
-    "desktop": "../projects/portnoy/assets/cover-redesign.png",
-    "mobile": "../projects/portnoy/assets/overview-390.png",
+    "desktop": "../projects/portnoy/assets/cover-redesign.webp",
+    "mobile": "../projects/portnoy/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/portnoy/assets/master-redesign-desktop.mp4",
-        "poster": "../projects/portnoy/assets/overview-1440.png",
+        "poster": "../projects/portnoy/assets/overview-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/portnoy/assets/master-redesign-mobile.mp4",
-        "poster": "../projects/portnoy/assets/overview-390.png",
+        "poster": "../projects/portnoy/assets/overview-390.webp",
         "mobile": true
       },
       {
         "src": "../projects/portnoy/assets/feature-3d-redesign-desktop.mp4",
-        "poster": "../projects/portnoy/assets/3d-fabric-redesign-1440.png",
+        "poster": "../projects/portnoy/assets/3d-fabric-redesign-1440.webp",
         "mobile": false
       }
     ],
     "screens": [
-      "../projects/portnoy/assets/3d-fabric-redesign-1440.png",
-      "../projects/portnoy/assets/catalog-1440.png",
-      "../projects/portnoy/assets/comparison-1440.png",
-      "../projects/portnoy/assets/configurator-1440.png"
+      "../projects/portnoy/assets/3d-fabric-redesign-1440.webp",
+      "../projects/portnoy/assets/catalog-1440.webp",
+      "../projects/portnoy/assets/comparison-1440.webp",
+      "../projects/portnoy/assets/configurator-1440.webp"
     ],
     "document": "../projects/portnoy/case.md",
     "research": "../review/portnoy.html",
@@ -735,7 +735,7 @@
     "mobile": "../portfolio/images/presentation/vibe-autorouter.svg",
     "media": [],
     "screens": [
-      "../projects/vibe-autorouter/assets/overview-390.png"
+      "../projects/vibe-autorouter/assets/overview-390.webp"
     ],
     "document": "../projects/vibe-autorouter/case.md",
     "research": "../site/case-vibe-autorouter.html",
@@ -770,9 +770,9 @@
     "mobile": "../portfolio/images/presentation/support-rag.svg",
     "media": [],
     "screens": [
-      "../projects/support-rag/assets/telegram-support-sanitized.png",
-      "../projects/support-rag/assets/webchat-host-1440.png",
-      "../projects/support-rag/assets/webchat-conversation-390.png"
+      "../projects/support-rag/assets/telegram-support-sanitized.webp",
+      "../projects/support-rag/assets/webchat-host-1440.webp",
+      "../projects/support-rag/assets/webchat-conversation-390.webp"
     ],
     "document": "../projects/support-rag/case.md",
     "research": "../site/case-support-rag.html",
@@ -804,12 +804,12 @@
     "flow": "Разделы сайта и исходные взаимодействия frontend. Генерация музыки и backend не подтверждены.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Сайты",
-    "desktop": "../projects/trekpodarok/assets/ideas-full-1440.png?v=full-20260925",
+    "desktop": "../projects/trekpodarok/assets/ideas-full-1440.webp?v=full-20260925",
     "mobile": "../projects/trekpodarok/assets/poster-mobile.webp?v=editorial-20260923",
     "media": [
       {
         "src": "../projects/trekpodarok/assets/master-desktop.mp4",
-        "poster": "../projects/trekpodarok/assets/ideas-full-1440.png?v=gallery-full-20260925",
+        "poster": "../projects/trekpodarok/assets/ideas-full-1440.webp?v=gallery-full-20260925",
         "mobile": false
       },
       {
@@ -819,9 +819,9 @@
       }
     ],
     "screens": [
-      "../projects/trekpodarok/assets/ideas-full-1440.png?v=gallery-full-20260925",
-      "../projects/trekpodarok/assets/continue-1440.png",
-      "../projects/trekpodarok/assets/faq-1440.png",
+      "../projects/trekpodarok/assets/ideas-full-1440.webp?v=gallery-full-20260925",
+      "../projects/trekpodarok/assets/continue-1440.webp",
+      "../projects/trekpodarok/assets/faq-1440.webp",
       "../projects/trekpodarok/assets/occasion-День рождения-1440.png"
     ],
     "document": "../projects/trekpodarok/case.md",
@@ -854,7 +854,7 @@
     "boundary": "Визуальные доработки сделаны в этой задаче. Контакты и запросы — демонстрационные.",
     "category": "Сайты",
     "desktop": "../projects/garmony/assets/cover.webp",
-    "mobile": "../projects/garmony/assets/overview-390.png",
+    "mobile": "../projects/garmony/assets/overview-390.webp",
     "media": [
       {
         "src": "../projects/garmony/assets/master-desktop.mp4",
@@ -868,10 +868,10 @@
       }
     ],
     "screens": [
-      "../projects/garmony/assets/approach-1440.png",
-      "../projects/garmony/assets/collection-galant-1440.png",
-      "../projects/garmony/assets/collection-magic-1440.png",
-      "../projects/garmony/assets/collection-toscana-1440.png"
+      "../projects/garmony/assets/approach-1440.webp",
+      "../projects/garmony/assets/collection-galant-1440.webp",
+      "../projects/garmony/assets/collection-magic-1440.webp",
+      "../projects/garmony/assets/collection-toscana-1440.webp"
     ],
     "document": "../projects/garmony/case.md",
     "research": "../review/garmony.html",
@@ -917,10 +917,10 @@
       }
     ],
     "screens": [
-      "../projects/ep-beauty/assets/booking-1440.png",
-      "../projects/ep-beauty/assets/contacts-1440.png",
-      "../projects/ep-beauty/assets/dark-1440.png",
-      "../projects/ep-beauty/assets/faq-1440.png"
+      "../projects/ep-beauty/assets/booking-1440.webp",
+      "../projects/ep-beauty/assets/contacts-1440.webp",
+      "../projects/ep-beauty/assets/dark-1440.webp",
+      "../projects/ep-beauty/assets/faq-1440.webp"
     ],
     "document": "../projects/ep-beauty/case.md",
     "research": "../review/ep-beauty.html",
@@ -952,7 +952,7 @@
     "boundary": "Видео и основные screenshots сняты 21 сентября 2026 с живого solonflowai-portfolio.vercel.app. Локальная polish-версия сохранена только как отдельный исследовательский слой.",
     "category": "Исследования",
     "desktop": "../projects/portfolio-archive/assets/cover-live.webp",
-    "mobile": "../projects/portfolio-archive/assets/live-hero-390.png",
+    "mobile": "../projects/portfolio-archive/assets/live-hero-390.webp",
     "media": [
       {
         "src": "../projects/portfolio-archive/assets/master-live-1440.mp4",
@@ -966,13 +966,13 @@
       }
     ],
     "screens": [
-      "../projects/portfolio-archive/assets/live-services-1440.png",
-      "../projects/portfolio-archive/assets/live-about-1440.png",
-      "../projects/portfolio-archive/assets/live-stack-1440.png",
-      "../projects/portfolio-archive/assets/live-projects-web-1440.png",
-      "../projects/portfolio-archive/assets/live-project-detail-1440.png",
-      "../projects/portfolio-archive/assets/live-contact-1440.png",
-      "../projects/portfolio-archive/assets/live-navigation-390.png"
+      "../projects/portfolio-archive/assets/live-services-1440.webp",
+      "../projects/portfolio-archive/assets/live-about-1440.webp",
+      "../projects/portfolio-archive/assets/live-stack-1440.webp",
+      "../projects/portfolio-archive/assets/live-projects-web-1440.webp",
+      "../projects/portfolio-archive/assets/live-project-detail-1440.webp",
+      "../projects/portfolio-archive/assets/live-contact-1440.webp",
+      "../projects/portfolio-archive/assets/live-navigation-390.webp"
     ],
     "document": "../projects/portfolio-archive/case.md",
     "research": "../review/portfolio-archive.html",
@@ -1004,25 +1004,25 @@
     "boundary": "Исходный backend и live collection verified. Portfolio UI — отдельный presentation layer; публичные Meta creatives используются как replay/demo evidence.",
     "category": "Автоматизация",
     "desktop": "../projects/meta-ads/assets/cover-v3.webp",
-    "mobile": "../projects/meta-ads/assets/results-redesign-390.png",
+    "mobile": "../projects/meta-ads/assets/results-redesign-390.webp",
     "media": [
       {
         "src": "../projects/meta-ads/assets/master-desktop-v3.mp4",
-        "poster": "../projects/meta-ads/assets/search-redesign-1440.png",
+        "poster": "../projects/meta-ads/assets/search-redesign-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/meta-ads/assets/master-mobile-v3.mp4",
-        "poster": "../projects/meta-ads/assets/search-redesign-390.png",
+        "poster": "../projects/meta-ads/assets/search-redesign-390.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/meta-ads/assets/search-redesign-1440.png",
-      "../projects/meta-ads/assets/results-redesign-1440.png",
-      "../projects/meta-ads/assets/detail-redesign-1440.png",
-      "../projects/meta-ads/assets/jobs-1440-v3.png",
-      "../projects/meta-ads/assets/contract-1440-v3.png"
+      "../projects/meta-ads/assets/search-redesign-1440.webp",
+      "../projects/meta-ads/assets/results-redesign-1440.webp",
+      "../projects/meta-ads/assets/detail-redesign-1440.webp",
+      "../projects/meta-ads/assets/jobs-1440-v3.webp",
+      "../projects/meta-ads/assets/contract-1440-v3.webp"
     ],
     "document": "../projects/meta-ads/case.md",
     "research": "../review/meta-ads.html",
@@ -1053,26 +1053,26 @@
     "flow": "20 экранов: заметки → прогресс → общая цель → полив → статьи → чат → настройки и библиотека.",
     "boundary": "Локальная portfolio-версия. Исходник, доработки и demo-состояния разделены в описании.",
     "category": "Продукты",
-    "desktop": "../projects/stepbystep/assets/cover-v3.png",
-    "mobile": "../projects/stepbystep/assets/art-v2-demo-home-390.png",
+    "desktop": "../projects/stepbystep/assets/cover-v3.webp",
+    "mobile": "../projects/stepbystep/assets/art-v2-demo-home-390.webp",
     "media": [
       {
         "src": "../projects/stepbystep/assets/art-v2-master-desktop-v2.mp4",
-        "poster": "../projects/stepbystep/assets/art-v2-demo-home-1440.png",
+        "poster": "../projects/stepbystep/assets/art-v2-demo-home-1440.webp",
         "mobile": false
       },
       {
         "src": "../projects/stepbystep/assets/art-v2-master-mobile-v2.mp4",
-        "poster": "../projects/stepbystep/assets/art-v2-demo-home-390.png",
+        "poster": "../projects/stepbystep/assets/art-v2-demo-home-390.webp",
         "mobile": true
       }
     ],
     "screens": [
-      "../projects/stepbystep/assets/art-v2-demo-home-1440.png",
-      "../projects/stepbystep/assets/art-v2-demo-progress-390.png",
-      "../projects/stepbystep/assets/art-v2-demo-notes-390.png",
-      "../projects/stepbystep/assets/art-v2-demo-article-result-390.png",
-      "../projects/stepbystep/assets/art-v2-demo-chat-390.png"
+      "../projects/stepbystep/assets/art-v2-demo-home-1440.webp",
+      "../projects/stepbystep/assets/art-v2-demo-progress-390.webp",
+      "../projects/stepbystep/assets/art-v2-demo-notes-390.webp",
+      "../projects/stepbystep/assets/art-v2-demo-article-result-390.webp",
+      "../projects/stepbystep/assets/art-v2-demo-chat-390.webp"
     ],
     "document": "../projects/stepbystep/case.md",
     "research": "../review/stepbystep.html",
@@ -1118,10 +1118,10 @@
       }
     ],
     "screens": [
-      "../projects/skazka/assets/audio-1440.png",
-      "../projects/skazka/assets/documents-1440.png",
-      "../projects/skazka/assets/ending-1440.png",
-      "../projects/skazka/assets/faq-1440.png"
+      "../projects/skazka/assets/audio-1440.webp",
+      "../projects/skazka/assets/documents-1440.webp",
+      "../projects/skazka/assets/ending-1440.webp",
+      "../projects/skazka/assets/faq-1440.webp"
     ],
     "document": "../projects/skazka/case.md",
     "research": "../review/skazka.html",
@@ -1256,7 +1256,7 @@
     "mobile": "../portfolio/images/presentation/telegram-leads.svg",
     "media": [],
     "screens": [
-      "../projects/telegram-leads/assets/telegram-leads-sanitized.png"
+      "../projects/telegram-leads/assets/telegram-leads-sanitized.webp"
     ],
     "document": "../projects/telegram-leads/case.md",
     "research": "../site/case-telegram-leads.html",
@@ -1302,10 +1302,10 @@
       }
     ],
     "screens": [
-      "../projects/topgadalkin/assets/example-0-1440.png",
-      "../projects/topgadalkin/assets/example-1-1440.png",
-      "../projects/topgadalkin/assets/example-2-1440.png",
-      "../projects/topgadalkin/assets/faq-0-1440.png"
+      "../projects/topgadalkin/assets/example-0-1440.webp",
+      "../projects/topgadalkin/assets/example-1-1440.webp",
+      "../projects/topgadalkin/assets/example-2-1440.webp",
+      "../projects/topgadalkin/assets/faq-0-1440.webp"
     ],
     "document": "../projects/topgadalkin/case.md",
     "research": "../review/topgadalkin.html",
@@ -1337,7 +1337,7 @@
     "boundary": "Atlas / Leads и Beauty Lead Hunter объединены редакционно как один B2B-кейс. Это две реализации; данные в демо синтетические, сетевой сбор и outreach отключены.",
     "category": "Автоматизация",
     "desktop": "../projects/maps-lead-generator/assets/cover-v2.webp",
-    "mobile": "../projects/maps-lead-generator/assets/company-table-390-v2.png",
+    "mobile": "../projects/maps-lead-generator/assets/company-table-390-v2.webp",
     "media": [
       {
         "src": "../projects/maps-lead-generator/assets/master-combined.mp4",
@@ -1366,13 +1366,13 @@
       }
     ],
     "screens": [
-      "../projects/maps-lead-generator/assets/search-settings-1440-v2.png",
-      "../projects/maps-lead-generator/assets/company-table-1440-v2.png",
-      "../projects/maps-lead-generator/assets/company-detail-1440-v2.png",
-      "../projects/maps-lead-generator/assets/email-filter-1440-v2.png",
-      "../projects/maps-lead-generator/assets/workflow-detail-1440-v2.png",
-      "../projects/beauty-lead/assets/detail-1440.png",
-      "../projects/beauty-lead/assets/filtered-1440.png"
+      "../projects/maps-lead-generator/assets/search-settings-1440-v2.webp",
+      "../projects/maps-lead-generator/assets/company-table-1440-v2.webp",
+      "../projects/maps-lead-generator/assets/company-detail-1440-v2.webp",
+      "../projects/maps-lead-generator/assets/email-filter-1440-v2.webp",
+      "../projects/maps-lead-generator/assets/workflow-detail-1440-v2.webp",
+      "../projects/beauty-lead/assets/detail-1440.webp",
+      "../projects/beauty-lead/assets/filtered-1440.webp"
     ],
     "document": "../projects/maps-lead-generator/case.md",
     "research": "../review/maps-lead-generator.html",
@@ -1598,5 +1598,45 @@
     "seoDescription": "Внутренние продукты · NDA: Обезличенный обзор внутренних сервисов юридической компании: телефония, CRM, контент, документы и интеграции.",
     "businessValue": "Повторяющиеся ручные действия автоматизировались, а данные и результаты передавались между рабочими инструментами без постоянного ручного переноса.",
     "statusLabel": "Внутренние продукты · NDA"
+  },
+  {
+    "id": "premium-lms",
+    "name": "Академия — образовательная платформа",
+    "subtitle": "LMS для онлайн-курсов: каталог программ, уроки из блоков, CMS с публикацией редакций, роли и защищённые материалы.",
+    "intro": "Платформа ведёт ученика от каталога до завершённого урока, а владельцу даёт собрать курс, опубликовать редакцию и назначить доступ.",
+    "stack": "Next.js · TypeScript · Supabase · PostgreSQL",
+    "flow": "Каталог → курс → урок → прогресс; админ-панель: курс → редакция → публикация → доступ.",
+    "boundary": "Платформа развёртывается локально и не размещена в интернете. Экраны сняты на демонстрационных seed-данных; оплата, подписки, сертификаты и SSO в поставку не входят.",
+    "category": "Продукты",
+    "desktop": "images/premium-lms.webp",
+    "mobile": "../projects/premium-lms/assets/mobile-390.webp",
+    "media": [],
+    "screens": [
+      "../projects/premium-lms/assets/course-1440.webp",
+      "../projects/premium-lms/assets/lesson-dark-1440.webp",
+      "../projects/premium-lms/assets/student-1440.webp",
+      "../projects/premium-lms/assets/library-1440.webp",
+      "../projects/premium-lms/assets/lesson-editor-1440.webp",
+      "../projects/premium-lms/assets/course-editor-1440.webp",
+      "../projects/premium-lms/assets/login-1440.webp"
+    ],
+    "document": "../projects/premium-lms/case.md",
+    "local": true,
+    "seoTitle": "Академия — LMS-платформа для онлайн-обучения",
+    "shortTitle": "Академия LMS",
+    "shortDescription": "Образовательная платформа: курсы из блоков, публикация редакций, роли с MFA и защищённые материалы.",
+    "problem": "Автору курсов нужен был один инструмент, чтобы собрать программу, опубликовать её и управлять доступом, не раздавая материалы всем подряд.",
+    "built": "Спроектировал и разработал платформу целиком: каталог, уроки из 11 типов блоков, CMS с черновиками и публикацией редакций, роли Student, Editor и Admin с обязательным TOTP, защищённые файлы, аналитику и журнал действий.",
+    "result": "Ученик проходит путь от каталога до завершённого урока с сохранением прогресса, а владелец собирает курс, публикует редакцию и назначает доступ из админ-панели.",
+    "proof": "Единый E2E-прогон 19/19, 28 unit-тестов, 32 security-сценария, 63 проверки доступности без нарушений и 147 проверок адаптива; пять реальных видеопровайдеров и Linux-контейнер.",
+    "keywords": [
+      "LMS",
+      "образовательная платформа",
+      "Next.js Supabase"
+    ],
+    "caseIntro": "Платформа ведёт ученика от каталога до завершённого урока, а владельцу даёт собрать курс, опубликовать редакцию и назначить доступ.",
+    "seoDescription": "Академия: образовательная платформа на Next.js и Supabase с CMS курсов, ролями, MFA и защищёнными материалами.",
+    "businessValue": "Владелец управляет обучением, материалами и доступами в одном месте, а ученики получают понятный путь с сохранённым прогрессом.",
+    "statusLabel": "Образовательная платформа"
   }
 ]
