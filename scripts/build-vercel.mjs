@@ -23,6 +23,7 @@ const copyTree = async (source, destination, exclude = new Set()) => {
 };
 
 await fs.copyFile(path.join(root, 'index.html'), path.join(output, 'index.html'));
+await fs.copyFile(path.join(root, 'site', '404.html'), path.join(output, '404.html'));
 await copyTree(path.join(root, 'site'), path.join(output, 'site'), new Set(['qa']));
 await copyTree(path.join(root, 'review'), path.join(output, 'review'));
 await copyTree(path.join(root, 'portfolio'), path.join(output, 'portfolio'));
