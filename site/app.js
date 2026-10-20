@@ -77,7 +77,7 @@ const caseArt = {
  'legal-automation':['automation','#0b0d0e',null,'Обезличенная схема реального процесса без вымышленного UI.']
 };
 function setupMenu(){const toggle=$('.menu-toggle');if(!toggle)return;const menu=$('#mobile-nav');toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')==='true';toggle.setAttribute('aria-expanded',String(!open));toggle.setAttribute('aria-label',open?'Открыть меню':'Закрыть меню');menu.hidden=open});menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.hidden=true;toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Открыть меню')}));}
-async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20260923-final-pass',location.href));if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
+async function loadProjects(){const response=await fetch(new URL('../portfolio/data.json?v=20261020-phone',location.href));if(!response.ok)throw new Error('Не удалось загрузить список проектов');return (await response.json()).filter(item=>item.published!==false);}
 
 function home(projects) {
   const selected = selectedIds.map(id => projects.find(project => project.id === id)).filter(Boolean);
@@ -217,3 +217,5 @@ addEventListener('pageshow', event => {
   if (event.persisted && !projectsLoaded) renderProjects();
 });
 renderProjects();
+
+document.addEventListener('loadedmetadata',event=>{const v=event.target;if(v.tagName==='VIDEO'&&v.closest('.video-phone')&&v.videoWidth&&v.videoHeight)v.style.aspectRatio=`${v.videoWidth}/${v.videoHeight}`;},true);

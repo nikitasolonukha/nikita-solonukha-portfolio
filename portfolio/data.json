@@ -263,8 +263,8 @@
         "mobile": false
       },
       {
-        "src": "../projects/tatiana/assets/user-mobile-clean-web.mp4",
-        "poster": "../projects/tatiana/assets/user-mobile-clean-poster.webp",
+        "src": "../projects/tatiana/assets/user-mobile-noframe.mp4",
+        "poster": "../projects/tatiana/assets/user-mobile-noframe-poster.webp",
         "mobile": true
       },
       {
@@ -1348,11 +1348,6 @@
         "src": "../projects/maps-lead-generator/assets/master-desktop-v2.mp4",
         "poster": "../projects/maps-lead-generator/assets/poster-desktop-v2.webp",
         "mobile": false
-      },
-      {
-        "src": "../projects/maps-lead-generator/assets/master-mobile-v2.mp4",
-        "poster": "../projects/maps-lead-generator/assets/poster-mobile-v2.webp",
-        "mobile": true
       },
       {
         "src": "../projects/beauty-lead/assets/master-desktop.mp4",
